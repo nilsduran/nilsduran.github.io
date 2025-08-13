@@ -2,7 +2,7 @@
 layout: default
 title: Projectes & Codi Obert
 tags: projects
-permalink: /projects_ca/
+permalink: /projects/
 lang: ca
 js:
   - js/gh_projects.js

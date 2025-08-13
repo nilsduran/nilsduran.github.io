@@ -1,23 +1,27 @@
 ---
 layout: default
+lang: ca
+permalink: /
 ---
 
-<script>
-  // Simple language detection and redirection
-  const userLang = navigator.language || navigator.userLanguage;
-  const supportedLangs = ['en', 'ca'];
-  let lang = 'en'; // default to English
+# 👋 Hola, <br/> sóc en Nils Duran.
 
-  if (supportedLangs.includes(userLang.slice(0, 2))) {
-    lang = userLang.slice(0, 2);
-  }
+### Sóc un desenvolupador d'IA apassionat per l'aprenentatge automàtic i la ciència de dades.
 
-  // Redirect to the language-specific page
-  window.location.href = `index_${lang}.html`;
-</script>
+### Actualment, estudio Intel·ligència Artificial a la UPC, Barcelona.
 
-<div style="text-align: center; margin-top: 5em;">
-  <p>Redirecting to your preferred language...</p>
-  <p>If you are not redirected, please select a language:</p>
-  <a href="index_en.html">English</a> | <a href="index_ca.html">Català</a>
-</div>
+<br>
+
+Normalment em podeu trobar en un IDE de programació o llegint.
+Sóc un gran defensor de:
+
+- 🧠 La Intel·ligència Artificial i el seu potencial per resoldre problemes del món real.
+- 📚 Els llibres de tota la vida. Dos dels meus favorits recents són [_Atomic Habits_](https://www.goodreads.com/book/show/40121378-atomic-habits) i [_Sapiens: A Brief History of Humankind_](https://www.goodreads.com/book/show/23692271-sapiens).
+- 🧗 L'escalada, el tennis i els escacs.
+
+<br>
+
+[**Veure les últimes publicacions del blog →**]({{ site.baseurl }}/blog)
+[**Sobre mi →**]({{ site.baseurl }}/about)
+[**Projectes →**]({{ site.baseurl }}/projects)
+[**Interessos →**]({{ site.baseurl }}/interests)

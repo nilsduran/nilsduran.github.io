@@ -1,6 +1,7 @@
 ---
 layout: default
 lang: en
+permalink: /index_en/
 ---
 
 # 👋 Hi there, <br/> I'm Nils Duran.

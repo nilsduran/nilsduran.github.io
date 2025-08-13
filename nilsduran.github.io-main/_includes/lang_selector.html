@@ -1,0 +1,47 @@
+<div class="lang-selector">
+  <a href="#" onclick="changeLang('en'); return false;">EN</a>
+  <span>/</span>
+  <a href="#" onclick="changeLang('ca'); return false;">CA</a>
+</div>
+
+<script>
+  function changeLang(lang) {
+    const currentPath = window.location.pathname;
+    const pathSegments = currentPath.split('/').filter(Boolean);
+    let newPath = '/';
+
+    if (pathSegments.length > 0) {
+        const lastSegment = pathSegments[pathSegments.length - 1];
+        const baseSegment = lastSegment.replace(/_en$|_ca$/, '');
+        
+        // Check if it's a language-specific page
+        if (lastSegment.endsWith('_en') || lastSegment.endsWith('_ca')) {
+            newPath = currentPath.replace(/_[a-z]{2}$/, `_${lang}`);
+        } else {
+            // It's a base page like /about/, so append the lang
+            newPath = `/${baseSegment}_${lang}/`;
+        }
+    } else {
+        // Root index page
+        newPath = `/index_${lang}.html`;
+    }
+
+    // Redirect only if the path is different
+    if (newPath !== window.location.pathname) {
+        window.location.href = newPath;
+    }
+  }
+</script>
+
+<style>
+.lang-selector {
+  float: right;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+.lang-selector a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+</style>

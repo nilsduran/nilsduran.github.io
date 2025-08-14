@@ -21,7 +21,4 @@ Sóc un gran defensor de:
 
 <br>
 
-[**Veure les últimes publicacions del blog →**]({{ site.baseurl }}/blog)
-[**Sobre mi →**]({{ site.baseurl }}/about)
-[**Projectes →**]({{ site.baseurl }}/projects)
-[**Interessos →**]({{ site.baseurl }}/interests)
+

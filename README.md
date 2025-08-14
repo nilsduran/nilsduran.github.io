@@ -14,6 +14,7 @@ My personal portfolio website. The theme is based on [thundergolfer/**junior-the
 ### Other places you can find me
 
 * LinkedIn @ [Nils Duran](https://www.linkedin.com/in/nils-duran2004/)
+* GitHub @ [nilsduran](https://github.com/nilsduran)
 
 ----
 

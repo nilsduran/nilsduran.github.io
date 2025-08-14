@@ -4,7 +4,7 @@ permalink: /about/
 lang: ca
 title: Una mica sobre mi.
 tags: about
-headshot: /images/headshot.jpg
+headshot: /images/misc/headshot.jpg
 ---
 
 ### Introducció

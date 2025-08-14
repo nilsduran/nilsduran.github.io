@@ -67,8 +67,11 @@ layout: default
           {% for project in site.projects %}
             {% if project.lang == 'ca' %}
               <div class="project-card">
+                {% assign project_slug = project.url | split: "/" | last %}
+                {% assign image_ext = project.image_format | default: "png" %}
+                {% assign project_image = "/images/projects/" | append: project_slug | append: "/" | append: project_slug | append: "." | append: image_ext %}
                 <a href="{{ project.url | relative_url }}">
-                  <img src="/images/placeholder-project.png" alt="{{ project.title }}">
+                  <img src="{{ project_image }}" alt="{{ project.title }}">
                 </a>
                 <a href="{{ project.url | relative_url }}" class="post-link">
                   <h3 class="h2 post-title">{{ project.title }}</h3>

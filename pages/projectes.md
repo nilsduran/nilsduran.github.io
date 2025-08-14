@@ -9,14 +9,17 @@ lang: ca
 
 Aquí hi ha alguns dels projectes en els quals he treballat.
 
-## Predicció de la Dificultat Elo de Puzles d'Escacs
-Vaig predir la dificultat Elo de la qualificació d'una posició d'escacs aprofitant tècniques avançades d'aprenentatge automàtic. Vaig aprofitar motors de joc existents com Stockfish, Leela i Maia per millorar el rendiment.
-
-## Classificació d'Imatges amb MareNostrum 5
-Vaig entrenar diversos models basats en Transformer amb el conjunt de dades complet MAMe (>200 GB) i vaig aconseguir una puntuació f1 de 0.75. Vaig utilitzar el superordinador MareNostrum V i Slurm per entrenar els models en un conjunt de dades molt gran.
-
-## Classificació de l'Estat de Pacients amb Cirrosi
-Vaig treballar amb dades de salut per classificar l'estat de pacients amb cirrosi. Vaig entrenar diversos models, inclosos KNN, SVM, Arbre de Decisió i Explainable Boosting Machine.
-
-## Resolució de Jocs d'Atari amb DQN
-Vaig treballar amb la biblioteca Gymnasium per crear entorns i implementar diversos algorismes d'Aprenentatge per Reforç com DQN, DDPG, TD3, SAC i PPO.
+{% for project in site.collections.portfolio %}
+  {% if project.lang == 'ca' %}
+    <article class="post-item">
+      <div class="project-item-content">
+        <a href="{{ project.url }}">
+          <img src="/images/placeholder-project.png" alt="{{ project.title }}" style="width: 100%; height: auto; max-width: 300px; display: block; margin-bottom: 1em;">
+        </a>
+        <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
+        <p>{{ project.excerpt | strip_html | truncatewords: 50 }}</p>
+        <a href="{{ project.url }}">Llegir més...</a>
+      </div>
+    </article>
+  {% endif %}
+{% endfor %}

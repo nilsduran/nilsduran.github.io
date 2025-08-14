@@ -1,7 +1,0 @@
-<div class="lang-selector">
-  {% if page.lang == 'ca' %}
-    <a href="{{ page.url | replace: '/', '/index_en/' }}">EN</a>
-  {% else %}
-    <a href="{{ page.url | replace: '_en', '' }}">CA</a>
-  {% endif %}
-</div>

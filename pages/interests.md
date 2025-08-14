@@ -7,10 +7,6 @@ lang: ca
 
 <div id="stats">
 
-
-
-
-
 <h2>Cançons preferides.</h2>
 
 <p>Tens curiositat per saber què estic escoltant? Aquí tens les meves cançons preferides a Spotify.</p>

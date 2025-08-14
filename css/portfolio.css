@@ -53,7 +53,8 @@ body, button, input, select, textarea {
 }
 
 a {
-  color: #00e;
+  color: #000;
+  text-decoration: underline;
   -webkit-transition: color 200ms linear;
   -moz-transition: color 200ms linear;
   transition: color 200ms linear;
@@ -64,7 +65,8 @@ a:visited {
 }
 
 a:hover {
-  color: #06e;
+  color: #333;
+  text-decoration: none;
 }
 
 a:focus {
@@ -295,7 +297,7 @@ td {
 
   a {
     font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
+    text-decoration: underline;
     color: #000;
     font-size: 14px;
   }
@@ -836,13 +838,13 @@ td {
 }
 
 .project-item-content h2 a {
-  color: #000 !important; /* Ensure black color */
-  text-decoration: underline !important; /* Add underline */
+  color: #000; /* Black color for project titles */
+  text-decoration: underline; /* Underline for project titles */
 }
 
 .project-item-content h2 a:hover {
-  color: #333 !important; /* Darker grey on hover for visual feedback */
-  text-decoration: none !important; /* Remove underline on hover */
+  color: #333; /* Darker grey on hover */
+  text-decoration: none; /* Remove underline on hover */
 }
 
 /* ==|== print styles ======================================================= */

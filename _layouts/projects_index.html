@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+<style>
+.projects-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 2rem !important;
+  margin-top: 2rem !important;
+  width: 100% !important;
+}
+
+.project-card {
+  flex: 0 0 calc(50% - 1rem) !important;
+  background: #f9f9f9 !important;
+  border-radius: 8px !important;
+  padding: 1.5rem !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  box-sizing: border-box !important;
+}
+
+.project-card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+}
+
+.project-card img {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 4px !important;
+  margin-bottom: 1rem !important;
+  display: block !important;
+}
+
+.project-card .post-link .post-title {
+  color: #353534 !important;
+  text-decoration: none !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.project-card .post-link:hover .post-title {
+  color: #0076df !important;
+}
+
+.project-card .post-summary {
+  color: #666 !important;
+  line-height: 1.5 !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .project-card {
+    flex: 0 0 100% !important;
+  }
+}
+</style>
+
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>{{ page.title }}</h1>
+        <p>{{ content }}</p>
+
+        <div class="projects-grid">
+          {% for project in site.projects %}
+            {% if project.lang == 'ca' %}
+              <div class="project-card">
+                <a href="{{ project.url | relative_url }}">
+                  <img src="/images/placeholder-project.png" alt="{{ project.title }}">
+                </a>
+                <a href="{{ project.url | relative_url }}" class="post-link">
+                  <h3 class="h2 post-title">{{ project.title }}</h3>
+                </a>
+                <p class="post-summary">{{ project.content | strip_html | truncatewords: 30 }}</p>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

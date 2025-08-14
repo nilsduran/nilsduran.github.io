@@ -21,6 +21,12 @@
   color: $black;
 }
 
+.post-link .post-title,
+.home .posts .post-link .post-title {
+  color: $black !important;
+  text-decoration: none !important;
+}
+
 .post-content {
   font-weight: 400;
 }

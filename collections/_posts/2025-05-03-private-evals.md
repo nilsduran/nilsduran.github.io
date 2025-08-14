@@ -1,22 +1,22 @@
 ---
 layout: post
-title: "You should have private evals"
+title: "Hauries de tenir avaluacions privades"
 date: 2025-05-03
 categories: genai llm career
-summary: Everybody should have a personal set of test prompts to try on LLMs. 
+summary: Tothom hauria de tenir un conjunt personal de proves per provar els LLMs.
 permalink: /blog/private-evals
 ---
 
 <figure style="margin: 0; margin-bottom: 1em; position: relative;">
-  <img 
-    src="/images/private-evals/private-evals-hero.webp" 
-    alt="Lorem Ipsum text with redaction and red/green coloring." 
+  <img
+    src="/images/private-evals/private-evals-hero.webp"
+    alt="Text Lorem Ipsum amb redacció i colors vermell/verd."
     width="100%"
     height="auto"
     style="aspect-ratio: 16/9; object-fit: cover; border-radius: 0.4em; filter: brightness(0.9);"
   >
   <div class="redaction-bars" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
-    <!-- Redaction bars will be added dynamically -->
+    <!-- Les barres de redacció s'afegiran dinàmicament -->
   </div>
 </figure>
 
@@ -53,7 +53,7 @@ permalink: /blog/private-evals
       bar.style.width = pos.width;
       redactionContainer.appendChild(bar);
     });
-    
+
     /* Add scroll effect for shadow movement */
     window.addEventListener('scroll', function() {
       const scrollY = window.scrollY;
@@ -106,167 +106,167 @@ permalink: /blog/private-evals
   window.addEventListener('resize', updateTocVisibility);
 });</script>
 
-If you are consistently using LLMs in any non-trivial task you should make your own private ‘evals’ (a.k.a tests). Take a couple hours, start simple, and shift from passive consumption of AI hype into active, critical tool use. I started after noticing multiple of the staff+ engineers I follow and admire share that they had private evals ([1](https://blog.ezyang.com/2025/04/why-you-should-maintain-a-personal-llm-coding-benchmark/), [2](https://www.notion.so/211-A-how-to-post-about-setting-up-private-LLM-evals-1db99ea4b26f802181def9c9632e332a?pvs=21), [3](https://x.com/GrantSlatton/status/1874900859462856977)). Both junior and staff+ engineers are heavily using LLMs, but the latter are engaging with the emerging technology in a strikingly different and more productive fashion. Juniors ‘hit and hope’, unsurprisingly awed at the speed and capability of these systems. Senior engineers, on the other hand, apply judgment, skepticism, and taste to LLM output, acting as an essential filter on the token firehose. Private evals are part of that filtering activity. 
+Si utilitzeu LLMs de manera consistent en qualsevol tasca no trivial, hauríeu de crear les vostres pròpies 'avaluacions' privades (també conegudes com a proves). Dediqueu un parell d'hores, comenceu de manera senzilla i passeu del consum passiu de l'eufòria de la IA a un ús actiu i crític de l'eina. Vaig començar després de notar que diversos enginyers de personal que segueixo i admiro compartien que tenien avaluacions privades ([1](https://blog.ezyang.com/2025/04/why-you-should-maintain-a-personal-llm-coding-benchmark/), [2](https://www.notion.so/211-A-how-to-post-about-setting-up-private-LLM-evals-1db99ea4b26f802181def9c9632e332a?pvs=21), [3](https://x.com/GrantSlatton/status/1874900859462856977)). Tant els enginyers júnior com els de personal utilitzen intensament els LLMs, però aquests últims s'impliquen amb la tecnologia emergent d'una manera sorprenentment diferent i més productiva. Els júniors 'proben sort', sorpresos per la velocitat i la capacitat d'aquests sistemes. Els enginyers sèniors, en canvi, apliquen judici, escepticisme i bon gust a la sortida dels LLM, actuant com un filtre essencial en el flux de tokens. Les avaluacions privades formen part d'aquesta activitat de filtratge.
 
-By ceding openness and control, LLM-driven knowledge work is looking more like Catholic Magisterium. The task of crafting and judging frontier models is vested uniquely in our bishops, those cracked and cracking researchers at OpenAI, Anthropic, Gemini.
+En cedir l'obertura i el control, el treball de coneixement impulsat per LLM s'assembla més al Magisteri Catòlic. La tasca de crear i jutjar models de frontera recau únicament en els nostres bisbes, aquells investigadors brillants i en procés de ser-ho d'OpenAI, Anthropic, Gemini.
 
-They’re telling you it’s a genius. They’re saying [it should write almost all code](https://x.com/ludwigABAP/status/1918286533775237245). Next time they release a model, join others in nailing your private evals to their door.
+Us diuen que és un geni. Diuen que [hauria d'escriure gairebé tot el codi](https://x.com/ludwigABAP/status/1918286533775237245). La propera vegada que llancin un model, uniu-vos a altres per clavar les vostres avaluacions privades a la seva porta.
 
 <figure style="margin: 0; margin-bottom: 1em;">
-  <a href="/images/private-evals/private-evals-results.png" target="_blank" title="Click to see enlarged">
-    <img 
-      src="/images/private-evals/private-evals-results.png" 
-      alt="April 17th results of my private evals." 
+  <a href="/images/private-evals/private-evals-results.png" target="_blank" title="Feu clic per veure ampliat">
+    <img
+      src="/images/private-evals/private-evals-results.png"
+      alt="Resultats del 17 d'abril de les meves avaluacions privades."
       width="100%"
       height="auto"
       style="width: 100%; height: auto; border-radius: 0.4em;"
     >
   </a>
-  <figcaption style="color: #777;">April 17th results of my private evals.</figcaption>
+  <figcaption style="color: #777;">Resultats del 17 d'abril de les meves avaluacions privades.</figcaption>
 </figure>
 
-## How-to: picking evaluations
+## Com fer-ho: escollir avaluacions
 
-As LLMs are such fabulously flexible token generators the landscape of possible fitness tests is impossibly large. You have limited time, and probably want to spend that time exploiting LLMs not evaluating them. So be discerning about what you eval.
+Com que els LLMs són generadors de tokens fabulosament flexibles, el panorama de possibles proves de rendiment és impossiblement gran. Teniu temps limitat i probablement voleu dedicar aquest temps a explotar els LLMs, no a avaluar-los. Així que sigueu exigents amb el que avalueu.
 
-The obvious and correct place to start is in your chat history. You’ve had LLMs help on hundreds of problems by now. Pick a few of the most important and interesting to form part of your private benchmarking.
+El lloc obvi i correcte per començar és el vostre historial de xat. Ja heu tingut LLMs que us han ajudat en centenars de problemes. Trieu alguns dels més importants i interessants per formar part de la vostra avaluació privada.
 
-Now having a source of potential evals, the next question becomes how to automate. Automation is important, but from what I’ve seen amongst the private eval crowd there’s too much emphasis on writing scripts and building frameworks to automate pass/fail benchmarking. Expect around half your evals to not be suitable for automation.
+Ara, tenint una font d'avaluacions potencials, la següent pregunta és com automatitzar. L'automatització és important, però pel que he vist entre la gent que fa avaluacions privades, hi ha massa èmfasi en escriure scripts i construir frameworks per automatitzar les avaluacions de pass/fail. Espereu que aproximadament la meitat de les vostres avaluacions no siguin adequades per a l'automatització.
 
-Simon Eskildsen [has seemingly no automation, tracking his private evals in Notion.](https://x.com/Sirupsen/status/1913943250068455526) That works fine. Don’t overthink it.
+Simon Eskildsen [aparentment no té cap automatització, fent un seguiment de les seves avaluacions privades a Notion.](https://x.com/Sirupsen/status/1913943250068455526) Això funciona bé. No us compliqueu la vida.
 
 <figure style="margin: 0 auto; margin-bottom: 1em; text-align: center;">
-  <img 
-    src="/images/private-evals/private-evals-automation-xkcd.png" 
-    alt="How long you can spend making a routine task more efficient before you'd spend more time than you'd save. https://xkcd.com/1205" 
+  <img
+    src="/images/private-evals/private-evals-automation-xkcd.png"
+    alt="Quant de temps pots dedicar a fer una tasca rutinària més eficient abans de dedicar-hi més temps del que estalviaries. https://xkcd.com/1205"
     height="auto"
     style="width:75%; height: auto; border-radius: 0.4em;"
   >
-  <figcaption style="color: #777;">How long you can spend making a routine task more efficient before you'd spend more time than you'd save. https://xkcd.com/1205</figcaption>
+  <figcaption style="color: #777;">Quant de temps pots dedicar a fer una tasca rutinària més eficient abans de dedicar-hi més temps del que estalviaries. https://xkcd.com/1205</figcaption>
 </figure>
 
-The question of automation dealt with, I have some other guidance. Evals should be:
+Un cop tractada la qüestió de l'automatització, tinc altres consells. Les avaluacions haurien de ser:
 
-- **Something you know a lot about.** If you’re an unreliable evaluator, you’ll confuse yourself and not get signal on frontier LLM performance. For example, benchmarks show LLMs smash the Law School Admission Test (LSAT). If you’re a lawyer by all means have private law evals. Otherwise, no.
-- **Something you care a lot about.** If LLMs are as life-and-world changing as the CEOs claim, proto-AGIs, they should help *you* with what you care about. If it’s cultivating rare strains of tea bush in unfavorable climates, ask about that. 🍵.
-- **Should be hard for LLMs, should be hard for you.** In other words, aim for high ROI. If an eval is easy for today’s LLMs, you’re wasting time and money running the eval. If it’s not hard for you, it doesn’t matter so much that an LLM can do it.
-- **Diverse**. LLMs are obviously useful for programming, but if they’re going to be a technology revolution on the scale of electricity, moveable type, or the internet, they should start being useful to you in most aspects of your life.
+-   **Quelcom que coneixeu molt bé.** Si sou un avaluador poc fiable, us confondereu i no obtindreu senyal sobre el rendiment dels LLM de frontera. Per exemple, els benchmarks mostren que els LLM superen el Test d'Admissió a la Facultat de Dret (LSAT). Si sou advocat, per descomptat, tingueu avaluacions de dret privades. En cas contrari, no.
+-   **Quelcom que us importi molt.** Si els LLM són tan transformadors de la vida i del món com afirmen els CEOs, proto-AGIs, haurien d'ajudar-vos amb el que us importa. Si és cultivar varietats rares de te en climes desfavorables, pregunteu sobre això. 🍵.
+-   **Hauria de ser difícil per als LLM, hauria de ser difícil per a vosaltres.** En altres paraules, apunteu a un alt ROI. Si una avaluació és fàcil per als LLM actuals, esteu perdent temps i diners executant l'avaluació. Si no és difícil per a vosaltres, no importa tant que un LLM pugui fer-ho.
+-   **Diverses**. Els LLM són òbviament útils per a la programació, però si seran una revolució tecnològica a l'escala de l'electricitat, la impremta o Internet, haurien de començar a ser-vos útils en la majoria dels aspectes de la vostra vida.
 
 <figure style="margin: 0 auto; margin-bottom: 1em; text-align: center;">
-  <img 
-    src="/images/private-evals/private-evals-irobot.webp" 
-    alt="Can a robot write a symphony?" 
+  <img
+    src="/images/private-evals/private-evals-irobot.webp"
+    alt="Pot un robot escriure una simfonia?"
     height="auto"
     style="width: 75%; height: auto; border-radius: 0.4em;"
   >
-  <figcaption style="color: #777;">Can you?</figcaption>
+  <figcaption style="color: #777;">Tu pots?</figcaption>
 </figure>
 
-## How-to: examples
+## Com fer-ho: exemples
 
-When people talk about their private evals it has an air of teasing about it. They are *private* after all. “I can’t tell you, internet stranger, without telling the LLMs.” They’re always scraping.
+Quan la gent parla de les seves avaluacions privades, té un aire de burla. Són *privades* al cap i a la fi. "No puc dir-t'ho, estrany d'Internet, sense dir-ho als LLMs." Sempre estan rastrejant.
 
-But I can get concrete and specific enough to help you bootstrap an eval set.
+Però puc ser prou concret i específic per ajudar-vos a iniciar un conjunt d'avaluacions.
 
-I group my evals into categories. I’ll pick an example from each category: recommendation, review, code, design, writing.
+Agrupo les meves avaluacions en categories. Escolliré un exemple de cada categoria: recomanació, revisió, codi, disseny, escriptura.
 
-### Recommendation:
+### Recomanació:
 
-Good recommendation is hard and valuable. We’re all aware of how Google’s search index and review products are suffering, but can LLMs replace it? Can LLMs, having swallowed Reddit, replace it too? 
+Una bona recomanació és difícil i valuosa. Tots som conscients de com l'índex de cerca de Google i els productes de revisió estan patint, però poden els LLM substituir-los? Poden els LLM, havent-se empassat Reddit, substituir-lo també?
 
-A recommendation eval I have is asking the LLMs to recommend the best cafe in my local area, based on a few parameters. A knowledgeable local can nail this question. I can answer this question. LLMs currently do *poorly*. They don’t hallucinate so much, but recommend closed or out of domain places (”here’s something closed in Bushwick. It’s great!”).
+Una avaluació de recomanació que tinc és demanar als LLM que recomanin la millor cafeteria de la meva zona, basant-me en alguns paràmetres. Un local amb coneixement pot encertar aquesta pregunta. Jo puc respondre aquesta pregunta. Els LLM actualment ho fan *malament*. No al·lucinen tant, però recomanen llocs tancats o fora de domini ("aquí hi ha alguna cosa tancada a Bushwick. És genial!").
 
-It will be interesting to me if they ever get good at this. If they do, I will trust them more with places I don’t know intimately. For now, Reddit is the ‘just fine’ online option. Local peers are best.
+Serà interessant per a mi si alguna vegada milloren en això. Si ho fan, els confiaré més amb llocs que no conec íntimament. Per ara, Reddit és l'opció en línia "simplement bé". Els companys locals són els millors.
 
-### Review:
+### Revisió:
 
-Humans are essential, [fallible](https://thundergolfer.com/pr-self-review), and expensive reviewers. Anytime I spot a non-trivial bug in a change set, that’s an obvious candidate as a private review eval. 
+Els humans són revisors essencials, [fal·libles](https://thundergolfer.com/pr-self-review) i cars. Cada vegada que detecto un error no trivial en un conjunt de canvis, és un candidat obvi per a una avaluació de revisió privada.
 
-If you get the LLM to pick out a specific line with the bug in a 100+ line snippet, that’s automatically testable and then you can follow up manually evaluating the explanation.
+Si aconseguiu que l'LLM seleccioni una línia específica amb l'error en un fragment de més de 100 línies, això és automàticament comprovable i després podeu fer un seguiment avaluant manualment l'explicació.
 
-Excitingly, I’ve found that LLMs are good at review. I have an eval involving arithmetic for a leaky bucket limiter and frontier LLMs can consistently find the edge case bug introduced by the LLM that originally expelled it (Claude 3.5). 
+Emocionantment, he descobert que els LLM són bons en la revisió. Tinc una avaluació que implica aritmètica per a un limitador de cub de fuita i els LLM de frontera poden trobar de manera consistent l'error de cas límit introduït per l'LLM que el va expulsar originalment (Claude 3.5).
 
-### Code:
+### Codi:
 
-Automated evals for coding should be obvious to any programmer. You write a prompt, you write a test. The LLM reads the prompt, it expels some code, and you run the test. 
+Les avaluacions automatitzades per a la codificació haurien de ser òbviament per a qualsevol programador. Escriviu una sol·licitud, escriviu una prova. L'LLM llegeix la sol·licitud, expulsa una mica de codi i executeu la prova.
 
-There’s two interesting bits though. First, you should sandbox the code execution. Second, how do you automate evaluation of code which produces *visual* output.
+Hi ha dues coses interessants, però. Primer, hauríeu de posar en quarantena l'execució del codi. Segon, com automatitzeu l'avaluació del codi que produeix una sortida *visual*.
 
-Sandboxed code execution I’ll take up down below. For visual evaluation, [Nicholas Carlini](https://github.com/carlini/yet-another-applied-llm-benchmark) has a great example of using visual LLMs as judges:
+L'execució de codi en quarantena la tractaré més endavant. Per a l'avaluació visual, [Nicholas Carlini](https://github.com/carlini/yet-another-applied-llm-benchmark) té un gran exemple d'ús de LLM visuals com a jutges:
 
 ```bash
 "Write a C program that draws an american flag to stdout." >> LLMRun() >> CRun() >> \
     LLMRun("What flag is shown in this image?") >> \
-        (SubstringEvaluator("United States") | 
-         SubstringEvaluator("USA") | 
+        (SubstringEvaluator("United States") |
+         SubstringEvaluator("USA") |
          SubstringEvaluator("America"))
 ```
 
-There’s limits to the current visual reasoning capabilities of frontier models, but I think this is pretty neat!
+Hi ha límits a les capacitats actuals de raonament visual dels models de frontera, però crec que això és bastant genial!
 
-### Design:
+### Disseny:
 
-> **Problem:** figuring out the optimal placement strategy for storing files on a hard drive given a prediction of the file's future popularity, given that you're minimizing and maximizing for certain things
-> 
-> 
-> **Results:** Clear winner: o1
-> 
+> **Problema:** esbrinar l'estratègia de col·locació òptima per emmagatzemar fitxers en un disc dur donada una predicció de la popularitat futura del fitxer, tenint en compte que esteu minimitzant i maximitzant certes coses
+>
+>
+> **Resultats:** Guanyador clar: o1
+>
 
-I admittedly haven’t spent the time making an eval in this category. I’ll defer to Grant Slatton’s description of his private software design eval: [x.com/GrantSlatton/status/1874900859462856977](https://x.com/GrantSlatton/status/1874900859462856977).
+Admeto que no he dedicat temps a fer una avaluació en aquesta categoria. Em remeto a la descripció de Grant Slatton de la seva avaluació privada de disseny de programari: [x.com/GrantSlatton/status/1874900859462856977](https://x.com/GrantSlatton/status/1874900859462856977).
 
-**Writing:** 
+**Escriptura:**
 
-Before spending time on private evals I was unconvinced that LLMs were either effective writers or editors. After adding private writing evals I now think they can be effective editors.
+Abans de dedicar temps a les avaluacions privades, no estava convençut que els LLM fossin escriptors o editors eficaços. Després d'afegir avaluacions d'escriptura privades, ara crec que poden ser editors eficaços.
 
-An example eval here is taking a [Modal.com](http://Modal.com) engineering blog post draft that was edited by myself and then completely rewritten and giving it to the LLM to critique. I have to manually review the LLM’s work, but 3 out of 5 provided net-valuable feedback.
+Un exemple d'avaluació aquí és agafar un esborrany d'una publicació de blog d'enginyeria de [Modal.com](http://Modal.com) que vaig editar jo mateix i després reescriure'l completament i donar-lo a l'LLM per criticar-lo. He de revisar manualment el treball de l'LLM, però 3 de cada 5 van proporcionar un feedback de valor net.
 
-## How-to: starter code
+## Com fer-ho: codi d'inici
 
 <figure style="margin: 0 auto; margin-bottom: 1em; text-align: center;">
-  <img 
-    src="/images/private-evals/private-evals-system-overview.png" 
-    alt="Overview of eval definition and execution. Credit: Nicholas Carlini for original DSL." 
+  <img
+    src="/images/private-evals/private-evals-system-overview.png"
+    alt="Visió general de la definició i execució de l'avaluació. Crèdit: Nicholas Carlini per al DSL original."
     height="auto"
     style="width: 100%; height: auto; border-radius: 0.4em;"
   >
-  <figcaption style="color: #777;">Overview of eval definition and execution. Credit: Nicholas Carlini for original DSL.</figcaption>
+  <figcaption style="color: #777;">Visió general de la definició i execució de l'avaluació. Crèdit: Nicholas Carlini per al DSL original.</figcaption>
 </figure>
 
-My basic private eval system is, [like Edward Yang’s](https://blog.ezyang.com/2025/04/why-you-should-maintain-a-personal-llm-coding-benchmark/), based off Nicholas Carlini’s [YAALLMB](https://github.com/carlini/yet-another-applied-llm-benchmark/). But I don’t recommend forking YALLMB for a few reasons.
+El meu sistema bàsic d'avaluació privada és, [com el d'Edward Yang](https://blog.ezyang.com/2025/04/why-you-should-maintain-a-personal-llm-coding-benchmark/), basat en el [YAALLMB](https://github.com/carlini/yet-another-applied-llm-benchmark/) de Nicholas Carlini. Però no recomano bifurcar YALLMB per diverses raons.
 
-1. It’s accumulated a lot of complexity to support Carlini’s numerous and sophisticated (public) evals.
-2. A lot of the code within is LLM generated and frankly janky.
-3. It relies on a brittle shim to a local Docker or Podman engine.
+1.  Ha acumulat molta complexitat per donar suport a les nombroses i sofisticades avaluacions (públiques) de Carlini.
+2.  Gran part del codi que conté és generat per LLM i, francament, és inestable.
+3.  Depèn d'un shim fràgil a un motor Docker o Podman local.
 
-Instead you can take a look at my significantly stripped down repo: [github.com/**thundergolfer/private-llm-bench**](http://github.com/thundergolfer/private-llm-bench). 
+En canvi, podeu fer una ullada al meu repositori significativament simplificat: [github.com/**thundergolfer/private-llm-bench**](http://github.com/thundergolfer/private-llm-bench).
 
-See the `README` for full and up-to-date instructions, but right now it only depends on `uv`, [`modal`](https://modal.com/use-cases/sandboxes), and an API key for all the frontier LLM providers you’d expect.
+Consulteu el `README` per obtenir instruccions completes i actualitzades, però ara mateix només depèn de `uv`, [`modal`](https://modal.com/use-cases/sandboxes) i una clau API per a tots els proveïdors de LLM de frontera que espereu.
 
-The cost to run this is peanuts. Across a dozen or so tests, running on a weekly cron, I’ve spendt 48 *cents* on OpenAI.
+El cost d'executar això és insignificant. En una dotzena de proves, executant-se en un cron setmanal, he gastat 48 *cèntims* a OpenAI.
 
 <figure style="margin: 0 auto; margin-bottom: 1em; text-align: center;">
-  <img 
-    src="/images/private-evals/private-evals-modal.png" 
-    alt="I run my private evals weekly using a Modal cron." 
+  <img
+    src="/images/private-evals/private-evals-modal.png"
+    alt="Executo les meves avaluacions privades setmanalment utilitzant un cron de Modal."
     height="auto"
     style="width: 75%; height: auto; border-radius: 0.4em;"
   >
-  <figcaption style="color: #777;">I run my private evals weekly using a Modal cron.</figcaption>
+  <figcaption style="color: #777;">Executo les meves avaluacions privades setmanalment utilitzant un cron de Modal.</figcaption>
 </figure>
 
 <figure style="margin: 0 auto; margin-bottom: 1em; text-align: center;">
-  <img 
-    src="/images/private-evals/private-evals-manual-review.png" 
-    alt="I use a dead simple manual review tool for those evals that need it." 
+  <img
+    src="/images/private-evals/private-evals-manual-review.png"
+    alt="Utilitzo una eina de revisió manual molt senzilla per a aquelles avaluacions que ho necessiten."
     height="auto"
     style="width: 100%; height: auto; border-radius: 0.4em;"
   >
-  <figcaption style="color: #777;">I use a dead simple manual review tool for those evals that need it.</figcaption>
+  <figcaption style="color: #777;">Utilitzo una eina de revisió manual molt senzilla per a aquelles avaluacions que ho necessiten.</figcaption>
 </figure>
 
 
-## End at the beginning, knowing for the first time.
+## Acabar al principi, sabent per primera vegada.
 
-A key behavior of strong engineers is ‘looking under the hood’ and learning how tools work so that they may be better exploited. Looking under the hood is also how you see tools *as* *tools*, and not dark magic. Docker images aren’t magic, they’re just [a stack of tarballs](https://fly.io/blog/docker-without-docker/).
+Un comportament clau dels enginyers forts és 'mirar sota el capó' i aprendre com funcionen les eines per poder-les explotar millor. Mirar sota el capó també és com veieu les eines *com a eines*, i no com a màgia negra. Les imatges de Docker no són màgia, només són [una pila de tarballs](https://fly.io/blog/docker-without-docker/).
 
-Given the state of frontier LLM software—very private, very complicated, schotastic, poorly understood—you unfortunately can’t handle them like the rest of your toolkit. But with private evals you can do something that looks more like proper wrench work. And that’s a start.
+Donat l'estat del programari LLM de frontera —molt privat, molt complicat, estocàstic, poc entès—, malauradament no podeu gestionar-los com la resta del vostre conjunt d'eines. Però amb les avaluacions privades podeu fer alguna cosa que s'assembla més a un treball de clau anglesa adequat. I això és un començament.

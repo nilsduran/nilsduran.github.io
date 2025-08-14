@@ -908,3 +908,31 @@ td {
       page-break-after: avoid;
     };
   }
+
+/* Custom adjustments for header and navigation */
+.site-header {
+  padding-top: 0.5em !important;
+  padding-bottom: 0.5em !important;
+}
+
+.site-header .wrap {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  height: auto !important; /* Allow height to adjust based on content */
+}
+
+.site-header .lang-selector {
+  margin-top: 0 !important;
+  margin-right: 0 !important;
+}
+
+.site-header nav {
+  margin-top: 0 !important;
+}
+
+.site-header .flexbox-parent {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+}

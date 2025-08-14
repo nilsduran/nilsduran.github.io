@@ -7,7 +7,7 @@ lang: ca
 
 <div id="stats">
 
-<h3 id="dashboard"><code>#dashboard</code></h3>
+
 
 <h2>Acabats de llegir.</h2>
 

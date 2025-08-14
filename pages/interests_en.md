@@ -7,7 +7,7 @@ lang: en
 
 <div id="stats">
 
-<h3 id="dashboard"><code>#dashboard</code></h3>
+
 
 <h2>Just finished.</h2>
 

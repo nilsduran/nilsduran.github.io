@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="home">
+  <h1>{{ page.title }}</h1>
+  
+  {% if site.posts.size > 0 %}
+    <div class="posts">
+      {% for post in site.posts %}
+        {% if post.lang == 'ca' %}
+          <div class="post-item-new">
+            <a href="{{ post.url | relative_url }}" class="post-link-new">
+              <span class="post-title-new">{{ post.title }}</span>
+            </a>
+            <span class="post-date-new">{{ post.date | date: "%d %b %Y" }}</span>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% else %}
+    <h2 class="center">{{ site.text.index.coming_soon }}</h2>
+  {% endif %}
+</div>

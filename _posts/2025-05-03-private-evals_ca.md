@@ -149,7 +149,7 @@ Simon Eskildsen [aparentment no té cap automatització, fent un seguiment de le
 Un cop tractada la qüestió de l'automatització, tinc altres consells. Les avaluacions haurien de ser:
 
 -   **Quelcom que coneixeu molt bé.** Si sou un avaluador poc fiable, us confondereu i no obtindreu senyal sobre el rendiment dels LLM de frontera. Per exemple, els benchmarks mostren que els LLM superen el Test d'Admissió a la Facultat de Dret (LSAT). Si sou advocat, per descomptat, tingueu avaluacions de dret privades. En cas contrari, no.
--   **Quelcom que us importi molt.** Si els LLM són tan transformadors de la vida i del món com afirmen els CEOs, proto-AGIs, haurien d'ajudar-vos amb el que us importa. Si és cultivar varietats rares de te en climes desfavorables, pregunteu sobre això. 🍵.
+-   **Quelcom que us importi molt.** Si els LLM són tan transformadors de la vida i del món com afirmen els CEOs, proto-AGIs, haurien de ajudar-vos amb el que us importa. Si és cultivar varietats rares de te en climes desfavorables, pregunteu sobre això. 🍵.
 -   **Hauria de ser difícil per als LLM, hauria de ser difícil per a vosaltres.** En altres paraules, apunteu a un alt ROI. Si una avaluació és fàcil per als LLM actuals, esteu perdent temps i diners executant l'avaluació. Si no és difícil per a vosaltres, no importa tant que un LLM pugui fer-ho.
 -   **Diverses**. Els LLM són òbviament útils per a la programació, però si seran una revolució tecnològica a l'escala de l'electricitat, la impremta o Internet, haurien de començar a ser-vos útils en la majoria dels aspectes de la vostra vida.
 
@@ -226,7 +226,7 @@ Un exemple d'avaluació aquí és agafar un esborrany d'una publicació de blog 
 <figure style="margin: 0 auto; margin-bottom: 1em; text-align: center;">
   <img
     src="/images/private-evals/private-evals-system-overview.png"
-    alt="Visió general de la definició i execució de l'avaluació. Crèdit: Nicholas Carlini per al DSL original."
+    alt="Visió general de la definició i l'execució de l'avaluació. Crèdit: Nicholas Carlini per al DSL original."
     height="auto"
     style="width: 100%; height: auto; border-radius: 0.4em;"
   >

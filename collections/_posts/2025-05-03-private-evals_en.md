@@ -4,7 +4,7 @@ title: "You should have private evals"
 date: 2025-05-03
 categories: genai llm career
 summary: Everybody should have a personal set of test prompts to try on LLMs. 
-permalink: /blog/private-evals
+permalink: /blog/private-evals_en
 ---
 
 <figure style="margin: 0; margin-bottom: 1em; position: relative;">

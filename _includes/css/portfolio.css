@@ -911,28 +911,148 @@ td {
 
 /* Custom adjustments for header and navigation */
 .site-header {
-  padding-top: 0.5em !important;
-  padding-bottom: 0.5em !important;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .site-header .wrap {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  height: auto !important; /* Allow height to adjust based on content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto; /* Allow height to adjust based on content */
 }
 
 .site-header .lang-selector {
-  margin-top: 0 !important;
-  margin-right: 0 !important;
+  margin-top: 0;
+  margin-right: 1em; /* Keep this margin for spacing */
 }
 
 .site-header nav {
-  margin-top: 0 !important;
+  margin-top: 0;
 }
 
 .site-header .flexbox-parent {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  align-items: center !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* New styles for navigation and language selector alignment */
+.lang-selector a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Styles from interests page */
+#stats {
+  background-color: #f7f7f9;
+  border-radius: 1rem;
+  padding: 1.5em;
+  margin-top: 2.5em;
+}
+
+#recent-finished-books {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#recent-finished-books a {
+    color: #111;
+}
+
+.book-item {
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+}
+
+.book-item div {
+    width: 200px;
+}
+
+.book-info h4 {
+    color: #222;
+}
+
+.book-info p {
+    color: #555;
+}
+
+.grow-me {
+  border-radius: 4px;
+  transition: all .2s ease-in-out;
+}
+
+.grow-me:hover {
+  transform: scale(1.02);
+}
+
+#top-spotify-tracks {
+    padding-left: 1em;
+}
+
+#top-spotify-tracks li {
+    color: #888;
+    border-bottom: 1px solid #ededed;
+    margin-top: 1rem;
+}
+
+#top-spotify-tracks a {
+    color: #111;
+}
+
+#top-spotify-tracks a:hover {
+    color: #1DB954; /* Spotify green */
+}
+
+#top-spotify-tracks p {
+    color: #555;
+}
+
+@media screen and (max-width: 900px) {
+
+
+  #recent-finished-books {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .book-item div {
+    width: 400px;
+  }
+
+  .book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cover-container, .book-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+  }
+
+  #top-spotify-tracks {
+    padding-left: 1.2em;
+  }
 }

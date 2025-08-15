@@ -21,3 +21,18 @@ My personal portfolio website. The theme is based on [thundergolfer/**junior-the
 ### Development
 
 Development documentation is in [DEVELOPMENT.md](DEVELOPMENT.md)
+
+### Idees blog
+- [ ] Blog que prediu quan moriràs (fent servir dades estadístiques i suposant que la medicina i esperança de vida continuarà avançant a un ritme derivada segona constant, acceleració constant). Fer servir sexe, edat (dia de naixement per més precisió), país, nivell econòmic (en categories del percentil de cobrar), hàbits alimentaris o esportius. I que l'usuari pugui anar actualitzant les seves dades per mirar de millorar la seva expectativa de vida.
+
+### TODO
+- [ ] Poblar el blog
+- [ ] Afegir més interessos a la pàgina d'interessos (separar grups, músics individuals, àlbums, menjar)
+- [ ] Que interessos s'actualitzin automàticament (API de letterboxd)
+- [ ] Traduir la pàgina web a l'anglès
+- [ ] Millorar l'accessibilitat i l'experiència d'usuari
+- [ ] Afegir més contingut a la pàgina d'inici
+- [ ] Revisar i actualitzar el contingut existent
+- [ ] Millorar l'optimització per a motors de cerca (SEO)
+- [ ] Afegir més imatges i vídeos per enriquir el contingut
+- [ ] Implementar un sistema de comentaris

@@ -12,7 +12,7 @@ layout: default
             <a href="{{ post.url | relative_url }}" class="post-link-new">
               <span class="post-title-new">{{ post.title }}</span>
             </a>
-            <span class="post-date-new">{{ post.date | date: "%d %b %Y" }}</span>
+            <span class="post-date-new">{% include catalan_date.html date=post.date %}</span>
           </div>
         {% endif %}
       {% endfor %}

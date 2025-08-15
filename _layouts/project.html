@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="post-header mb2">
   <h1>{{ page.title }}</h1>
-  <span class="post-meta">{{ page.date | date: site.date_format }}</span><br />
+  {% if page.date %}<span class="post-meta">{% include catalan_date.html date=page.date %}</span><br />{% endif %}
 </div>
 
 <article class="post-content">

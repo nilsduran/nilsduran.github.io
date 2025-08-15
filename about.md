@@ -9,7 +9,7 @@ headshot: /images/misc/headshot.jpg
 
 ### Introducció
 
-Hola, sóc en Nils, un estudiant de 21 anys cursant el quart any del grau en Intel·ligència Artificial a la UPC. Fora dels meus estudis, m'agrada llegir, jugar a tennis, escalar i els escacs.
+Hola, soc en Nils, un estudiant de 21 anys cursant el quart any del grau en Intel·ligència Artificial a la UPC. Fora dels meus estudis, m'agrada llegir, jugar a tennis, escalar i els escacs.
 
 ### Què faig ara
 
@@ -18,6 +18,8 @@ Actualment, estic centrat en els meus estudis d'Intel·ligència Artificial i tr
 ### Educació
 
 Actualment estic cursant el **Grau en Intel·ligència Artificial** a la *Universitat Politècnica de Catalunya* (2022-2026).
+
+Estic fent un Erasmus al *Karlsruhe Institut für Technologie* (KIT) a Karlsruhe, Baden-Württemberg, Alemanya (Quadrimestre de tardor 2025-2026).
 
 Anteriorment, vaig completar l'**ESO i el Batxillerat** a l'*Escola Frederic Mistral-Tècnic Eulàlia* (2016-2022).
 

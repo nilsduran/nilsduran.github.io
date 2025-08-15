@@ -105,7 +105,7 @@ permalink: /
             • 🧠 La Intel·ligència Artificial i el seu potencial per resoldre problemes del món real.<br>
             • 🎨 L'art en totes les seves formes com a eina transformadora. Alguns dels meus artistes preferits són l'Antoni Gaudí i en <a href="https://cjthex.com">CJ The X</a><br>
             • 📚 Els llibres per reflexionar i somiar. Alguns que recomano són <a href="https://app.thestorygraph.com/books/6b6b5cc8-3724-4a9a-8465-2fb9ea94b69d">The Power Broker, Robert A. Caro</a> i <a href="https://app.thestorygraph.com/books/fde79989-1f95-4499-b879-81e4722e14c7">La plaça del Diamant, Mercè Rodoreda</a>.<br>
-            • L'escalada🧗, el tennis🎾, els escacs♟️ i el Barça<img src="/images/escut-barça.png" alt="Barça Logo" style="width: 25px; height: 25px; vertical-align: middle;">. </div>
+            • L'escalada🧗, el tennis🎾, els escacs♟️ i el Barça<img src="/images/misc/escut-barça.png" alt="Barça Logo" style="width: 25px; height: 25px; vertical-align: middle;">. </div>
         </div>
   </div>
 </div>

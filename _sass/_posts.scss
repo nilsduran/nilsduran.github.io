@@ -64,3 +64,34 @@
 .related-post-title {
   border-bottom: thin solid #f3f3f3;
 }
+
+/* New styles for the blog index page */
+.post-item-new {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.8em 0;
+  border-bottom: 2px solid #eee;
+}
+
+.post-link-new {
+  text-decoration: none;
+  color: black;
+}
+
+.post-title-new {
+  text-decoration: underline;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.post-link-new:hover .post-title-new {
+  text-decoration: none;
+}
+
+.post-date-new {
+  color: #666;
+  font-size: 0.9em;
+  white-space: nowrap;
+  margin-left: 1em;
+}

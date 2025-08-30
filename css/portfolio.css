@@ -790,7 +790,7 @@ td {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 0.8em 0;
+  padding: 0.4em 0;
   border-bottom: 1px solid #eee; /* Subtle separator */
 }
 

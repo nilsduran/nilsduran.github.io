@@ -2,7 +2,7 @@
 layout: about
 permalink: /about/
 lang: ca
-title: Una mica sobre mi.
+title: Una mica sobre mi
 tags: about
 headshot: /images/misc/headshot.jpg
 ---
@@ -22,6 +22,30 @@ Actualment estic cursant el **Grau en Intel·ligència Artificial** a la *Univer
 Estic fent un Erasmus al *Karlsruhe Institut für Technologie* (KIT) a Karlsruhe, Baden-Württemberg, Alemanya (Quadrimestre de tardor 2025-2026).
 
 Anteriorment, vaig completar l'**ESO i el Batxillerat** a l'*Escola Frederic Mistral-Tècnic Eulàlia* (2016-2022).
+
+### Curriculum Vitae
+
+Si vols més detalls sobre la meva experiència acadèmica i professional, pots consultar el meu [CV](/cv/).
+
+<style>
+.cv-link-about {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.cv-link-about:hover {
+  background-color: #005999;
+  color: white;
+  text-decoration: none;
+}
+</style>
 
 ### Contacta'm
 

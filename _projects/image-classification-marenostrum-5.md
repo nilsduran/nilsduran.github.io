@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Classificació d'Imatges amb MareNostrum 5
+lang: ca
 type: project
 image_format: png
 ---

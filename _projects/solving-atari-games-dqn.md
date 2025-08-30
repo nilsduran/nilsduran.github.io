@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Resolució de Jocs d'Atari amb DQN
+lang: ca
 type: project
 image_format: gif
 ---

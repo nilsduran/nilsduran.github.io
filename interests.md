@@ -2,6 +2,7 @@
 layout: page
 title: Interessos
 permalink: /interests/
+lang: ca
 ---
 
 <div class="interests-container">

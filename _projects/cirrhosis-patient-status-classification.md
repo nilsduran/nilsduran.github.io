@@ -1,7 +1,6 @@
 ---
 layout: project
 title: Classificació de l'Estat de Pacients amb Cirrosi
-lang: ca
 type: project
 image_format: png
 ---

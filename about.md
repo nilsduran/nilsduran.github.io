@@ -1,7 +1,6 @@
 ---
 layout: about
 permalink: /about/
-lang: ca
 title: Una mica sobre mi
 tags: about
 headshot: /images/misc/headshot.jpg

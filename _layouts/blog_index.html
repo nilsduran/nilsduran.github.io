@@ -9,7 +9,7 @@ layout: default
 <div class="home">
   {% if posts_count > 0 %}
   <div class="posts">
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
       <div class="post py1" {% if post.hidden == true %}style="display: none;"{% endif %}>
         <p class="post-meta">
           <span>{% include catalan_date.html date=post.date %}</span>
@@ -27,8 +27,7 @@ layout: default
       </div>
     {% endfor %}
   </div>
-  {% if site.show_subscribe_cta %} {% include
-  subscribe.html %} {% endif %} {% else %}
+  {% else %}
   <h1 class="center">{{ site.text.index.coming_soon }}</h1>
   {% endif %}
 </div>

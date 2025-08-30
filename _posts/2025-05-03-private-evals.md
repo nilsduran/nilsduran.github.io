@@ -3,7 +3,6 @@ layout: post
 title: "Hauries de tenir avaluacions privades"
 date: 2025-05-03
 categories: genai llm career
-lang: ca
 summary: Tothom hauria de tenir un conjunt personal de proves per provar els LLMs.
 permalink: /blog/private-evals
 ---

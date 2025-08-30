@@ -1,6 +1,5 @@
 ---
 layout: default
-lang: ca
 permalink: /
 ---
 

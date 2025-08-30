@@ -35,10 +35,10 @@ layout: default
 
 <div class="post-header mb2">
   <h1>{{ page.title }}</h1>
-  <span class="post-meta">{% include catalan_date.html date=page.date %}</span><br />
+  <span class="post-meta">{% include date.html date=page.date %}</span><br />
   {% if page.update_date %}
   <span class="post-meta"
-    >{{ site.text.post.updated }}: {% include catalan_date.html date=page.update_date %}</span
+    >{{ site.text.post.updated }}: {% include date.html date=page.update_date %}</span
   ><br />
   {% endif %}
   <span class="post-meta h6">
@@ -72,7 +72,7 @@ site.show_subscribe_cta %} {% include subscribe.html %} {% endif %}
         >{{ post.title }}</a
       >
       <span class="post-meta" style="display: inline-block"
-        >({% include catalan_date.html date=post.date %})</span
+        >({% include date.html date=post.date %})</span
       >
     </h4>
   </div>
@@ -83,7 +83,7 @@ site.show_subscribe_cta %} {% include subscribe.html %} {% endif %}
     <h4>
       <a class="dark-gray" href="{{page.next.url}}">{{page.next.title}}</a>
       <span class="post-meta" style="display: inline-block"
-        >({% include catalan_date.html date=page.next.date %})</span
+        >({% include date.html date=page.next.date %})</span
       >
     </h4>
   </div>
@@ -94,7 +94,7 @@ site.show_subscribe_cta %} {% include subscribe.html %} {% endif %}
         >{{page.previous.title}}</a
       >
       <span class="post-meta" style="display: inline-block"
-        >({% include catalan_date.html date=page.previous.date %})</span
+        >({% include date.html date=page.previous.date %})</span
       >
     </h4>
   </div>

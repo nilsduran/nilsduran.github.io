@@ -12,7 +12,7 @@ layout: default
     {% for post in site.posts %}
       <div class="post py1" {% if post.hidden == true %}style="display: none;"{% endif %}>
         <p class="post-meta">
-          <span>{% include catalan_date.html date=post.date %}</span>
+          <span>{% include date.html date=post.date %}</span>
           {% if post.tags contains "popular" %}
           <span class="post-meta-popular-tag">Popular</span>
           {% endif %}

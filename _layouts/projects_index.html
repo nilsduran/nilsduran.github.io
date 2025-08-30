@@ -65,7 +65,6 @@ layout: default
 
         <div class="projects-grid">
           {% for project in site.projects %}
-            {% if project.lang == 'ca' %}
               <div class="project-card">
                 {% assign project_slug = project.url | split: "/" | last %}
                 {% assign image_ext = project.image_format | default: "png" %}
@@ -78,8 +77,7 @@ layout: default
                 </a>
                 <p class="post-summary">{{ project.content | strip_html | truncatewords: 30 }}</p>
               </div>
-            {% endif %}
-          {% endfor %}
+            {% endfor %}
         </div>
       </div>
     </div>

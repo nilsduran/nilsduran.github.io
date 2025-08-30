@@ -27,26 +27,6 @@ Anteriorment, vaig completar l'**ESO i el Batxillerat** a l'*Escola Frederic Mis
 
 Si vols més detalls sobre la meva experiència acadèmica i professional, pots consultar el meu [CV](/cv/).
 
-<style>
-.cv-link-about {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-  background-color: #007acc;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-}
-
-.cv-link-about:hover {
-  background-color: #005999;
-  color: white;
-  text-decoration: none;
-}
-</style>
-
 ### Contacta'm
 
 Pots contactar amb mi a través del meu [correu electrònic](mailto:nilsdula@gmail.com) o connectar amb mi a [LinkedIn](https://www.linkedin.com/in/nils-duran2004) i [GitHub](https://github.com/nilsduran).

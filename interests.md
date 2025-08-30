@@ -5,160 +5,6 @@ permalink: /interests/
 lang: ca
 ---
 
-<style>
-.interests-container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.interest-category {
-  margin-bottom: 2rem; /* Reduït de 3rem a 2rem */
-}
-
-.interest-category h2 {
-  margin-bottom: 1rem;
-  color: #333;
-  font-size: 1.5rem; /* Tornat a la     <h2>🎵 Música</h2>   <h2>🎵 Música (només 4 artistes)</h2>ida original de seccions */
-  font-weight: 700; /* Pes normal per seccions */
-  line-height: 1.25;
-}
-
-.interest-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 170px); /* Mida intermèdia: 170×255px = ratio 2:3 */
-  gap: 0.75rem;
-  margin-bottom: 1rem;
-  align-items: end; /* Alinea els elements a la base per uniformitat visual */
-  justify-content: center; /* Centra la grid si no omple tota l'amplada */
-}
-
-.interest-item {
-  position: relative;
-  width: 170px; /* Mida intermèdia */
-  height: 255px; /* Altura proporcionalment correcta (170 × 1.5 = 255) */
-  overflow: hidden;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); /* Fons neutre per espais buits */
-}
-
-.interest-link {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  color: inherit;
-}
-
-.interest-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-}
-
-.interest-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.interest-placeholder {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #666;
-  font-size: 0.8rem;
-  text-align: center;
-  padding: 1rem;
-  height: 100%;
-}
-
-.interest-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(transparent, rgba(0,0,0,0.8));
-  color: white;
-  padding: 0.75rem 0.5rem 0.5rem;
-  font-size: 0.75rem;
-  line-height: 1.2;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-.interest-item:hover .interest-overlay {
-  opacity: 1;
-}
-
-.interest-title {
-  font-weight: bold;
-  margin-bottom: 0.25rem;
-}
-
-.interest-subtitle {
-  font-size: 0.7rem;
-  opacity: 0.9;
-}
-
-/* Estil especial per la categoria Art - grid 2x2 amb proporcions originals */
-.art-category .interest-grid {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem; /* Més espai entre imatges d'art */
-  max-width: 900px; /* Amplada màxima per centrar millor */
-  margin: 0 auto; /* Centrar la grid */
-  align-items: start; /* Alinear al principi per evitar estiraments */
-  justify-items: center; /* Centrar cada element dins la seva cel·la */
-}
-
-.art-category .interest-item {
-  height: auto; /* Altura completament automàtica */
-  width: auto; /* Amplada completament automàtica */
-  max-width: 100%; /* No superar l'amplada de la cel·la de grid */
-  background: transparent; /* Eliminar el fons gris per art */
-  display: inline-block; /* Per ajustar-se al contingut */
-}
-
-.art-category .interest-item img {
-  height: auto; /* Altura natural de la imatge */
-  width: auto; /* Amplada natural de la imatge */
-  max-width: 400px; /* Amplada màxima per evitar imatges massa grans */
-  max-height: 350px; /* Altura màxima per evitar imatges massa altes */
-  object-fit: contain; /* Mantenir proporcions exactes sense retallar */
-  object-position: center;
-  border-radius: 4px; /* Afegir border-radius directament a la imatge */
-  display: block; /* Per eliminar espai extra sota la imatge */
-}
-
-@media (max-width: 600px) {
-  .interest-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
-  }
-  
-  .interest-item {
-    height: 200px; /* Altura lleugerament menor per mòbil */
-  }
-  
-  .interest-category h2 {
-    font-size: 1.6rem; /* Ajustat per mòbil */
-  }
-  
-  .art-category .interest-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .art-category .interest-item {
-    min-height: 150px; /* Altura mínima menor per mòbil */
-  }
-  
-  .art-category .interest-item img {
-    max-height: 220px; /* Altura màxima menor per mòbil */
-  }
-}
-</style>
 <div class="interests-container">
   
   <!-- Pel·lícules -->
@@ -335,7 +181,7 @@ lang: ca
 
   <!-- Música (artistes i àlbums favorits) -->
   <div class="interest-category">
-    <h2>� Música</h2>
+    <h2>🎵 Música</h2>
     <div class="interest-grid">
       <!-- Artistes seleccionats -->
       <div class="interest-item">
@@ -530,7 +376,7 @@ lang: ca
         </a>
       </div>
       <div class="interest-item">
-        <a href="#⚽-esports" class="interest-link" target="_blank" rel="noopener">
+        <a href="#⚽-esports" class="interest-.interest-link" target="_blank" rel="noopener">
           <img src="/images/interests/sports/climbing.jpg" alt="Esport 3" onerror="this.parentElement.parentElement.innerHTML='<div class=&quot;interest-placeholder&quot;>Esport 3</div>'">
           <div class="interest-overlay">
             <div class="interest-title">Escalada</div>

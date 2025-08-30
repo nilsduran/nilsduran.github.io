@@ -1,11 +1,11 @@
 ---
 layout: default
 lang: ca
+permalink: /blog/
+title: Blog
 ---
 
 {% assign posts_count = site.posts | size %}
-
-<h1>Blog</h1>
 
 <div class="home">
   {% if posts_count > 0 %}

@@ -33,7 +33,7 @@ text:
   post:
     updated: "Updated"
     minute_read: '🕒 minuts'
-    related_posts: "More to read"
+    related_posts: "També et pot interessar"
   index:
     coming_soon: "Coming soon..."
 

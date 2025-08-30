@@ -9,7 +9,7 @@ permalink: /blog/private-evals
 
 <figure style="margin: 0; margin-bottom: 1em; position: relative;">
   <img
-    src="/images/private-evals/private-evals-hero.webp"
+    src="/images/blog/private-evals/private-evals-hero.webp"
     alt="Text Lorem Ipsum amb redacció i colors vermell/verd."
     width="100%"
     height="auto"
@@ -113,9 +113,9 @@ En cedir l'obertura i el control, el treball de coneixement impulsat per LLM s'a
 Us diuen que és un geni. Diuen que [hauria d'escriure gairebé tot el codi](https://x.com/ludwigABAP/status/1918286533775237245). La propera vegada que llancin un model, uniu-vos a altres per clavar les vostres avaluacions privades a la seva porta.
 
 <figure style="margin: 0; margin-bottom: 1em;">
-  <a href="/images/private-evals/private-evals-results.png" target="_blank" title="Feu clic per veure ampliat">
+  <a href="/images/blog/private-evals/private-evals-results.png" target="_blank" title="Feu clic per veure ampliat">
     <img
-      src="/images/private-evals/private-evals-results.png"
+      src="/images/blog/private-evals/private-evals-results.png"
       alt="Resultats del 17 d'abril de les meves avaluacions privades."
       width="100%"
       height="auto"
@@ -137,7 +137,7 @@ Simon Eskildsen [aparentment no té cap automatització, fent un seguiment de le
 
 <figure style="margin: 0 auto; margin-bottom: 1em; text-align: center;">
   <img
-    src="/images/private-evals/private-evals-automation-xkcd.png"
+    src="/images/blog/private-evals/private-evals-automation-xkcd.png"
     alt="Quant de temps pots dedicar a fer una tasca rutinària més eficient abans de dedicar-hi més temps del que estalviaries. https://xkcd.com/1205"
     height="auto"
     style="width:75%; height: auto; border-radius: 0.4em;"
@@ -154,7 +154,7 @@ Un cop tractada la qüestió de l'automatització, tinc altres consells. Les ava
 
 <figure style="margin: 0 auto; margin-bottom: 1em; text-align: center;">
   <img
-    src="/images/private-evals/private-evals-irobot.webp"
+    src="/images/blog/private-evals/private-evals-irobot.webp"
     alt="Pot un robot escriure una simfonia?"
     height="auto"
     style="width: 75%; height: auto; border-radius: 0.4em;"
@@ -224,7 +224,7 @@ Un exemple d'avaluació aquí és agafar un esborrany d'una publicació de blog 
 
 <figure style="margin: 0 auto; margin-bottom: 1em; text-align: center;">
   <img
-    src="/images/private-evals/private-evals-system-overview.png"
+    src="/images/blog/private-evals/private-evals-system-overview.png"
     alt="Visió general de la definició i l'execució de l'avaluació. Crèdit: Nicholas Carlini per al DSL original."
     height="auto"
     style="width: 100%; height: auto; border-radius: 0.4em;"
@@ -246,7 +246,7 @@ El cost d'executar això és insignificant. En una dotzena de proves, executant-
 
 <figure style="margin: 0 auto; margin-bottom: 1em; text-align: center;">
   <img
-    src="/images/private-evals/private-evals-modal.png"
+    src="/images/blog/private-evals/private-evals-modal.png"
     alt="Executo les meves avaluacions privades setmanalment utilitzant un cron de Modal."
     height="auto"
     style="width: 75%; height: auto; border-radius: 0.4em;"
@@ -256,7 +256,7 @@ El cost d'executar això és insignificant. En una dotzena de proves, executant-
 
 <figure style="margin: 0 auto; margin-bottom: 1em; text-align: center;">
   <img
-    src="/images/private-evals/private-evals-manual-review.png"
+    src="/images/blog/private-evals/private-evals-manual-review.png"
     alt="Utilitzo una eina de revisió manual molt senzilla per a aquelles avaluacions que ho necessiten."
     height="auto"
     style="width: 100%; height: auto; border-radius: 0.4em;"

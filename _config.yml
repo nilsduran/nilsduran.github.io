@@ -46,5 +46,12 @@ sass:
   compressed: true
 plugins:
   - jekyll-sitemap
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [vendor]

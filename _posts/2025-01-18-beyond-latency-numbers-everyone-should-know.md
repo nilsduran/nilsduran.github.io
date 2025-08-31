@@ -4,7 +4,7 @@ title: Beyond ‘latency numbers every programmer should know’
 date: 2025-01-18
 categories: software performance
 summary: Took 10 years, but there's finally a better list.
-permalink: latency-numbers
+permalink: /blog/latency-numbers
 ---
 
 <figure style="margin: 0; margin-bottom: 1em;">

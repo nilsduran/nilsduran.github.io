@@ -4,7 +4,7 @@ title: "Calculadora d'Esperança de Vida: Quan Moriràs?"
 date: 2025-08-30
 categories: health, minigame, interactive
 summary: Calcula la teva esperança de vida amb un model de risc multiplicatiu i rep consells personalitzats per millorar la teva longevitat.
-permalink: /blog/life-expectancy-calculator/
+permalink: /blog/life-expectancy-calculator
 ---
 
 Aquesta calculadora utilitza un model de risc relatiu per predir la teva esperança de vida, assumint que els avenços mèdics continuaran a un ritme d'acceleració constant. Pots ajustar els teus hàbits i rebre consells personalitzats per allargar la teva vida. Les dades que introdueixis no s'emmagatzemaran per a cap motiu.

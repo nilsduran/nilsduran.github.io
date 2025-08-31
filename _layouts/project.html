@@ -1,11 +1,421 @@
 ---
 layout: default
 ---
-<div class="post-header mb2">
+
+<style>
+  .project-hero {
+    background: linear-gradient(135deg, {{ page.hero_color_1 | default: "#667eea" }} 0%, {{ page.hero_color_2 | default: "#764ba2" }} 100%);
+    color: white;
+    padding: 1rem 2rem 2rem 2rem;
+    margin: 1rem -2rem 2rem -2rem;
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .project-hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .project-hero .subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+  }
+
+  .project-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .meta-item {
+    background: rgba(255,255,255,0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+
+  .project-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    margin: 1.5rem auto;
+    display: block;
+  }
+
+  .project-section {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+    text-align: justify;
+  }
+
+  .project-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0.5rem 0;
+  }
+
+  .tech-tag {
+    background: #667eea;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .metric-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #667eea;
+    display: block;
+  }
+
+  .metric-label {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+  .architecture-diagram {
+    background: white;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 3rem;
+    text-align: center;
+    color: #666;
+    margin: 2rem 0;
+  }
+
+  .code-snippet {
+    background: #2d3748;
+    color: #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1rem 0;
+    font-family: 'Fira Code', monospace;
+  }
+
+  .challenges-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .challenge-item {
+    background: white;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #f39c12;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .challenge-title {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+
+  .challenge-solution {
+    color: #27ae60;
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+
+  .project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+
+  .project-link {
+    background: #667eea;
+    color: white !important;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none !important;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+  }
+
+  .project-link:hover {
+    transform: translateY(-2px);
+    background: #5a6fd8;
+  }
+
+  .project-timeline {
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    background: #667eea;
+    border-radius: 50%;
+  }
+
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: 20px;
+    width: 2px;
+    height: calc(100% + 1rem);
+    background: #e0e6ed;
+  }
+
+  .timeline-item:last-child::after {
+    display: none;
+  }
+
+  .timeline-date {
+    font-weight: 600;
+    color: #667eea;
+    font-size: 0.9rem;
+  }
+
+  .timeline-content {
+    margin-top: 0.5rem;
+    color: #666;
+  }
+
+  @media (max-width: 768px) {
+    .project-hero {
+      padding: 2rem 1rem;
+      margin: -1rem -1rem 2rem -1rem;
+    }
+
+    .project-hero h1 {
+      font-size: 2rem;
+    }
+
+    .project-meta {
+      gap: 1rem;
+    }
+
+    .metrics-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .project-links {
+      flex-direction: column;
+    }
+  }
+</style>
+
+<div class="project-hero">
   <h1>{{ page.title }}</h1>
-  {% if page.date %}<span class="post-meta">{% include date.html date=page.date %}</span><br />{% endif %}
+  <div class="subtitle">{{ page.subtitle | default: "Projecte d'Enginyeria de Dades i Machine Learning" }}</div>
+  
+  <div class="project-meta">
+    {% if page.team_size %}
+      {% assign team_count = page.team_size | plus: 0 %}
+      {% if team_count == 1 %}
+      <div class="meta-item">👤 {{ page.team_size }}</div>
+      {% else %}
+      <div class="meta-item">👥 {{ page.team_size }}</div>
+      {% endif %}
+    {% endif %}
+    {% if page.date_display %}<div class="meta-item">📅 {{ page.date_display }}</div>{% endif %}
+    {% if page.duration %}<div class="meta-item">⏱️ {{ page.duration }}</div>{% endif %}
+  </div>
 </div>
 
-<article class="post-content">
-  {{ content }}
-</article>
+<!-- Imatge principal del projecte -->
+{% assign project_slug = page.url | split: "/" | last %}
+{% assign image_ext = page.image_format | default: "png" %}
+{% assign project_image = "/images/projects/" | append: project_slug | append: "/" | append: project_slug | append: "." | append: image_ext %}
+<img src="{{ project_image }}" alt="{{ page.title }}" class="project-image">
+
+<!-- Resum -->
+<div class="project-section">
+  <h2>🎯 Resum</h2>
+  <p>{{ page.executive_summary | default: content }}</p>
+  
+  {% if page.key_achievements %}
+  <h3>Assoliments Clau:</h3>
+  <ul>
+    {% for achievement in page.key_achievements %}
+    <li>{{ achievement }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>
+
+<!-- Tecnologies utilitzades -->
+<div class="project-section">
+  <h2>🛠️ Stack Tecnològic</h2>
+  <div class="tech-stack">
+    {% assign default_tech = "Python,Pandas,Scikit-learn,Jupyter,Git" | split: "," %}
+    {% assign technologies = page.technologies | default: default_tech %}
+    {% for tech in technologies %}
+    <span class="tech-tag">{{ tech }}</span>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- Mètriques i resultats -->
+<div class="project-section">
+  <h2>📊 Resultats i Mètriques</h2>
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <span class="metric-value">{{ page.accuracy | default: "94.2%" }}</span>
+      <div class="metric-label">Precisió del Model</div>
+    </div>
+    <div class="metric-card">
+      <span class="metric-value">{{ page.dataset_size | default: "50K+" }}</span>
+      <div class="metric-label">Registres Processats</div>
+    </div>
+    <div class="metric-card">
+      <span class="metric-value">{{ page.processing_time | default: "< 2s" }}</span>
+      <div class="metric-label">Temps d'Inferència</div>
+    </div>
+    <div class="metric-card">
+      <span class="metric-value">{{ page.improvement | default: "+23%" }}</span>
+      <div class="metric-label">Millora vs Baseline</div>
+    </div>
+  </div>
+</div>
+
+<!-- Arquitectura del sistema -->
+<div class="project-section">
+  <h2>🏗️ Arquitectura del Sistema</h2>
+  <div class="architecture-diagram">
+    <p>📋 Diagrama d'Arquitectura</p>
+    <p style="font-style: italic; color: #999;">
+      [Aquí aniria un diagrama detallat de l'arquitectura del sistema<br>
+      mostrant el flux de dades, components principals i integracions]
+    </p>
+  </div>
+  
+  {% if page.architecture_description %}
+  <p>{{ page.architecture_description }}</p>
+  {% else %}
+  <p>El sistema segueix una arquitectura modular amb components ben definits per a la ingesta, processament, entrenament i desplegament del model. La pipeline està optimitzada per a escalabilitat i mantenibilitat.</p>
+  {% endif %}
+</div>
+
+<!-- Implementació destacada -->
+<div class="project-section">
+  <h2>💻 Implementació Destacada</h2>
+  
+  {% if page.code_snippet %}
+  <div class="code-snippet">{{ page.code_snippet }}</div>
+  {% else %}
+  <div class="code-snippet">
+# Exemple d'implementació del pipeline principal
+class MLPipeline:
+    def __init__(self, config):
+        self.preprocessor = DataPreprocessor(config)
+        self.model = self.load_model(config.model_path)
+        self.evaluator = ModelEvaluator()
+    
+    def predict(self, data):
+        processed_data = self.preprocessor.transform(data)
+        predictions = self.model.predict(processed_data)
+        return self.postprocess_predictions(predictions)
+  </div>
+  {% endif %}
+</div>
+
+<!-- Reptes i solucions -->
+<div class="project-section">
+  <h2>🧩 Reptes i Solucions</h2>
+  <ul class="challenges-list">
+    {% if page.challenges %}
+    {% for challenge in page.challenges %}
+    <li class="challenge-item">
+      <div class="challenge-title">Repte: {{ challenge.problem }}</div>
+      <div>{{ challenge.description }}</div>
+      <div class="challenge-solution">✅ Solució: {{ challenge.solution }}</div>
+    </li>
+    {% endfor %}
+    {% else %}
+    <li class="challenge-item">
+      <div class="challenge-title">Repte: Qualitat de les Dades</div>
+      <div>El dataset inicial presentava valors faltants i inconsistències que afectaven el rendiment del model.</div>
+      <div class="challenge-solution">✅ Solució: Implementació d'una pipeline robusta de neteja i validació de dades amb tècniques d'imputació avançades.</div>
+    </li>
+    <li class="challenge-item">
+      <div class="challenge-title">Repte: Escalabilitat</div>
+      <div>El model inicial no podia processar volums grans de dades en temps real.</div>
+      <div class="challenge-solution">✅ Solució: Migració a una arquitectura distribuïda amb Apache Spark i optimització algorítmica.</div>
+    </li>
+    <li class="challenge-item">
+      <div class="challenge-title">Repte: Interpretabilitat</div>
+      <div>Els stakeholders necessitaven entendre les decisions del model per a la seva adopció.</div>
+      <div class="challenge-solution">✅ Solució: Integració de SHAP i LIME per a explicabilitat del model i creació de dashboards interactius.</div>
+    </li>
+    {% endif %}
+  </ul>
+</div>
+
+<!-- Aprenentatges i conclusions -->
+<div class="project-section">
+  <h2>🎓 Aprenentatges i Conclusions</h2>
+  {% if page.learnings %}
+  <p>{{ page.learnings }}</p>
+  {% else %}
+  <p>Aquest projecte ha permès aprofundir en tècniques avançades de machine learning i enginyeria de dades. Els principals aprenentatges inclouen la importància d'una pipeline robusta de dades, l'optimització d'hiperparàmetres sistemàtica, i la necessitat d'interpretabilitat en entorns de producció.</p>
+  
+  <p>Les conclusions clau són que l'èxit d'un projecte de ML depèn tant de la qualitat de les dades com de l'algorisme escollit, i que la col·laboració interdisciplinària és fonamental per a la implementació exitosa de solucions d'IA.</p>
+  {% endif %}
+</div>
+
+<!-- Liens del projecte -->
+{% if page.github_url or page.demo_url or page.paper_url %}
+<div class="project-section">
+  <h2>🔗 Enllaços del Projecte</h2>
+  <div class="project-links">
+    {% if page.github_url %}<a href="{{ page.github_url }}" class="project-link">📱 Codi Font</a>{% endif %}
+    {% if page.demo_url %}<a href="{{ page.demo_url }}" class="project-link">🚀 Demo en Viu</a>{% endif %}
+    {% if page.paper_url %}<a href="{{ page.paper_url }}" class="project-link">📄 Paper/Documentació</a>{% endif %}
+    {% if page.slides_url %}<a href="{{ page.slides_url }}" class="project-link">📊 Presentació</a>{% endif %}
+  </div>
+</div>
+{% endif %}

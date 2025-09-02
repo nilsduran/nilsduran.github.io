@@ -1,214 +1,188 @@
-// Script per actualitzar automàticament les activitats recents
-// Inclou integracions amb Letterboxd, Last.fm i altres APIs
+document.addEventListener('DOMContentLoaded', function() {
+    initRecentActivity();
+});
 
-class RecentActivityUpdater {
-  constructor() {
-    this.corsProxy = 'https://proxy.cors.sh/';
-    this.usernames = {
-      letterboxd: 'Tique_011',
-      storygraph: 'nilsnoether73',
-      lastfm: 'nilsdula'
-    };
-    this.apiKeys = {
-      lastfm: '1c59d3b2e1bdf619a62da8b888762fa7'
-    };
-  }
+const CACHE_KEY = 'recentActivityCache';
 
-  async updateLetterboxdActivity() {
-    try {
-      // Letterboxd no té API oficial, però podem fer scraping del RSS
-      const rssUrl = `https://letterboxd.com/${this.usernames.letterboxd}/rss/`;
-      const response = await fetch(`${this.corsProxy}${rssUrl}`, {
-        headers: {
-          'x-requested-with': 'XMLHttpRequest'
-        }
-      });
-      const text = await response.text();
-      
-      const parser = new DOMParser();
-      const xmlDoc = parser.parseFromString(text, 'text/xml');
-      const items = xmlDoc.querySelectorAll('item');
-      
-      if (items.length > 0) {
-        const latestItem = items[0];
-        const title = latestItem.querySelector('letterboxd\\:filmTitle, filmTitle')?.textContent;
-        const year = latestItem.querySelector('letterboxd\\:filmYear, filmYear')?.textContent;
-        const director = latestItem.querySelector('letterboxd\\:director, director')?.textContent;
-        const image = latestItem.querySelector('description')?.textContent?.match(/src="([^"]+)"/)?[1];
-        
-        this.updateMovieCard({
-          title: title || 'Última pel·lícula',
-          director: director || 'Director desconegut',
-          year: year,
-          image: image || '/images/interests/recent/movie.jpg'
-        });
-      }
-    } catch (error) {
-      console.log('No s\'ha pogut actualitzar Letterboxd:', error);
-      this.setMovieFallback();
-    }
-  }
-
-  async updateLastFmActivity() {
-    try {
-      const apiUrl = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${this.usernames.lastfm}&api_key=${this.apiKeys.lastfm}&format=json&limit=1`;
-      const response = await fetch(apiUrl);
-      const data = await response.json();
-      
-      if (data.recenttracks && data.recenttracks.track && data.recenttracks.track.length > 0) {
-        const track = Array.isArray(data.recenttracks.track) ? data.recenttracks.track[0] : data.recenttracks.track;
-        
-        this.updateMusicCard({
-          title: track.name || 'Cançó desconeguda',
-          artist: track.artist?.['#text'] || 'Artista desconegut',
-          image: track.image?.[3]?.['#text'] || '/images/interests/recent/music.jpg',
-          url: track.url
-        });
-      }
-    } catch (error) {
-      console.log('No s\'ha pogut actualitzar Last.fm:', error);
-      this.setMusicFallback();
-    }
-  }
-
-  async updateStoryGraphActivity() {
-    try {
-      const response = await fetch(`${this.corsProxy}https://app.thestorygraph.com/profile/${this.usernames.storygraph}`, {
-        headers: {
-          'x-requested-with': 'XMLHttpRequest'
-        }
-      });
-      const text = await response.text();
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(text, 'text/html');
-
-      let bookData = null;
-
-      // Prioritize "Currently Reading"
-      const currentlyReading = doc.querySelector('.currently-reading-group-container .book-pane-content');
-      if (currentlyReading) {
-        const title = currentlyReading.querySelector('h3 a')?.textContent.trim();
-        const author = currentlyReading.querySelector('p a')?.textContent.trim();
-        const image = currentlyReading.querySelector('img')?.src;
-        if (title && author && image) {
-          bookData = { title, author, image };
-        }
-      }
-
-      // If no "Currently Reading", find the latest "Read" book
-      if (!bookData) {
-        const feedEntries = doc.querySelectorAll('.feed-entry-container');
-        for (const entry of feedEntries) {
-          const actionText = entry.querySelector('.action-text-container')?.innerHTML;
-          if (actionText && actionText.includes('as <strong>Read</strong>')) {
-            const title = entry.querySelector('.book-title-author-and-series h3 a')?.textContent.trim();
-            const author = entry.querySelector('.book-title-author-and-series p a')?.textContent.trim();
-            const image = entry.querySelector('.book-cover-container img')?.src;
-            if (title && author && image) {
-              bookData = { title, author, image };
-              break; // Found the latest one
-            }
-          }
-        }
-      }
-
-      if (bookData) {
-        this.updateBookCard(bookData);
-      } else {
-        this.setBookFallback();
-      }
-    } catch (error) {
-      console.log('No s\'ha pogut actualitzar The StoryGraph:', error);
-      this.setBookFallback();
-    }
-  }
-
-  updateMovieCard(movieData) {
-    const movieCard = document.getElementById('recent-movie');
-    if (movieCard) {
-      const img = movieCard.querySelector('.recent-movie-poster');
-      const title = movieCard.querySelector('.recent-movie-title');
-      const director = movieCard.querySelector('.recent-movie-director');
-      
-      if (img) img.src = movieData.image;
-      if (title) title.textContent = movieData.title;
-      if (director) director.textContent = `${movieData.director}${movieData.year ? ' \u2022 ' + movieData.year : ''}`;
-    }
-  }
-
-  updateMusicCard(musicData) {
-    const musicCard = document.getElementById('recent-music');
-    if (musicCard) {
-      const img = musicCard.querySelector('.recent-music-cover');
-      const title = musicCard.querySelector('.recent-music-title');
-      const artist = musicCard.querySelector('.recent-music-artist');
-      const link = musicCard.querySelector('.recent-music-link');
-      
-      if (img) img.src = musicData.image;
-      if (title) title.textContent = musicData.title;
-      if (artist) artist.textContent = musicData.artist;
-      if (link && musicData.url) link.href = musicData.url;
-    }
-  }
-
-  updateBookCard(bookData) {
-    const bookCard = document.getElementById('recent-book');
-    if (bookCard) {
-      const img = bookCard.querySelector('.recent-book-cover');
-      const title = bookCard.querySelector('.recent-book-title');
-      const author = bookCard.querySelector('.recent-book-author');
-      
-      if (img) img.src = bookData.image;
-      if (title) title.textContent = bookData.title;
-      if (author) author.textContent = bookData.author;
-    }
-  }
-
-  setMovieFallback() {
-    this.updateMovieCard({
-      title: 'Última pel·lícula',
-      director: 'Visita Letterboxd',
-      image: '/images/interests/recent/movie.jpg'
-    });
-  }
-
-  setMusicFallback() {
-    this.updateMusicCard({
-      title: 'Última cançó',
-      artist: 'Connecta Last.fm',
-      image: '/images/interests/recent/music.jpg'
-    });
-  }
-
-  setBookFallback() {
-    this.updateBookCard({
-      title: 'Últim llibre',
-      author: 'Actualització manual',
-      image: '/images/interests/recent/book.jpg'
-    });
-  }
-
-  async updateAll() {
-    console.log('Actualitzant activitats recents...');
-    
-    // Executem totes les actualitzacions en paral·lel
-    await Promise.allSettled([
-      this.updateLetterboxdActivity(),
-      this.updateLastFmActivity(),
-      this.updateStoryGraphActivity()
-    ]);
-    
-    console.log('Actualització d\'activitats recents completada');
-  }
+function initRecentActivity() {
+    loadFromCache();
+    fetchAndCacheAll();
 }
 
-// Inicialitzem quan la pàgina es carregui
-document.addEventListener('DOMContentLoaded', () => {
-  const updater = new RecentActivityUpdater();
-  updater.updateAll();
-  
-  // Actualitzem cada 5 minuts
-  setInterval(() => {
-    updater.updateAll();
-  }, 5 * 60 * 1000);
-});
+/**
+ * Carrega les dades des del localStorage i les mostra a la pàgina.
+ */
+function loadFromCache() {
+    const cache = JSON.parse(localStorage.getItem(CACHE_KEY));
+    if (!cache) return;
+
+    if (cache.movie) updateMovieHTML(cache.movie);
+    if (cache.book) updateBookHTML(cache.book);
+    if (cache.music) updateMusicHTML(cache.music);
+}
+
+/**
+ * Executa totes les funcions de fetch.
+ */
+function fetchAndCacheAll() {
+    fetchLetterboxd();
+    fetchStoryGraph();
+    fetchLastFm();
+}
+
+/**
+ * Desa les dades al localStorage.
+ * @param {string} key - 'movie', 'book', or 'music'
+ * @param {object} data - L'objecte de dades a desar.
+ */
+function saveToCache(key, data) {
+    const cache = JSON.parse(localStorage.getItem(CACHE_KEY)) || {};
+    if (JSON.stringify(cache[key]) !== JSON.stringify(data)) {
+        cache[key] = data;
+        localStorage.setItem(CACHE_KEY, JSON.stringify(cache));
+    }
+}
+
+// --- HTML UPDATE FUNCTIONS ---
+
+function updateMovieHTML(data) {
+    const movieTitleEl = document.querySelector('#recent-movie .recent-movie-title');
+    const movieDirectorEl = document.querySelector('#recent-movie .recent-movie-director');
+    const moviePosterEl = document.querySelector('#recent-movie .recent-movie-poster');
+    const movieLinkEl = document.querySelector('#recent-movie .interest-link');
+
+    if (movieTitleEl) movieTitleEl.textContent = data.title;
+    if (movieDirectorEl) movieDirectorEl.textContent = data.subtitle;
+    if (moviePosterEl && data.imgSrc) moviePosterEl.src = data.imgSrc;
+    if (movieLinkEl) movieLinkEl.href = data.link;
+}
+
+function updateBookHTML(data) {
+    const bookTitleEl = document.querySelector('#recent-book .recent-book-title');
+    const bookAuthorEl = document.querySelector('#recent-book .recent-book-author');
+    const bookCoverEl = document.querySelector('#recent-book .recent-book-cover');
+    const bookLinkEl = document.querySelector('#recent-book .interest-link');
+
+    if (bookTitleEl) bookTitleEl.textContent = data.title;
+    if (bookAuthorEl) bookAuthorEl.textContent = data.subtitle;
+    if (bookCoverEl && data.imgSrc) bookCoverEl.src = data.imgSrc;
+    if (bookLinkEl) bookLinkEl.href = data.link;
+}
+
+function updateMusicHTML(data) {
+    const musicTitleEl = document.querySelector('#recent-music .recent-music-title');
+    const musicArtistEl = document.querySelector('#recent-music .recent-music-artist');
+    const musicCoverEl = document.querySelector('#recent-music .recent-music-cover');
+    const musicLinkEl = document.querySelector('#recent-music .recent-music-link');
+
+    if (musicTitleEl) musicTitleEl.textContent = data.title;
+    if (musicArtistEl) musicArtistEl.textContent = data.subtitle;
+    if (musicCoverEl && data.imgSrc) musicCoverEl.src = data.imgSrc;
+    if (musicLinkEl) musicLinkEl.href = data.link;
+}
+
+function updateUIWithError(section) {
+    const cache = JSON.parse(localStorage.getItem(CACHE_KEY));
+    if (cache && cache[section]) return;
+
+    let titleEl, subtitleEl;
+    if (section === 'movie') {
+        titleEl = document.querySelector('#recent-movie .recent-movie-title');
+        subtitleEl = document.querySelector('#recent-movie .recent-movie-director');
+    } else if (section === 'book') {
+        titleEl = document.querySelector('#recent-book .recent-book-title');
+        subtitleEl = document.querySelector('#recent-book .recent-book-author');
+    } else if (section === 'music') {
+        titleEl = document.querySelector('#recent-music .recent-music-title');
+        subtitleEl = document.querySelector('#recent-music .recent-music-artist');
+    }
+    if (titleEl) titleEl.textContent = 'Error en carregar';
+    if (subtitleEl) subtitleEl.textContent = 'Refresca la pàgina';
+}
+
+// --- FETCH FUNCTIONS ---
+
+function fetchLetterboxd() {
+    const letterboxdUrl = 'https://letterboxd.com/tique_011/rss/';
+    const proxyUrl = 'https://api.allorigins.win/get?url=';
+
+    fetch(proxyUrl + encodeURIComponent(letterboxdUrl))
+        .then(response => response.ok ? response.json() : Promise.reject('Error fetching Letterboxd via proxy'))
+        .then(proxyData => {
+            if (!proxyData.contents) return Promise.reject('Proxy returned empty contents for Letterboxd');
+            
+            const data = new window.DOMParser().parseFromString(proxyData.contents, "text/xml");
+            const item = data.querySelector("item");
+            if (item) {
+                const titleWithDetails = item.querySelector("title").textContent;
+                const link = item.querySelector("link").textContent;
+                const description = item.querySelector("description").textContent;
+                const doc = new DOMParser().parseFromString(description, 'text/html');
+                const imgSrc = doc.querySelector('img') ? doc.querySelector('img').src.replace(/-\d+-0-\d+-crop/, '-500-0-750-crop') : '';
+                const title = titleWithDetails.split(' (')[0];
+                const year = (titleWithDetails.match(/\((\d{4})\)/) || [])[1] || '';
+
+                const movieData = { title, subtitle: year, imgSrc, link };
+                updateMovieHTML(movieData);
+                saveToCache('movie', movieData);
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching Letterboxd data:', error);
+            updateUIWithError('movie');
+        });
+}
+
+function fetchStoryGraph() {
+    // Llegeix el fitxer JSON local que genera la GitHub Action
+    fetch('/js/recent_book.json')
+        .then(response => {
+            // Afegeix una comprovació per si el fitxer encara no existeix
+            if (!response.ok) {
+                return Promise.reject('El fitxer recent_book.json no s\'ha trobat.');
+            }
+            return response.json();
+        })
+        .then(bookData => {
+            if (bookData) {
+                updateBookHTML(bookData);
+                saveToCache('book', bookData);
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching StoryGraph data:', error);
+            updateUIWithError('book');
+        });
+}
+
+function fetchLastFm() {
+    const apiKey = '1c59d3b2e1bdf619a62da8b888762fa7';
+    const username = 'nilsdula';
+    const lastFmUrl = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json&limit=1`;
+    const proxyUrl = 'https://api.allorigins.win/get?url=';
+
+    fetch(proxyUrl + encodeURIComponent(lastFmUrl))
+        .then(response => response.ok ? response.json() : Promise.reject('Error fetching Last.fm via proxy'))
+        .then(proxyData => {
+            if (!proxyData.contents) return Promise.reject('Proxy returned empty contents for Last.fm');
+            
+            const data = JSON.parse(proxyData.contents);
+            if (data.error) return Promise.reject(`Last.fm API Error: ${data.message}`);
+
+            const track = data?.recenttracks?.track?.[0];
+            if (track) {
+                const trackName = track.name;
+                const artistName = track.artist['#text'];
+                const albumArt = (track.image.find(img => img.size === 'extralarge') || {})['#text'] || '';
+                const trackUrl = track.url;
+
+                const musicData = { title: trackName, subtitle: artistName, imgSrc: albumArt, link: trackUrl };
+                updateMusicHTML(musicData);
+                saveToCache('music', musicData);
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching Last.fm data:', error);
+            updateUIWithError('music');
+        });
+}

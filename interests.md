@@ -7,13 +7,11 @@ permalink: /interests/
 <div class="interests-container">
   
   <!-- Recents -->
-  <!--
   <div class="interest-category">
     <h2>🔥 Recents</h2>
     <div class="interest-grid">
 
       <!-- Últim llibre llegit -->
-      <!--
       <div class="interest-item" id="recent-book">
         <a href="https://app.thestorygraph.com/profile/nilsnoether73" class="interest-link" target="_blank" rel="noopener">
           <img src="/images/interests/recent/book.jpg" alt="Últim llibre llegit" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'">
@@ -23,10 +21,8 @@ permalink: /interests/
           </div>
         </a>
       </div>
-      -->
       
       <!-- Última pel·lícula vista -->
-      <!--
       <div class="interest-item" id="recent-movie">
         <a href="https://letterboxd.com/tique_011/" class="interest-link" target="_blank" rel="noopener">
           <img src="/images/interests/recent/movie.jpg" alt="Última pel·lícula vista" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'">
@@ -36,10 +32,8 @@ permalink: /interests/
           </div>
         </a>
       </div>
-      -->
       
       <!-- Última cançó escoltada -->
-      <!--
       <div class="interest-item" id="recent-music">
         <a href="#" class="interest-link recent-music-link" target="_blank" rel="noopener">
           <img src="/images/interests/recent/music.jpg" alt="Última música escoltada" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'">
@@ -49,7 +43,6 @@ permalink: /interests/
           </div>
         </a>
       </div>
-      -->
 
       <!-- Últim país visitat -->
       <!--
@@ -62,8 +55,8 @@ permalink: /interests/
           </div>
         </a>
       </div>
+      -->
     </div>
-    -->
   </div>
   
   <!-- Pel·lícules -->

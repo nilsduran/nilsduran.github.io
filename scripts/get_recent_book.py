@@ -1,5 +1,5 @@
 import os
-from storygraph_api.api import StorygraphApi
+from storygraph_api import StorygraphApi
 import json
 
 # Agafa les credencials de les GitHub Secrets

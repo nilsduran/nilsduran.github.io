@@ -95,6 +95,17 @@
   opacity: 0.9;
 }
 
+/* Subtítol de pel·lícules (que conté les estrelles) ha de ser daurat */
+#recent-movie .recent-movie-director {
+  color: #ffd700 !important;
+}
+
+.interest-stars {
+  font-size: 0.8rem;
+  color: #ffd700;
+  margin-top: 0.25rem;
+}
+
 /* Estil especial per la categoria Art - grid 2x2 amb proporcions originals */
 .art-category .interest-grid {
   grid-template-columns: repeat(2, 1fr);

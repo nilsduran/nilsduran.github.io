@@ -18,6 +18,7 @@ permalink: /interests/
           <div class="interest-overlay">
             <div class="interest-title recent-book-title">Carregant...</div>
             <div class="interest-subtitle recent-book-author">The StoryGraph</div>
+            <div class="interest-stars recent-book-stars"></div>
           </div>
         </a>
       </div>
@@ -45,17 +46,16 @@ permalink: /interests/
       </div>
 
       <!-- Últim país visitat -->
-      <!--
-      <div class="interest-item">
+      <div class="interest-item" id="recent-travel">
         <a href="#" class="interest-link" target="_blank" rel="noopener">
-          <img src="/images/interests/recent/travel.jpg" alt="Viatge recent" onerror="this.parentElement.parentElement.innerHTML='<div class=&quot;interest-placeholder&quot;>Poster 2</div>'">
+          <img src="/images/interests/recent/travel.jpg" alt="Viatge recent" class="recent-travel-image" onerror="this.src='/images/interests/recent/travel.jpg'">
           <div class="interest-overlay">
-            <div class="interest-title">Sud-àfrica</div>
-            <div class="interest-subtitle">Kruger, Cape Town • Agost 2025</div>
+            <div class="interest-title recent-travel-title">Carregant...</div>
+            <div class="interest-subtitle recent-travel-subtitle">Viatge recent</div>
+            <div class="interest-stars recent-travel-stars"></div>
           </div>
         </a>
       </div>
-      -->
     </div>
   </div>
   

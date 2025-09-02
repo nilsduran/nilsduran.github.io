@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test de conversió d'estrelles</title>
+</head>
+<body>
+    <h1>Test de conversió d'estrelles</h1>
+    <div id="results"></div>
+    
+    <script>
+        function convertRatingToStars(rating) {
+            if (typeof rating === 'string') return rating;
+            if (typeof rating !== 'number') return '';
+            
+            const fullStars = Math.floor(rating);
+            const hasHalfStar = rating % 1 !== 0;
+            
+            let stars = '★'.repeat(fullStars);
+            if (hasHalfStar) stars += '½';
+            
+            return stars;
+        }
+        
+        const testValues = [4.5, 4.0, 3.5, 5.0, 2.5, 1.0, 0.5, 0.0];
+        const resultsDiv = document.getElementById('results');
+        
+        testValues.forEach(value => {
+            const result = convertRatingToStars(value);
+            resultsDiv.innerHTML += `<p>${value} → ${result}</p>`;
+        });
+    </script>
+</body>
+</html>

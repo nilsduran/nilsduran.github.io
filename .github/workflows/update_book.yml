@@ -19,12 +19,9 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install storygraph-api
+        run: pip install storygraph-api requests beautifulsoup4 requests beautifulsoup4
 
       - name: Run script to get recent book
-        env:
-          STORYGRAPH_USERNAME: ${{ secrets.STORYGRAPH_USERNAME }}
-          STORYGRAPH_PASSWORD: ${{ secrets.STORYGRAPH_PASSWORD }}
         run: python scripts/get_recent_book.py
 
       - name: Commit and push if there are changes

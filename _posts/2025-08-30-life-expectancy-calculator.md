@@ -7,7 +7,7 @@ summary: Calcula la teva esperança de vida amb un model de risc multiplicatiu i
 permalink: /blog/life-expectancy-calculator
 ---
 
-Aquesta calculadora utilitza un model de risc relatiu per predir la teva esperança de vida, assumint que els avenços mèdics continuaran a un ritme d'acceleració constant. Pots ajustar els teus hàbits i rebre consells personalitzats per allargar la teva vida. Les dades que introdueixis no s'emmagatzemaran per a cap motiu.
+Aquesta calculadora utilitza un model de risc relatiu per predir la teva esperança de vida, assumint que els avenços mèdics continuaran a un ritme d'acceleració constant (assumpció que podria variar molt en realitat). Pots ajustar els teus hàbits i rebre consells personalitzats per allargar la teva vida. Les dades que introdueixis **no s'emmagatzemaran** per a cap motiu.
 
 <div class="life-calculator">
   <div class="calculator-section">
@@ -232,22 +232,17 @@ Aquesta calculadora utilitza un model de risc relatiu per predir la teva esperan
 
 ## 📈 Metodologia
 
-Aquesta calculadora no es limita a sumar o restar anys. Utilitza un **Model de Risc Relatiu Multiplicatiu**, un enfocament més sofisticat inspirat en estudis epidemiològics.
+Aquesta calculadora utilitza un **Model de Risc Relatiu Multiplicatiu** inspirat en estudis epidemiològics:
 
-1.  **Esperança de Vida Base**: Comencem amb les dades oficials d'esperança de vida del país i sexe seleccionats.
-2.  **Índex de Risc Personalitzat**: En lloc de sumar anys, cada un dels teus hàbits i factors socioeconòmics (dieta, exercici, tabac, etc.) modifica un **índex de risc de mortalitat**.
-    *   Els hàbits saludables **redueixen** el teu risc (multiplicador < 1.0).
-    *   Els hàbits de risc l'**augmenten** (multiplicador > 1.0).
-3.  **Efecte Compost**: El model **multiplica** aquests factors entre si. Això significa que la combinació de múltiples mals hàbits té un impacte molt més gran que la simple suma de les seves parts, reflectint la realitat biològica.
-4.  **Ajust Final**: L'índex de risc total s'utilitza per ajustar l'esperança de vida base de manera no lineal, proporcionant una estimació més realista i matisada.
-5.  **Progrés Futur**: Finalment, s'aplica una projecció sobre els avenços mèdics futurs per calcular la data final.
+1. **Base**: Esperança de vida oficial del país i sexe seleccionats
+2. **Factors de risc**: Cada hàbit modifica un índex de mortalitat (hàbits saludables < 1.0, factors de risc > 1.0)
+3. **Efecte multiplicatiu**: Els factors es combinen multiplicativament, reflectint la realitat biològica
+4. **Ajust no lineal**: L'índex total ajusta l'esperança de vida base
+5. **Projecció futura**: S'afegeixen els avenços mèdics esperats
 
 ### ⚠️ Limitacions
 
-- **No és mèdic**: Aquesta eina és només educativa i estadística.
-- **Factors no inclosos**: Genètica, malalties hereditàries, accidents.
-- **Prediccions incertes**: Els avenços mèdics poden variar.
-- **Promitjos**: Els resultats individuals poden diferir significativament.
+Aquesta eina és **només educativa**. No inclou genètica, malalties hereditàries o accidents. Els avenços mèdics i resultats individuals poden variar significativament.
 
 <style>
 .life-calculator {

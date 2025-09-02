@@ -7,7 +7,7 @@ $heading-font-family: 'Cabin', sans-serif !default;
 $heading-font-weight: 700 !default;
 $heading-line-height: 1.25 !default;
 $monospace-font-family: 'Source Code Pro', Consolas, monospace !default;
-$h1: 2rem !default;
+$h1: 2.4rem !default;
 $h2: 1.6rem !default;
 $h3: 1.35rem !default;
 $h4: 1.2rem !default;
@@ -48,6 +48,32 @@ $dark-gray: #111 !default;
 $mid-gray: #777 !default;
 $light-gray: #ccc !default;
 $lighter-gray: #eee !default;
+
+// Project Hero Banner Colors
+$hero-medical-primary: #e74c3c !default;    // Vermell mèdic clar
+$hero-medical-secondary: #c0392b !default;  // Vermell mèdic fosc
+$hero-tech-primary: #3498db !default;       // Blau tecnològic
+$hero-tech-secondary: #2c3e50 !default;     // Gris fosc elegant
+$hero-ai-primary: #9b59b6 !default;         // Violeta IA clar
+$hero-ai-secondary: #8e44ad !default;       // Violeta IA fosc
+
+// Extended Color Palette for Future Projects
+$hero-finance-primary: #f39c12 !default;    // Taronja financer
+$hero-finance-secondary: #e67e22 !default;  // Taronja fosc
+$hero-research-primary: #1abc9c !default;   // Turquesa recerca
+$hero-research-secondary: #16a085 !default; // Turquesa fosc
+$hero-data-primary: #34495e !default;       // Gris dades
+$hero-data-secondary: #2c3e50 !default;     // Gris fosc dades
+$hero-web-primary: #2ecc71 !default;        // Verd web
+$hero-web-secondary: #27ae60 !default;      // Verd fosc web
+$hero-mobile-primary: #e91e63 !default;     // Rosa mobile
+$hero-mobile-secondary: #ad1457 !default;   // Rosa fosc mobile
+$hero-academic-primary: #673ab7 !default;   // Violeta acadèmic
+$hero-academic-secondary: #512da8 !default; // Violeta fosc acadèmic
+$hero-startup-primary: #ff5722 !default;    // Taronja startup
+$hero-startup-secondary: #d84315 !default;  // Taronja fosc startup
+$hero-consulting-primary: #607d8b !default; // Gris blau consulting
+$hero-consulting-secondary: #455a64 !default; // Gris blau fosc
 $darken-1: rgba(#000,.0625) !default;
 $darken-2: rgba(#000,.125) !default;
 $darken-3: rgba(#000,.25) !default;

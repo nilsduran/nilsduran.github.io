@@ -6,7 +6,7 @@ My personal portfolio website. The theme is based on [thundergolfer/**junior-the
 
 ### What you can find there
 
-* [Blog posts](https://nilsduran.github.io/)
+* [Blog posts](https://nilsduran.github.io/blog/)
 * [A few of my most notable projects](https://nilsduran.github.io/projects/)
 * [A basic about me page](https://nilsduran.github.io/about/)
 * [A page for my interests](https://nilsduran.github.io/interests/)

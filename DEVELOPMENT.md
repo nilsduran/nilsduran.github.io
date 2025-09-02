@@ -19,6 +19,7 @@ Initial modifications from the thundergolfer GitHub page have been vibe-coded wi
 
 ### Idees blog
 - [x] Blog que prediu quan moriràs (fent servir dades estadístiques i suposant que la medicina i esperança de vida continuarà avançant a un ritme derivada segona constant, acceleració constant). Fer servir sexe, edat (dia de naixement per més precisió), país, nivell econòmic (en categories del percentil de cobrar), hàbits alimentaris o esportius. I que l'usuari pugui anar actualitzant les seves dades per mirar de millorar la seva expectativa de vida.
+- [ ] Blog filosòfic
 
 ### TODO
 - [ ] Poblar el blog

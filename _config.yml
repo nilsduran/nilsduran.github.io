@@ -21,7 +21,7 @@ show_post_footers: False
 show_subscribe_cta: False
 show_social_icons: false
 ajaxify_contact_form: false
-enable_mathjax: false
+enable_mathjax: true
 extended_fonts: false
 enable_anchorjs: true
 

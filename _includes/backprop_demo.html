@@ -1,0 +1,35 @@
+<div id="backprop-demo" class="backprop-demo simplified phased">
+  <h2>Backpropagation: Visual pas a pas</h2>
+  <p class="bp-intro">Segueix cada fase: forward, pèrdua, gradients i actualització. Estil inspirat en l'enfoc visual de 3Blue1Brown.</p>
+
+  <div class="bp-toolbar">
+    <button id="bp-prev" type="button" disabled>⟨ Anterior</button>
+    <button id="bp-step" type="button">Següent ⟩</button>
+    <button id="bp-play" type="button" data-running="false">▶ Auto</button>
+    <button id="bp-reset" type="button">Reinicia</button>
+    <button id="bp-sample" type="button">Canvia mostra</button>
+    <label class="bp-inline lr">η <input id="lr" type="range" min="0.01" max="0.6" step="0.01" value="0.20"></label>
+    <label class="bp-inline speed">Velocitat <input id="speed" type="range" min="0.4" max="2" step="0.1" value="1"></label>
+    <span class="bp-inline">Mostra <code id="bp-sample-val">--</code></span>
+    <span class="bp-inline">Fase <code id="bp-phase-index">0</code>/<code id="bp-phase-total">--</code></span>
+    <span class="bp-inline">Loss: <code id="bp-loss">--</code></span>
+    <span class="bp-inline">ŷ: <code id="bp-pred">--</code></span>
+  </div>
+
+  <div class="bp-phase-label" id="bp-phase-label">—</div>
+
+  <div class="bp-canvas-wrapper">
+    <canvas id="bp-network" width="740" height="360" aria-label="Xarxa neuronal XOR"></canvas>
+    <div id="bp-equation" class="bp-equation-overlay" aria-live="polite"></div>
+  </div>
+
+  <div id="bp-formulas" class="bp-formulas" aria-live="polite"></div>
+  <div class="bp-mini-legend">
+    <span class="legend-chip in">Input</span>
+    <span class="legend-chip hid">Oculta</span>
+    <span class="legend-chip out">Sortida</span>
+    <span class="legend-chip act">Activat</span>
+    <span class="legend-chip grad">Gradient</span>
+    <span class="legend-chip upd">Update</span>
+  </div>
+</div>

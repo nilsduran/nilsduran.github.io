@@ -1,12 +1,10 @@
-
 .posts {
   margin: 0;
 }
 
 .posts .post {
   background-color: white;
-  margin-bottom: 0.75em;
-  border-bottom: thin solid #f3f3f3;
+  margin-bottom: 0.0em;
 }
 
 .posts .post:last-child {
@@ -94,4 +92,10 @@
   font-size: 0.9em;
   white-space: nowrap;
   margin-left: 1em;
+}
+
+.post-date {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #666;
 }

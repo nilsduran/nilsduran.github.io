@@ -35,10 +35,18 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="{{ "/css/junior.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
 
+    <!-- Divider CSS -->
+    <link rel="stylesheet" href="{{ "/css/divider.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
+
     {% if page.tags contains "projects" %}
     <link rel="stylesheet" href="{{ "/css/projects.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/emojione/3.0.3/extras/css/emojione.min.css"/>
     {% endif %}
+
+  {% if page.backprop_demo %}
+  <!-- Backprop Demo Styles -->
+  <link rel="stylesheet" href="{{ "/css/backprop.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
+  {% endif %}
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +60,15 @@
 
     {% if site.enable_mathjax or page.mathjax == true %}
     <!-- MathJax -->
-    <script async type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     {% endif %}
 
     {% if site.google_verification %}

@@ -1,37 +1,60 @@
-<div id="backprop-demo" class="backprop-demo simplified phased">
-  <h2>Backpropagation: Visual pas a pas</h2>
-  <p class="bp-intro">Segueix cada fase: forward, pèrdua, gradients i actualització. Estil inspirat en l'enfoc visual de 3Blue1Brown.</p>
+<div class="backprop-demo">
+  <h2>Interactive Backpropagation</h2>
+  <p class="bp-intro">
+    This visual demonstration shows how backpropagation works step by step in a neural network.
+    Click "Next Step" to advance through each phase of the algorithm.
+  </p>
 
   <div class="bp-toolbar">
-    <button id="bp-prev" type="button" disabled>⟨ Anterior</button>
-    <button id="bp-step" type="button">Següent ⟩</button>
-    <button id="bp-play" type="button" data-running="false">▶ Auto</button>
-    <button id="bp-reset" type="button">Reinicia</button>
-    <button id="bp-sample" type="button">Canvia mostra</button>
-    <label class="bp-inline lr">η <input id="lr" type="range" min="0.01" max="0.6" step="0.01" value="0.20"></label>
-    <label class="bp-inline speed">Velocitat <input id="speed" type="range" min="0.4" max="2" step="0.1" value="1"></label>
-    <span class="bp-inline">Mostra <code id="bp-sample-val">--</code></span>
-    <span class="bp-inline">Fase <code id="bp-phase-index">0</code>/<code id="bp-phase-total">--</code></span>
-    <span class="bp-inline">Loss: <code id="bp-loss">--</code></span>
-    <span class="bp-inline">ŷ: <code id="bp-pred">--</code></span>
+    <button id="bp-reset">🔄 Reset</button>
+    <button id="bp-step">▶ Next Step</button>
+    <button id="bp-prev" disabled>◀ Prev Step</button>
+    <button id="bp-play">⏯ Auto Play</button>
+    
+    <span class="bp-inline">
+      Learning Rate: <code id="lr-value">0.5</code>
+      <input type="range" id="lr" min="0.1" max="1" step="0.1" value="0.5">
+    </span>
+    
+    <span class="bp-inline">
+      Speed: <code id="speed-value">1000ms</code>
+      <input type="range" id="speed" min="500" max="3000" step="250" value="1000">
+    </span>
+    
+    <span class="bp-inline">
+      Error: <code id="bp-loss">-</code>
+    </span>
   </div>
 
-  <!-- Prominent step title overlay -->
-  <div id="bp-step-title" class="bp-step-title">—</div>
-  <div class="bp-phase-label" id="bp-phase-label">—</div>
+  <div class="bp-phase-label" id="bp-phase-label">Step 1: Initialize Network</div>
 
   <div class="bp-canvas-wrapper">
-    <canvas id="bp-network" width="740" height="360" aria-label="Xarxa neuronal XOR"></canvas>
-    <div id="bp-equation" class="bp-equation-overlay" aria-live="polite"></div>
+    <div class="bp-equation-overlay" id="bp-equation-overlay"></div>
+    <canvas id="bp-network" width="700" height="400"></canvas>
   </div>
 
-  <div id="bp-formulas" class="bp-formulas" aria-live="polite"></div>
-  <div class="bp-mini-legend">
-    <span class="legend-chip in">Input</span>
-    <span class="legend-chip hid">Oculta</span>
-    <span class="legend-chip out">Sortida</span>
-    <span class="legend-chip act">Activat</span>
-    <span class="legend-chip grad">Gradient</span>
-    <span class="legend-chip upd">Update</span>
+  <!-- Interactive Questions Section -->
+  <div class="bp-questions">
+    <h3>🤔 Explore and Learn</h3>
+    <details>
+      <summary>💡 Què és la funció sigmoidea?</summary>
+      <p>La funció sigmoidea σ(x) = 1/(1+e^(-x)) és una funció d'activació que mapeja qualsevol número real a un valor entre 0 i 1. És especialment útil perquè té una derivada simple: σ'(x) = σ(x)(1-σ(x)).</p>
+    </details>
+    
+    <details>
+      <summary>📈 Com funciona la taxa d'aprenentatge?</summary>
+      <p>La taxa d'aprenentatge (α) controla la magnitud dels canvis en els pesos durant l'entrenament. Una taxa alta pot fer que l'algoritme convergeixi ràpidament però pot saltar el mínim òptim. Una taxa baixa és més estable però més lenta.</p>
+    </details>
+    
+    <details>
+      <summary>🎯 Per què utilitzem XOR?</summary>
+      <p>XOR és un problema clàssic que no es pot resoldre amb una sola neurona (no és linealment separable). Demostra la necessitat de capes ocultes en les xarxes neuronals per aprendre funcions no lineals.</p>
+    </details>
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  new BackpropDemo();
+});
+</script>

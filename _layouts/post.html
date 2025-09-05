@@ -110,3 +110,9 @@ site.show_subscribe_cta %} {% include subscribe.html %} {% endif %}
 {% include backprop_demo.html %}
 <script src="{{ "/js/backprop.js" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" defer></script>
 {% endif %}
+
+{% if page.backprop_demo_enhanced %}
+<!-- Enhanced Backprop Demo Include -->
+<link rel="stylesheet" href="{{ "/css/backprop_enhanced.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}">
+<script src="{{ "/js/backprop_enhanced.js" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" defer></script>
+{% endif %}

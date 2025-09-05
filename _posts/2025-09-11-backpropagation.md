@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Backpropagation: Una història"
+title: "Backpropagation: Una història visual"
 date: 2025-09-03
-categories: deep-learning, python, matemàtiques, ai, xarxes-neuronals, teoria, first-principles
-summary: Una guia detallada sobre com funciona el backpropagation, des de les derivades fins a una implementació pràctica en Python.
+categories: deep-learning, python, matemàtiques, ai, xarxes-neuronals, teoria, first-principles, interactive
+summary: Una guia visual i interactiva sobre com funciona el backpropagation, amb animacions pas a pas i equacions que s'expliquen intuïtivament.
 mathjax: true
 permalink: /blog/backpropagation
 backprop_demo: true
@@ -20,11 +20,12 @@ El gradient de la _loss_ és una veueta que ens diu "ep, t’has desviat una mic
 
 ---
 
-Imagina un nen aprenent a encistellar una pilota. Cada cop que falla, no rep un manual de 700 pàgines de mecànica newtoniana; només un feedback subtil: massa amunt, massa curt, massa fort. La retropropagació fa exactament això amb les xarxes neuronals: converteix l’error en instruccions simples i locals que cada connexió pot entendre. No calen gaires romanços: només repetir, ajustar, repetir.
-
 Dos nens juguen a tirar a cistella.
-El primer falla un tir. El seu entrenador li diu: massa curt. Torna-ho a provar. Massa fort. Torna-ho a provar. És un bucle senzill: error, petit feedback, ajust.
+
+El primer falla un tir. El seu entrenador li diu: "Massa curt. Torna-ho a provar. Massa fort. Torna-ho a provar". És un bucle senzill: error, petit feedback, ajust.
+
 L’altre nen falla… i el seu entrenador diu: "D’acord, primer necessitem parlar de la trajectòria parabòlica, la gravetat, la rotació de la pilota…". I de sobte hi ha un projector, gràfics en 3D i un PowerPoint titulat ‘Introducció a la mecànica de fluids per a nens de 8 anys que només volien jugar a bàsquet’. Quan el nen torna a tirar, ja és de nit i el pavelló està tancat.
+
 La retropropagació és com el primer cas: instruccions simples, locals i immediates. No calen gaires romanços: només repetir, ajustar, repetir.
 
 Ah, i per cert: el primer era en Steph Curry. El segon… encara està buscant el compàs i l'escaire.

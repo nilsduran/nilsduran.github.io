@@ -1,345 +1,414 @@
-(function(){
-  if(!document.getElementById('backprop-demo')) return;
-  const canvas = document.getElementById('bp-network');
-  const ctx = canvas.getContext('2d');
-  const elLoss = document.getElementById('bp-loss');
-  const elPred = document.getElementById('bp-pred');
-  const elSampleVal = document.getElementById('bp-sample-val');
-  const lrEl = document.getElementById('lr');
-  const speedEl = document.getElementById('speed');
-  const btnStep = document.getElementById('bp-step');
-  const btnPrev = document.getElementById('bp-prev');
-  const btnPlay = document.getElementById('bp-play');
-  const btnReset = document.getElementById('bp-reset');
-  const btnSample = document.getElementById('bp-sample');
-  const formulasBox = document.getElementById('bp-formulas');
-  const eqBox = document.getElementById('bp-equation');
-  const phaseLabel = document.getElementById('bp-phase-label');
-  const phaseIndexEl = document.getElementById('bp-phase-index');
-  const phaseTotalEl = document.getElementById('bp-phase-total');
-
-  const data = [ {x:[0,0], y:0}, {x:[0,1], y:1}, {x:[1,0], y:1}, {x:[1,1], y:0} ];
-  let sampleIdx = 0;
-
-  // Parameters (initial)
-  let W = [ [0.7,-0.3], [0.4,0.9] ];
-  let V = [1.2,-0.8];
-  let b1 = [0,0];
-  let b2 = 0;
-
-  // Cache per cicle
-  let forwardCache = null;
-  let gradsCache = null;
-
-  // Phases definides
-  const PHASES = [
-    { key:'forward_h1', label:'Forward: càlcul z₁ i a₁', focus:{nodes:['x1','x2','h1'], weights:[['x1','h1'],['x2','h1']]}, sub:[
-      {k:'sym', txt:'z₁ = W₁₁ x₁ + W₁₂ x₂ + b₁'},
-      {k:'num', txt: (s)=>`z₁ = ${W[0][0].toFixed(2)}·${s.x[0]} + ${W[0][1].toFixed(2)}·${s.x[1]} + ${b1[0].toFixed(2)}`},
-      {k:'act', txt:(s,f)=>`a₁ = σ(${f.z1[0].toFixed(4)}) = ${f.a1[0].toFixed(4)}`}
-    ] },
-    { key:'forward_h2', label:'Forward: càlcul z₂ i a₂', focus:{nodes:['x1','x2','h2'], weights:[['x1','h2'],['x2','h2']]}, sub:[
-      {k:'sym', txt:'z₂ = W₂₁ x₁ + W₂₂ x₂ + b₂'},
-      {k:'num', txt:(s)=>`z₂ = ${W[1][0].toFixed(2)}·${s.x[0]} + ${W[1][1].toFixed(2)}·${s.x[1]} + ${b1[1].toFixed(2)}`},
-      {k:'act', txt:(s,f)=>`a₂ = σ(${f.z1[1].toFixed(4)}) = ${f.a1[1].toFixed(4)}`}
-    ] },
-    { key:'forward_out', label:'Forward: càlcul z³ i ŷ', focus:{nodes:['h1','h2','out'], weights:[['h1','out'],['h2','out']]}, sub:[
-      {k:'sym', txt:'z³ = v₁ a₁ + v₂ a₂ + b'},
-      {k:'num', txt:(s,f)=>`z³ = ${V[0].toFixed(2)}·${f.a1[0].toFixed(2)} + ${V[1].toFixed(2)}·${f.a1[1].toFixed(2)} + ${b2.toFixed(2)}`},
-      {k:'act', txt:(s,f)=>`ŷ = σ(${f.z2.toFixed(4)}) = ${f.a2.toFixed(4)}`}
-    ] },
-    { key:'loss', label:'Càlcul de la pèrdua L', focus:{nodes:['out'], weights:[]}, sub:[
-      {k:'sym', txt:'L = (ŷ - y)²'},
-      {k:'num', txt:(s,f)=>`L = (${f.a2.toFixed(4)} - ${s.y})² = ${(loss(f.a2,s.y)).toFixed(6)}`}
-    ] },
-    { key:'grad_out', label:'Gradient sortida ∂L/∂v, ∂L/∂z³', focus:{nodes:['h1','h2','out'], weights:[['h1','out'],['h2','out']]}, sub:[
-      {k:'sym', txt:'∂L/∂z³ = 2(ŷ - y) σ′(z³)'},
-      {k:'num', txt:(s,f)=>`∂L/∂z³ = 2(${f.a2.toFixed(4)} - ${s.y}) σ′(${f.z2.toFixed(4)}) = TBD`},
-      {k:'exp', txt:(s,f,g)=>`= ${g.dL_dz2.toFixed(6)}`},
-      {k:'v', txt:(s,f,g)=>`∂L/∂v₁ = ${g.dL_dV0.toFixed(5)}, ∂L/∂v₂ = ${g.dL_dV1.toFixed(5)}`}
-    ] },
-    { key:'grad_h1', label:'Gradient cap a h1', focus:{nodes:['x1','x2','h1'], weights:[['x1','h1'],['x2','h1']]}, sub:[
-      {k:'sym', txt:'∂L/∂W₁₁ = ∂L/∂z₁ x₁'},
-      {k:'num', txt:(s,f,g)=>`∂L/∂z₁ = ${g.dL_dW[0][0]!==undefined? (g.dL_dW[0][0]/s.x[0]||0).toFixed(5):''}`},
-      {k:'w', txt:(s,f,g)=>`∂L/∂W₁₁ = ${g.dL_dW[0][0].toFixed(5)}, ∂L/∂W₁₂ = ${g.dL_dW[0][1].toFixed(5)}`}
-    ] },
-    { key:'grad_h2', label:'Gradient cap a h2', focus:{nodes:['x1','x2','h2'], weights:[['x1','h2'],['x2','h2']]}, sub:[
-      {k:'sym', txt:'∂L/∂W₂₁ = ∂L/∂z₂ x₁'},
-      {k:'w', txt:(s,f,g)=>`∂L/∂W₂₁ = ${g.dL_dW[1][0].toFixed(5)}, ∂L/∂W₂₂ = ${g.dL_dW[1][1].toFixed(5)}`}
-    ] },
-    { key:'update', label:'Actualització de pesos', focus:{nodes:['x1','x2','h1','h2','out'], weights:[['x1','h1'],['x2','h1'],['x1','h2'],['x2','h2'],['h1','out'],['h2','out']]}, sub:[
-      {k:'sym', txt:'w ← w - η·gradient'},
-      {k:'num', txt:(s,f,g)=>`v₁ ← ${ (V[0]+parseFloat(lrEl.value)*g.dL_dV0).toFixed(2)} - η·${g.dL_dV0.toFixed(4)}`},
-      {k:'done', txt:'Pesos actualitzats'}
-    ] }
-  ];
-  phaseTotalEl.textContent = PHASES.length.toString();
-  let phase = 0; // index dins PHASES
-  let substep = 0; // index dins phase.sub
-  let playing = false;
-  let playTimer = null;
-
-  function sigmoid(z){return 1/(1+Math.exp(-z));}
-  function sigmoidDeriv(z){const s=sigmoid(z);return s*(1-s);}  
-  function loss(pred, y){ return (pred - y)**2; }
-
-  function forward(x){
-    const z1 = [ W[0][0]*x[0] + W[0][1]*x[1] + b1[0], W[1][0]*x[0] + W[1][1]*x[1] + b1[1] ];
-    const a1 = [ sigmoid(z1[0]), sigmoid(z1[1]) ];
-    const z2 = V[0]*a1[0] + V[1]*a1[1] + b2;
-    const a2 = sigmoid(z2);
-    return {z1,a1,z2,a2};
-  }
-
-  function backward(x, y, cache){
-    const dL_dz2 = 2*(cache.a2 - y)*sigmoidDeriv(cache.z2);
-    const dL_dV0 = dL_dz2 * cache.a1[0];
-    const dL_dV1 = dL_dz2 * cache.a1[1];
-    const dL_db2 = dL_dz2;
-    const dL_da1 = [ dL_dz2 * V[0], dL_dz2 * V[1] ];
-    const dL_dz1 = [ dL_da1[0]*sigmoidDeriv(cache.z1[0]), dL_da1[1]*sigmoidDeriv(cache.z1[1]) ];
-    const dL_dW = [ [ dL_dz1[0]*x[0], dL_dz1[0]*x[1] ], [ dL_dz1[1]*x[0], dL_dz1[1]*x[1] ] ];
-    const dL_db1 = [ dL_dz1[0], dL_dz1[1] ];
-    return {dL_dz2,dL_dV0,dL_dV1,dL_db2,dL_dW,dL_db1};
-  }
-
-  function updateWeights(grads){
-    const lr = parseFloat(lrEl.value);
-    V[0] -= lr*grads.dL_dV0; V[1] -= lr*grads.dL_dV1; b2 -= lr*grads.dL_db2;
-    W[0][0] -= lr*grads.dL_dW[0][0]; W[0][1] -= lr*grads.dL_dW[0][1];
-    W[1][0] -= lr*grads.dL_dW[1][0]; W[1][1] -= lr*grads.dL_dW[1][1];
-    b1[0] -= lr*grads.dL_db1[0]; b1[1] -= lr*grads.dL_db1[1];
-  }
-
-  // animation state
-  let animStart = null;
-  let animProgress = 0; // 0..1
-
-  function draw(sample, phaseObj){
-    ctx.clearRect(0,0,canvas.width, canvas.height);
-    const fadeActive = phaseObj && phaseObj.focus;
-    const f = forwardCache;
-
-    // Node coordinates
-    const coords = {
-      x1:{x:110,y:110}, x2:{x:110,y:250},
-      h1:{x:350,y:110}, h2:{x:350,y:250},
-      out:{x:600,y:180}
+// Simple Backpropagation Demo
+class BackpropDemo {
+  constructor() {
+    this.canvas = document.getElementById('bp-network');
+    this.ctx = this.canvas.getContext('2d');
+    this.currentStep = 0;
+    this.maxSteps = 12; // Més passos per ser més detallat
+    this.isPlaying = false;
+    this.playInterval = null;
+    
+    // Neural network structure - XOR example with normalized weights
+    this.network = {
+      inputs: [1, 0], // XOR input: 1 XOR 0 = 1
+      hiddenWeights: [[0.8, -0.6], [0.5, 0.9]], // Weights between -1 and 1
+      hiddenBiases: [0, -0.3], // Biases between -1 and 1
+      outputWeights: [0.7, -0.8], // Output weights between -1 and 1
+      outputBias: 0, // No output bias for simplicity
+      hiddenOutputs: [0, 0],
+      finalOutput: 0,
+      target: 1, // XOR(1,0) should be 1
+      error: 0
     };
-
-    function isNodeFocused(name){
-      if(!fadeActive) return true;
-      return phaseObj.focus.nodes.includes(name);
+    
+    this.setupEventListeners();
+    this.updateDisplay();
+  }
+  
+  setupEventListeners() {
+    document.getElementById('bp-reset').onclick = () => this.reset();
+    document.getElementById('bp-step').onclick = () => this.nextStep();
+    document.getElementById('bp-prev').onclick = () => this.prevStep();
+    document.getElementById('bp-play').onclick = () => this.togglePlay();
+    
+    document.getElementById('lr').oninput = (e) => {
+      document.getElementById('lr-value').textContent = e.target.value;
+    };
+    
+    document.getElementById('speed').oninput = (e) => {
+      document.getElementById('speed-value').textContent = e.target.value + 'ms';
+    };
+  }
+  
+  reset() {
+    this.currentStep = 0;
+    this.isPlaying = false;
+    if (this.playInterval) clearInterval(this.playInterval);
+    
+    // Reset network to initial state - XOR example
+    this.network.hiddenWeights = [[0.8, -0.6], [0.5, 0.9]];
+    this.network.hiddenBiases = [0, -0.3];
+    this.network.outputWeights = [0.7, -0.8];
+    this.network.outputBias = 0;
+    
+    this.updateDisplay();
+  }
+  
+  nextStep() {
+    if (this.currentStep < this.maxSteps) {
+      this.currentStep++;
+      this.updateDisplay();
     }
-    function isWeightFocused(a,b){
-      if(!fadeActive) return true;
-      return phaseObj.focus.weights.some(w=> w[0]===a && w[1]===b);
+  }
+  
+  prevStep() {
+    if (this.currentStep > 0) {
+      this.currentStep--;
+      this.updateDisplay();
     }
-
-    function weightColor(w){return w>=0? '#0b6bcb':'#d13f3f';}
-
-    // Draw connections with optional fade + animated pulse thickness
-    const weightsSpec = [
-      ['x1','h1', W[0][0]], ['x2','h1', W[0][1]],
-      ['x1','h2', W[1][0]], ['x2','h2', W[1][1]],
-      ['h1','out', V[0]], ['h2','out', V[1]]
+  }
+  
+  togglePlay() {
+    this.isPlaying = !this.isPlaying;
+    const btn = document.getElementById('bp-play');
+    
+    if (this.isPlaying) {
+      btn.textContent = '⏸ Pause';
+      const speed = parseInt(document.getElementById('speed').value);
+      this.playInterval = setInterval(() => {
+        if (this.currentStep >= this.maxSteps) {
+          this.togglePlay();
+        } else {
+          this.nextStep();
+        }
+      }, speed);
+    } else {
+      btn.textContent = '⏯ Auto Play';
+      if (this.playInterval) clearInterval(this.playInterval);
+    }
+  }
+  
+  updateDisplay() {
+    this.updateButtons();
+    this.updatePhaseLabel();
+    this.drawNetwork();
+    this.updateEquations();
+    this.computeStep();
+  }
+  
+  updateButtons() {
+    document.getElementById('bp-prev').disabled = this.currentStep === 0;
+    document.getElementById('bp-step').disabled = this.currentStep >= this.maxSteps;
+  }
+  
+  updatePhaseLabel() {
+    const phases = [
+      "Initialize Network",
+      "Forward Pass - Input Layer",
+      "Forward Pass - Hidden Neuron z₁",
+      "Forward Pass - Hidden Neuron z₂", 
+      "Forward Pass - Output Layer",
+      "Compute Loss Function",
+      "Backward Pass - Output Error Gradient",
+      "Backward Pass - Hidden Layer Error z₁",
+      "Backward Pass - Hidden Layer Error z₂",
+      "Update Output Layer Weights",
+      "Update Hidden Layer Weights z₁",
+      "Update Hidden Layer Weights z₂",
+      "Training Iteration Complete"
     ];
-    weightsSpec.forEach(w=>{
-      const a = coords[w[0]], b = coords[w[1]], val = w[2];
-      ctx.save();
-      if(!isWeightFocused(w[0], w[1])) ctx.globalAlpha = 0.08;
-      // thickness pulse if focused edge in current substep
-      const isFocus = isWeightFocused(w[0], w[1]);
-      const baseWidth = 2;
-      let width = baseWidth;
-      if(isFocus && animProgress < 1 && phaseObj && phaseObj.key.startsWith('forward')){
-        width = baseWidth + 3*Math.sin(animProgress*Math.PI);
-      }
-      ctx.beginPath(); ctx.moveTo(a.x+38,a.y); ctx.lineTo(b.x-38,b.y);
-      ctx.strokeStyle = weightColor(val); ctx.lineWidth = width; ctx.stroke();
-      // arrowhead
-      const ang = Math.atan2(b.y - a.y, b.x - a.x);
-      ctx.beginPath(); ctx.moveTo(b.x-38,b.y);
-      ctx.lineTo(b.x-48*Math.cos(ang+0.25), b.y-48*Math.sin(ang+0.25));
-      ctx.lineTo(b.x-48*Math.cos(ang-0.25), b.y-48*Math.sin(ang-0.25));
-      ctx.closePath(); ctx.fillStyle = weightColor(val); ctx.fill();
-      // weight label
-      if(isWeightFocused(w[0],w[1])){
-        const mx = (a.x+38 + b.x-38)/2; const my = (a.y + b.y)/2;
-        ctx.fillStyle='#333'; ctx.font='12px Cabin'; ctx.fillText(val.toFixed(2), mx-12, my-6);
-      }
-      ctx.restore();
+    
+    document.getElementById('bp-phase-label').textContent = 
+      `Step ${this.currentStep + 1}: ${phases[this.currentStep]}`;
+  }
+  
+  computeStep() {
+    switch(this.currentStep) {
+      case 2: // Forward pass - hidden neuron z1
+        this.network.hiddenOutputs[0] = this.sigmoid(
+          this.network.inputs[0] * this.network.hiddenWeights[0][0] + 
+          this.network.inputs[1] * this.network.hiddenWeights[0][1] + 
+          this.network.hiddenBiases[0]
+        );
+        break;
+        
+      case 3: // Forward pass - hidden neuron z2
+        this.network.hiddenOutputs[1] = this.sigmoid(
+          this.network.inputs[0] * this.network.hiddenWeights[1][0] + 
+          this.network.inputs[1] * this.network.hiddenWeights[1][1] + 
+          this.network.hiddenBiases[1]
+        );
+        break;
+        
+      case 4: // Forward pass - output layer
+        this.network.finalOutput = this.sigmoid(
+          this.network.hiddenOutputs[0] * this.network.outputWeights[0] + 
+          this.network.hiddenOutputs[1] * this.network.outputWeights[1] + 
+          this.network.outputBias
+        );
+        break;
+        
+      case 5: // Compute loss
+        this.network.error = 0.5 * Math.pow(this.network.target - this.network.finalOutput, 2);
+        document.getElementById('bp-loss').textContent = this.formatNumber(this.network.error);
+        break;
+    }
+  }
+  
+  sigmoid(x) {
+    return 1 / (1 + Math.exp(-x));
+  }
+  
+  // Smart number formatting: remove unnecessary zeros and limit to 2 decimals
+  formatNumber(num) {
+    if (Number.isInteger(num)) return num.toString();
+    let formatted = num.toFixed(2);
+    // Remove trailing zeros: 1.00 -> 1, 0.80 -> 0.8
+    return formatted.replace(/\.?0+$/, '');
+  }
+  
+  drawNetwork() {
+    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    
+    // Millor centrat i equidistant - usa tot l'ample del canvas
+    const canvasWidth = this.canvas.width;
+    const canvasHeight = this.canvas.height;
+    const margin = 100;
+    
+    // Posicions X equidistants
+    const inputX = margin + 80;
+    const hiddenX = canvasWidth / 2;
+    const outputX = canvasWidth - margin - 80;
+    
+    // Posicions Y centrades verticalment
+    const centerY = canvasHeight / 2;
+    const nodeSpacing = 80;
+    
+    // Input layer (2 neurones centrades)
+    const inputY = [centerY - nodeSpacing/2, centerY + nodeSpacing/2];
+    
+    // Hidden layer (2 neurones centrades)
+    const hiddenY = [centerY - nodeSpacing/2, centerY + nodeSpacing/2];
+    
+    // Output layer (1 neurona centrada)
+    const outputY = centerY;
+    
+    // Draw connections first (behind nodes) 
+    this.drawConnections3B1B(inputX, inputY, hiddenX, hiddenY, this.currentStep >= 1);
+    this.drawConnections3B1B(hiddenX, hiddenY, outputX, [outputY], this.currentStep >= 4);
+    
+    // Draw nodes with grayscale style (no colors)
+    this.drawNode3B1B(inputX, inputY[0], this.network.inputs[0], 'input', this.currentStep >= 1);
+    this.drawNode3B1B(inputX, inputY[1], this.network.inputs[1], 'input', this.currentStep >= 1);
+    
+    // Hidden nodes - show individual activation based on step
+    const showHidden1 = this.currentStep >= 2;
+    const showHidden2 = this.currentStep >= 3;
+    this.drawNode3B1B(hiddenX, hiddenY[0], this.network.hiddenOutputs[0], 'hidden', showHidden1);
+    this.drawNode3B1B(hiddenX, hiddenY[1], this.network.hiddenOutputs[1], 'hidden', showHidden2);
+    
+    this.drawNode3B1B(outputX, outputY, this.network.finalOutput, 'output', this.currentStep >= 4);
+    
+    // Draw layer labels
+    this.ctx.fillStyle = '#1e40af';
+    this.ctx.font = 'bold 16px SF Pro Display, sans-serif';
+    this.ctx.textAlign = 'center';
+    this.ctx.fillText('Input', inputX, 80);
+    this.ctx.fillText('Hidden', hiddenX, 80);
+    this.ctx.fillText('Output', outputX, 80);
+  }
+  
+  // 3Blue1Brown style node rendering (simple grayscale, no colors)
+  drawNode3B1B(x, y, value, type, active) {
+    const radius = 38; // Increased from 32 to 38
+    
+    // More pronounced grayscale: 0 = dark gray, 1 = white
+    let grayValue = active ? Math.round(50 + value * 180) : 160; // Wider range: 50-255
+    let fillColor = `rgb(${grayValue}, ${grayValue}, ${grayValue})`;
+    
+    // Simple gray rim - no colors
+    let rimColor = active ? '#4b5563' : '#9ca3af';
+    
+    // Draw outer rim
+    this.ctx.beginPath();
+    this.ctx.arc(x, y, radius + 2, 0, 2 * Math.PI);
+    this.ctx.fillStyle = rimColor;
+    this.ctx.fill();
+    
+    // Draw main node
+    this.ctx.beginPath();
+    this.ctx.arc(x, y, radius, 0, 2 * Math.PI);
+    this.ctx.fillStyle = fillColor;
+    this.ctx.fill();
+    
+    // Draw subtle inner highlight for 3D effect
+    if (active && value > 0.3) {
+      this.ctx.beginPath();
+      this.ctx.arc(x - 8, y - 8, radius * 0.3, 0, 2 * Math.PI);
+      this.ctx.fillStyle = `rgba(255, 255, 255, ${value * 0.4})`;
+      this.ctx.fill();
+    }
+    
+    // Draw activation value INSIDE the neuron
+    if (active && value > 0) {
+      this.ctx.fillStyle = grayValue > 150 ? '#1e293b' : '#ffffff';
+      this.ctx.font = 'bold 14px SF Mono, monospace'; // Increased from 12px to 14px
+      this.ctx.textAlign = 'center';
+      this.ctx.fillText(this.formatNumber(value), x, y + 4);
+    }
+  }
+  
+  // 3Blue1Brown style connections (blue for positive weights, red for negative)
+  drawConnections3B1B(fromX, fromY, toX, toY, active) {
+    if (!Array.isArray(fromY)) fromY = [fromY];
+    if (!Array.isArray(toY)) toY = [toY];
+    
+    const weights = fromX < 300 ? this.network.hiddenWeights : this.network.outputWeights;
+    
+    fromY.forEach((fy, i) => {
+      toY.forEach((ty, j) => {
+        let weight = Array.isArray(weights[0]) ? weights[i][j] : weights[j];
+        let color = active ? (weight >= 0 ? '#3b82f6' : '#ef4444') : '#94a3b8';
+        
+        // Line thickness based on weight magnitude
+        let lineWidth = active ? Math.max(2, Math.abs(weight) * 6) : 2;
+        
+        this.ctx.beginPath();
+        this.ctx.moveTo(fromX + 38, fy); // Adjusted for larger radius
+        this.ctx.lineTo(toX - 38, ty);   // Adjusted for larger radius
+        this.ctx.strokeStyle = color;
+        this.ctx.lineWidth = lineWidth;
+        this.ctx.stroke();
+        
+        // Draw weight value on connection when active and relevant
+        if (active) {
+          const midX = (fromX + toX) / 2;
+          const midY = (fy + ty) / 2;
+          
+          // Show weights only when they're being used in current step
+          let showWeight = false;
+          if (this.currentStep >= 2 && fromX < 300) showWeight = true; // Input to hidden
+          if (this.currentStep >= 4 && fromX > 300) showWeight = true; // Hidden to output
+          
+          if (showWeight) {
+            this.ctx.fillStyle = weight >= 0 ? '#3b82f6' : '#ef4444';
+            this.ctx.font = 'bold 12px SF Mono, monospace'; // Més gran
+            this.ctx.textAlign = 'center';
+            this.ctx.fillText(this.formatNumber(weight), midX, midY - 8);
+          }
+        }
+      });
     });
-
-    // Draw nodes
-  const nodeList = ['x1','x2','h1','h2','out'];
-    nodeList.forEach(name=>{
-      const c = coords[name];
-      ctx.save();
-      const focused = isNodeFocused(name);
-      if(!focused) ctx.globalAlpha = 0.08;
-      const r = 36;
-      // shell
-      ctx.beginPath(); ctx.arc(c.x,c.y,r,0,Math.PI*2);
-      const grad = ctx.createRadialGradient(c.x-5,c.y-8,4,c.x,c.y,r);
-      if(name==='out') grad.addColorStop(0,'#fff7ed'), grad.addColorStop(1,'#ffe4cc');
-      else if(name.startsWith('h')) grad.addColorStop(0,'#faf7ff'), grad.addColorStop(1,'#e9ddff');
-      else grad.addColorStop(0,'#f2f9ff'), grad.addColorStop(1,'#d9ecff');
-      ctx.fillStyle = grad; ctx.fill();
-      ctx.lineWidth = focused?2.4:1.5; ctx.strokeStyle = focused? '#16394a':'#6d7a80'; ctx.stroke();
-      // label & value
-      ctx.fillStyle = '#111'; ctx.font='12px Cabin'; ctx.textAlign='center';
-      let label = name;
-      let valText='';
-      if(forwardCache){
-        if(name==='x1') valText = sample.x[0];
-        if(name==='x2') valText = sample.x[1];
-        if(name==='h1') valText = forwardCache.a1[0].toFixed(3);
-        if(name==='h2') valText = forwardCache.a1[1].toFixed(3);
-        if(name==='out') valText = forwardCache.a2.toFixed(3);
-      }
-      ctx.fillText(label, c.x, c.y-4);
-      if(focused && valText!=='' && phase <= 3) { // only show values in forward/loss phases
-        ctx.fillStyle='#333'; ctx.font='11px Cabin'; ctx.fillText(valText, c.x, c.y+14);
-      }
-      ctx.restore();
-    });
-
-    // Phase overlay explanation
-    ctx.save();
-  ctx.fillStyle='#385766'; ctx.font='14px Cabin';
-  ctx.fillText(PHASES[phase].label + ` (${substep+1}/${PHASES[phase].sub.length})`, canvas.width/2 - 140, 30);
-    ctx.restore();
   }
-
-  function updateUI(sample){
-  phaseIndexEl.textContent = (phase+1).toString();
-    phaseLabel.textContent = PHASES[phase].label;
-    btnPrev.disabled = phase===0;
-    btnStep.textContent = phase === PHASES.length-1 ? 'Completa cicle' : 'Següent ⟩';
-    elSampleVal.textContent = `[${sample.x[0]}, ${sample.x[1]}] → ${sample.y}`;
-    const L = forwardCache ? loss(forwardCache.a2, sample.y) : NaN;
-    if(!isNaN(L)) elLoss.textContent = L.toFixed(4);
-    if(forwardCache) elPred.textContent = forwardCache.a2.toFixed(4);
-  }
-
-  function formulas(sample){
-    const f = forwardCache;
-    const g = gradsCache;
-    let html = `<div class="formula-row"><strong>x</strong> = [${sample.x[0]}, ${sample.x[1]}], y=${sample.y}</div>`;
-    if(phase>=0){
-      html += `<div class="formula-row">z₁ = W₁₁ x₁ + W₁₂ x₂ + b₁ = ${W[0][0].toFixed(2)}*${sample.x[0]} + ${W[0][1].toFixed(2)}*${sample.x[1]} + ${b1[0].toFixed(2)} = ${f.z1[0].toFixed(4)}</div>`;
-    }
-    if(phase>=1){
-      html += `<div class="formula-row">z₂ = W₂₁ x₁ + W₂₂ x₂ + b₂ = ${W[1][0].toFixed(2)}*${sample.x[0]} + ${W[1][1].toFixed(2)}*${sample.x[1]} + ${b1[1].toFixed(2)} = ${f.z1[1].toFixed(4)}</div>`;
-    }
-    if(phase>=2){
-      html += `<div class="formula-row">z³ = v₁ a₁ + v₂ a₂ + b = ${V[0].toFixed(2)}*${f.a1[0].toFixed(2)} + ${V[1].toFixed(2)}*${f.a1[1].toFixed(2)} + ${b2.toFixed(2)} = ${f.z2.toFixed(4)}</div>`;
-      html += `<div class="formula-row">ŷ = σ(z³) = ${f.a2.toFixed(4)}</div>`;
-    }
-    if(phase>=3){
-      html += `<div class="formula-row">L = (ŷ - y)² = (${f.a2.toFixed(4)} - ${sample.y})² = ${(loss(f.a2,sample.y)).toFixed(6)}</div>`;
-    }
-    if(phase>=4 && g){
-      html += `<div class="formula-row grad-title">∂L/∂v₁=${g.dL_dV0.toFixed(4)}, ∂L/∂v₂=${g.dL_dV1.toFixed(4)}; ∂L/∂z³=${g.dL_dz2.toFixed(4)}</div>`;
-    }
-    if(phase>=5 && g){
-      html += `<div class="formula-row">∂L/∂W₁₁=${g.dL_dW[0][0].toFixed(4)}, ∂L/∂W₁₂=${g.dL_dW[0][1].toFixed(4)}</div>`;
-    }
-    if(phase>=6 && g){
-      html += `<div class="formula-row">∂L/∂W₂₁=${g.dL_dW[1][0].toFixed(4)}, ∂L/∂W₂₂=${g.dL_dW[1][1].toFixed(4)}</div>`;
-    }
-    if(phase>=7 && g){
-      html += `<div class="formula-row grad-title">Update: w ← w - η·gradient</div>`;
-    }
-    formulasBox.innerHTML = html;
-  }
-
-  function advance(){
-    const sample = data[sampleIdx];
-    if(phase === 0){
-      forwardCache = forward(sample.x);
-    } else if(phase === 4){
-      // compute grads at start of outward gradient phase if not yet
-      if(!gradsCache) gradsCache = backward(sample.x, sample.y, forwardCache);
-    } else if(phase === 7){
-      // apply update & reset caches for next cycle
-      if(!gradsCache) gradsCache = backward(sample.x, sample.y, forwardCache);
-      updateWeights(gradsCache);
-    }
-    // Redraw + formulas
-    draw(sample, PHASES[phase]);
-    updateUI(sample);
-    formulas(sample);
-    // manage substeps
-    if(substep < PHASES[phase].sub.length-1){
-      substep++;
-    } else {
-      substep = 0;
-      phase = (phase + 1) % PHASES.length;
-      if(phase===0){ gradsCache = null; forwardCache = null; }
-    }
-    updateEquation(sample);
-  }
-
-  function stepForward(){
-    advance();
-  }
-
-  function stepBackward(){
-    // Go back one substep or phase
-    if(substep>0){ substep--; }
-    else { phase = (phase-1+PHASES.length)%PHASES.length; substep = PHASES[phase].sub.length-1; }
-    const sample=data[sampleIdx]; if(!forwardCache) forwardCache = forward(sample.x); if(!gradsCache && phase>=4) gradsCache= backward(sample.x, sample.y, forwardCache);
-    draw(sample, PHASES[phase]); updateUI(sample); formulas(sample); updateEquation(sample, true);
-  }
-
-  function togglePlay(){
-    if(!playing){
-      playing = true; btnPlay.textContent='⏸ Pausa';
-      const tick = ()=>{ stepForward(); const speed = parseFloat(speedEl.value); playTimer = setTimeout(tick, 900 / speed); };
-      tick();
-    } else {
-      playing = false; btnPlay.textContent='▶ Auto'; clearTimeout(playTimer);
+  
+  updateEquations() {
+    const overlay = document.getElementById('bp-equation-overlay');
+    const equations = this.getEquationsForStep();
+    
+    overlay.innerHTML = equations.map(eq => 
+      `<div class="eq-line">${eq}</div>`
+    ).join('');
+    
+    // Re-render MathJax if available
+    if (window.MathJax) {
+      MathJax.typesetPromise([overlay]).catch(err => console.log('MathJax error:', err));
     }
   }
-
-  function changeSample(){ sampleIdx = (sampleIdx+1)%data.length; phase=0; substep=0; gradsCache=null; forwardCache=null; const s=data[sampleIdx]; draw(s, PHASES[phase]); updateUI(s); formulas(s); updateEquation(s); }
-
-  function resetAll(){ W = [ [0.7,-0.3], [0.4,0.9] ]; V=[1.2,-0.8]; b1=[0,0]; b2=0; sampleIdx=0; phase=0; substep=0; gradsCache=null; forwardCache=null; draw(data[0], PHASES[phase]); updateUI(data[0]); formulas(data[0]); updateEquation(data[0]); }
-
-  function updateEquation(sample, backwards=false){
-    if(!eqBox) return; const ph = PHASES[phase]; const s = sample; const f = forwardCache; const g = gradsCache;
-    const sub = ph.sub[substep];
-    let lines = [];
-    for(let i=0;i<=substep;i++){
-      const desc = ph.sub[i];
-      let content = typeof desc.txt === 'function' ? desc.txt(s,f,g) : desc.txt;
-      // refine numeric placeholders after grads computed
-      if(desc.k==='num' && ph.key==='grad_out' && g){
-        content = `∂L/∂z³ = 2(${f.a2.toFixed(4)} - ${s.y}) · σ′(${f.z2.toFixed(4)}) = ${(g.dL_dz2).toFixed(6)}`;
-      }
-      lines.push(`<div class="eq-line ${i===substep?'visible':'visible fade-out'}" data-k="${desc.k}">${content}</div>`);
+  
+  getEquationsForStep() {
+    switch(this.currentStep) {
+      case 0: return [
+        '🧠 Neural Network Ready',
+        '$W \\in [-1, 1]$, $b \\in [-1, 1]$',
+        '$\\mathbf{x} = [1, 0]^T$ (XOR input)',
+        '$y_{target} = 1$ (XOR output: 1⊕0=1)'
+      ];
+      case 1: return [
+        '➡️ Forward Pass: Input Layer Active',
+        '$\\mathbf{x} = \\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix}$',
+        'XOR input loaded: first bit = 1, second bit = 0',
+        'Expected output: 1 ⊕ 0 = 1'
+      ];
+      case 2: return [
+        '🔄 Computing Hidden Neuron $z_1$',
+        '$z_1 = w_{1,1} x_1 + w_{1,2} x_2 + b_1$',
+        `$z_1 = ${this.formatNumber(this.network.hiddenWeights[0][0])} \\cdot 1 + ${this.formatNumber(this.network.hiddenWeights[0][1])} \\cdot 0 + ${this.formatNumber(this.network.hiddenBiases[0])}$`,
+        `$z_1 = ${this.formatNumber(this.network.hiddenWeights[0][0])} + 0 + ${this.formatNumber(this.network.hiddenBiases[0])} = ${this.formatNumber(this.network.hiddenWeights[0][0] + this.network.hiddenBiases[0])}$`,
+        `$a_1 = \\sigma(z_1) = ${this.formatNumber(this.network.hiddenOutputs[0])}$`
+      ];
+      case 3: return [
+        '🔄 Computing Hidden Neuron $z_2$',
+        '$z_2 = w_{2,1} x_1 + w_{2,2} x_2 + b_2$',
+        `$z_2 = ${this.formatNumber(this.network.hiddenWeights[1][0])} \\cdot 1 + ${this.formatNumber(this.network.hiddenWeights[1][1])} \\cdot 0 + ${this.formatNumber(this.network.hiddenBiases[1])}$`,
+        `$z_2 = ${this.formatNumber(this.network.hiddenWeights[1][0])} + 0 + ${this.formatNumber(this.network.hiddenBiases[1])} = ${this.formatNumber(this.network.hiddenWeights[1][0] + this.network.hiddenBiases[1])}$`,
+        `$a_2 = \\sigma(z_2) = ${this.formatNumber(this.network.hiddenOutputs[1])}$`
+      ];
+      case 4: return [
+        '🎯 Computing Output Layer',
+        '$z^{out} = w_1^{out} a_1 + w_2^{out} a_2 + b^{out}$',
+        `$z^{out} = ${this.formatNumber(this.network.outputWeights[0])} \\cdot ${this.formatNumber(this.network.hiddenOutputs[0])} + ${this.formatNumber(this.network.outputWeights[1])} \\cdot ${this.formatNumber(this.network.hiddenOutputs[1])} + ${this.formatNumber(this.network.outputBias)}$`,
+        `$\\hat{y} = \\sigma(z^{out}) = ${this.formatNumber(this.network.finalOutput)}$`,
+        'Should be close to 1 for XOR(1,0)'
+      ];
+      case 5: return [
+        '📊 Computing Loss Function',
+        '$\\mathcal{L} = \\frac{1}{2}(y - \\hat{y})^2$',
+        `$\\mathcal{L} = \\frac{1}{2}(${this.network.target} - ${this.formatNumber(this.network.finalOutput)})^2$`,
+        `$\\mathcal{L} = ${this.formatNumber(this.network.error)}$`,
+        'Lower is better - how far are we from XOR(1,0)=1?'
+      ];
+      case 6: return [
+        '⬅️ Backprop: Output Layer Gradient',
+        '$\\frac{\\partial \\mathcal{L}}{\\partial \\hat{y}} = -(y - \\hat{y})$',
+        '$\\delta^{out} = \\frac{\\partial \\mathcal{L}}{\\partial \\hat{y}} \\cdot \\sigma\'(z^{out})$',
+        '$\\sigma\'(z) = \\sigma(z)(1 - \\sigma(z))$',
+        'Output error computed'
+      ];
+      case 7: return [
+        '🔙 Hidden Layer Error: $z_1$',
+        '$\\frac{\\partial \\mathcal{L}}{\\partial a_1} = w_1^{out} \\cdot \\delta^{out}$',
+        '$\\delta_1 = \\frac{\\partial \\mathcal{L}}{\\partial a_1} \\cdot \\sigma\'(z_1)$',
+        'Error for $z_1$ computed'
+      ];
+      case 8: return [
+        '🔙 Hidden Layer Error: $z_2$',
+        '$\\frac{\\partial \\mathcal{L}}{\\partial a_2} = w_2^{out} \\cdot \\delta^{out}$',
+        '$\\delta_2 = \\frac{\\partial \\mathcal{L}}{\\partial a_2} \\cdot \\sigma\'(z_2)$',
+        'Error for $z_2$ computed'
+      ];
+      case 9: return [
+        '🔄 Update Output Weights',
+        '$w^{out} \\leftarrow w^{out} - \\alpha \\frac{\\partial \\mathcal{L}}{\\partial w^{out}}$',
+        '$b^{out} \\leftarrow b^{out} - \\alpha \\frac{\\partial \\mathcal{L}}{\\partial b^{out}}$',
+        '$\\alpha = 0.5$ (learning rate from slider)'
+      ];
+      case 10: return [
+        '🔄 Update Hidden Weights: $z_1$',
+        '$w_{1,j} \\leftarrow w_{1,j} - \\alpha \\delta_1 x_j$',
+        '$b_1 \\leftarrow b_1 - \\alpha \\delta_1$',
+        'Weights for neuron $z_1$ updated'
+      ];
+      case 11: return [
+        '🔄 Update Hidden Weights: $z_2$',
+        '$w_{2,j} \\leftarrow w_{2,j} - \\alpha \\delta_2 x_j$',
+        '$b_2 \\leftarrow b_2 - \\alpha \\delta_2$',
+        'Weights for neuron $z_2$ updated'
+      ];
+      case 12: return [
+        '✅ Training Iteration Complete',
+        'Forward pass: $\\mathbf{x} \\rightarrow \\mathbf{h} \\rightarrow \\hat{y}$ ✓',
+        'Loss computation: $\\mathcal{L}(y, \\hat{y})$ ✓',
+        'Backpropagation: $\\nabla \\mathcal{L}$ ✓',
+        'Weight updates: $\\theta \\leftarrow \\theta - \\alpha \\nabla \\mathcal{L}$ ✓'
+      ];
+      default: return ['Ready to start...'];
     }
-    eqBox.innerHTML = lines.join('');
   }
+}
 
-  function animLoop(ts){
-    if(!animStart) animStart = ts; const dt = ts - animStart; animProgress = Math.min(1, dt/650);
-    const sample = data[sampleIdx]; if(forwardCache) draw(sample, PHASES[phase]);
-    if(animProgress<1) requestAnimationFrame(animLoop); else { animStart=null; animProgress=0; }
+// Initialize demo when page loads
+document.addEventListener('DOMContentLoaded', () => {
+  if (document.getElementById('bp-network')) {
+    new BackpropDemo();
   }
-
-  // Hook into step to trigger animation
-  const origAdvance = advance;
-  advance = function(){ origAdvance(); animStart=null; animProgress=0; requestAnimationFrame(animLoop); };
-
-  // Events
-  btnStep.addEventListener('click', stepForward);
-  btnPrev.addEventListener('click', stepBackward);
-  btnPlay.addEventListener('click', togglePlay);
-  btnReset.addEventListener('click', resetAll);
-  btnSample.addEventListener('click', changeSample);
-
-  resetAll();
-})();
+});

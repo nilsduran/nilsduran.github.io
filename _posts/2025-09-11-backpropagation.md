@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Backpropagation: Una història visual"
-date: 2025-09-03
+date: 2025-09-11
 categories: deep-learning, python, matemàtiques, ai, xarxes-neuronals, teoria, first-principles, interactive
 summary: Una guia visual i interactiva sobre com funciona el backpropagation, amb animacions pas a pas i equacions que s'expliquen intuïtivament.
 mathjax: true

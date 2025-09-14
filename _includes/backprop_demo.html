@@ -1,44 +1,53 @@
 <div class="backprop-demo">
-  <h2>Interactive Backpropagation</h2>
+  <h2>Retropropagació interactiva</h2>
   <p class="bp-intro">
-    This visual demonstration shows how backpropagation works step by step in a neural network.
-    Click "Next Step" to advance through each phase of the algorithm.
+    Aquesta demostració visual explica pas a pas com funciona la retropropagació en una xarxa neuronal.
+    Fes clic a "Següent pas" per avançar per cada fase de l'algorisme.
   </p>
 
   <div class="bp-toolbar">
-    <button id="bp-reset">🔄 Reset</button>
-    <button id="bp-step">▶ Next Step</button>
-    <button id="bp-prev" disabled>◀ Prev Step</button>
-    <button id="bp-play">⏯ Auto Play</button>
+  <button id="bp-play">⏯ Reprodueix</button>
+  <div id="bp-stepper" class="bp-stepper" aria-label="Control de passos">
+  <span class="bp-stepper-label">Progrés</span>
+    <input id="bp-step-slider" class="bp-stepper-slider" type="range" min="0" max="16" value="0" aria-label="Pas actual">
+    <div class="bp-stepper-buttons">
+  <!-- TODO(Fletxes Progrés): aquests dos botons defineixen els triangles (són caràcters Unicode ◀ i ▶). Canvia el text interior o substitueix-lo per SVG/icones si vols un estil diferent. -->
+  <button id="bp-step-back" class="bp-stepper-btn" aria-label="Pas anterior" title="Pas anterior" disabled>◀</button>
+  <button id="bp-step-forward" class="bp-stepper-btn" aria-label="Següent pas" title="Següent pas">▶</button>
+    </div>
+  </div>
+  <button id="bp-reset">🔄 Reinicia</button>
     
-    <span class="bp-inline">
-      Learning Rate: <code id="lr-value">0.5</code>
-      <input type="range" id="lr" min="0.1" max="1" step="0.1" value="0.5">
+    <!-- ORDRE INTERCANVIAT: primer velocitat, després taxa d'aprenentatge -->
+    <span class="bp-inline bp-inline-speed">
+      Velocitat: <code id="speed-value">1000ms</code>
+      <input type="range" id="speed" min="250" max="4500" step="250" value="1000">
     </span>
-    
-    <span class="bp-inline">
-      Speed: <code id="speed-value">1000ms</code>
-      <input type="range" id="speed" min="500" max="3000" step="250" value="1000">
+
+    <span class="bp-inline bp-inline-lr">
+      α (lr): <code id="bp-lr-value">0.3</code>
+      <input type="range" id="bp-lr" min="0.1" max="1" step="0.1" value="0.3">
     </span>
-    
-    <span class="bp-inline">
+
+    <span class="bp-inline bp-inline-error">
       Error: <code id="bp-loss">-</code>
     </span>
   </div>
 
-  <div class="bp-phase-label" id="bp-phase-label">Step 1: Initialize Network</div>
+  <div class="bp-phase-label" id="bp-phase-label">Pas 0: Inicialització de la xarxa</div>
 
   <div class="bp-canvas-wrapper">
     <div class="bp-equation-overlay" id="bp-equation-overlay"></div>
-    <canvas id="bp-network" width="700" height="400"></canvas>
+  <div id="bp-tooltip" class="bp-tooltip" hidden></div>
+        <canvas id="bp-network" width="750" height="300"></canvas>
   </div>
 
   <!-- Interactive Questions Section -->
   <div class="bp-questions">
-    <h3>🤔 Explore and Learn</h3>
+    <h3>🤔 Explora i Aprèn</h3>
     <details>
-      <summary>💡 Què és la funció sigmoidea?</summary>
-      <p>La funció sigmoidea σ(x) = 1/(1+e^(-x)) és una funció d'activació que mapeja qualsevol número real a un valor entre 0 i 1. És especialment útil perquè té una derivada simple: σ'(x) = σ(x)(1-σ(x)).</p>
+      <summary>💡 Què és la funció sigmoide?</summary>
+      <p>La funció sigmoide σ(x) = 1/(1+e^(-x)) és una funció d'activació que mapeja qualsevol número real a un valor entre 0 i 1. És especialment útil perquè té una derivada simple: σ'(x) = σ(x)(1-σ(x)).</p>
     </details>
     
     <details>
@@ -55,6 +64,10 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  new BackpropDemo();
+  const canvas = document.getElementById('bp-network');
+  if (canvas && !canvas.dataset.bpInit) {
+    new BackpropDemo();
+    canvas.dataset.bpInit = '1';
+  }
 });
 </script>

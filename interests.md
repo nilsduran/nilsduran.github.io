@@ -60,6 +60,7 @@ permalink: /interests/
   </div>
   
   <!-- Pel·lícules -->
+  <div class="divider-fade"><div class="divider-fade-inner"></div></div>
   <div class="interest-category">
     <h2>🎬 Pel·lícules</h2>
     <div class="interest-grid">
@@ -103,8 +104,9 @@ permalink: /interests/
   </div>
 
   <!-- Sèries -->
+  <div class="divider-fade"><div class="divider-fade-inner"></div></div>
   <div class="interest-category">
-    <h2> Sèries</h2>
+    <h2>📺 Sèries</h2>
     <div class="interest-grid">
       <div class="interest-item">
         <a href="https://www.imdb.com/title/tt0367279/" class="interest-link" target="_blank" rel="noopener">
@@ -146,6 +148,7 @@ permalink: /interests/
   </div>
 
   <!-- Llibres de ficció -->
+  <div class="divider-fade"><div class="divider-fade-inner"></div></div>
   <div class="interest-category">
     <h2>📚 Ficció</h2>
     <div class="interest-grid">
@@ -189,6 +192,7 @@ permalink: /interests/
   </div>
 
   <!-- Llibres de no-ficció -->
+  <div class="divider-fade"><div class="divider-fade-inner"></div></div>
   <div class="interest-category">
     <h2>📖 No-ficció</h2>
     <div class="interest-grid">
@@ -232,6 +236,7 @@ permalink: /interests/
   </div>
 
   <!-- Música (artistes i àlbums favorits) -->
+  <div class="divider-fade"><div class="divider-fade-inner"></div></div>
   <div class="interest-category">
     <h2>🎵 Música</h2>
     <div class="interest-grid">
@@ -277,6 +282,7 @@ permalink: /interests/
   </div>
 
   <!-- Musicals -->
+  <div class="divider-fade"><div class="divider-fade-inner"></div></div>
   <div class="interest-category">
     <h2>🎭 Musicals</h2>
     <div class="interest-grid">
@@ -320,6 +326,7 @@ permalink: /interests/
   </div>
 
   <!-- Menjar -->
+  <div class="divider-fade"><div class="divider-fade-inner"></div></div>
   <div class="interest-category">
     <h2>🍽️ Menjar</h2>
     <div class="interest-grid">

@@ -35,7 +35,7 @@ layout: default
 
 <div class="post-header mb2">
   <h1>{{ page.title }}</h1>
-  <span class="post-meta">{% include date.html date=page.date %}</span><br />
+  <span class="post-meta"><span class="post-date">{% include date.html date=page.date %}</span></span><br />
   {% if page.update_date %}
   <span class="post-meta"
     >{{ site.text.post.updated }}: {% include date.html date=page.update_date %}</span
@@ -103,4 +103,16 @@ site.show_subscribe_cta %} {% include subscribe.html %} {% endif %}
 
 <hr />
 
+{% endif %}
+
+{% if page.backprop_demo %}
+<!-- Backprop Demo Include -->
+{% include backprop_demo.html %}
+<script src="{{ "/js/backprop.js" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" defer></script>
+{% endif %}
+
+{% if page.backprop_demo_enhanced %}
+<!-- Enhanced Backprop Demo Include -->
+<link rel="stylesheet" href="{{ "/css/backprop_enhanced.css" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}">
+<script src="{{ "/js/backprop_enhanced.js" | prepend: site.baseurl }}?{{ site.time | date: "%Y%m%d%H%M" }}" defer></script>
 {% endif %}

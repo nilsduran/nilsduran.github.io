@@ -1,34 +1,36 @@
-## Development Documentation
+## Maintenance & Updates
 
-This information is only really useful for the site owner.
+To perform routine maintenance (update recent book, compress new images, update cookies), run the master script:
 
-### Build, Test, Local-Dev
-Initial modifications from the thundergolfer GitHub page have been vibe-coded with the gemini cli: `gemini` (default gemini-2.5-pro) or `gemini -m gemini-2.5-flash`
+```bash
+python update.py
+```
 
-#### Install
+This script will:
+1.  **Compress Images**: Optimize any new images in `images/`.
+2.  **Update Recent Book**: Fetch the latest "Recently Read" book from Storygraph.
+3.  **Manage Cookies**: Prompt you to update the Storygraph cookie if needed.
 
-`bundle install`
+## Storygraph Automation
 
-#### Run Locally
+The "Recent Books" section is automatically updated by a GitHub Action that runs every 6 hours.
 
-`bundle exec jekyll server`
+### Troubleshooting
+If the book on the website is not updating:
+1.  The **Storygraph Cookie** might have expired.
+2.  Run `python update.py` locally.
+3.  It will verify the cookie and guide you to update it if necessary.
+4.  The script will also attempt to update the GitHub Secret (`STORYGRAPH_COOKIE`) for you.
 
-#### Clean directory
+### Manual Override
+If automation fails completely, you can manually edit `js/recent_book.json`:
 
-`bundle exec jekyll clean`
-
-### Idees blog
-- [x] Blog que prediu quan moriràs (fent servir dades estadístiques i suposant que la medicina i esperança de vida continuarà avançant a un ritme derivada segona constant, acceleració constant). Fer servir sexe, edat (dia de naixement per més precisió), país, nivell econòmic (en categories del percentil de cobrar), hàbits alimentaris o esportius. I que l'usuari pugui anar actualitzant les seves dades per mirar de millorar la seva expectativa de vida.
-- [ ] Blog filosòfic
-
-### TODO
-- [ ] Poblar el blog
-- [ ] Afegir més interessos a la pàgina d'interessos (ciutats, països, destins per visitar, restaurants, recentment (llegit The Storygraph, vist Letterboxd, escoltat Spotify, visitat manualment), artistes)
-- [ ] Que interessos s'actualitzin automàticament (API de letterboxd)
-- [ ] Traduir la pàgina web a l'anglès
-- [ ] Millorar l'accessibilitat i l'experiència d'usuari
-- [ ] Revisar i actualitzar el contingut existent
-- [ ] Millorar l'optimització per a motors de cerca (SEO)
-- [ ] Fer servir Google Analytics o Google Tag Manager per fer un seguiment del trànsit i el comportament dels usuaris
-- [ ] Afegir més imatges i vídeos per enriquir el contingut
-- [ ] Implementar un sistema de comentaris
+```json
+{
+    "title": "Book Title",
+    "subtitle": "Author Name",
+    "stars": 4.5,
+    "imgSrc": "https://cdn.thestorygraph.com/...",
+    "link": "https://app.thestorygraph.com/books/..."
+}
+```

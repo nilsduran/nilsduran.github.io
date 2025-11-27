@@ -94,7 +94,7 @@ function updateBookHTML(data) {
 
     if (bookTitleEl) bookTitleEl.textContent = data.title;
     if (bookAuthorEl) bookAuthorEl.textContent = data.subtitle;
-    if (bookCoverEl) bookCoverEl.src = '/images/interests/recent/book.jpg';
+    if (bookCoverEl) bookCoverEl.src = data.imgSrc || '/images/interests/recent/book.jpg';
     if (bookLinkEl) bookLinkEl.href = data.link;
     if (bookStarsEl) bookStarsEl.textContent = convertRatingToStars(data.stars);
 }

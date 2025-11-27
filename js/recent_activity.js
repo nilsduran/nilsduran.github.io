@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('Recent Activity Script Loaded');
     initRecentActivity();
 });
 
@@ -40,6 +41,19 @@ function convertRatingToStars(rating) {
  */
 function loadFromCache() {
     const cache = JSON.parse(localStorage.getItem(CACHE_KEY));
+    if (!cache) return;
+
+    if (cache.movie) updateMovieHTML(cache.movie);
+    if (cache.book) updateBookHTML(cache.book);
+    if (cache.music) updateMusicHTML(cache.music);
+    if (cache.travel) updateTravelHTML(cache.travel);
+}
+
+/**
+ * Executa totes les funcions de fetch.
+ */
+function fetchAndCacheAll() {
+    fetchBook();
     fetchMovie();
     fetchMusic();
     fetchTravel();
@@ -137,7 +151,7 @@ function updateUIWithError(section) {
 // --- FETCH FUNCTIONS ---
 
 function fetchBook() {
-    fetch('/js/recent_book.json')
+    fetch('/js/recent_book.json?t=' + new Date().getTime())
         .then(response => {
             if (!response.ok) return Promise.reject('recent_book.json not found');
             return response.json();
@@ -155,7 +169,7 @@ function fetchBook() {
 }
 
 function fetchMovie() {
-    fetch('/js/recent_movie.json')
+    fetch('/js/recent_movie.json?t=' + new Date().getTime())
         .then(response => {
             if (!response.ok) return Promise.reject('recent_movie.json not found');
             return response.json();
@@ -173,7 +187,7 @@ function fetchMovie() {
 }
 
 function fetchMusic() {
-    fetch('/js/recent_music.json')
+    fetch('/js/recent_music.json?t=' + new Date().getTime())
         .then(response => {
             if (!response.ok) return Promise.reject('recent_music.json not found');
             return response.json();
@@ -191,7 +205,7 @@ function fetchMusic() {
 }
 
 function fetchTravel() {
-    fetch('/js/recent_travel.json')
+    fetch('/js/recent_travel.json?t=' + new Date().getTime())
         .then(response => {
             if (!response.ok) return Promise.reject('recent_travel.json not found');
             return response.json();

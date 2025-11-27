@@ -26,11 +26,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Paul+Russell/_/Lil+Boo+Thang" rel="noopener" target="_blank">
-<img alt="Lil Boo Thang" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/8f754ab3437d02bca2c1f09a6ddfe874.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/The+Kid+LAROI/_/STAY+(with+Justin+Bieber)" rel="noopener" target="_blank">
+<img alt="STAY (with Justin Bieber)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/5ae611e1e5653f6a0ef16f510297a310.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Lil Boo Thang</div>
-<div class="interest-subtitle recent-music-artist">Paul Russell</div>
+<div class="interest-title recent-music-title">STAY (with Justin Bieber)</div>
+<div class="interest-subtitle recent-music-artist">The Kid LAROI</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

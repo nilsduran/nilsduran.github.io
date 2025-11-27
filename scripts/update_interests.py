@@ -6,6 +6,7 @@ import sys
 import cloudscraper
 import re
 import math
+from typing import Optional, Dict, Any
 
 # Constants
 STORYGRAPH_PROFILE_URL = "https://app.thestorygraph.com/profile/nilsnoether73"
@@ -14,10 +15,10 @@ LASTFM_USER = "nilsdula"
 LASTFM_API_URL = "https://ws.audioscrobbler.com/2.0/"
 INTERESTS_FILE = "interests.md"
 
-def create_scraper():
+def create_scraper() -> cloudscraper.CloudScraper:
     return cloudscraper.create_scraper()
 
-def convert_rating_to_stars(rating):
+def convert_rating_to_stars(rating: Any) -> str:
     if isinstance(rating, str):
         return rating
     if not isinstance(rating, (int, float)):
@@ -31,7 +32,69 @@ def convert_rating_to_stars(rating):
         stars += "½"
     return stars
 
-def update_markdown(data_map):
+def generate_interest_html(key: str, data: Dict[str, Any]) -> str:
+    """Generates the HTML for a single interest item."""
+    stars = convert_rating_to_stars(data.get("stars", 0))
+    
+    # Default images for onerror
+    default_images = {
+        "recent-book": "/images/interests/recent/book.jpg",
+        "recent-movie": "/images/interests/recent/movie.jpg",
+        "recent-music": "/images/interests/recent/music.jpg",
+        "recent-travel": "/images/interests/recent/travel.jpg"
+    }
+    default_img = default_images.get(key, "")
+
+    # CSS classes mapping
+    classes = {
+        "recent-book": {
+            "img": "recent-book-cover",
+            "title": "recent-book-title",
+            "subtitle": "recent-book-author",
+            "stars": "recent-book-stars"
+        },
+        "recent-movie": {
+            "img": "recent-movie-poster",
+            "title": "recent-movie-title",
+            "subtitle": "recent-movie-director",
+            "stars": "" # Movies usually have stars in subtitle or separate, but we can handle it
+        },
+        "recent-music": {
+            "img": "recent-music-cover",
+            "title": "recent-music-title",
+            "subtitle": "recent-music-artist",
+            "stars": ""
+        },
+        "recent-travel": {
+            "img": "recent-travel-image",
+            "title": "recent-travel-title",
+            "subtitle": "recent-travel-subtitle",
+            "stars": "recent-travel-stars"
+        }
+    }
+    
+    cls = classes.get(key, {})
+    link_class = "interest-link"
+    if key == "recent-music":
+        link_class += " recent-music-link"
+
+    html = f"""
+        <a href="{data['link']}" class="{link_class}" target="_blank" rel="noopener">
+          <img src="{data['imgSrc']}" alt="{data['title']}" class="{cls.get('img', '')}" onerror="this.src='{default_img}'">
+          <div class="interest-overlay">
+            <div class="interest-title {cls.get('title', '')}">{data['title']}</div>
+            <div class="interest-subtitle {cls.get('subtitle', '')}">{data['subtitle']}</div>"""
+    
+    if cls.get("stars") and stars:
+        html += f"""
+            <div class="interest-stars {cls.get('stars', '')}">{stars}</div>"""
+            
+    html += """
+          </div>
+        </a>"""
+    return html
+
+def update_markdown(data_map: Dict[str, Optional[Dict[str, Any]]]):
     print(f"\n📝 Updating {INTERESTS_FILE}...")
     
     if not os.path.exists(INTERESTS_FILE):
@@ -62,49 +125,7 @@ def update_markdown(data_map):
             print(f"   ⚠️ Element with id '{key}' not found.")
             continue
 
-        # Create new content
-        if key == "recent-book":
-            stars = convert_rating_to_stars(data.get("stars", 0))
-            new_inner_html = f"""
-        <a href="{data['link']}" class="interest-link" target="_blank" rel="noopener">
-          <img src="{data['imgSrc']}" alt="{data['title']}" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'">
-          <div class="interest-overlay">
-            <div class="interest-title recent-book-title">{data['title']}</div>
-            <div class="interest-subtitle recent-book-author">{data['subtitle']}</div>
-            <div class="interest-stars recent-book-stars">{stars}</div>
-          </div>
-        </a>"""
-        elif key == "recent-movie":
-            new_inner_html = f"""
-        <a href="{data['link']}" class="interest-link" target="_blank" rel="noopener">
-          <img src="{data['imgSrc']}" alt="{data['title']}" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'">
-          <div class="interest-overlay">
-            <div class="interest-title recent-movie-title">{data['title']}</div>
-            <div class="interest-subtitle recent-movie-director">{data['subtitle']}</div>
-          </div>
-        </a>"""
-        elif key == "recent-music":
-            new_inner_html = f"""
-        <a href="{data['link']}" class="interest-link recent-music-link" target="_blank" rel="noopener">
-          <img src="{data['imgSrc']}" alt="{data['title']}" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'">
-          <div class="interest-overlay">
-            <div class="interest-title recent-music-title">{data['title']}</div>
-            <div class="interest-subtitle recent-music-artist">{data['subtitle']}</div>
-          </div>
-        </a>"""
-        elif key == "recent-travel":
-            stars = convert_rating_to_stars(data.get("stars", 0))
-            new_inner_html = f"""
-        <a href="{data['link']}" class="interest-link" target="_blank" rel="noopener">
-          <img src="{data['imgSrc']}" alt="{data['title']}" class="recent-travel-image" onerror="this.src='/images/interests/recent/travel.jpg'">
-          <div class="interest-overlay">
-            <div class="interest-title recent-travel-title">{data['title']}</div>
-            <div class="interest-subtitle recent-travel-subtitle">{data['subtitle']}</div>
-            <div class="interest-stars recent-travel-stars">{stars}</div>
-          </div>
-        </a>"""
-        else:
-            continue
+        new_inner_html = generate_interest_html(key, data)
 
         # Parse new inner HTML
         new_tag = BeautifulSoup(new_inner_html.strip(), "html.parser")
@@ -123,7 +144,7 @@ def update_markdown(data_map):
     print("✅ Markdown updated.")
 
 # --- STORYGRAPH (BOOKS) ---
-def fetch_book(scraper):
+def fetch_book(scraper: cloudscraper.CloudScraper) -> Optional[Dict[str, Any]]:
     print("\n📚 Fetching Storygraph...")
     try:
         # Cookie handling
@@ -206,7 +227,7 @@ def fetch_book(scraper):
         return None
 
 # --- LETTERBOXD (MOVIES) ---
-def fetch_movie(scraper):
+def fetch_movie(scraper: cloudscraper.CloudScraper) -> Optional[Dict[str, Any]]:
     print("\n🎬 Fetching Letterboxd...")
     try:
         response = scraper.get(LETTERBOXD_RSS_URL)
@@ -239,14 +260,34 @@ def fetch_movie(scraper):
         title = full_title
         stars_str = ""
         
+        # Format: "Title, Year - Rating" or "Title, Year"
+        # We want: "Title (Year)"
+        
         if " - " in full_title:
             parts = full_title.rsplit(" - ", 1)
-            title_part = parts[0]
-            stars_part = parts[1]
+            title_part = parts[0] # "Title, Year"
+            stars_part = parts[1] # "Rating"
             
             if '★' in stars_part or '½' in stars_part:
-                title = title_part
                 stars_str = stars_part
+                
+                # Fix year format
+                if ", " in title_part:
+                    t_parts = title_part.rsplit(", ", 1)
+                    if t_parts[1].isdigit() and len(t_parts[1]) == 4:
+                        title = f"{t_parts[0]} ({t_parts[1]})"
+                    else:
+                        title = title_part
+                else:
+                    title = title_part
+        else:
+            # Just "Title, Year"
+            if ", " in full_title:
+                t_parts = full_title.rsplit(", ", 1)
+                if t_parts[1].isdigit() and len(t_parts[1]) == 4:
+                    title = f"{t_parts[0]} ({t_parts[1]})"
+                else:
+                    title = full_title
         
         return {
             "title": title,
@@ -261,7 +302,7 @@ def fetch_movie(scraper):
         return None
 
 # --- LAST.FM (MUSIC) ---
-def fetch_music(scraper):
+def fetch_music(scraper: cloudscraper.CloudScraper) -> Optional[Dict[str, Any]]:
     print("\n🎵 Fetching Last.fm...")
     api_key = os.environ.get("LASTFM_API_KEY")
     if not api_key:
@@ -310,7 +351,7 @@ def fetch_music(scraper):
         return None
 
 # --- TRAVEL ---
-def fetch_travel():
+def fetch_travel() -> Optional[Dict[str, Any]]:
     print("\n🌍 Fetching Travel...")
     try:
         json_path = os.path.join(os.path.dirname(__file__), "..", "js", "recent_travel.json")

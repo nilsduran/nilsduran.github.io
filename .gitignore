@@ -22,3 +22,4 @@ vendor/
 **/media
 
 **/__pycache__
+storygraph_cookie.txt

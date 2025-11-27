@@ -40,67 +40,6 @@ function convertRatingToStars(rating) {
  */
 function loadFromCache() {
     const cache = JSON.parse(localStorage.getItem(CACHE_KEY));
-    if (!cache) return;
-
-    if (cache.movie) updateMovieHTML(cache.movie);
-    if (cache.book) updateBookHTML(cache.book);
-    if (cache.music) updateMusicHTML(cache.music);
-    if (cache.travel) updateTravelHTML(cache.travel);
-document.addEventListener('DOMContentLoaded', function() {
-    initRecentActivity();
-});
-
-const CACHE_KEY = 'recentActivityCache';
-
-function initRecentActivity() {
-    // Comentem loadFromCache() temporalment per forçar sempre les APIs
-    // loadFromCache();
-    fetchAndCacheAll();
-}
-
-/**
- * Neteja la caché per forçar una actualització completa
- */
-function clearCache() {
-    localStorage.removeItem(CACHE_KEY);
-    console.log('Cache cleared - forcing fresh data fetch');
-    fetchAndCacheAll();
-}
-
-/**
- * Converteix un número (ex: 4.5) a estrelles visuals (ex: ★★★★½)
- */
-function convertRatingToStars(rating) {
-    if (typeof rating === 'string') return rating; // Si ja és string, retorna tal com està
-    if (typeof rating !== 'number') return ''; // Si no és número, retorna buit
-    
-    const fullStars = Math.floor(rating);
-    const hasHalfStar = rating % 1 !== 0;
-    
-    let stars = '★'.repeat(fullStars);
-    if (hasHalfStar) stars += '½';
-    
-    return stars;
-}
-
-/**
- * Carrega les dades des del localStorage i les mostra a la pàgina.
- */
-function loadFromCache() {
-    const cache = JSON.parse(localStorage.getItem(CACHE_KEY));
-    if (!cache) return;
-
-    if (cache.movie) updateMovieHTML(cache.movie);
-    if (cache.book) updateBookHTML(cache.book);
-    if (cache.music) updateMusicHTML(cache.music);
-    if (cache.travel) updateTravelHTML(cache.travel);
-}
-
-/**
- * Executa totes les funcions de fetch.
- */
-function fetchAndCacheAll() {
-    fetchBook();
     fetchMovie();
     fetchMusic();
     fetchTravel();

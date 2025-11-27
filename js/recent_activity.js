@@ -46,16 +46,64 @@ function loadFromCache() {
     if (cache.book) updateBookHTML(cache.book);
     if (cache.music) updateMusicHTML(cache.music);
     if (cache.travel) updateTravelHTML(cache.travel);
+document.addEventListener('DOMContentLoaded', function() {
+    initRecentActivity();
+});
+
+const CACHE_KEY = 'recentActivityCache';
+
+function initRecentActivity() {
+    // Comentem loadFromCache() temporalment per forçar sempre les APIs
+    // loadFromCache();
+    fetchAndCacheAll();
+}
+
+/**
+ * Neteja la caché per forçar una actualització completa
+ */
+function clearCache() {
+    localStorage.removeItem(CACHE_KEY);
+    console.log('Cache cleared - forcing fresh data fetch');
+    fetchAndCacheAll();
+}
+
+/**
+ * Converteix un número (ex: 4.5) a estrelles visuals (ex: ★★★★½)
+ */
+function convertRatingToStars(rating) {
+    if (typeof rating === 'string') return rating; // Si ja és string, retorna tal com està
+    if (typeof rating !== 'number') return ''; // Si no és número, retorna buit
+    
+    const fullStars = Math.floor(rating);
+    const hasHalfStar = rating % 1 !== 0;
+    
+    let stars = '★'.repeat(fullStars);
+    if (hasHalfStar) stars += '½';
+    
+    return stars;
+}
+
+/**
+ * Carrega les dades des del localStorage i les mostra a la pàgina.
+ */
+function loadFromCache() {
+    const cache = JSON.parse(localStorage.getItem(CACHE_KEY));
+    if (!cache) return;
+
+    if (cache.movie) updateMovieHTML(cache.movie);
+    if (cache.book) updateBookHTML(cache.book);
+    if (cache.music) updateMusicHTML(cache.music);
+    if (cache.travel) updateTravelHTML(cache.travel);
 }
 
 /**
  * Executa totes les funcions de fetch.
  */
 function fetchAndCacheAll() {
-    fetchBook();        // Manual - llegeix JSON local
-    fetchTravel();      // Manual - llegeix JSON local
-    fetchLetterboxd();  // Automàtic - API en temps real
-    fetchLastFm();      // Automàtic - API en temps real
+    fetchBook();
+    fetchMovie();
+    fetchMusic();
+    fetchTravel();
 }
 
 /**
@@ -152,167 +200,71 @@ function updateUIWithError(section) {
 function fetchBook() {
     fetch('/js/recent_book.json')
         .then(response => {
-            if (!response.ok) {
-                return Promise.reject('El fitxer recent_book.json no s\'ha trobat.');
-            }
+            if (!response.ok) return Promise.reject('recent_book.json not found');
             return response.json();
         })
-        .then(bookData => {
-            if (bookData) {
-                updateBookHTML(bookData);
-                saveToCache('book', bookData);
+        .then(data => {
+            if (data) {
+                updateBookHTML(data);
+                saveToCache('book', data);
             }
         })
         .catch(error => {
-            console.error('Error fetching book data:', error);
+            console.error('Error fetching book:', error);
             updateUIWithError('book');
+        });
+}
+
+function fetchMovie() {
+    fetch('/js/recent_movie.json')
+        .then(response => {
+            if (!response.ok) return Promise.reject('recent_movie.json not found');
+            return response.json();
+        })
+        .then(data => {
+            if (data) {
+                updateMovieHTML(data);
+                saveToCache('movie', data);
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching movie:', error);
+            updateUIWithError('movie');
+        });
+}
+
+function fetchMusic() {
+    fetch('/js/recent_music.json')
+        .then(response => {
+            if (!response.ok) return Promise.reject('recent_music.json not found');
+            return response.json();
+        })
+        .then(data => {
+            if (data) {
+                updateMusicHTML(data);
+                saveToCache('music', data);
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching music:', error);
+            updateUIWithError('music');
         });
 }
 
 function fetchTravel() {
     fetch('/js/recent_travel.json')
         .then(response => {
-            if (!response.ok) {
-                return Promise.reject('El fitxer recent_travel.json no s\'ha trobat.');
-            }
+            if (!response.ok) return Promise.reject('recent_travel.json not found');
             return response.json();
         })
-        .then(travelData => {
-            if (travelData) {
-                updateTravelHTML(travelData);
-                saveToCache('travel', travelData);
+        .then(data => {
+            if (data) {
+                updateTravelHTML(data);
+                saveToCache('travel', data);
             }
         })
         .catch(error => {
-            console.error('Error fetching travel data:', error);
+            console.error('Error fetching travel:', error);
             updateUIWithError('travel');
-        });
-}
-
-function fetchLetterboxd() {
-    const letterboxdUrl = 'https://letterboxd.com/tique_011/rss/';
-    const proxyUrl = 'https://api.allorigins.win/get?url=';
-
-    console.log('🎬 Fetching Letterboxd data from:', letterboxdUrl);
-
-    fetch(proxyUrl + encodeURIComponent(letterboxdUrl))
-        .then(response => {
-            console.log('🎬 Letterboxd response status:', response.status);
-            return response.ok ? response.json() : Promise.reject('Error fetching Letterboxd via proxy');
-        })
-        .then(proxyData => {
-            console.log('🎬 Letterboxd proxy response:', proxyData);
-            
-            let rssContent = proxyData.contents;
-            
-            // Comprovar si les dades estan en base64
-            if (rssContent && rssContent.startsWith('data:application/rss+xml;charset=utf-8;base64,')) {
-                console.log('🎬 Detected base64 encoded RSS, decoding...');
-                const base64Data = rssContent.replace('data:application/rss+xml;charset=utf-8;base64,', '');
-                
-                // Descodificar base64 amb suport UTF-8 adequat
-                try {
-                    const binaryString = atob(base64Data);
-                    const bytes = new Uint8Array(binaryString.length);
-                    for (let i = 0; i < binaryString.length; i++) {
-                        bytes[i] = binaryString.charCodeAt(i);
-                    }
-                    rssContent = new TextDecoder('utf-8').decode(bytes);
-                } catch (error) {
-                    console.warn('🎬 UTF-8 decode failed, using simple atob:', error);
-                    rssContent = atob(base64Data);
-                }
-                
-                console.log('🎬 Decoded RSS content (first 500 chars):', rssContent.substring(0, 500));
-            } else if (!rssContent) {
-                return Promise.reject('Proxy returned empty contents for Letterboxd');
-            }
-            
-            const data = new window.DOMParser().parseFromString(rssContent, "text/xml");
-            const items = data.querySelectorAll("item");
-            console.log('🎬 Found', items.length, 'items in RSS');
-            
-            const item = data.querySelector("item");
-            if (item) {
-                const titleWithDetails = item.querySelector("title").textContent;
-                const link = item.querySelector("link").textContent;
-                const description = item.querySelector("description").textContent;
-                
-                console.log('🎬 Raw title:', titleWithDetails);
-                console.log('🎬 Raw description:', description);
-                
-                const doc = new DOMParser().parseFromString(description, 'text/html');
-                const imgElement = doc.querySelector('img');
-                const imgSrc = imgElement ? imgElement.src.replace(/-\d+-0-\d+-crop/, '-500-0-750-crop') : '';
-                
-                // Extreure títol i estrelles
-                const titleParts = titleWithDetails.split(' - ');
-                let movieTitle = titleParts[0]; // Títol complet amb any entre parèntesis
-                let stars = '';
-                
-                // Neteja caràcters malmesos al títol també
-                movieTitle = movieTitle.replace(/&#039;/g, "'").replace(/&amp;/g, "&").replace(/&quot;/g, '"');
-                
-                // Convertir format "Title, Year" a "Title (Year)"
-                const yearMatch = movieTitle.match(/^(.+), (\d{4})$/);
-                if (yearMatch) {
-                    movieTitle = `${yearMatch[1]} (${yearMatch[2]})`;
-                }
-                
-                if (titleParts.length > 1) {
-                    // Les estrelles estan després del guió
-                    stars = titleParts[1];
-                    // Neteja caràcters estranys i converteix a estrelles
-                    stars = stars.replace(/[âââ]/g, '★').replace(/â/g, '★');
-                    console.log('🎬 Extracted stars:', stars);
-                }
-                
-                // El títol ja inclou l'any entre parèntesis
-                // El subtítol són les estrelles
-                const subtitle = stars || '';
-
-                const movieData = { title: movieTitle, subtitle: subtitle, stars: '', imgSrc, link };
-                console.log('🎬 Final movie data:', movieData);
-                updateMovieHTML(movieData);
-                saveToCache('movie', movieData);
-            } else {
-                console.log('🎬 No items found in Letterboxd RSS');
-            }
-        })
-        .catch(error => {
-            console.error('🎬 Error fetching Letterboxd data:', error);
-            updateUIWithError('movie');
-        });
-}
-
-function fetchLastFm() {
-    const apiKey = '1c59d3b2e1bdf619a62da8b888762fa7';
-    const username = 'nilsdula';
-    const lastFmUrl = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json&limit=1`;
-    const proxyUrl = 'https://api.allorigins.win/get?url=';
-
-    fetch(proxyUrl + encodeURIComponent(lastFmUrl))
-        .then(response => response.ok ? response.json() : Promise.reject('Error fetching Last.fm via proxy'))
-        .then(proxyData => {
-            if (!proxyData.contents) return Promise.reject('Proxy returned empty contents for Last.fm');
-            
-            const data = JSON.parse(proxyData.contents);
-            if (data.error) return Promise.reject(`Last.fm API Error: ${data.message}`);
-
-            const track = data?.recenttracks?.track?.[0];
-            if (track) {
-                const trackName = track.name;
-                const artistName = track.artist['#text'];
-                const albumArt = (track.image.find(img => img.size === 'extralarge') || {})['#text'] || '';
-                const trackUrl = track.url;
-
-                const musicData = { title: trackName, subtitle: artistName, imgSrc: albumArt, link: trackUrl };
-                updateMusicHTML(musicData);
-                saveToCache('music', musicData);
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching Last.fm data:', error);
-            updateUIWithError('music');
         });
 }

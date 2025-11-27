@@ -82,7 +82,7 @@ def update_storygraph_cookie():
     # 3. Verify
     verify = input("\nDo you want to verify the new cookie locally? (y/n): ").strip().lower()
     if verify == 'y':
-        run_command("python scripts/update_books.py", "Verifying Cookie")
+        run_command("python scripts/update_interests.py", "Verifying Cookie")
 
 def print_manual_instructions():
     print("\n👉 MANUAL ACTION REQUIRED:")

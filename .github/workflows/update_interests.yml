@@ -1,4 +1,4 @@
-name: Update Recent Books
+name: Update Recent Interests
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # Allow manual trigger
 
 jobs:
-  update-books:
+  update-interests:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -26,11 +26,14 @@ jobs:
           pip install requests beautifulsoup4 cloudscraper
 
       - name: Run update script
-        run: python scripts/update_books.py
+        env:
+          STORYGRAPH_COOKIE: ${{ secrets.STORYGRAPH_COOKIE }}
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+        run: python scripts/update_interests.py
 
       - name: Commit and push changes
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add js/recent_book.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update recent book from Storygraph" && git push)
+          git add js/recent_book.json js/recent_movie.json js/recent_music.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update recent interests" && git push)

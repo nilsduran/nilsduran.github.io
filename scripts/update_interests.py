@@ -92,6 +92,17 @@ def update_markdown(data_map):
             <div class="interest-subtitle recent-music-artist">{data['subtitle']}</div>
           </div>
         </a>"""
+        elif key == "recent-travel":
+            stars = convert_rating_to_stars(data.get("stars", 0))
+            new_inner_html = f"""
+        <a href="{data['link']}" class="interest-link" target="_blank" rel="noopener">
+          <img src="{data['imgSrc']}" alt="{data['title']}" class="recent-travel-image" onerror="this.src='/images/interests/recent/travel.jpg'">
+          <div class="interest-overlay">
+            <div class="interest-title recent-travel-title">{data['title']}</div>
+            <div class="interest-subtitle recent-travel-subtitle">{data['subtitle']}</div>
+            <div class="interest-stars recent-travel-stars">{stars}</div>
+          </div>
+        </a>"""
         else:
             continue
 
@@ -298,13 +309,30 @@ def fetch_music(scraper):
         print(f"   ❌ Error fetching music: {e}")
         return None
 
+# --- TRAVEL ---
+def fetch_travel():
+    print("\n🌍 Fetching Travel...")
+    try:
+        json_path = os.path.join(os.path.dirname(__file__), "..", "js", "recent_travel.json")
+        if not os.path.exists(json_path):
+             print(f"   ❌ {json_path} not found.")
+             return None
+        
+        with open(json_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            return data
+    except Exception as e:
+        print(f"   ❌ Error reading travel json: {e}")
+        return None
+
 def main():
     scraper = create_scraper()
     
     data_map = {
         "recent-book": fetch_book(scraper),
         "recent-movie": fetch_movie(scraper),
-        "recent-music": fetch_music(scraper)
+        "recent-music": fetch_music(scraper),
+        "recent-travel": fetch_travel()
     }
     
     update_markdown(data_map)

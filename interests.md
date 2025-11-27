@@ -34,16 +34,14 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Últim país visitat -->
-<div class="interest-item" id="recent-travel">
-<a class="interest-link" href="#" rel="noopener" target="_blank">
-<img alt="Viatge recent" class="recent-travel-image" onerror="this.src='/images/interests/recent/travel.jpg'" src="/images/interests/recent/travel.jpg"/>
+<div class="interest-item" id="recent-travel"><a class="interest-link" href="#" rel="noopener" target="_blank">
+<img alt="Sud-àfrica" class="recent-travel-image" onerror="this.src='/images/interests/recent/travel.jpg'" src="/images/interests/recent/travel.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-travel-title">Carregant...</div>
-<div class="interest-subtitle recent-travel-subtitle">Viatge recent</div>
-<div class="interest-stars recent-travel-stars"></div>
+<div class="interest-title recent-travel-title">Sud-àfrica</div>
+<div class="interest-subtitle recent-travel-subtitle">Kruger, Cape Town • Agost 2025</div>
+<div class="interest-stars recent-travel-stars">★★★★★</div>
 </div>
-</a>
-</div>
+</a></div>
 </div>
 </div>
 <!-- Pel·lícules -->

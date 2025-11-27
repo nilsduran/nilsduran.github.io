@@ -29,7 +29,7 @@ jobs:
         env:
           STORYGRAPH_COOKIE: ${{ secrets.STORYGRAPH_COOKIE }}
           LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
-        run: python update.py
+        run: python scripts/update.py
 
       - name: Commit and push changes
         run: |

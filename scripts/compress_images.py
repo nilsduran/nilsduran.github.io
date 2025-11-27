@@ -37,7 +37,7 @@ def compress_images(directory):
                             print(f"  New size: {compressed_size / 1024:.2f} KB")
                             print(f"  Reduction: {reduction:.2f}%")
                         else:
-                            print(f"Skipped {file_path} (reduction {reduction:.2f}% was less than 2%)")
+                            print(f"Skipped {file_path} (reduction {reduction:.2f}% was less than 10%)")
 
                 except Exception as e:
                     print(f"Error processing {file_path}: {e}")

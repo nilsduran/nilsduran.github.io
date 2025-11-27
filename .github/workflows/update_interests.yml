@@ -23,13 +23,13 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 cloudscraper lxml
+          pip install requests beautifulsoup4 cloudscraper lxml Pillow
 
       - name: Run update script
         env:
           STORYGRAPH_COOKIE: ${{ secrets.STORYGRAPH_COOKIE }}
           LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
-        run: python scripts/update_interests.py
+        run: python update.py
 
       - name: Commit and push changes
         run: |

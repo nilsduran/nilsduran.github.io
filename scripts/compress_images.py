@@ -27,7 +27,7 @@ def compress_images(directory):
                         else:
                             reduction = 0 # No reduction possible if original size is 0
 
-                        if reduction >= 5.0: # Only update if reduction is at least 2%
+                        if reduction >= 10.0: # Only update if reduction is at least 10%
                             output_buffer.seek(0)
                             with open(file_path, 'wb') as f:
                                 f.write(output_buffer.read())
@@ -41,3 +41,6 @@ def compress_images(directory):
 
                 except Exception as e:
                     print(f"Error processing {file_path}: {e}")
+
+if __name__ == "__main__":
+    compress_images(".")

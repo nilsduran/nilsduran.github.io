@@ -92,12 +92,22 @@ def print_manual_instructions():
     print("Value: (Paste your cookie)")
 
 def main():
+    if len(sys.argv) > 1 and sys.argv[1] == "--cookie":
+        update_storygraph_cookie()
+        return
+
     print("========================================")
-    print("   Nils Duran Portfolio - Update Tool   ")
+    print("   Nils Duran Portfolio - Auto Update   ")
     print("========================================")
     
+    # 1. Update Interests
+    if os.path.exists("scripts/update_interests.py"):
+        run_command("python scripts/update_interests.py", "Updating Interests")
+    else:
+        print("❌ scripts/update_interests.py not found.")
+
+    # 2. Compress Images
     update_images()
-    update_storygraph_cookie()
     
     print("\n✨ Update process finished.")
 

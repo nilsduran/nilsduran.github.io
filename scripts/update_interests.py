@@ -4,30 +4,112 @@ import json
 import os
 import sys
 import cloudscraper
+import re
+import math
 
 # Constants
 STORYGRAPH_PROFILE_URL = "https://app.thestorygraph.com/profile/nilsnoether73"
 LETTERBOXD_RSS_URL = "https://letterboxd.com/tique_011/rss/"
 LASTFM_USER = "nilsdula"
 LASTFM_API_URL = "https://ws.audioscrobbler.com/2.0/"
-
-# Output Files
-BOOK_FILE = "js/recent_book.json"
-MOVIE_FILE = "js/recent_movie.json"
-MUSIC_FILE = "js/recent_music.json"
+INTERESTS_FILE = "interests.md"
 
 def create_scraper():
     return cloudscraper.create_scraper()
 
-def save_json(filepath, data):
-    if not data:
-        print(f"⚠️ No data to save for {filepath}")
-        return
+def convert_rating_to_stars(rating):
+    if isinstance(rating, str):
+        return rating
+    if not isinstance(rating, (int, float)):
+        return ""
     
-    os.makedirs(os.path.dirname(filepath), exist_ok=True)
-    with open(filepath, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=4, ensure_ascii=False)
-    print(f"✅ Saved {filepath}")
+    full_stars = math.floor(rating)
+    has_half_star = (rating % 1) != 0
+    
+    stars = "★" * full_stars
+    if has_half_star:
+        stars += "½"
+    return stars
+
+def update_markdown(data_map):
+    print(f"\n📝 Updating {INTERESTS_FILE}...")
+    
+    if not os.path.exists(INTERESTS_FILE):
+        print(f"   ❌ {INTERESTS_FILE} not found.")
+        return
+
+    with open(INTERESTS_FILE, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    # Split frontmatter
+    frontmatter = ""
+    body = content
+    if content.startswith("---"):
+        parts = content.split("---", 2)
+        if len(parts) >= 3:
+            frontmatter = parts[1]
+            body = parts[2]
+
+    soup = BeautifulSoup(body, "html.parser")
+
+    for key, data in data_map.items():
+        if not data:
+            continue
+            
+        print(f"   Updating {key}...")
+        element = soup.find(id=key)
+        if not element:
+            print(f"   ⚠️ Element with id '{key}' not found.")
+            continue
+
+        # Create new content
+        if key == "recent-book":
+            stars = convert_rating_to_stars(data.get("stars", 0))
+            new_inner_html = f"""
+        <a href="{data['link']}" class="interest-link" target="_blank" rel="noopener">
+          <img src="{data['imgSrc']}" alt="{data['title']}" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'">
+          <div class="interest-overlay">
+            <div class="interest-title recent-book-title">{data['title']}</div>
+            <div class="interest-subtitle recent-book-author">{data['subtitle']}</div>
+            <div class="interest-stars recent-book-stars">{stars}</div>
+          </div>
+        </a>"""
+        elif key == "recent-movie":
+            new_inner_html = f"""
+        <a href="{data['link']}" class="interest-link" target="_blank" rel="noopener">
+          <img src="{data['imgSrc']}" alt="{data['title']}" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'">
+          <div class="interest-overlay">
+            <div class="interest-title recent-movie-title">{data['title']}</div>
+            <div class="interest-subtitle recent-movie-director">{data['subtitle']}</div>
+          </div>
+        </a>"""
+        elif key == "recent-music":
+            new_inner_html = f"""
+        <a href="{data['link']}" class="interest-link recent-music-link" target="_blank" rel="noopener">
+          <img src="{data['imgSrc']}" alt="{data['title']}" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'">
+          <div class="interest-overlay">
+            <div class="interest-title recent-music-title">{data['title']}</div>
+            <div class="interest-subtitle recent-music-artist">{data['subtitle']}</div>
+          </div>
+        </a>"""
+        else:
+            continue
+
+        # Parse new inner HTML
+        new_tag = BeautifulSoup(new_inner_html.strip(), "html.parser")
+        
+        # Clear existing content and append new
+        element.clear()
+        # Append children of new_tag to element
+        for child in new_tag.contents:
+             element.append(child)
+
+    # Write back
+    with open(INTERESTS_FILE, "w", encoding="utf-8") as f:
+        if frontmatter:
+            f.write(f"---{frontmatter}---")
+        f.write(str(soup))
+    print("✅ Markdown updated.")
 
 # --- STORYGRAPH (BOOKS) ---
 def fetch_book(scraper):
@@ -140,21 +222,9 @@ def fetch_movie(scraper):
         img = desc_soup.find("img")
         img_src = img["src"] if img else ""
         
-        # Resize image to be higher quality (Letterboxd RSS images are small)
-        # Convert ...-0-150-0-225-crop... to ...-0-500-0-750-crop...
-        # Or just generic replacement if pattern matches
         if "-crop" in img_src:
-             # Heuristic replacement based on observed URL patterns
-             # Often: https://a.ltrbxd.com/resized/.../poster-123-0-150-0-225-crop.jpg
-             # We want larger. Let's try to replace the dimensions.
-             # Actually, the JS used: replace(/-\d+-0-\d+-crop/, '-500-0-750-crop')
-             import re
              img_src = re.sub(r'-\d+-0-\d+-crop', '-500-0-750-crop', img_src)
 
-        # Parse Title and Rating from "Title (Year) - Rating"
-        # Example: "Dune: Part Two (2024) - ★★★★★"
-        # or "Movie (Year)" if no rating
-        
         title = full_title
         stars_str = ""
         
@@ -163,17 +233,14 @@ def fetch_movie(scraper):
             title_part = parts[0]
             stars_part = parts[1]
             
-            # Check if second part is actually stars (contains ★ or ½)
             if '★' in stars_part or '½' in stars_part:
                 title = title_part
                 stars_str = stars_part
         
-        # Clean title HTML entities just in case (BS4 handles most, but good to be safe)
-        
         return {
             "title": title,
-            "subtitle": stars_str, # Using stars as subtitle for movies as per design
-            "stars": stars_str,    # Also keeping raw stars if needed
+            "subtitle": stars_str,
+            "stars": stars_str,
             "imgSrc": img_src,
             "link": link
         }
@@ -215,7 +282,7 @@ def fetch_music(scraper):
         # Get largest image
         images = track.get("image", [])
         img_src = ""
-        for img in reversed(images): # Start from largest (usually at end)
+        for img in reversed(images):
             if img.get("#text"):
                 img_src = img["#text"]
                 break
@@ -234,17 +301,13 @@ def fetch_music(scraper):
 def main():
     scraper = create_scraper()
     
-    # 1. Books
-    book_data = fetch_book(scraper)
-    save_json(BOOK_FILE, book_data)
+    data_map = {
+        "recent-book": fetch_book(scraper),
+        "recent-movie": fetch_movie(scraper),
+        "recent-music": fetch_music(scraper)
+    }
     
-    # 2. Movies
-    movie_data = fetch_movie(scraper)
-    save_json(MOVIE_FILE, movie_data)
-    
-    # 3. Music
-    music_data = fetch_music(scraper)
-    save_json(MUSIC_FILE, music_data)
+    update_markdown(data_map)
 
 if __name__ == "__main__":
     main()

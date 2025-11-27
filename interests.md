@@ -44,6 +44,8 @@ permalink: /interests/
 </div>
 </a>
 </div>
+</div>
+</div>
 <!-- Pel·lícules -->
 <div class="divider-fade"><div class="divider-fade-inner"></div></div>
 <div class="interest-category">
@@ -473,4 +475,4 @@ permalink: /interests/
 </div>
 </div>
 </div>
-</div></div></div>
+</div>

@@ -26,11 +26,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/The+Kid+LAROI/_/STAY+(with+Justin+Bieber)" rel="noopener" target="_blank">
-<img alt="STAY (with Justin Bieber)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/5ae611e1e5653f6a0ef16f510297a310.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Kevin+Olusola/_/Hallelujah+(I+Don%27t+Think+About+You)" rel="noopener" target="_blank">
+<img alt="Hallelujah (I Don't Think About You)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/834c2f83fd3f8b73e91d086d91276da1.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">STAY (with Justin Bieber)</div>
-<div class="interest-subtitle recent-music-artist">The Kid LAROI</div>
+<div class="interest-title recent-music-title">Hallelujah (I Don't Think About You)</div>
+<div class="interest-subtitle recent-music-artist">Kevin Olusola</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

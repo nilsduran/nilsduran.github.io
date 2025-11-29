@@ -26,11 +26,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Mark+Ambor/_/Belong+Together" rel="noopener" target="_blank">
-<img alt="Belong Together" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/427bf7502df62089b6fcdac6339e656d.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Sabrina+Carpenter/_/When+Did+You+Get+Hot%3F" rel="noopener" target="_blank">
+<img alt="When Did You Get Hot?" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/6bbc8416c1f1c3a25054d4ae3b5fbb35.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Belong Together</div>
-<div class="interest-subtitle recent-music-artist">Mark Ambor</div>
+<div class="interest-title recent-music-title">When Did You Get Hot?</div>
+<div class="interest-subtitle recent-music-artist">Sabrina Carpenter</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

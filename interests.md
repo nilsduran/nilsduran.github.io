@@ -14,7 +14,6 @@ permalink: /interests/
 <div class="interest-overlay">
 <div class="interest-title recent-book-title">Project Hail Mary</div>
 <div class="interest-subtitle recent-book-author">Andy Weir</div>
-<div class="interest-stars recent-book-stars">★★★★★</div>
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
@@ -26,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Sabrina+Carpenter/_/When+Did+You+Get+Hot%3F" rel="noopener" target="_blank">
-<img alt="When Did You Get Hot?" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/6bbc8416c1f1c3a25054d4ae3b5fbb35.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Sting/_/What+Could+Have+Been+(from+the+series+Arcane+League+of+Legends)" rel="noopener" target="_blank">
+<img alt="What Could Have Been (from the series Arcane League of Legends)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/c03af9e73de2d20ee541d4c116554202.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">When Did You Get Hot?</div>
-<div class="interest-subtitle recent-music-artist">Sabrina Carpenter</div>
+<div class="interest-title recent-music-title">What Could Have Been (from the series Arcane League of Legends)</div>
+<div class="interest-subtitle recent-music-artist">Sting</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

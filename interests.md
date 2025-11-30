@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Sting/_/What+Could+Have+Been+(from+the+series+Arcane+League+of+Legends)" rel="noopener" target="_blank">
-<img alt="What Could Have Been (from the series Arcane League of Legends)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/c03af9e73de2d20ee541d4c116554202.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Paramore/_/Hard+Times" rel="noopener" target="_blank">
+<img alt="Hard Times" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/fc4c4f4eb4fa6e9215ecb6705cbb72de.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">What Could Have Been (from the series Arcane League of Legends)</div>
-<div class="interest-subtitle recent-music-artist">Sting</div>
+<div class="interest-title recent-music-title">Hard Times</div>
+<div class="interest-subtitle recent-music-artist">Paramore</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

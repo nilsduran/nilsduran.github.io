@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-big-short/" rel="noopener" target="_blank">
-<img alt="The Big Short (2015)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/2/4/6/0/1/3/246013-the-big-short-0-500-0-750-crop.jpg?v=53fc881989"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-wild-robot/" rel="noopener" target="_blank">
+<img alt="The Wild Robot (2024)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/0/7/1/1/9/6/1071196-the-wild-robot-0-500-0-750-crop.jpg?v=a70bdbaea0"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">The Big Short (2015)</div>
-<div class="interest-subtitle recent-movie-director">★★★★½</div>
+<div class="interest-title recent-movie-title">The Wild Robot (2024)</div>
+<div class="interest-subtitle recent-movie-director">★★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

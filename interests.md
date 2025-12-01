@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Paramore/_/Hard+Times" rel="noopener" target="_blank">
-<img alt="Hard Times" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/fc4c4f4eb4fa6e9215ecb6705cbb72de.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/S+U+R+V+I+V+E/_/DIRGE" rel="noopener" target="_blank">
+<img alt="DIRGE" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/6b7069ca2bd341208bdf03cbb069ce6a.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Hard Times</div>
-<div class="interest-subtitle recent-music-artist">Paramore</div>
+<div class="interest-title recent-music-title">DIRGE</div>
+<div class="interest-subtitle recent-music-artist">S U R V I V E</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

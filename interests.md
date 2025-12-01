@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/S+U+R+V+I+V+E/_/DIRGE" rel="noopener" target="_blank">
-<img alt="DIRGE" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/6b7069ca2bd341208bdf03cbb069ce6a.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Andrea+Datzman/_/Outside+Intro" rel="noopener" target="_blank">
+<img alt="Outside Intro" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/cfeea565ad0bafc1c0659e2f159164a2.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">DIRGE</div>
-<div class="interest-subtitle recent-music-artist">S U R V I V E</div>
+<div class="interest-title recent-music-title">Outside Intro</div>
+<div class="interest-subtitle recent-music-artist">Andrea Datzman</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/%E5%B9%B3%E9%87%8E%E7%BE%A9%E4%B9%85/_/Low+of+Solipsism+%E2%85%A1" rel="noopener" target="_blank">
-<img alt="Low of Solipsism Ⅱ" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/5171e08816f4d1940cf9c0f593c063e2.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Justin+Hurwitz/_/Planetarium" rel="noopener" target="_blank">
+<img alt="Planetarium" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/8f6de0210d232cf4ebab0648737781d0.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Low of Solipsism Ⅱ</div>
-<div class="interest-subtitle recent-music-artist">平野義久</div>
+<div class="interest-title recent-music-title">Planetarium</div>
+<div class="interest-subtitle recent-music-artist">Justin Hurwitz</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Justin+Hurwitz/_/Planetarium" rel="noopener" target="_blank">
-<img alt="Planetarium" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/8f6de0210d232cf4ebab0648737781d0.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Cristobal+Tapia+de+Veer/_/Renaissance+(Main+Title+Theme)+-+from+%22The+White+Lotus:+Season+2%22" rel="noopener" target="_blank">
+<img 2""="" alt="Renaissance (Main Title Theme) - from " class="recent-music-cover" lotus:="" onerror="this.src='/images/interests/recent/music.jpg'" season="" src="https://lastfm.freetls.fastly.net/i/u/300x300/a20cbc2b421d03a84ab2bcb01fa643cd.jpg" the="" white=""/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Planetarium</div>
-<div class="interest-subtitle recent-music-artist">Justin Hurwitz</div>
+<div class="interest-title recent-music-title">Renaissance (Main Title Theme) - from "The White Lotus: Season 2"</div>
+<div class="interest-subtitle recent-music-artist">Cristobal Tapia de Veer</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

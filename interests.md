@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Taylor+Swift/_/the+1" rel="noopener" target="_blank">
-<img alt="the 1" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/7283dedc810f971388eba0b710d90020.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Red+Hot+Chili+Peppers/_/Under+the+Bridge" rel="noopener" target="_blank">
+<img alt="Under the Bridge" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/426f10a255a07002b3702e4bc275ec44.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">the 1</div>
-<div class="interest-subtitle recent-music-artist">Taylor Swift</div>
+<div class="interest-title recent-music-title">Under the Bridge</div>
+<div class="interest-subtitle recent-music-artist">Red Hot Chili Peppers</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

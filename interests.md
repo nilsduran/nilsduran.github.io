@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/La+Ludwig+Band/_/Tranquil%C2%B7la,+mama" rel="noopener" target="_blank">
-<img alt="Tranquil·la, mama" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Arcane/_/Blood+Sweat+&amp;+Tears+(from+the+series+Arcane+League+of+Legends)" rel="noopener" target="_blank">
+<img alt="Blood Sweat &amp; Tears (from the series Arcane League of Legends)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/e7afa92b8a8e4ecc3e5e7b1a0ec18e6b.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Tranquil·la, mama</div>
-<div class="interest-subtitle recent-music-artist">La Ludwig Band</div>
+<div class="interest-title recent-music-title">Blood Sweat &amp; Tears (from the series Arcane League of Legends)</div>
+<div class="interest-subtitle recent-music-artist">Arcane</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

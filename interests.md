@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Red+Hot+Chili+Peppers/_/Under+the+Bridge" rel="noopener" target="_blank">
-<img alt="Under the Bridge" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/426f10a255a07002b3702e4bc275ec44.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/La+Ludwig+Band/_/Tranquil%C2%B7la,+mama" rel="noopener" target="_blank">
+<img alt="Tranquil·la, mama" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Under the Bridge</div>
-<div class="interest-subtitle recent-music-artist">Red Hot Chili Peppers</div>
+<div class="interest-title recent-music-title">Tranquil·la, mama</div>
+<div class="interest-subtitle recent-music-artist">La Ludwig Band</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

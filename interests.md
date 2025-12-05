@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Arcane/_/Blood+Sweat+&amp;+Tears+(from+the+series+Arcane+League+of+Legends)" rel="noopener" target="_blank">
-<img alt="Blood Sweat &amp; Tears (from the series Arcane League of Legends)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/e7afa92b8a8e4ecc3e5e7b1a0ec18e6b.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/HUNTR%2FX/_/Golden" rel="noopener" target="_blank">
+<img alt="Golden" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/c8b02d0731e867cd38ca0ff7329a759b.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Blood Sweat &amp; Tears (from the series Arcane League of Legends)</div>
-<div class="interest-subtitle recent-music-artist">Arcane</div>
+<div class="interest-title recent-music-title">Golden</div>
+<div class="interest-subtitle recent-music-artist">HUNTR/X</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

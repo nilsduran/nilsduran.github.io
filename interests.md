@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/HUNTR%2FX/_/Golden" rel="noopener" target="_blank">
-<img alt="Golden" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/c8b02d0731e867cd38ca0ff7329a759b.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Taylor+Swift/_/The+Fate+of+Ophelia" rel="noopener" target="_blank">
+<img alt="The Fate of Ophelia" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/837e4d37b0c4a0a65eb12177e1afb8ee.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Golden</div>
-<div class="interest-subtitle recent-music-artist">HUNTR/X</div>
+<div class="interest-title recent-music-title">The Fate of Ophelia</div>
+<div class="interest-subtitle recent-music-artist">Taylor Swift</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

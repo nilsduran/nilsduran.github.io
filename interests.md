@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Taylor+Swift/_/The+Fate+of+Ophelia" rel="noopener" target="_blank">
-<img alt="The Fate of Ophelia" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/837e4d37b0c4a0a65eb12177e1afb8ee.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Adele/_/Set+Fire+to+the+Rain" rel="noopener" target="_blank">
+<img alt="Set Fire to the Rain" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/7694508c2aa520df08bb8e6248bfedf0.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">The Fate of Ophelia</div>
-<div class="interest-subtitle recent-music-artist">Taylor Swift</div>
+<div class="interest-title recent-music-title">Set Fire to the Rain</div>
+<div class="interest-subtitle recent-music-artist">Adele</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

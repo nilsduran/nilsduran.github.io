@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Meryl+Streep/_/Dancing+Queen+-+From+%27Mamma+Mia!%27+Original+Motion+Picture+Soundtrack" rel="noopener" target="_blank">
-<img alt="Dancing Queen - From 'Mamma Mia!' Original Motion Picture Soundtrack" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/a5e792789435ff7f362ae5f08c94972a.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Dotan/_/Home+II" rel="noopener" target="_blank">
+<img alt="Home II" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/1b167ea04122be09aaa3f14e5210b3ee.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Dancing Queen - From 'Mamma Mia!' Original Motion Picture Soundtrack</div>
-<div class="interest-subtitle recent-music-artist">Meryl Streep</div>
+<div class="interest-title recent-music-title">Home II</div>
+<div class="interest-subtitle recent-music-artist">Dotan</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

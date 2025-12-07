@@ -26,7 +26,7 @@ permalink: /interests/
 </a></div>
 <!-- Última cançó escoltada -->
 <div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/5+Seconds+of+Summer/_/She+Looks+So+Perfect" rel="noopener" target="_blank">
-<img alt="She Looks So Perfect" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/e815896554a33c37d06cecb59a6100ab.png"/>
+<img alt="She Looks So Perfect" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/cdd6ecd970739e3634f26b7472cfe273.jpg"/>
 <div class="interest-overlay">
 <div class="interest-title recent-music-title">She Looks So Perfect</div>
 <div class="interest-subtitle recent-music-artist">5 Seconds of Summer</div>

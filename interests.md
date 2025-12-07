@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/5+Seconds+of+Summer/_/She+Looks+So+Perfect" rel="noopener" target="_blank">
-<img alt="She Looks So Perfect" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/cdd6ecd970739e3634f26b7472cfe273.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Meryl+Streep/_/Dancing+Queen+-+From+%27Mamma+Mia!%27+Original+Motion+Picture+Soundtrack" rel="noopener" target="_blank">
+<img alt="Dancing Queen - From 'Mamma Mia!' Original Motion Picture Soundtrack" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/a5e792789435ff7f362ae5f08c94972a.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">She Looks So Perfect</div>
-<div class="interest-subtitle recent-music-artist">5 Seconds of Summer</div>
+<div class="interest-title recent-music-title">Dancing Queen - From 'Mamma Mia!' Original Motion Picture Soundtrack</div>
+<div class="interest-subtitle recent-music-artist">Meryl Streep</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

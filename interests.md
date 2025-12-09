@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Rodrigo/_/happier" rel="noopener" target="_blank">
-<img alt="happier" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/9da8add22ca31771a440d2a6f7615f6d.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Adele/_/When+We+Were+Young" rel="noopener" target="_blank">
+<img alt="When We Were Young" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/6284ff0b115c46d1b28ae96e6d5b4099.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">happier</div>
-<div class="interest-subtitle recent-music-artist">Olivia Rodrigo</div>
+<div class="interest-title recent-music-title">When We Were Young</div>
+<div class="interest-subtitle recent-music-artist">Adele</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

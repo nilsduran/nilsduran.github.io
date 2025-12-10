@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Adele/_/When+We+Were+Young" rel="noopener" target="_blank">
-<img alt="When We Were Young" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/6284ff0b115c46d1b28ae96e6d5b4099.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Damiano+David/_/The+First+Time" rel="noopener" target="_blank">
+<img alt="The First Time" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/66ed4ef9ce2d682b155dc49ba0c63b39.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">When We Were Young</div>
-<div class="interest-subtitle recent-music-artist">Adele</div>
+<div class="interest-title recent-music-title">The First Time</div>
+<div class="interest-subtitle recent-music-artist">Damiano David</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

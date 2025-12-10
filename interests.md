@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Damiano+David/_/The+First+Time" rel="noopener" target="_blank">
-<img alt="The First Time" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/66ed4ef9ce2d682b155dc49ba0c63b39.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Nicky+Youre/_/Sunroof" rel="noopener" target="_blank">
+<img alt="Sunroof" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/52d6aed2df099649276c07d6436ff844.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">The First Time</div>
-<div class="interest-subtitle recent-music-artist">Damiano David</div>
+<div class="interest-title recent-music-title">Sunroof</div>
+<div class="interest-subtitle recent-music-artist">Nicky Youre</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

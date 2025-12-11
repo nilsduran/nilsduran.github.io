@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Nicky+Youre/_/Sunroof" rel="noopener" target="_blank">
-<img alt="Sunroof" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/52d6aed2df099649276c07d6436ff844.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Zac+Efron/_/Rewrite+The+Stars" rel="noopener" target="_blank">
+<img alt="Rewrite The Stars" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/9ca14c7ab6b6e898ddb2707778b553d1.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Sunroof</div>
-<div class="interest-subtitle recent-music-artist">Nicky Youre</div>
+<div class="interest-title recent-music-title">Rewrite The Stars</div>
+<div class="interest-subtitle recent-music-artist">Zac Efron</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

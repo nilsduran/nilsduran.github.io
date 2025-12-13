@@ -17,19 +17,19 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-wild-robot/" rel="noopener" target="_blank">
-<img alt="The Wild Robot (2024)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/0/7/1/1/9/6/1071196-the-wild-robot-0-500-0-750-crop.jpg?v=a70bdbaea0"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/wake-up-dead-man/" rel="noopener" target="_blank">
+<img alt="Wake Up Dead Man (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/7/2/9/1/1/3/729113-wake-up-dead-man-0-500-0-750-crop.jpg?v=85f3366617"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">The Wild Robot (2024)</div>
+<div class="interest-title recent-movie-title">Wake Up Dead Man (2025)</div>
 <div class="interest-subtitle recent-movie-director">★★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/La+Ludwig+Band/_/El+Fill+del+Rei" rel="noopener" target="_blank">
-<img alt="El Fill del Rei" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/fa4d6f09aeca66eebd98288f74504e1c.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Mushkaa/_/Barras+Warras" rel="noopener" target="_blank">
+<img alt="Barras Warras" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/a454d5bde8773efd57561a11c10c213e.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">El Fill del Rei</div>
-<div class="interest-subtitle recent-music-artist">La Ludwig Band</div>
+<div class="interest-title recent-music-title">Barras Warras</div>
+<div class="interest-subtitle recent-music-artist">Mushkaa</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

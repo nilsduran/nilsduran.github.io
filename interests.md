@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Taylor+Swift/_/Miss+Americana+&amp;+the+Heartbreak+Prince" rel="noopener" target="_blank">
-<img alt="Miss Americana &amp; the Heartbreak Prince" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/d3f083370c371a3ba1cddafaf193c27d.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Billie+Eilish/_/What+Was+I+Made+For%3F+%5BFrom+the+Motion+Picture+%22Barbie%22%5D" rel="noopener" target="_blank">
+<img alt="What Was I Made For? [From the Motion Picture " barbie"]"="" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/69628d7606c8e3916141050c32505a9e.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Miss Americana &amp; the Heartbreak Prince</div>
-<div class="interest-subtitle recent-music-artist">Taylor Swift</div>
+<div class="interest-title recent-music-title">What Was I Made For? [From the Motion Picture "Barbie"]</div>
+<div class="interest-subtitle recent-music-artist">Billie Eilish</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

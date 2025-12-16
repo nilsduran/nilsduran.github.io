@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/TheIshter/_/Watashi+No+Uso+(Your+Lie+in+April+Original+Soundtrack)" rel="noopener" target="_blank">
-<img alt="Watashi No Uso (Your Lie in April Original Soundtrack)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/6f26706de6e86d1c5e7d78f178c7fd18.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Charlie+Hodson-Prior/_/Revolting+Children" rel="noopener" target="_blank">
+<img alt="Revolting Children" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/e9ae84cd9b120a5c398f7531198eb15b.gif"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Watashi No Uso (Your Lie in April Original Soundtrack)</div>
-<div class="interest-subtitle recent-music-artist">TheIshter</div>
+<div class="interest-title recent-music-title">Revolting Children</div>
+<div class="interest-subtitle recent-music-artist">Charlie Hodson-Prior</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

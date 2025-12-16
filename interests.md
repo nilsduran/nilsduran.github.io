@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Adele/_/Hometown+Glory" rel="noopener" target="_blank">
-<img alt="Hometown Glory" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/58a9a10b96ac70e224f67c8c41e406e7.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Chappell+Roan/_/Good+Luck,+Babe!" rel="noopener" target="_blank">
+<img alt="Good Luck, Babe!" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/86fa0d410ba70ada74d22cf4b690b05b.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Hometown Glory</div>
-<div class="interest-subtitle recent-music-artist">Adele</div>
+<div class="interest-title recent-music-title">Good Luck, Babe!</div>
+<div class="interest-subtitle recent-music-artist">Chappell Roan</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

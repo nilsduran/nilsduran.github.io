@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Lady+Gaga/_/Die+with+a+Smile" rel="noopener" target="_blank">
-<img alt="Die with a Smile" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/23425459b73eac17b203119b55814c89.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/RAYE/_/WHERE+IS+MY+HUSBAND!" rel="noopener" target="_blank">
+<img alt="WHERE IS MY HUSBAND!" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/d699b39671911b7dfc69d4c0acdcc4f1.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Die with a Smile</div>
-<div class="interest-subtitle recent-music-artist">Lady Gaga</div>
+<div class="interest-title recent-music-title">WHERE IS MY HUSBAND!</div>
+<div class="interest-subtitle recent-music-artist">RAYE</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

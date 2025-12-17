@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Charlie+Hodson-Prior/_/Revolting+Children" rel="noopener" target="_blank">
-<img alt="Revolting Children" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/e9ae84cd9b120a5c398f7531198eb15b.gif"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/TRIQUELL/_/Road+Trip" rel="noopener" target="_blank">
+<img alt="Road Trip" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/715425cfa3bb19f01726b20225fc2305.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Revolting Children</div>
-<div class="interest-subtitle recent-music-artist">Charlie Hodson-Prior</div>
+<div class="interest-title recent-music-title">Road Trip</div>
+<div class="interest-subtitle recent-music-artist">TRIQUELL</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

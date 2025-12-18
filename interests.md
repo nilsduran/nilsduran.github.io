@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Charlie+Hodson-Prior/_/Revolting+Children" rel="noopener" target="_blank">
-<img alt="Revolting Children" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/2f903160c2f5789455a4407e7641677c.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Rei+Yamauchi+Fulker/_/When+I+Grow+Up" rel="noopener" target="_blank">
+<img alt="When I Grow Up" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/7c3593afc8a2ec98725dcfc3634c6133.gif"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Revolting Children</div>
-<div class="interest-subtitle recent-music-artist">Charlie Hodson-Prior</div>
+<div class="interest-title recent-music-title">When I Grow Up</div>
+<div class="interest-subtitle recent-music-artist">Rei Yamauchi Fulker</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

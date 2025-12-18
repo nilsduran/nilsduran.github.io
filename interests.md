@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Rei+Yamauchi+Fulker/_/When+I+Grow+Up" rel="noopener" target="_blank">
-<img alt="When I Grow Up" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/7c3593afc8a2ec98725dcfc3634c6133.gif"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Andy+Williams/_/It%27s+the+Most+Wonderful+Time+of+the+Year" rel="noopener" target="_blank">
+<img alt="It's the Most Wonderful Time of the Year" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/06ff9a7878e30cc92f34e41190cd7bb4.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">When I Grow Up</div>
-<div class="interest-subtitle recent-music-artist">Rei Yamauchi Fulker</div>
+<div class="interest-title recent-music-title">It's the Most Wonderful Time of the Year</div>
+<div class="interest-subtitle recent-music-artist">Andy Williams</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

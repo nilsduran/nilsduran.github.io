@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/RAYE/_/WHERE+IS+MY+HUSBAND!" rel="noopener" target="_blank">
-<img alt="WHERE IS MY HUSBAND!" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/d699b39671911b7dfc69d4c0acdcc4f1.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Charlie+Hodson-Prior/_/Revolting+Children" rel="noopener" target="_blank">
+<img alt="Revolting Children" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/2f903160c2f5789455a4407e7641677c.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">WHERE IS MY HUSBAND!</div>
-<div class="interest-subtitle recent-music-artist">RAYE</div>
+<div class="interest-title recent-music-title">Revolting Children</div>
+<div class="interest-subtitle recent-music-artist">Charlie Hodson-Prior</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

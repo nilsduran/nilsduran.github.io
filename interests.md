@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Cass+Elliot/_/Make+Your+Own+Kind+of+Music" rel="noopener" target="_blank">
-<img alt="Make Your Own Kind of Music" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/01bdfb27fc463c5e189bd27a2350aa65.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Glasperlenspiel/_/Das+Krasseste" rel="noopener" target="_blank">
+<img alt="Das Krasseste" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/d2768c80e763423cd59203f989727854.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Make Your Own Kind of Music</div>
-<div class="interest-subtitle recent-music-artist">Cass Elliot</div>
+<div class="interest-title recent-music-title">Das Krasseste</div>
+<div class="interest-subtitle recent-music-artist">Glasperlenspiel</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

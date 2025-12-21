@@ -9,11 +9,11 @@ permalink: /interests/
 <h2>🔥 Recents</h2>
 <div class="interest-grid">
 <!-- Últim llibre llegit -->
-<div class="interest-item" id="recent-book"><a class="interest-link" href="https://app.thestorygraph.com/books/7112fac3-ec7f-4ead-8bc7-7b0d3a990da4" rel="noopener" target="_blank">
-<img alt="Project Hail Mary" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'" src="https://cdn.thestorygraph.com/1izdkc05wohqx20hurp8iyjxgggu"/>
+<div class="interest-item" id="recent-book"><a class="interest-link" href="https://app.thestorygraph.com/books/c5f48f86-f58a-496d-98b1-55c1927f6f06" rel="noopener" target="_blank">
+<img alt="L'ascens dels rebels" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'" src="https://cdn.thestorygraph.com/q5xlet31gwl3xe7o1xwhnbuyzzs7"/>
 <div class="interest-overlay">
-<div class="interest-title recent-book-title">Project Hail Mary</div>
-<div class="interest-subtitle recent-book-author">Andy Weir</div>
+<div class="interest-title recent-book-title">L'ascens dels rebels</div>
+<div class="interest-subtitle recent-book-author">Mariona Bessa</div>
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Doechii/_/DENIAL+IS+A+RIVER" rel="noopener" target="_blank">
-<img alt="DENIAL IS A RIVER" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/7860c303862f4cd1d1101f7e5726661b.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/The+Lumineers/_/Ophelia" rel="noopener" target="_blank">
+<img alt="Ophelia" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/ea77f864eff0a4283fa30b8edade7ddb.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">DENIAL IS A RIVER</div>
-<div class="interest-subtitle recent-music-artist">Doechii</div>
+<div class="interest-title recent-music-title">Ophelia</div>
+<div class="interest-subtitle recent-music-artist">The Lumineers</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

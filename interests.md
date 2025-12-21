@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/wake-up-dead-man/" rel="noopener" target="_blank">
-<img alt="Wake Up Dead Man (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/7/2/9/1/1/3/729113-wake-up-dead-man-0-500-0-750-crop.jpg?v=85f3366617"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/nuremberg-2025/" rel="noopener" target="_blank">
+<img alt="Nuremberg (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/0/9/8/7/8/2/1098782-nuremberg-2025-0-500-0-750-crop.jpg?v=954f98ffb4"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Wake Up Dead Man (2025)</div>
-<div class="interest-subtitle recent-movie-director">★★★★</div>
+<div class="interest-title recent-movie-title">Nuremberg (2025)</div>
+<div class="interest-subtitle recent-movie-director">★★★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

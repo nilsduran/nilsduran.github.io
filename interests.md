@@ -9,18 +9,18 @@ permalink: /interests/
 <h2>🔥 Recents</h2>
 <div class="interest-grid">
 <!-- Últim llibre llegit -->
-<div class="interest-item" id="recent-book"><a class="interest-link" href="https://app.thestorygraph.com/books/c5f48f86-f58a-496d-98b1-55c1927f6f06" rel="noopener" target="_blank">
-<img alt="L'ascens dels rebels" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'" src="https://cdn.thestorygraph.com/q5xlet31gwl3xe7o1xwhnbuyzzs7"/>
+<div class="interest-item" id="recent-book"><a class="interest-link" href="https://app.thestorygraph.com/books/f1e27be8-76cc-4f13-95b5-8d9ce3115ffb" rel="noopener" target="_blank">
+<img alt="L'ascens dels rebels" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'" src="https://cdn.thestorygraph.com/77ducl9n7iwicervy2n5zgv8g1bn"/>
 <div class="interest-overlay">
 <div class="interest-title recent-book-title">L'ascens dels rebels</div>
 <div class="interest-subtitle recent-book-author">Mariona Bessa</div>
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/nuremberg-2025/" rel="noopener" target="_blank">
-<img alt="Nuremberg (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/0/9/8/7/8/2/1098782-nuremberg-2025-0-500-0-750-crop.jpg?v=954f98ffb4"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/now-you-see-me-now-you-dont-2025/" rel="noopener" target="_blank">
+<img alt="Now You See Me: Now You Don't (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/3/5/8/7/5/7/358757-now-you-see-me-now-you-dont-2025-0-500-0-750-crop.jpg?v=942a6497bc"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Nuremberg (2025)</div>
+<div class="interest-title recent-movie-title">Now You See Me: Now You Don't (2025)</div>
 <div class="interest-subtitle recent-movie-director">★★★★½</div>
 </div>
 </a></div>

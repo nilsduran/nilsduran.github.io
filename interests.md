@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/The+Lumineers/_/Ophelia" rel="noopener" target="_blank">
-<img alt="Ophelia" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/ea77f864eff0a4283fa30b8edade7ddb.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Cass+Elliot/_/Make+Your+Own+Kind+of+Music" rel="noopener" target="_blank">
+<img alt="Make Your Own Kind of Music" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/01bdfb27fc463c5e189bd27a2350aa65.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Ophelia</div>
-<div class="interest-subtitle recent-music-artist">The Lumineers</div>
+<div class="interest-title recent-music-title">Make Your Own Kind of Music</div>
+<div class="interest-subtitle recent-music-artist">Cass Elliot</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

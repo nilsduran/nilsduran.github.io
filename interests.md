@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Billie+Eilish/_/BIRDS+OF+A+FEATHER" rel="noopener" target="_blank">
-<img alt="BIRDS OF A FEATHER" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/6db576307ee7bdd81056432542b6bab7.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Chappell+Roan/_/Good+Luck,+Babe!" rel="noopener" target="_blank">
+<img alt="Good Luck, Babe!" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/86fa0d410ba70ada74d22cf4b690b05b.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">BIRDS OF A FEATHER</div>
-<div class="interest-subtitle recent-music-artist">Billie Eilish</div>
+<div class="interest-title recent-music-title">Good Luck, Babe!</div>
+<div class="interest-subtitle recent-music-artist">Chappell Roan</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

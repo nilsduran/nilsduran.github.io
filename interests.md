@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Oques+Grasses/_/SORT+DE+TU" rel="noopener" target="_blank">
-<img alt="SORT DE TU" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/61a152b8dbb6764536f11e7cfe6597e6.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Adele/_/Love+Is+a+Game" rel="noopener" target="_blank">
+<img alt="Love Is a Game" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/35a9537590ea3d5164b598c75b3a378c.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">SORT DE TU</div>
-<div class="interest-subtitle recent-music-artist">Oques Grasses</div>
+<div class="interest-title recent-music-title">Love Is a Game</div>
+<div class="interest-subtitle recent-music-artist">Adele</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Teddybears/_/Punkrocker+(feat.+Iggy+Pop)+-+As+featured+in+Superman" rel="noopener" target="_blank">
-<img alt="Punkrocker (feat. Iggy Pop) - As featured in Superman" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/6f8cf3bfb7cd48c2c8b3399900c0c749.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Mushkaa/_/Entre+el+Fum" rel="noopener" target="_blank">
+<img alt="Entre el Fum" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/38e981c97f26e2aabf3423bcebc18f93.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Punkrocker (feat. Iggy Pop) - As featured in Superman</div>
-<div class="interest-subtitle recent-music-artist">Teddybears</div>
+<div class="interest-title recent-music-title">Entre el Fum</div>
+<div class="interest-subtitle recent-music-artist">Mushkaa</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

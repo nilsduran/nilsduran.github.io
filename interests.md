@@ -17,10 +17,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/now-you-see-me-now-you-dont-2025/" rel="noopener" target="_blank">
-<img alt="Now You See Me: Now You Don't (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/3/5/8/7/5/7/358757-now-you-see-me-now-you-dont-2025-0-500-0-750-crop.jpg?v=942a6497bc"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/one-battle-after-another/" rel="noopener" target="_blank">
+<img alt="One Battle After Another (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/9/5/1/2/7/7/951277-one-battle-after-another-0-500-0-750-crop.jpg?v=d27c4cc662"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Now You See Me: Now You Don't (2025)</div>
+<div class="interest-title recent-movie-title">One Battle After Another (2025)</div>
 <div class="interest-subtitle recent-movie-director">★★★★½</div>
 </div>
 </a></div>

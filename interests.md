@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Kendrick+Lamar/_/Not+Like+Us" rel="noopener" target="_blank">
-<img alt="Not Like Us" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/ad04999220beed1745aa499653cd84bd.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Nirvana/_/Smells+Like+Teen+Spirit" rel="noopener" target="_blank">
+<img alt="Smells Like Teen Spirit" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/d9d503d11af105587eb785c9302910bc.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Not Like Us</div>
-<div class="interest-subtitle recent-music-artist">Kendrick Lamar</div>
+<div class="interest-title recent-music-title">Smells Like Teen Spirit</div>
+<div class="interest-subtitle recent-music-artist">Nirvana</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

@@ -26,7 +26,7 @@ permalink: /interests/
 </a></div>
 <!-- Última cançó escoltada -->
 <div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Lola+Young/_/Messy" rel="noopener" target="_blank">
-<img alt="Messy" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/f136731d4234c4ba6dab5df1a74120a5.jpg"/>
+<img alt="Messy" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/4e2f92d99dfa7c123c54401407e9ddf6.png"/>
 <div class="interest-overlay">
 <div class="interest-title recent-music-title">Messy</div>
 <div class="interest-subtitle recent-music-artist">Lola Young</div>

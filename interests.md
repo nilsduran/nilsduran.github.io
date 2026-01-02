@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/HUNTR%2FX/_/What+It+Sounds+Like" rel="noopener" target="_blank">
-<img alt="What It Sounds Like" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/c8b02d0731e867cd38ca0ff7329a759b.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Lady+Gaga/_/The+Dead+Dance" rel="noopener" target="_blank">
+<img alt="The Dead Dance" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/49b8e2ed4d250fd2923ae56a44f937c0.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">What It Sounds Like</div>
-<div class="interest-subtitle recent-music-artist">HUNTR/X</div>
+<div class="interest-title recent-music-title">The Dead Dance</div>
+<div class="interest-subtitle recent-music-artist">Lady Gaga</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

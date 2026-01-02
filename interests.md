@@ -17,19 +17,19 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/one-battle-after-another/" rel="noopener" target="_blank">
-<img alt="One Battle After Another (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/9/5/1/2/7/7/951277-one-battle-after-another-0-500-0-750-crop.jpg?v=d27c4cc662"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/wicked-for-good/" rel="noopener" target="_blank">
+<img alt="Wicked: For Good (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/8/7/1/1/4/8/871148-wicked-for-good-0-500-0-750-crop.jpg?v=f1330d6f91"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">One Battle After Another (2025)</div>
-<div class="interest-subtitle recent-movie-director">★★★★½</div>
+<div class="interest-title recent-movie-title">Wicked: For Good (2025)</div>
+<div class="interest-subtitle recent-movie-director">★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Lola+Young/_/Messy" rel="noopener" target="_blank">
-<img alt="Messy" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/4e2f92d99dfa7c123c54401407e9ddf6.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/HUNTR%2FX/_/What+It+Sounds+Like" rel="noopener" target="_blank">
+<img alt="What It Sounds Like" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/c8b02d0731e867cd38ca0ff7329a759b.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Messy</div>
-<div class="interest-subtitle recent-music-artist">Lola Young</div>
+<div class="interest-title recent-music-title">What It Sounds Like</div>
+<div class="interest-subtitle recent-music-artist">HUNTR/X</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

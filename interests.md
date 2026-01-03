@@ -17,19 +17,19 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/wicked-for-good/" rel="noopener" target="_blank">
-<img alt="Wicked: For Good (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/8/7/1/1/4/8/871148-wicked-for-good-0-500-0-750-crop.jpg?v=f1330d6f91"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/jay-kelly/" rel="noopener" target="_blank">
+<img alt="Jay Kelly (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/9/6/4/4/3/8/964438-jay-kelly-0-500-0-750-crop.jpg?v=173fd0d7da"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Wicked: For Good (2025)</div>
-<div class="interest-subtitle recent-movie-director">★★</div>
+<div class="interest-title recent-movie-title">Jay Kelly (2025)</div>
+<div class="interest-subtitle recent-movie-director">★★★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Lady+Gaga/_/The+Dead+Dance" rel="noopener" target="_blank">
-<img alt="The Dead Dance" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/49b8e2ed4d250fd2923ae56a44f937c0.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/The+Weeknd/_/Timeless+(feat.+Playboi+Carti)" rel="noopener" target="_blank">
+<img alt="Timeless (feat. Playboi Carti)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/f6de2df09d18a5d0a6af0f85e72ca293.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">The Dead Dance</div>
-<div class="interest-subtitle recent-music-artist">Lady Gaga</div>
+<div class="interest-title recent-music-title">Timeless (feat. Playboi Carti)</div>
+<div class="interest-subtitle recent-music-artist">The Weeknd</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

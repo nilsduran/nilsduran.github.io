@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/James+Newton+Howard/_/There+Are+Worse+Games+To+Play%2FDeep+In+The+Meadow%2FThe+Hunger+Games+Suite+-+From+%22The+Hunger+Games:+Mockingjay,+Part+2%22+Soundtrack" rel="noopener" target="_blank">
-<img 2"="" alt="There Are Worse Games To Play/Deep In The Meadow/The Hunger Games Suite - From " class="recent-music-cover" games:="" hunger="" mockingjay,="" onerror="this.src='/images/interests/recent/music.jpg'" part="" soundtrack"="" src="https://lastfm.freetls.fastly.net/i/u/300x300/8e6cfda6e79455ce9ced65524376f89f.jpg" the=""/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Post+Malone/_/Psycho+(feat.+Ty+Dolla+$ign)" rel="noopener" target="_blank">
+<img alt="Psycho (feat. Ty Dolla $ign)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/d9a790b6c8526a4c8cb9862c64bc3342.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">There Are Worse Games To Play/Deep In The Meadow/The Hunger Games Suite - From "The Hunger Games: Mockingjay, Part 2" Soundtrack</div>
-<div class="interest-subtitle recent-music-artist">James Newton Howard</div>
+<div class="interest-title recent-music-title">Psycho (feat. Ty Dolla $ign)</div>
+<div class="interest-subtitle recent-music-artist">Post Malone</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

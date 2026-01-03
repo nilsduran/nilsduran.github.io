@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Post+Malone/_/Psycho+(feat.+Ty+Dolla+$ign)" rel="noopener" target="_blank">
-<img alt="Psycho (feat. Ty Dolla $ign)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/d9a790b6c8526a4c8cb9862c64bc3342.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Y2K/_/Lalala" rel="noopener" target="_blank">
+<img alt="Lalala" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/be06bf6072eb9f46c74d239988103dec.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Psycho (feat. Ty Dolla $ign)</div>
-<div class="interest-subtitle recent-music-artist">Post Malone</div>
+<div class="interest-title recent-music-title">Lalala</div>
+<div class="interest-subtitle recent-music-artist">Y2K</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

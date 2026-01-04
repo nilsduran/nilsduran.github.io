@@ -17,10 +17,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/jay-kelly/" rel="noopener" target="_blank">
-<img alt="Jay Kelly (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/9/6/4/4/3/8/964438-jay-kelly-0-500-0-750-crop.jpg?v=173fd0d7da"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/bugonia/" rel="noopener" target="_blank">
+<img alt="Bugonia (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/6/2/5/4/0/0/625400-bugonia-0-500-0-750-crop.jpg?v=4c6649150e"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Jay Kelly (2025)</div>
+<div class="interest-title recent-movie-title">Bugonia (2025)</div>
 <div class="interest-subtitle recent-movie-director">★★★★½</div>
 </div>
 </a></div>

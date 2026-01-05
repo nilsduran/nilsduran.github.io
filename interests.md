@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/IThemba+Youth+Choir/_/Emakhaya" rel="noopener" target="_blank">
-<img alt="Emakhaya" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Taylor+Swift/_/Shake+It+Off" rel="noopener" target="_blank">
+<img alt="Shake It Off" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/574db9d1528b064ca2faaf557f564bda.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Emakhaya</div>
-<div class="interest-subtitle recent-music-artist">IThemba Youth Choir</div>
+<div class="interest-title recent-music-title">Shake It Off</div>
+<div class="interest-subtitle recent-music-artist">Taylor Swift</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

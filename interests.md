@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Manu+Guix/_/El+Vanit%C3%B3s" rel="noopener" target="_blank">
-<img alt="El Vanitós" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Mariona+Escoda/_/La+Pla%C3%A7a+Del+Diamant+-+En+directe" rel="noopener" target="_blank">
+<img alt="La Plaça Del Diamant - En directe" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">El Vanitós</div>
-<div class="interest-subtitle recent-music-artist">Manu Guix</div>
+<div class="interest-title recent-music-title">La Plaça Del Diamant - En directe</div>
+<div class="interest-subtitle recent-music-artist">Mariona Escoda</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

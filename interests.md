@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Jack+and+Daisy/_/Barcelona+(In+The+Rearview)" rel="noopener" target="_blank">
-<img alt="Barcelona (In The Rearview)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Sabrina+Carpenter/_/Please+Please+Please" rel="noopener" target="_blank">
+<img alt="Please Please Please" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/bad7187fa0cb0d19edd775f8be53afd6.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Barcelona (In The Rearview)</div>
-<div class="interest-subtitle recent-music-artist">Jack and Daisy</div>
+<div class="interest-title recent-music-title">Please Please Please</div>
+<div class="interest-subtitle recent-music-artist">Sabrina Carpenter</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

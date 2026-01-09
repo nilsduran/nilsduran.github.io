@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Sabrina+Carpenter/_/Please+Please+Please" rel="noopener" target="_blank">
-<img alt="Please Please Please" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/bad7187fa0cb0d19edd775f8be53afd6.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Burna+Boy/_/Kilometre" rel="noopener" target="_blank">
+<img alt="Kilometre" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/ddfd299a3ebfa24ad076f0963b2a18fe.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Please Please Please</div>
-<div class="interest-subtitle recent-music-artist">Sabrina Carpenter</div>
+<div class="interest-title recent-music-title">Kilometre</div>
+<div class="interest-subtitle recent-music-artist">Burna Boy</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

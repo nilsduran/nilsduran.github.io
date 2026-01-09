@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Burna+Boy/_/Kilometre" rel="noopener" target="_blank">
-<img alt="Kilometre" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/ddfd299a3ebfa24ad076f0963b2a18fe.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Calum+Scott/_/Dancing+on+My+Own" rel="noopener" target="_blank">
+<img alt="Dancing on My Own" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/5674aa41c4e6d93ff7bf5990bab0f126.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Kilometre</div>
-<div class="interest-subtitle recent-music-artist">Burna Boy</div>
+<div class="interest-title recent-music-title">Dancing on My Own</div>
+<div class="interest-subtitle recent-music-artist">Calum Scott</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

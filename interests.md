@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/bugonia/" rel="noopener" target="_blank">
-<img alt="Bugonia (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/6/2/5/4/0/0/625400-bugonia-0-500-0-750-crop.jpg?v=4c6649150e"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/cowspiracy-the-sustainability-secret/" rel="noopener" target="_blank">
+<img alt="Cowspiracy: The Sustainability Secret (2014)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/2/0/7/6/3/2/207632-cowspiracy-the-sustainability-secret-0-500-0-750-crop.jpg?v=9681064dd4"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Bugonia (2025)</div>
-<div class="interest-subtitle recent-movie-director">★★★★½</div>
+<div class="interest-title recent-movie-title">Cowspiracy: The Sustainability Secret (2014)</div>
+<div class="interest-subtitle recent-movie-director">★★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

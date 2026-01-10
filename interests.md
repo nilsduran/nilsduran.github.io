@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Modern+Talking/_/Brother+Louie" rel="noopener" target="_blank">
-<img alt="Brother Louie" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/b94c58cc33813d23f6bcc4bd7a0ed1ae.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Ed+Sheeran/_/Castle+on+the+Hill" rel="noopener" target="_blank">
+<img alt="Castle on the Hill" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/5c808e167d1af3d4c89e711e3baaf8ab.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Brother Louie</div>
-<div class="interest-subtitle recent-music-artist">Modern Talking</div>
+<div class="interest-title recent-music-title">Castle on the Hill</div>
+<div class="interest-subtitle recent-music-artist">Ed Sheeran</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

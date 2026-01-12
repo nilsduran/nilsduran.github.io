@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Ferran+Gonzalez/_/Ese+Es+Mi+Destino" rel="noopener" target="_blank">
-<img alt="Ese Es Mi Destino" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/bf969c7d88f916a41a9494ee2ac8839a.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Toploader/_/Dancing+in+the+Moonlight" rel="noopener" target="_blank">
+<img alt="Dancing in the Moonlight" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/5b56d4ee3c110b66f173afdb4047517d.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Ese Es Mi Destino</div>
-<div class="interest-subtitle recent-music-artist">Ferran Gonzalez</div>
+<div class="interest-title recent-music-title">Dancing in the Moonlight</div>
+<div class="interest-subtitle recent-music-artist">Toploader</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

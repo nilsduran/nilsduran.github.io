@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Coldplay/_/Paradise" rel="noopener" target="_blank">
-<img alt="Paradise" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/1cf47ae5836c144211e8fc1a40087a0a.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/P!nk/_/Try" rel="noopener" target="_blank">
+<img alt="Try" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/cfb93405716d049a337433c2531ae6f9.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Paradise</div>
-<div class="interest-subtitle recent-music-artist">Coldplay</div>
+<div class="interest-title recent-music-title">Try</div>
+<div class="interest-subtitle recent-music-artist">P!nk</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

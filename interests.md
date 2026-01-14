@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/P!nk/_/Try" rel="noopener" target="_blank">
-<img alt="Try" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/cfb93405716d049a337433c2531ae6f9.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Dean/_/So+Easy+(To+Fall+In+Love)" rel="noopener" target="_blank">
+<img alt="So Easy (To Fall In Love)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/e9aedce534c4c0cf22f18483bed6620e.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Try</div>
-<div class="interest-subtitle recent-music-artist">P!nk</div>
+<div class="interest-title recent-music-title">So Easy (To Fall In Love)</div>
+<div class="interest-subtitle recent-music-artist">Olivia Dean</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

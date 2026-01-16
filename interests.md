@@ -21,15 +21,15 @@ permalink: /interests/
 <img alt="Ocean with David Attenborough (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/3/2/5/4/2/9/1325429-ocean-with-david-attenborough-0-500-0-750-crop.jpg?v=bc7f0ae698"/>
 <div class="interest-overlay">
 <div class="interest-title recent-movie-title">Ocean with David Attenborough (2025)</div>
-<div class="interest-subtitle recent-movie-director">★★★★</div>
+<div class="interest-subtitle recent-movie-director">★★★★ (contains spoilers)</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Sting/_/What+Could+Have+Been+(from+the+series+Arcane+League+of+Legends)" rel="noopener" target="_blank">
-<img alt="What Could Have Been (from the series Arcane League of Legends)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/7898fef0f62a0ef4bf1ef5ba973cf2a2.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/League+of+Legends/_/I%27ll+Find+A+Way" rel="noopener" target="_blank">
+<img alt="I'll Find A Way" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/6a6aaa1c99faa13c6e127b13224a758c.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">What Could Have Been (from the series Arcane League of Legends)</div>
-<div class="interest-subtitle recent-music-artist">Sting</div>
+<div class="interest-title recent-music-title">I'll Find A Way</div>
+<div class="interest-subtitle recent-music-artist">League of Legends</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

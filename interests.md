@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/La+Ludwig+Band/_/Sand%C3%A0lies" rel="noopener" target="_blank">
-<img alt="Sandàlies" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/fa4d6f09aeca66eebd98288f74504e1c.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Gracie+Abrams/_/I+Love+You,+I%27m+Sorry" rel="noopener" target="_blank">
+<img alt="I Love You, I'm Sorry" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/8d7fd882962d21187f6d49e0cefb7fb7.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Sandàlies</div>
-<div class="interest-subtitle recent-music-artist">La Ludwig Band</div>
+<div class="interest-title recent-music-title">I Love You, I'm Sorry</div>
+<div class="interest-subtitle recent-music-artist">Gracie Abrams</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

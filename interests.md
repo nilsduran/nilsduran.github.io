@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Post+Malone/_/I+Had+Some+Help+(feat.+Morgan+Wallen)" rel="noopener" target="_blank">
-<img alt="I Had Some Help (feat. Morgan Wallen)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/527e0c98a03cf1421c13bfa917795de1.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Hans+Zimmer/_/Simba+Is+Alive!" rel="noopener" target="_blank">
+<img alt="Simba Is Alive!" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/363dfc79b4ca46ce67e1c1058b556cc5.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">I Had Some Help (feat. Morgan Wallen)</div>
-<div class="interest-subtitle recent-music-artist">Post Malone</div>
+<div class="interest-title recent-music-title">Simba Is Alive!</div>
+<div class="interest-subtitle recent-music-artist">Hans Zimmer</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

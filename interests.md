@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/ocean-with-david-attenborough/" rel="noopener" target="_blank">
-<img alt="Ocean with David Attenborough (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/3/2/5/4/2/9/1325429-ocean-with-david-attenborough-0-500-0-750-crop.jpg?v=bc7f0ae698"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-sound-of-music/2/" rel="noopener" target="_blank">
+<img alt="The Sound of Music (1965)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/4/2/5/8/0/42580-the-sound-of-music-0-500-0-750-crop.jpg?v=743d70b886"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Ocean with David Attenborough (2025)</div>
-<div class="interest-subtitle recent-movie-director">★★★★ (contains spoilers)</div>
+<div class="interest-title recent-movie-title">The Sound of Music (1965)</div>
+<div class="interest-subtitle recent-movie-director">★★★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

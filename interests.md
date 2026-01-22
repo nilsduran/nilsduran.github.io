@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Atticus+Ross/_/Main+Title+(Sh%C5%8Dgun)" rel="noopener" target="_blank">
-<img alt="Main Title (Shōgun)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/ddc19407953fd0517aaa306b4c1a866e.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Hans+Zimmer/_/S.T.A.Y." rel="noopener" target="_blank">
+<img alt="S.T.A.Y." class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/4d6322c6d784708fd7723b991714e51d.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Main Title (Shōgun)</div>
-<div class="interest-subtitle recent-music-artist">Atticus Ross</div>
+<div class="interest-title recent-music-title">S.T.A.Y.</div>
+<div class="interest-subtitle recent-music-artist">Hans Zimmer</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

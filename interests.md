@@ -17,10 +17,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-sound-of-music/2/" rel="noopener" target="_blank">
-<img alt="The Sound of Music (1965)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/4/2/5/8/0/42580-the-sound-of-music-0-500-0-750-crop.jpg?v=743d70b886"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/dune-part-two/2/" rel="noopener" target="_blank">
+<img alt="Dune: Part Two (2024)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/6/1/7/4/4/3/617443-dune-part-two-0-500-0-750-crop.jpg?v=cc533700f8"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">The Sound of Music (1965)</div>
+<div class="interest-title recent-movie-title">Dune: Part Two (2024)</div>
 <div class="interest-subtitle recent-movie-director">★★★★★</div>
 </div>
 </a></div>

@@ -4,6 +4,7 @@ title: Classificació de l'Estat de Pacients amb Cirrosi
 subtitle: Sistema Intel·ligent de Suport al Diagnòstic Mèdic
 type: project
 image_format: png
+index_description: "Model ML interpretable per predir l'estat de pacients hepàtics amb un 94% de precisió, utilitzant XGBoost i SHAP."
 date_display: "Novembre 2024"
 duration: 8 setmanes
 team_size: 1

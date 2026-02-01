@@ -264,7 +264,33 @@ layout: default
     {% if page.date_display %}<div class="meta-item">📅 {{ page.date_display }}</div>{% endif %}
     {% if page.duration %}<div class="meta-item">⏱️ {{ page.duration }}</div>{% endif %}
   </div>
+
+{% if page.demo_video %}
+<div class="project-section" style="padding: 0; overflow: hidden; background: #000;">
+  <div style="background: #262730; color: white; padding: 0.5rem 1rem; font-size: 0.8rem; text-align: right;">
+    🎥 Demostració en vídeo (Arxivat)
+  </div>
+  <video controls style="width: 100%; display: block;">
+    <source src="{{ page.demo_video }}" type="video/mp4">
+    El teu navegador no suporta el tag de vídeo.
+  </video>
 </div>
+{% endif %}
+</div>
+
+{% if page.streamlit_url %}
+<div class="project-section" style="padding: 0; overflow: hidden; background: #fafafa;">
+  <div style="background: #262730; color: white; padding: 0.5rem 1rem; font-size: 0.8rem; text-align: right;">
+    📱 App interactiva carregada des de Streamlit Cloud
+  </div>
+  <iframe
+    src="{{ page.streamlit_url }}?embed=true"
+    height="850"
+    style="width:100%; border:none;"
+    title="{{ page.title }}"
+  ></iframe>
+</div>
+{% endif %}
 
 <!-- Imatge principal del projecte -->
 {% assign project_slug = page.url | split: "/" | last %}
@@ -307,14 +333,18 @@ layout: default
       <span class="metric-value">{{ page.accuracy | default: "94.2%" }}</span>
       <div class="metric-label">Precisió del Model</div>
     </div>
+    {% if page.dataset_size %}
     <div class="metric-card">
-      <span class="metric-value">{{ page.dataset_size | default: "50K+" }}</span>
+      <span class="metric-value">{{ page.dataset_size }}</span>
       <div class="metric-label">Registres Processats</div>
     </div>
+    {% endif %}
+    {% if page.processing_time %}
     <div class="metric-card">
-      <span class="metric-value">{{ page.processing_time | default: "< 2s" }}</span>
+      <span class="metric-value">{{ page.processing_time }}</span>
       <div class="metric-label">Temps d'Inferència</div>
     </div>
+    {% endif %}
     <div class="metric-card">
       <span class="metric-value">{{ page.improvement | default: "+23%" }}</span>
       <div class="metric-label">Millora vs Baseline</div>
@@ -325,12 +355,18 @@ layout: default
 <!-- Arquitectura del sistema -->
 <div class="project-section">
   <h2>🏗️ Arquitectura del Sistema</h2>
-  <div class="architecture-diagram">
-    <p>📋 Diagrama d'Arquitectura</p>
-    <p style="font-style: italic; color: #999;">
-      [Aquí aniria un diagrama detallat de l'arquitectura del sistema<br>
-      mostrant el flux de dades, components principals i integracions]
-    </p>
+  <div class="architecture-diagram" style="padding: 0; border: none; overflow: hidden;">
+    {% if page.architecture_image %}
+      <img src="{{ page.architecture_image }}" alt="Arquitectura del sistema" style="width: 100%; height: auto; display: block;">
+    {% else %}
+      <div style="padding: 3rem; border: 2px dashed #ccc; border-radius: 8px;">
+        <p>📋 Diagrama d'Arquitectura</p>
+        <p style="font-style: italic; color: #999;">
+          [Aquí aniria un diagrama detallat de l'arquitectura del sistema<br>
+          mostrant el flux de dades, components principals i integracions]
+        </p>
+      </div>
+    {% endif %}
   </div>
   
   {% if page.architecture_description %}
@@ -341,27 +377,12 @@ layout: default
 </div>
 
 <!-- Implementació destacada -->
-<div class="project-section">
-  <h2>💻 Implementació Destacada</h2>
-  
   {% if page.code_snippet %}
-  <div class="code-snippet">{{ page.code_snippet }}</div>
-  {% else %}
-  <div class="code-snippet">
-# Exemple d'implementació del pipeline principal
-class MLPipeline:
-    def __init__(self, config):
-        self.preprocessor = DataPreprocessor(config)
-        self.model = self.load_model(config.model_path)
-        self.evaluator = ModelEvaluator()
-    
-    def predict(self, data):
-        processed_data = self.preprocessor.transform(data)
-        predictions = self.model.predict(processed_data)
-        return self.postprocess_predictions(predictions)
+  <div class="project-section">
+    <h2>💻 Implementació Destacada</h2>
+    <div class="code-snippet">{{ page.code_snippet }}</div>
   </div>
   {% endif %}
-</div>
 
 <!-- Reptes i solucions -->
 <div class="project-section">

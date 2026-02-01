@@ -6,7 +6,7 @@ permalink: /cv/
 
 <div class="cv-container">
   <h1>Curriculum Vitae</h1>
-  <p class="cv-subtitle">Darrera actualització: Agost 2025</p>
+  <p class="cv-subtitle">Darrera actualització: Gener 2026</p>
   
   <div class="cv-embed">
     <embed src="/Nils Duran CV.pdf" type="application/pdf" width="100%" height="965px">

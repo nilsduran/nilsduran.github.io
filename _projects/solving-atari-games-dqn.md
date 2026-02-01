@@ -4,6 +4,7 @@ title: Resolució de Jocs d'Atari amb Deep Q-Networks
 subtitle: Implementació d'Agents Intel·ligents per Videojocs Clàssics
 type: project
 image_format: gif
+index_description: "Agents de Reinforcement Learning que aprenen a jugar videojocs d'Atari des de zero, superant el rendiment humà."
 date_display: "Estiu 2024"
 duration: 10 setmanes
 team_size: 1

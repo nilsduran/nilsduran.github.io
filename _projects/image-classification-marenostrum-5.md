@@ -4,11 +4,7 @@ title: Classificació d'Imatges Massiva amb MareNostrum 5
 subtitle: Deep Learning a Escala amb Supercomputació
 type: project
 image_format: png
-date_display: "Setembre 2024"
-duration: 12 setmanes
-team_size: 3
-hero_color_1: "#3498db"
-hero_color_2: "#2c3e50"
+index_description: "Classificació massiva d'imatges (+200GB) utilitzant Transformers distribuïts en el supercomputador MareNostrum 5."
 executive_summary: "Projecte de classificació d'imatges a gran escala utilitzant el superordinador MareNostrum V del BSC. Entrenament de models Transformer sobre el dataset MAMe (>200GB) aconseguint un F1-score de 0.75 amb tècniques avançades de paral·lelització distribuïda."
 technologies:
   - PyTorch

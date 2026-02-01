@@ -95,9 +95,14 @@
   opacity: 0.9;
 }
 
-/* Subtítol de pel·lícules (que conté les estrelles) ha de ser daurat */
-#recent-movie .recent-movie-director {
+#recent-movie .recent-movie-director,
+#recent-book .recent-book-stars {
   color: #ffd700 !important;
+}
+
+#recent-book .recent-book-author {
+  opacity: 1 !important;
+  color: white !important;
 }
 
 .interest-stars {

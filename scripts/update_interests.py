@@ -206,11 +206,31 @@ def fetch_book(scraper: cloudscraper.CloudScraper) -> Optional[Dict[str, Any]]:
             book_page = scraper.get(link)
             if book_page.status_code == 200:
                 book_soup = BeautifulSoup(book_page.text, "html.parser")
+                
+                # Try finding rating in different places
+                rating_found = False
+                
+                # 1. Review section
                 review_section = book_soup.find("div", class_="book-page-review-section")
                 if review_section:
                     rating_span = review_section.find("span", class_="font-medium")
                     if rating_span:
-                        stars = float(rating_span.get_text(strip=True))
+                        try:
+                            stars = float(rating_span.get_text(strip=True))
+                            rating_found = True
+                        except ValueError:
+                            pass
+                
+                # 2. Main book info area (if logged in or different layout)
+                if not rating_found:
+                    # Look for text like "4.50" or "4,50" near "ratings"
+                    rating_pattern = re.compile(r'(\d+[.,]\d+)')
+                    avg_rating_div = book_soup.find("div", string=lambda t: t and "Average rating" in t)
+                    if avg_rating_div:
+                        match = rating_pattern.search(avg_rating_div.get_text())
+                        if match:
+                             stars = float(match.group(1).replace(",", "."))
+                             rating_found = True
         except Exception as e:
             print(f"   ⚠️ Error fetching rating: {e}")
 

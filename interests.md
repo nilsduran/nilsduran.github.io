@@ -9,20 +9,20 @@ permalink: /interests/
 <h2>🔥 Recents</h2>
 <div class="interest-grid">
 <!-- Últim llibre llegit -->
-<div class="interest-item" id="recent-book"><a class="interest-link" href="https://app.thestorygraph.com/books/7112fac3-ec7f-4ead-8bc7-7b0d3a990da4" rel="noopener" target="_blank">
-<img alt="Project Hail Mary" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'" src="https://cdn.thestorygraph.com/1izdkc05wohqx20hurp8iyjxgggu"/>
+<div class="interest-item" id="recent-book"><a class="interest-link" href="https://app.thestorygraph.com/books/f1e27be8-76cc-4f13-95b5-8d9ce3115ffb" rel="noopener" target="_blank">
+<img alt="L'ascens dels rebels" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'" src="https://cdn.thestorygraph.com/77ducl9n7iwicervy2n5zgv8g1bn"/>
 <div class="interest-overlay">
-<div class="interest-title recent-book-title">Project Hail Mary</div>
-<div class="interest-subtitle recent-book-author">Andy Weir</div>
-<div class="interest-stars recent-book-stars">★★★★★</div>
+<div class="interest-title recent-book-title">L'ascens dels rebels</div>
+<div class="interest-subtitle recent-book-author">Mariona Bessa</div>
+<div class="interest-stars recent-book-stars">★★★★½</div>
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-big-short/" rel="noopener" target="_blank">
-<img alt="The Big Short (2015)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/2/4/6/0/1/3/246013-the-big-short-0-500-0-750-crop.jpg?v=53fc881989"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/haikyu-the-dumpster-battle/" rel="noopener" target="_blank">
+<img alt="HAIKYU!! The Dumpster Battle (2024)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/9/1/1/9/6/6/911966-haikyu-the-dumpster-battle-0-500-0-750-crop.jpg?v=eb94163e7b"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">The Big Short (2015)</div>
-<div class="interest-subtitle recent-movie-director">★★★★½</div>
+<div class="interest-title recent-movie-title">HAIKYU!! The Dumpster Battle (2024)</div>
+<div class="interest-subtitle recent-movie-director">★★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

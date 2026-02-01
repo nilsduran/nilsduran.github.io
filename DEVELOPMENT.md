@@ -11,6 +11,14 @@ This script will:
 2.  **Update Recent Book**: Fetch the latest "Recently Read" book from Storygraph.
 3.  **Manage Cookies**: Prompt you to update the Storygraph cookie if needed.
 
+## Local Development
+
+To preview the site locally and see changes in real-time, use the following command:
+
+```bash
+bundle exec jekyll serve --livereload
+```
+
 ## Storygraph Automation
 
 The "Recent Books" section is automatically updated by a GitHub Action that runs every 6 hours.

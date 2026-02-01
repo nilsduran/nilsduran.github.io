@@ -11,22 +11,15 @@ permalink: /interests/
 <!-- Últim llibre llegit -->
 <div class="interest-item" id="recent-book"><a class="interest-link" href="https://app.thestorygraph.com/books/f1e27be8-76cc-4f13-95b5-8d9ce3115ffb" rel="noopener" target="_blank">
 <img alt="L'ascens dels rebels" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'" src="https://cdn.thestorygraph.com/77ducl9n7iwicervy2n5zgv8g1bn"/>
-<div class="interest-item" id="recent-book"><a class="interest-link" href="https://app.thestorygraph.com/books/f1e27be8-76cc-4f13-95b5-8d9ce3115ffb" rel="noopener" target="_blank">
-<img alt="L'ascens dels rebels" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'" src="https://cdn.thestorygraph.com/77ducl9n7iwicervy2n5zgv8g1bn"/>
 <div class="interest-overlay">
 <div class="interest-title recent-book-title">L'ascens dels rebels</div>
 <div class="interest-subtitle recent-book-author">Mariona Bessa</div>
-<div class="interest-stars recent-book-stars">★★★★½</div>
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
 <div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/haikyu-the-dumpster-battle/" rel="noopener" target="_blank">
 <img alt="HAIKYU!! The Dumpster Battle (2024)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/9/1/1/9/6/6/911966-haikyu-the-dumpster-battle-0-500-0-750-crop.jpg?v=eb94163e7b"/>
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/haikyu-the-dumpster-battle/" rel="noopener" target="_blank">
-<img alt="HAIKYU!! The Dumpster Battle (2024)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/9/1/1/9/6/6/911966-haikyu-the-dumpster-battle-0-500-0-750-crop.jpg?v=eb94163e7b"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">HAIKYU!! The Dumpster Battle (2024)</div>
-<div class="interest-subtitle recent-movie-director">★★★½</div>
 <div class="interest-title recent-movie-title">HAIKYU!! The Dumpster Battle (2024)</div>
 <div class="interest-subtitle recent-movie-director">★★★½</div>
 </div>

@@ -67,20 +67,20 @@ permalink: /interests/
 </a>
 </div>
 <div class="interest-item">
-<a class="interest-link" href="https://letterboxd.com/tique_011/film/little-women-2019/" rel="noopener" target="_blank">
-<img alt="Pel·lícula 3" onerror="this.parentElement.parentElement.innerHTML='&lt;div class=&quot;interest-placeholder&quot;&gt;Poster 3&lt;/div&gt;'" src="/images/interests/movies/little-women.jpg"/>
+<a class="interest-link" href="https://letterboxd.com/tique_011/film/the-lion-king/" rel="noopener" target="_blank">
+<img alt="Pel·lícula 3" onerror="this.parentElement.parentElement.innerHTML='&lt;div class=&quot;interest-placeholder&quot;&gt;Poster 3&lt;/div&gt;'" src="/images/interests/movies/the-lion-king.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title">Little Women</div>
-<div class="interest-subtitle">Greta Gerwig • 2019</div>
+<div class="interest-title">The Lion King</div>
+<div class="interest-subtitle">Roger Allers, Rob Minkoff • 1994</div>
 </div>
 </a>
 </div>
 <div class="interest-item">
-<a class="interest-link" href="https://letterboxd.com/tique_011/film/when-hitler-stole-pink-rabbit/activity/" rel="noopener" target="_blank">
-<img alt="Pel·lícula 4" onerror="this.parentElement.parentElement.innerHTML='&lt;div class=&quot;interest-placeholder&quot;&gt;Poster 4&lt;/div&gt;'" src="/images/interests/movies/als-hitler-das-rosa-kaninchen-stahl.jpg"/>
+<a class="interest-link" href="https://letterboxd.com/tique_011/film/heroes-2010-1/activity/" rel="noopener" target="_blank">
+<img alt="Pel·lícula 4" onerror="this.parentElement.parentElement.innerHTML='&lt;div class=&quot;interest-placeholder&quot;&gt;Poster 4&lt;/div&gt;'" src="/images/interests/movies/herois.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title">Als Hitler das Rosa Kaninchen Stahl</div>
-<div class="interest-subtitle">Caroline Link • 2019</div>
+<div class="interest-title">Herois</div>
+<div class="interest-subtitle">Pau Freixas • 2010</div>
 </div>
 </a>
 </div>

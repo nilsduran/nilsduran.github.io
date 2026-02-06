@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Hans+Zimmer/_/A+Time+of+Quiet+Between+the+Storms" rel="noopener" target="_blank">
-<img alt="A Time of Quiet Between the Storms" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/5fe26b8576576fac9e6e72bd7bc786da.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Tears+for+Fears/_/Shout+-+Alternative+Version" rel="noopener" target="_blank">
+<img alt="Shout - Alternative Version" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/db2010fbfdaeea0d270993d87af3c96a.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">A Time of Quiet Between the Storms</div>
-<div class="interest-subtitle recent-music-artist">Hans Zimmer</div>
+<div class="interest-title recent-music-title">Shout - Alternative Version</div>
+<div class="interest-subtitle recent-music-artist">Tears for Fears</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

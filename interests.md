@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Tears+for+Fears/_/Shout+-+US+Dub+Version" rel="noopener" target="_blank">
-<img alt="Shout - US Dub Version" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/db2010fbfdaeea0d270993d87af3c96a.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Bad+Bunny/_/VOY+A+LLeVARTE+PA+PR" rel="noopener" target="_blank">
+<img alt="VOY A LLeVARTE PA PR" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/7d0982b56a5e4304eb6207d6688c917a.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Shout - US Dub Version</div>
-<div class="interest-subtitle recent-music-artist">Tears for Fears</div>
+<div class="interest-title recent-music-title">VOY A LLeVARTE PA PR</div>
+<div class="interest-subtitle recent-music-artist">Bad Bunny</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Bad+Bunny/_/LA+MuDANZA" rel="noopener" target="_blank">
-<img alt="LA MuDANZA" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/7d0982b56a5e4304eb6207d6688c917a.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Andrew+Garfield/_/30%2F90" rel="noopener" target="_blank">
+<img alt="30/90" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/f798d1ae7233d8e98d7f37139768f0f2.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">LA MuDANZA</div>
-<div class="interest-subtitle recent-music-artist">Bad Bunny</div>
+<div class="interest-title recent-music-title">30/90</div>
+<div class="interest-subtitle recent-music-artist">Andrew Garfield</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

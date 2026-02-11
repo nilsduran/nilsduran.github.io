@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Andrew+Garfield/_/30%2F90" rel="noopener" target="_blank">
-<img alt="30/90" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/f798d1ae7233d8e98d7f37139768f0f2.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Jonathan+Groff/_/You%27ll+Be+Back" rel="noopener" target="_blank">
+<img alt="You'll Be Back" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/3a45f08c32702b682d944b15bad8e0d9.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">30/90</div>
-<div class="interest-subtitle recent-music-artist">Andrew Garfield</div>
+<div class="interest-title recent-music-title">You'll Be Back</div>
+<div class="interest-subtitle recent-music-artist">Jonathan Groff</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

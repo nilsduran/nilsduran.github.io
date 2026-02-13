@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Eminence+Symphony+Orchestra/_/Death+Note+Suite" rel="noopener" target="_blank">
-<img alt="Death Note Suite" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/66452427e8db095da82a9400e72b0240.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Ludwig+G%C3%B6ransson/_/The+Mandalorian" rel="noopener" target="_blank">
+<img alt="The Mandalorian" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/023d2efef0b78b41a8365cdb572f43ac.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Death Note Suite</div>
-<div class="interest-subtitle recent-music-artist">Eminence Symphony Orchestra</div>
+<div class="interest-title recent-music-title">The Mandalorian</div>
+<div class="interest-subtitle recent-music-artist">Ludwig Göransson</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

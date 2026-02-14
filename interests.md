@@ -25,10 +25,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/James+Newton+Howard/_/Healing+Katniss+-+From+%22The+Hunger+Games%22" rel="noopener" target="_blank">
-<img alt="Healing Katniss - From " class="recent-music-cover" games""="" hunger="" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/73401f0ce42b4fe5add9fe6b432cd64b.png" the=""/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/James+Newton+Howard/_/Horn+of+Plenty+-+From+%22The+Hunger+Games%22" rel="noopener" target="_blank">
+<img alt="Horn of Plenty - From " class="recent-music-cover" games""="" hunger="" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/8645dbbd03b77a4d3e2ccde91b2df2d6.png" the=""/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Healing Katniss - From "The Hunger Games"</div>
+<div class="interest-title recent-music-title">Horn of Plenty - From "The Hunger Games"</div>
 <div class="interest-subtitle recent-music-artist">James Newton Howard</div>
 </div>
 </a></div>

@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/James+Newton+Howard/_/Horn+of+Plenty+-+From+%22The+Hunger+Games%22" rel="noopener" target="_blank">
-<img alt="Horn of Plenty - From " class="recent-music-cover" games""="" hunger="" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/8645dbbd03b77a4d3e2ccde91b2df2d6.png" the=""/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Jean-Marie+Leclair/_/Tambourin" rel="noopener" target="_blank">
+<img alt="Tambourin" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/5f0edaceedcf6e6175e36e595046b358.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Horn of Plenty - From "The Hunger Games"</div>
-<div class="interest-subtitle recent-music-artist">James Newton Howard</div>
+<div class="interest-title recent-music-title">Tambourin</div>
+<div class="interest-subtitle recent-music-artist">Jean-Marie Leclair</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

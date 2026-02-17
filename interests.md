@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Alice+Smith/_/Last+Time+(I+Seen+the+Sun)" rel="noopener" target="_blank">
-<img alt="Last Time (I Seen the Sun)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/62f7e02f3f821dda150b068cf90169e4.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/OG+DAYV/_/Troubled+Waters+%2F+Homesick" rel="noopener" target="_blank">
+<img alt="Troubled Waters / Homesick" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/83b705580773603ba4d270ed76cd4734.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Last Time (I Seen the Sun)</div>
-<div class="interest-subtitle recent-music-artist">Alice Smith</div>
+<div class="interest-title recent-music-title">Troubled Waters / Homesick</div>
+<div class="interest-subtitle recent-music-artist">OG DAYV</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

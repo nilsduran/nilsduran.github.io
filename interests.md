@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Joshua+Henry/_/Green+Green+Dress" rel="noopener" target="_blank">
-<img alt="Green Green Dress" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/96e62aac93a88388bf2036bec6acaa5d.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Julie+Andrews/_/The+Lonely+Goatherd" rel="noopener" target="_blank">
+<img alt="The Lonely Goatherd" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/705279421cf593b0cdcd2171389fd346.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Green Green Dress</div>
-<div class="interest-subtitle recent-music-artist">Joshua Henry</div>
+<div class="interest-title recent-music-title">The Lonely Goatherd</div>
+<div class="interest-subtitle recent-music-artist">Julie Andrews</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

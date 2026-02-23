@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Tom+Odell/_/Another+Love" rel="noopener" target="_blank">
-<img alt="Another Love" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/fdfebc9ffd15402c86ecf782fd4022e4.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Aaron+May/_/Wainwright%27s" rel="noopener" target="_blank">
+<img alt="Wainwright's" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/116d1ee23d08f586bafac096cfa9ee3c.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Another Love</div>
-<div class="interest-subtitle recent-music-artist">Tom Odell</div>
+<div class="interest-title recent-music-title">Wainwright's</div>
+<div class="interest-subtitle recent-music-artist">Aaron May</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

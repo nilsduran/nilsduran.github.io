@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Aaron+May/_/Fragile+(Sting+Cover)" rel="noopener" target="_blank">
-<img alt="Fragile (Sting Cover)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/116d1ee23d08f586bafac096cfa9ee3c.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Hans+Zimmer/_/Dream+Is+Collapsing" rel="noopener" target="_blank">
+<img alt="Dream Is Collapsing" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/fe27be04693b9a1c81596bb0af0c26e1.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Fragile (Sting Cover)</div>
-<div class="interest-subtitle recent-music-artist">Aaron May</div>
+<div class="interest-title recent-music-title">Dream Is Collapsing</div>
+<div class="interest-subtitle recent-music-artist">Hans Zimmer</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

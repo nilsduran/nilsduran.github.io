@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Benson+Boone/_/Young+American+Heart" rel="noopener" target="_blank">
-<img alt="Young American Heart" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/b730d4e00f5bdc52460826fb0842d737.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Dean/_/Dive" rel="noopener" target="_blank">
+<img alt="Dive" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/ac2df99cc1231065a80cc7fdff880d2d.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Young American Heart</div>
-<div class="interest-subtitle recent-music-artist">Benson Boone</div>
+<div class="interest-title recent-music-title">Dive</div>
+<div class="interest-subtitle recent-music-artist">Olivia Dean</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

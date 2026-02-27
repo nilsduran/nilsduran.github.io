@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Selena+Gomez+&amp;+the+Scene/_/Naturally" rel="noopener" target="_blank">
-<img alt="Naturally" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/8fa16ed2654c39163120f95a2f83e955.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/PewDiePie/_/Coco" rel="noopener" target="_blank">
+<img alt="Coco" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/171529509f36fa9fac0d6ff408f0e747.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Naturally</div>
-<div class="interest-subtitle recent-music-artist">Selena Gomez &amp; the Scene</div>
+<div class="interest-title recent-music-title">Coco</div>
+<div class="interest-subtitle recent-music-artist">PewDiePie</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Donald+Lawrence+&amp;+The+Tri-City+Singers/_/The+Best+Is+Yet+To+Come" rel="noopener" target="_blank">
-<img alt="The Best Is Yet To Come" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Erich+Wolfgang+Korngold/_/The+Adventures+of+Robin+Hood:+Love+Scene" rel="noopener" target="_blank">
+<img alt="The Adventures of Robin Hood: Love Scene" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/cd79b2f2747d413e8242dc49f4e4622f.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">The Best Is Yet To Come</div>
-<div class="interest-subtitle recent-music-artist">Donald Lawrence &amp; The Tri-City Singers</div>
+<div class="interest-title recent-music-title">The Adventures of Robin Hood: Love Scene</div>
+<div class="interest-subtitle recent-music-artist">Erich Wolfgang Korngold</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

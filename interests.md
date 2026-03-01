@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Erich+Wolfgang+Korngold/_/The+Adventures+of+Robin+Hood:+Love+Scene" rel="noopener" target="_blank">
-<img alt="The Adventures of Robin Hood: Love Scene" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/cd79b2f2747d413e8242dc49f4e4622f.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Jonny+Greenwood/_/One+Battle+After+Another" rel="noopener" target="_blank">
+<img alt="One Battle After Another" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/46ac1567ae1929da6b477011f5abe190.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">The Adventures of Robin Hood: Love Scene</div>
-<div class="interest-subtitle recent-music-artist">Erich Wolfgang Korngold</div>
+<div class="interest-title recent-music-title">One Battle After Another</div>
+<div class="interest-subtitle recent-music-artist">Jonny Greenwood</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

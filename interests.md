@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Hans+Zimmer/_/Herald+of+the+Change" rel="noopener" target="_blank">
-<img alt="Herald of the Change" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/374db711f3c0173081433d8309d07f64.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/David+Fleming/_/Home" rel="noopener" target="_blank">
+<img alt="Home" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/26d78fe6ee13447a4cf120f152cdfd9d.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Herald of the Change</div>
-<div class="interest-subtitle recent-music-artist">Hans Zimmer</div>
+<div class="interest-title recent-music-title">Home</div>
+<div class="interest-subtitle recent-music-artist">David Fleming</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

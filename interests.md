@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Dean/_/Close+Up" rel="noopener" target="_blank">
-<img alt="Close Up" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/e9aedce534c4c0cf22f18483bed6620e.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Harry+Styles/_/The+Waiting+Game" rel="noopener" target="_blank">
+<img alt="The Waiting Game" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/c2bd6cb310d31e39faaa0f206cee4068.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Close Up</div>
-<div class="interest-subtitle recent-music-artist">Olivia Dean</div>
+<div class="interest-title recent-music-title">The Waiting Game</div>
+<div class="interest-subtitle recent-music-artist">Harry Styles</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

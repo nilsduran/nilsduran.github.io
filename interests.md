@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Benson+Boone/_/Mystical+Magical" rel="noopener" target="_blank">
-<img alt="Mystical Magical" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/b730d4e00f5bdc52460826fb0842d737.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Charli+xcx/_/Always+Everywhere" rel="noopener" target="_blank">
+<img alt="Always Everywhere" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/d902b8896a3d57c1cf29257e2c692302.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Mystical Magical</div>
-<div class="interest-subtitle recent-music-artist">Benson Boone</div>
+<div class="interest-title recent-music-title">Always Everywhere</div>
+<div class="interest-subtitle recent-music-artist">Charli xcx</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-housemaid-2025/" rel="noopener" target="_blank">
-<img alt="The Housemaid (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/2/5/5/3/1/9/1255319-the-housemaid-2025-0-500-0-750-crop.jpg?v=b054fee6ec"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/balandrau-where-the-fierce-wind-blew/" rel="noopener" target="_blank">
+<img alt="Balandrau: Where the Fierce Wind Blew (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/3/1/9/6/7/5/1319675-balandrau-vent-salvatge-0-500-0-750-crop.jpg?v=7a6aa55b6c"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">The Housemaid (2025)</div>
-<div class="interest-subtitle recent-movie-director">★★★★½</div>
+<div class="interest-title recent-movie-title">Balandrau: Where the Fierce Wind Blew (2026)</div>
+<div class="interest-subtitle recent-movie-director">★★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/all-the-empty-rooms/" rel="noopener" target="_blank">
-<img alt="All the Empty Rooms (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/4/0/0/3/4/0/1400340-all-the-empty-rooms-0-500-0-750-crop.jpg?v=161cce5c40"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/a-house-of-dynamite/" rel="noopener" target="_blank">
+<img alt="A House of Dynamite (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/1/7/2/7/8/7/1172787-a-house-of-dynamite-0-500-0-750-crop.jpg?v=9013364dac"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">All the Empty Rooms (2025)</div>
-<div class="interest-subtitle recent-movie-director">★★★½</div>
+<div class="interest-title recent-movie-title">A House of Dynamite (2025)</div>
+<div class="interest-subtitle recent-movie-director">★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

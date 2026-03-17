@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/balandrau-where-the-fierce-wind-blew/" rel="noopener" target="_blank">
-<img alt="Balandrau: Where the Fierce Wind Blew (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/3/1/9/6/7/5/1319675-balandrau-where-the-fierce-wind-blew-0-500-0-750-crop.jpg?v=fb35831206"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-perfect-neighbour/" rel="noopener" target="_blank">
+<img alt="The Perfect Neighbor (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/2/8/4/1/5/7/1284157-the-perfect-neighbor-2025-0-500-0-750-crop.jpg?v=f3b31c60df"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Balandrau: Where the Fierce Wind Blew (2026)</div>
-<div class="interest-subtitle recent-movie-director">★★★★</div>
+<div class="interest-title recent-movie-title">The Perfect Neighbor (2025)</div>
+<div class="interest-subtitle recent-movie-director">★★★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

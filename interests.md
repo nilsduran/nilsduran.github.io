@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/a-house-of-dynamite/" rel="noopener" target="_blank">
-<img alt="A House of Dynamite (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/1/7/2/7/8/7/1172787-a-house-of-dynamite-0-500-0-750-crop.jpg?v=9013364dac"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-nice-guys/" rel="noopener" target="_blank">
+<img alt="The Nice Guys (2016)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/2/1/6/3/0/1/216301-the-nice-guys-0-500-0-750-crop.jpg?v=40616daa2c"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">A House of Dynamite (2025)</div>
-<div class="interest-subtitle recent-movie-director">★★</div>
+<div class="interest-title recent-movie-title">The Nice Guys (2016)</div>
+<div class="interest-subtitle recent-movie-director">★★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

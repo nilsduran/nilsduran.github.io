@@ -17,19 +17,19 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/one-battle-after-another/1/" rel="noopener" target="_blank">
-<img alt="One Battle After Another (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/9/5/1/2/7/7/951277-one-battle-after-another-0-500-0-750-crop.jpg?v=d27c4cc662"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/forrest-gump/1/" rel="noopener" target="_blank">
+<img alt="Forrest Gump (1994)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/2/7/0/4/2704-forrest-gump-0-500-0-750-crop.jpg?v=173bc04cf0"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">One Battle After Another (2025)</div>
-<div class="interest-subtitle recent-movie-director">★★★★★</div>
+<div class="interest-title recent-movie-title">Forrest Gump (1994)</div>
+<div class="interest-subtitle recent-movie-director">★★★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Jerskin+Fendrix/_/Resurrectionem" rel="noopener" target="_blank">
-<img alt="Resurrectionem" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/b127a9965f4742aaf640c5fcd367769e.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Lola+Young/_/Wish+You+Were+Dead" rel="noopener" target="_blank">
+<img alt="Wish You Were Dead" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/4cf7517ce7db21dbde4dde5478502c2b.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Resurrectionem</div>
-<div class="interest-subtitle recent-music-artist">Jerskin Fendrix</div>
+<div class="interest-title recent-music-title">Wish You Were Dead</div>
+<div class="interest-subtitle recent-music-artist">Lola Young</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

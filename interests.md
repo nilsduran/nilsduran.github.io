@@ -9,11 +9,11 @@ permalink: /interests/
 <h2>🔥 Recents</h2>
 <div class="interest-grid">
 <!-- Últim llibre llegit -->
-<div class="interest-item" id="recent-book"><a class="interest-link" href="https://app.thestorygraph.com/books/f1e27be8-76cc-4f13-95b5-8d9ce3115ffb" rel="noopener" target="_blank">
-<img alt="L'ascens dels rebels" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'" src="https://cdn.thestorygraph.com/77ducl9n7iwicervy2n5zgv8g1bn"/>
+<div class="interest-item" id="recent-book"><a class="interest-link" href="https://app.thestorygraph.com/books/7112728f-c55f-43b2-9a23-64ff71f88e5b" rel="noopener" target="_blank">
+<img alt="Què és ser vegà?" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'" src="https://cdn.thestorygraph.com/9pxwp4h52nqsei8hjyuqec0r8gb7"/>
 <div class="interest-overlay">
-<div class="interest-title recent-book-title">L'ascens dels rebels</div>
-<div class="interest-subtitle recent-book-author">Mariona Bessa</div>
+<div class="interest-title recent-book-title">Què és ser vegà?</div>
+<div class="interest-subtitle recent-book-author">Charlotte Willis</div>
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->

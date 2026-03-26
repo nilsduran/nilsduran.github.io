@@ -17,10 +17,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/seaspiracy/" rel="noopener" target="_blank">
-<img alt="Seaspiracy (2021)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/7/1/8/6/1/5/718615-seaspiracy-0-500-0-750-crop.jpg?v=e49917c3f5"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/dominion-2018/" rel="noopener" target="_blank">
+<img alt="Dominion (2018)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/4/0/4/1/6/9/404169-dominion-0-500-0-750-crop.jpg?v=48c495867f"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Seaspiracy (2021)</div>
+<div class="interest-title recent-movie-title">Dominion (2018)</div>
 <div class="interest-subtitle recent-movie-director">★★★★★</div>
 </div>
 </a></div>

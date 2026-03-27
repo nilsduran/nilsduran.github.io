@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/hard-eight/" rel="noopener" target="_blank">
-<img alt="Hard Eight (1996)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/4/7/9/1/3/47913-hard-eight-0-500-0-750-crop.jpg?v=d5198f6351"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/war-machine-2026/" rel="noopener" target="_blank">
+<img alt="War Machine (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/1/4/9/6/7/6/1149676-war-machine-2026-0-500-0-750-crop.jpg?v=75d5b01b26"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Hard Eight (1996)</div>
-<div class="interest-subtitle recent-movie-director">★★★★</div>
+<div class="interest-title recent-movie-title">War Machine (2026)</div>
+<div class="interest-subtitle recent-movie-director">★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

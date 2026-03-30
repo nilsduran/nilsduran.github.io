@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Lola+Young/_/Wish+You+Were+Dead" rel="noopener" target="_blank">
-<img alt="Wish You Were Dead" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/4cf7517ce7db21dbde4dde5478502c2b.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Dean/_/So+Easy+(To+Fall+In+Love)" rel="noopener" target="_blank">
+<img alt="So Easy (To Fall In Love)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/e9aedce534c4c0cf22f18483bed6620e.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Wish You Were Dead</div>
-<div class="interest-subtitle recent-music-artist">Lola Young</div>
+<div class="interest-title recent-music-title">So Easy (To Fall In Love)</div>
+<div class="interest-subtitle recent-music-artist">Olivia Dean</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

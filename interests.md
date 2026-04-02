@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/good-luck-have-fun-dont-die/" rel="noopener" target="_blank">
-<img alt="Good Luck, Have Fun, Don't Die (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/0/0/9/2/3/7/1009237-good-luck-have-fun-dont-die-0-500-0-750-crop.jpg?v=be79007f48"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-running-man-2025/" rel="noopener" target="_blank">
+<img alt="The Running Man (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/7/1/6/1/7/8/716178-the-running-man-2025-0-500-0-750-crop.jpg?v=51fba45d13"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Good Luck, Have Fun, Don't Die (2025)</div>
-<div class="interest-subtitle recent-movie-director">★★★★½</div>
+<div class="interest-title recent-movie-title">The Running Man (2025)</div>
+<div class="interest-subtitle recent-movie-director">★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

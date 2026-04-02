@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-running-man-2025/" rel="noopener" target="_blank">
-<img alt="The Running Man (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/7/1/6/1/7/8/716178-the-running-man-2025-0-500-0-750-crop.jpg?v=51fba45d13"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-adventures-of-robin-hood/" rel="noopener" target="_blank">
+<img alt="The Adventures of Robin Hood (1938)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/4/5/7/8/5/45785-the-adventures-of-robin-hood-0-500-0-750-crop.jpg?v=cc2efa4cc6"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">The Running Man (2025)</div>
-<div class="interest-subtitle recent-movie-director">★★★</div>
+<div class="interest-title recent-movie-title">The Adventures of Robin Hood (1938)</div>
+<div class="interest-subtitle recent-movie-director">★★★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

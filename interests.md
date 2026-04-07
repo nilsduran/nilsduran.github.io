@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Gracie+Abrams/_/That%E2%80%99s+So+True" rel="noopener" target="_blank">
-<img alt="That’s So True" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/e84d919d43ddb2a1a0ce735e7b399e7e.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Andrew+Lloyd+Webber/_/You+Must+Love+Me" rel="noopener" target="_blank">
+<img alt="You Must Love Me" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/ad390936cfb999db6f2c83de7e553827.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">That’s So True</div>
-<div class="interest-subtitle recent-music-artist">Gracie Abrams</div>
+<div class="interest-title recent-music-title">You Must Love Me</div>
+<div class="interest-subtitle recent-music-artist">Andrew Lloyd Webber</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

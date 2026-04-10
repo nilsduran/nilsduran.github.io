@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Bear+McCreary/_/The+Tunnel+of+Love" rel="noopener" target="_blank">
-<img alt="The Tunnel of Love" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/4184314f50013f694f27eacc8d54510f.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Michael+Giacchino/_/Bundle+of+Joy" rel="noopener" target="_blank">
+<img alt="Bundle of Joy" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/b1239e019346ccc52de078547d7dab01.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">The Tunnel of Love</div>
-<div class="interest-subtitle recent-music-artist">Bear McCreary</div>
+<div class="interest-title recent-music-title">Bundle of Joy</div>
+<div class="interest-subtitle recent-music-artist">Michael Giacchino</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

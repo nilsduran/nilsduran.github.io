@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Alexandre+Desplat/_/Little+Women+-+from+%22Little+Women%22+Soundtrack" rel="noopener" target="_blank">
-<img alt="Little Women - from " class="recent-music-cover" little="" onerror="this.src='/images/interests/recent/music.jpg'" soundtrack"="" src="https://lastfm.freetls.fastly.net/i/u/300x300/d52ff9ae35eba7769c65be69fee013f4.png" women"=""/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Bear+McCreary/_/The+Tunnel+of+Love" rel="noopener" target="_blank">
+<img alt="The Tunnel of Love" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/4184314f50013f694f27eacc8d54510f.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Little Women - from "Little Women" Soundtrack</div>
-<div class="interest-subtitle recent-music-artist">Alexandre Desplat</div>
+<div class="interest-title recent-music-title">The Tunnel of Love</div>
+<div class="interest-subtitle recent-music-artist">Bear McCreary</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

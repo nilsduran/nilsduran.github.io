@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Michael+Giacchino/_/Bundle+of+Joy" rel="noopener" target="_blank">
-<img alt="Bundle of Joy" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/b1239e019346ccc52de078547d7dab01.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Noah+Kahan/_/False+Confidence" rel="noopener" target="_blank">
+<img alt="False Confidence" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/50cf4e0e36f3183f150cb008143cdd36.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Bundle of Joy</div>
-<div class="interest-subtitle recent-music-artist">Michael Giacchino</div>
+<div class="interest-title recent-music-title">False Confidence</div>
+<div class="interest-subtitle recent-music-artist">Noah Kahan</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

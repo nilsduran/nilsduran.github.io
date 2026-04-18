@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Noah+Kahan/_/False+Confidence" rel="noopener" target="_blank">
-<img alt="False Confidence" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/50cf4e0e36f3183f150cb008143cdd36.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Zach+Bryan/_/Sarah%27s+Place+(feat.+Noah+Kahan)" rel="noopener" target="_blank">
+<img alt="Sarah's Place (feat. Noah Kahan)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/571b1070a5f75690dc14e6b3e556c3ec.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">False Confidence</div>
-<div class="interest-subtitle recent-music-artist">Noah Kahan</div>
+<div class="interest-title recent-music-title">Sarah's Place (feat. Noah Kahan)</div>
+<div class="interest-subtitle recent-music-artist">Zach Bryan</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

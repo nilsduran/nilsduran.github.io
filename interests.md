@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Zach+Bryan/_/Sarah%27s+Place+(feat.+Noah+Kahan)" rel="noopener" target="_blank">
-<img alt="Sarah's Place (feat. Noah Kahan)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/571b1070a5f75690dc14e6b3e556c3ec.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Bishop+Briggs/_/The+Way+I+Do" rel="noopener" target="_blank">
+<img alt="The Way I Do" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/7d8e01d53018048916c7878bbdae60d7.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Sarah's Place (feat. Noah Kahan)</div>
-<div class="interest-subtitle recent-music-artist">Zach Bryan</div>
+<div class="interest-title recent-music-title">The Way I Do</div>
+<div class="interest-subtitle recent-music-artist">Bishop Briggs</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

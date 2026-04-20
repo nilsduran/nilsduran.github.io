@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/louis-theroux-inside-the-manosphere/" rel="noopener" target="_blank">
-<img alt="Louis Theroux: Inside the Manosphere (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/4/9/9/9/1/7/1499917-louis-theroux-inside-the-manosphere-0-500-0-750-crop.jpg?v=901afcf4d1"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/project-hail-mary/1/" rel="noopener" target="_blank">
+<img alt="Project Hail Mary (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/6/1/1/2/8/8/611288-project-hail-mary-0-500-0-750-crop.jpg?v=ac31b6ec03"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Louis Theroux: Inside the Manosphere (2026)</div>
-<div class="interest-subtitle recent-movie-director">★★½</div>
+<div class="interest-title recent-movie-title">Project Hail Mary (2026)</div>
+<div class="interest-subtitle recent-movie-director">★★★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

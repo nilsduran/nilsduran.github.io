@@ -10,7 +10,7 @@ permalink: /interests/
 <div class="interest-grid">
 <!-- Últim llibre llegit -->
 <div class="interest-item" id="recent-book"><a class="interest-link" href="https://app.thestorygraph.com/books/7112728f-c55f-43b2-9a23-64ff71f88e5b" rel="noopener" target="_blank">
-<img alt="Què és ser vegà?" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'" src="https://cdn.thestorygraph.com/9pxwp4h52nqsei8hjyuqec0r8gb7"/>
+<img alt="Què és ser vegà?" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'" src="https://cdn.thestorygraph.com/cx3pl7d79hm4mjf216ury3yn4o8m"/>
 <div class="interest-overlay">
 <div class="interest-title recent-book-title">Què és ser vegà?</div>
 <div class="interest-subtitle recent-book-author">Charlotte Willis</div>

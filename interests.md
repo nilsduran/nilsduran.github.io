@@ -25,10 +25,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Michael+Jackson/_/Chicago" rel="noopener" target="_blank">
-<img alt="Chicago" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/b366cff64b1e4757c7f64e117142baa5.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Michael+Jackson/_/P.Y.T.+(Pretty+Young+Thing)" rel="noopener" target="_blank">
+<img alt="P.Y.T. (Pretty Young Thing)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/a6a876bd5f927ac2ca5b72a4826f62c7.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Chicago</div>
+<div class="interest-title recent-music-title">P.Y.T. (Pretty Young Thing)</div>
 <div class="interest-subtitle recent-music-artist">Michael Jackson</div>
 </div>
 </a></div>

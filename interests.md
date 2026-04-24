@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/boogie-nights/" rel="noopener" target="_blank">
-<img alt="Boogie Nights (1997)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/4/9/0/0/7/49007-boogie-nights-0-500-0-750-crop.jpg?v=57bef85dc6"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/michael-2026/" rel="noopener" target="_blank">
+<img alt="Michael (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/8/4/1/1/0/3/841103-michael-2026-0-500-0-750-crop.jpg?v=1e8e478e40"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Boogie Nights (1997)</div>
-<div class="interest-subtitle recent-movie-director">★★★★</div>
+<div class="interest-title recent-movie-title">Michael (2026)</div>
+<div class="interest-subtitle recent-movie-director">★★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

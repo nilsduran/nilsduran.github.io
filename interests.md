@@ -10,7 +10,7 @@ permalink: /interests/
 <div class="interest-grid">
 <!-- Últim llibre llegit -->
 <div class="interest-item" id="recent-book"><a class="interest-link" href="https://app.thestorygraph.com/books/7112728f-c55f-43b2-9a23-64ff71f88e5b" rel="noopener" target="_blank">
-<img alt="Què és ser vegà?" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'" src="https://cdn.thestorygraph.com/cx3pl7d79hm4mjf216ury3yn4o8m"/>
+<img alt="Què és ser vegà?" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'" src="https://cdn.thestorygraph.com/9pxwp4h52nqsei8hjyuqec0r8gb7"/>
 <div class="interest-overlay">
 <div class="interest-title recent-book-title">Què és ser vegà?</div>
 <div class="interest-subtitle recent-book-author">Charlotte Willis</div>
@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/RAYE/_/WHERE+IS+MY+HUSBAND!" rel="noopener" target="_blank">
-<img alt="WHERE IS MY HUSBAND!" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/9a46ff6f5eff4b7f011dc63c87e800c0.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Flo+Rida/_/My+House" rel="noopener" target="_blank">
+<img alt="My House" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/535ef4ca88254e3acec383a89b16cb71.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">WHERE IS MY HUSBAND!</div>
-<div class="interest-subtitle recent-music-artist">RAYE</div>
+<div class="interest-title recent-music-title">My House</div>
+<div class="interest-subtitle recent-music-artist">Flo Rida</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

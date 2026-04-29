@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Flo+Rida/_/My+House" rel="noopener" target="_blank">
-<img alt="My House" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/535ef4ca88254e3acec383a89b16cb71.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Taylor+Swift/_/Opalite" rel="noopener" target="_blank">
+<img alt="Opalite" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/837e4d37b0c4a0a65eb12177e1afb8ee.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">My House</div>
-<div class="interest-subtitle recent-music-artist">Flo Rida</div>
+<div class="interest-title recent-music-title">Opalite</div>
+<div class="interest-subtitle recent-music-artist">Taylor Swift</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

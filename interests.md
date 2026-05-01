@@ -9,11 +9,11 @@ permalink: /interests/
 <h2>🔥 Recents</h2>
 <div class="interest-grid">
 <!-- Últim llibre llegit -->
-<div class="interest-item" id="recent-book"><a class="interest-link" href="https://app.thestorygraph.com/books/7112728f-c55f-43b2-9a23-64ff71f88e5b" rel="noopener" target="_blank">
-<img alt="Què és ser vegà?" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'" src="https://cdn.thestorygraph.com/9pxwp4h52nqsei8hjyuqec0r8gb7"/>
+<div class="interest-item" id="recent-book"><a class="interest-link" href="https://app.thestorygraph.com/books/ea859dce-4ff3-4267-b996-afb90856b62d" rel="noopener" target="_blank">
+<img alt="Sedició a la Granja" class="recent-book-cover" onerror="this.src='/images/interests/recent/book.jpg'" src="https://cdn.thestorygraph.com/qe0zlwj44vhr4k4vuy9ipyocoqpw"/>
 <div class="interest-overlay">
-<div class="interest-title recent-book-title">Què és ser vegà?</div>
-<div class="interest-subtitle recent-book-author">Charlotte Willis</div>
+<div class="interest-title recent-book-title">Sedició a la Granja</div>
+<div class="interest-subtitle recent-book-author">Lluís Freixes Carbonell</div>
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->

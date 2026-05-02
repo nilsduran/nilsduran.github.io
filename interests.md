@@ -17,10 +17,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/catch-me-if-you-can-2002/1/" rel="noopener" target="_blank">
-<img alt="Catch Me If You Can (2002)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/5/1/4/8/4/51484-catch-me-if-you-can-0-500-0-750-crop.jpg?v=942d676423"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-wolf-of-wall-street/1/" rel="noopener" target="_blank">
+<img alt="The Wolf of Wall Street (2013)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/8/6/1/1/4/86114-the-wolf-of-wall-street-0-500-0-750-crop.jpg?v=a2b958b6f1"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Catch Me If You Can (2002)</div>
+<div class="interest-title recent-movie-title">The Wolf of Wall Street (2013)</div>
 <div class="interest-subtitle recent-movie-director">★★★★½</div>
 </div>
 </a></div>

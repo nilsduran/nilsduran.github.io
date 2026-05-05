@@ -26,7 +26,7 @@ permalink: /interests/
 </a></div>
 <!-- Última cançó escoltada -->
 <div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Rodrigo/_/drop+dead" rel="noopener" target="_blank">
-<img alt="drop dead" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/83ab92064fe63e2c93b44c7acc24297f.jpg"/>
+<img alt="drop dead" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/a5bcdcfabeaef208137820ec015f5964.jpg"/>
 <div class="interest-overlay">
 <div class="interest-title recent-music-title">drop dead</div>
 <div class="interest-subtitle recent-music-artist">Olivia Rodrigo</div>

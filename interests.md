@@ -25,10 +25,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Billie+Eilish/_/L%E2%80%99AMOUR+DE+MA+VIE+%5BOVER+NOW+EXTENDED+EDIT%5D" rel="noopener" target="_blank">
-<img alt="L’AMOUR DE MA VIE [OVER NOW EXTENDED EDIT]" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/f997b2536994ed755aeabb0d728dff53.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Billie+Eilish/_/idontwannabeyouanymore" rel="noopener" target="_blank">
+<img alt="idontwannabeyouanymore" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/fa0cc28717131fb40092775c9b1f2213.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">L’AMOUR DE MA VIE [OVER NOW EXTENDED EDIT]</div>
+<div class="interest-title recent-music-title">idontwannabeyouanymore</div>
 <div class="interest-subtitle recent-music-artist">Billie Eilish</div>
 </div>
 </a></div>

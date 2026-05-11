@@ -17,19 +17,19 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/magnolia/" rel="noopener" target="_blank">
-<img alt="Magnolia (1999)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/5/1/7/2/8/51728-magnolia-0-500-0-750-crop.jpg?v=178b5e5c17"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-two-popes/" rel="noopener" target="_blank">
+<img alt="The Two Popes (2019)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/4/8/0/0/9/9/480099-the-two-popes-0-500-0-750-crop.jpg?v=b9d6e67718"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Magnolia (1999)</div>
+<div class="interest-title recent-movie-title">The Two Popes (2019)</div>
 <div class="interest-subtitle recent-movie-director">★★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Billie+Eilish/_/ocean+eyes" rel="noopener" target="_blank">
-<img alt="ocean eyes" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/27d83f93d2c848c70354aaf771b103eb.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Blaumut/_/Pa+Amb+Oli+i+Sal" rel="noopener" target="_blank">
+<img alt="Pa Amb Oli i Sal" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/7e579e5cfbeaf8a0f3b7b3345b5f9089.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">ocean eyes</div>
-<div class="interest-subtitle recent-music-artist">Billie Eilish</div>
+<div class="interest-title recent-music-title">Pa Amb Oli i Sal</div>
+<div class="interest-subtitle recent-music-artist">Blaumut</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

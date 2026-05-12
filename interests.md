@@ -17,19 +17,19 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-two-popes/" rel="noopener" target="_blank">
-<img alt="The Two Popes (2019)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/4/8/0/0/9/9/480099-the-two-popes-0-500-0-750-crop.jpg?v=b9d6e67718"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/30-minutes-or-less/" rel="noopener" target="_blank">
+<img alt="30 Minutes or Less (2011)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/4/5/5/8/4558-30-minutes-or-less-0-500-0-750-crop.jpg?v=168f0fcbee"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">The Two Popes (2019)</div>
-<div class="interest-subtitle recent-movie-director">★★★★</div>
+<div class="interest-title recent-movie-title">30 Minutes or Less (2011)</div>
+<div class="interest-subtitle recent-movie-director">★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Sisa/_/Qualsevol+Nit+Pot+Sortir+El+Sol" rel="noopener" target="_blank">
-<img alt="Qualsevol Nit Pot Sortir El Sol" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/48a1676c80484c7a858c9c254c3a7cc7.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Dagoll+Dagom/_/Himne+Dels+Pirates" rel="noopener" target="_blank">
+<img alt="Himne Dels Pirates" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Qualsevol Nit Pot Sortir El Sol</div>
-<div class="interest-subtitle recent-music-artist">Sisa</div>
+<div class="interest-title recent-music-title">Himne Dels Pirates</div>
+<div class="interest-subtitle recent-music-artist">Dagoll Dagom</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

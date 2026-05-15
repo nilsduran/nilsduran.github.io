@@ -25,10 +25,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Dean/_/Man+I+Need" rel="noopener" target="_blank">
-<img alt="Man I Need" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/6e55edaaed5134db13090ecfec74a043.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Dean/_/Nice+To+Each+Other" rel="noopener" target="_blank">
+<img alt="Nice To Each Other" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/f56dfa3569b3164d048fd8341c8b422d.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Man I Need</div>
+<div class="interest-title recent-music-title">Nice To Each Other</div>
 <div class="interest-subtitle recent-music-artist">Olivia Dean</div>
 </div>
 </a></div>

@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Michael+Jackson/_/They+Don%27t+Care+About+Us" rel="noopener" target="_blank">
-<img alt="They Don't Care About Us" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/124d91edf558a82a897dbd4c798fdaca.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Dean/_/Man+I+Need" rel="noopener" target="_blank">
+<img alt="Man I Need" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/6e55edaaed5134db13090ecfec74a043.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">They Don't Care About Us</div>
-<div class="interest-subtitle recent-music-artist">Michael Jackson</div>
+<div class="interest-title recent-music-title">Man I Need</div>
+<div class="interest-subtitle recent-music-artist">Olivia Dean</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

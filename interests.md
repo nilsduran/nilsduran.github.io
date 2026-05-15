@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Dean/_/Nice+To+Each+Other" rel="noopener" target="_blank">
-<img alt="Nice To Each Other" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/f56dfa3569b3164d048fd8341c8b422d.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Germaine+Franco/_/Abre+Los+Ojos" rel="noopener" target="_blank">
+<img alt="Abre Los Ojos" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/ef5f03a871f0c3b95f4c4bc7f3014491.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Nice To Each Other</div>
-<div class="interest-subtitle recent-music-artist">Olivia Dean</div>
+<div class="interest-title recent-music-title">Abre Los Ojos</div>
+<div class="interest-subtitle recent-music-artist">Germaine Franco</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

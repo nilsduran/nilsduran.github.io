@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Charlie+Puth/_/How+Long" rel="noopener" target="_blank">
-<img alt="How Long" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/548ddc92a61f79f77e832ad3d66d110f.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Justin+Timberlake/_/CAN%27T+STOP+THE+FEELING!+-+Film+Version" rel="noopener" target="_blank">
+<img alt="CAN'T STOP THE FEELING! - Film Version" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/4465308a5b2bc0aef6bcd3ea5ccfe761.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">How Long</div>
-<div class="interest-subtitle recent-music-artist">Charlie Puth</div>
+<div class="interest-title recent-music-title">CAN'T STOP THE FEELING! - Film Version</div>
+<div class="interest-subtitle recent-music-artist">Justin Timberlake</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

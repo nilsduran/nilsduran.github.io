@@ -17,19 +17,19 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/30-minutes-or-less/" rel="noopener" target="_blank">
-<img alt="30 Minutes or Less (2011)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/4/5/5/8/4558-30-minutes-or-less-0-500-0-750-crop.jpg?v=168f0fcbee"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/unfinished-business-2015/" rel="noopener" target="_blank">
+<img alt="Unfinished Business (2015)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/6/8/0/6/1/168061-unfinished-business-0-500-0-750-crop.jpg?v=5a60b94cc0"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">30 Minutes or Less (2011)</div>
-<div class="interest-subtitle recent-movie-director">★★★</div>
+<div class="interest-title recent-movie-title">Unfinished Business (2015)</div>
+<div class="interest-subtitle recent-movie-director">★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Justin+Timberlake/_/CAN%27T+STOP+THE+FEELING!+-+Film+Version" rel="noopener" target="_blank">
-<img alt="CAN'T STOP THE FEELING! - Film Version" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/4465308a5b2bc0aef6bcd3ea5ccfe761.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Maroon+5/_/What+Lovers+Do+(feat.+SZA)" rel="noopener" target="_blank">
+<img alt="What Lovers Do (feat. SZA)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/103aa20a67beffa98240fac2891ebc77.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">CAN'T STOP THE FEELING! - Film Version</div>
-<div class="interest-subtitle recent-music-artist">Justin Timberlake</div>
+<div class="interest-title recent-music-title">What Lovers Do (feat. SZA)</div>
+<div class="interest-subtitle recent-music-artist">Maroon 5</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

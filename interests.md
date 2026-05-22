@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/James+Newton+Howard/_/Snow+Lands+on+Top" rel="noopener" target="_blank">
-<img alt="Snow Lands on Top" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/8a74a5fa4e217fe7af30e70d92e36414.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Rodrigo/_/making+the+bed" rel="noopener" target="_blank">
+<img alt="making the bed" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/e39eb31f874f4a5c4afa836845141437.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Snow Lands on Top</div>
-<div class="interest-subtitle recent-music-artist">James Newton Howard</div>
+<div class="interest-title recent-music-title">making the bed</div>
+<div class="interest-subtitle recent-music-artist">Olivia Rodrigo</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

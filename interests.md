@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Tears+for+Fears/_/Everybody+Wants+to+Rule+the+World" rel="noopener" target="_blank">
-<img alt="Everybody Wants to Rule the World" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/f3668f68387d4336c3a797a66196f851.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Green+Day/_/St.+Jimmy" rel="noopener" target="_blank">
+<img alt="St. Jimmy" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/d6128602380800295151442774164f91.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Everybody Wants to Rule the World</div>
-<div class="interest-subtitle recent-music-artist">Tears for Fears</div>
+<div class="interest-title recent-music-title">St. Jimmy</div>
+<div class="interest-subtitle recent-music-artist">Green Day</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

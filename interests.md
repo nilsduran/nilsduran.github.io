@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/unfinished-business-2015/" rel="noopener" target="_blank">
-<img alt="Unfinished Business (2015)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/6/8/0/6/1/168061-unfinished-business-0-500-0-750-crop.jpg?v=5a60b94cc0"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/ladies-first-2026/" rel="noopener" target="_blank">
+<img alt="Ladies First (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/2/5/6/1/1/5/1256115-ladies-first-2026-0-500-0-750-crop.jpg?v=81efe9e2c7"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Unfinished Business (2015)</div>
-<div class="interest-subtitle recent-movie-director">★</div>
+<div class="interest-title recent-movie-title">Ladies First (2026)</div>
+<div class="interest-subtitle recent-movie-director">★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

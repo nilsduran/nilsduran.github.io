@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Gracie+Abrams/_/That%E2%80%99s+So+True" rel="noopener" target="_blank">
-<img alt="That’s So True" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/e84d919d43ddb2a1a0ce735e7b399e7e.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/James+Newton+Howard/_/The+Train+-+From+%22The+Hunger+Games%22" rel="noopener" target="_blank">
+<img alt="The Train - From " class="recent-music-cover" games""="" hunger="" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/8645dbbd03b77a4d3e2ccde91b2df2d6.png" the=""/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">That’s So True</div>
-<div class="interest-subtitle recent-music-artist">Gracie Abrams</div>
+<div class="interest-title recent-music-title">The Train - From "The Hunger Games"</div>
+<div class="interest-subtitle recent-music-artist">James Newton Howard</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

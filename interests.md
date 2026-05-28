@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Ariana+Grande/_/R.E.M" rel="noopener" target="_blank">
-<img alt="R.E.M" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/cd8c5ce4dad43c822c00dec987d295ca.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Corey+Hawkins/_/96,000" rel="noopener" target="_blank">
+<img alt="96,000" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/820ef30bce1639b265a9ca791589469e.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">R.E.M</div>
-<div class="interest-subtitle recent-music-artist">Ariana Grande</div>
+<div class="interest-title recent-music-title">96,000</div>
+<div class="interest-subtitle recent-music-artist">Corey Hawkins</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

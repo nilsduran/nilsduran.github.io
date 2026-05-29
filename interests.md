@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Paris+Paloma/_/Ocean+Baby" rel="noopener" target="_blank">
-<img alt="Ocean Baby" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/6da0ebe5f0c7b9f367b24d142cfa778d.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Tiffany+Tatreau/_/What+the+World+Needs" rel="noopener" target="_blank">
+<img alt="What the World Needs" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/029401065c65624e3ea49371a0c6e633.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Ocean Baby</div>
-<div class="interest-subtitle recent-music-artist">Paris Paloma</div>
+<div class="interest-title recent-music-title">What the World Needs</div>
+<div class="interest-subtitle recent-music-artist">Tiffany Tatreau</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

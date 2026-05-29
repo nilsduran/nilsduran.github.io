@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Corey+Hawkins/_/96,000" rel="noopener" target="_blank">
-<img alt="96,000" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/820ef30bce1639b265a9ca791589469e.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Paris+Paloma/_/Ocean+Baby" rel="noopener" target="_blank">
+<img alt="Ocean Baby" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/6da0ebe5f0c7b9f367b24d142cfa778d.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">96,000</div>
-<div class="interest-subtitle recent-music-artist">Corey Hawkins</div>
+<div class="interest-title recent-music-title">Ocean Baby</div>
+<div class="interest-subtitle recent-music-artist">Paris Paloma</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

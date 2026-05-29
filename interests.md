@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Tiffany+Tatreau/_/What+the+World+Needs" rel="noopener" target="_blank">
-<img alt="What the World Needs" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/029401065c65624e3ea49371a0c6e633.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Maroon+5/_/This+Summer+-+Maroon+5+vs.+Alesso" rel="noopener" target="_blank">
+<img alt="This Summer - Maroon 5 vs. Alesso" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/c05ed4da6f3488b70a1c1e278e2789b9.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">What the World Needs</div>
-<div class="interest-subtitle recent-music-artist">Tiffany Tatreau</div>
+<div class="interest-title recent-music-title">This Summer - Maroon 5 vs. Alesso</div>
+<div class="interest-subtitle recent-music-artist">Maroon 5</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/ladies-first-2026/" rel="noopener" target="_blank">
-<img alt="Ladies First (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/2/5/6/1/1/5/1256115-ladies-first-2026-0-500-0-750-crop.jpg?v=81efe9e2c7"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-devil-wears-prada-2/" rel="noopener" target="_blank">
+<img alt="The Devil Wears Prada 2 (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/1/9/5/5/8/6/1195586-the-devil-wears-prada-2-0-500-0-750-crop.jpg?v=0d955add69"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Ladies First (2026)</div>
-<div class="interest-subtitle recent-movie-director">★★★</div>
+<div class="interest-title recent-movie-title">The Devil Wears Prada 2 (2026)</div>
+<div class="interest-subtitle recent-movie-director">★★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Izzy+Escobar/_/Evergreen+Avenue" rel="noopener" target="_blank">
-<img alt="Evergreen Avenue" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/3b771bf88c29bc05744b3184b1689587.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/James+Newton+Howard/_/Preparing+The+Chariots+-+From+%22The+Hunger+Games%22" rel="noopener" target="_blank">
+<img alt="Preparing The Chariots - From " class="recent-music-cover" games""="" hunger="" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/73401f0ce42b4fe5add9fe6b432cd64b.png" the=""/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Evergreen Avenue</div>
-<div class="interest-subtitle recent-music-artist">Izzy Escobar</div>
+<div class="interest-title recent-music-title">Preparing The Chariots - From "The Hunger Games"</div>
+<div class="interest-subtitle recent-music-artist">James Newton Howard</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

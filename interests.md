@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-devil-wears-prada-2/" rel="noopener" target="_blank">
-<img alt="The Devil Wears Prada 2 (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/1/9/5/5/8/6/1195586-the-devil-wears-prada-2-0-500-0-750-crop.jpg?v=0d955add69"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-fall-guy-2024/1/" rel="noopener" target="_blank">
+<img alt="The Fall Guy (2024)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/6/6/7/5/5/0/667550-the-fall-guy-0-500-0-750-crop.jpg?v=5f491a1281"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">The Devil Wears Prada 2 (2026)</div>
-<div class="interest-subtitle recent-movie-director">★★★★</div>
+<div class="interest-title recent-movie-title">The Fall Guy (2024)</div>
+<div class="interest-subtitle recent-movie-director">★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

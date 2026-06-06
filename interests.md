@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Daniel+Pemberton/_/The+Prowler" rel="noopener" target="_blank">
-<img alt="The Prowler" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/36f1d6f5795235041237a5368133aba6.gif"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Rodrigo/_/Can%E2%80%99t+Catch+Me+Now+-+from+The+Hunger+Games:+The+Ballad+of+Songbirds+&amp;+Snakes" rel="noopener" target="_blank">
+<img alt="Can’t Catch Me Now - from The Hunger Games: The Ballad of Songbirds &amp; Snakes" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/a1a922abcb8bb0858c0d603e53c2ed52.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">The Prowler</div>
-<div class="interest-subtitle recent-music-artist">Daniel Pemberton</div>
+<div class="interest-title recent-music-title">Can’t Catch Me Now - from The Hunger Games: The Ballad of Songbirds &amp; Snakes</div>
+<div class="interest-subtitle recent-music-artist">Olivia Rodrigo</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

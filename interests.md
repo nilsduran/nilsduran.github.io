@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Thomas+Newman/_/Shawshank+Prison+-+Stoic+Theme" rel="noopener" target="_blank">
-<img alt="Shawshank Prison - Stoic Theme" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/fe5a28b1bf744a928377cf66bad3e447.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Harry+Styles/_/As+It+Was" rel="noopener" target="_blank">
+<img alt="As It Was" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/1534f4871b5acfffb2d621047a771fa0.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Shawshank Prison - Stoic Theme</div>
-<div class="interest-subtitle recent-music-artist">Thomas Newman</div>
+<div class="interest-title recent-music-title">As It Was</div>
+<div class="interest-subtitle recent-music-artist">Harry Styles</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

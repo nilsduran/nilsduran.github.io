@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Harry+Styles/_/As+It+Was" rel="noopener" target="_blank">
-<img alt="As It Was" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/1534f4871b5acfffb2d621047a771fa0.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/James+Newton+Howard/_/Tenuous+Winners+%2F+Returning+Home" rel="noopener" target="_blank">
+<img alt="Tenuous Winners / Returning Home" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/73401f0ce42b4fe5add9fe6b432cd64b.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">As It Was</div>
-<div class="interest-subtitle recent-music-artist">Harry Styles</div>
+<div class="interest-title recent-music-title">Tenuous Winners / Returning Home</div>
+<div class="interest-subtitle recent-music-artist">James Newton Howard</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

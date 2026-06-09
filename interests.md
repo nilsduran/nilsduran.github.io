@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Rodrigo/_/Can%E2%80%99t+Catch+Me+Now+-+from+The+Hunger+Games:+The+Ballad+of+Songbirds+&amp;+Snakes" rel="noopener" target="_blank">
-<img alt="Can’t Catch Me Now - from The Hunger Games: The Ballad of Songbirds &amp; Snakes" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/a1a922abcb8bb0858c0d603e53c2ed52.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Thomas+Newman/_/Shawshank+Prison+-+Stoic+Theme" rel="noopener" target="_blank">
+<img alt="Shawshank Prison - Stoic Theme" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/fe5a28b1bf744a928377cf66bad3e447.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Can’t Catch Me Now - from The Hunger Games: The Ballad of Songbirds &amp; Snakes</div>
-<div class="interest-subtitle recent-music-artist">Olivia Rodrigo</div>
+<div class="interest-title recent-music-title">Shawshank Prison - Stoic Theme</div>
+<div class="interest-subtitle recent-music-artist">Thomas Newman</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

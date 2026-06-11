@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/James+Newton+Howard/_/Coryo+in+the+Capitol" rel="noopener" target="_blank">
-<img alt="Coryo in the Capitol" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/8a74a5fa4e217fe7af30e70d92e36414.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Edison+Lighthouse/_/Love+Grows+(Where+My+Rosemary+Goes)" rel="noopener" target="_blank">
+<img alt="Love Grows (Where My Rosemary Goes)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/6a8a3590ad85f51700987d896571909f.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Coryo in the Capitol</div>
-<div class="interest-subtitle recent-music-artist">James Newton Howard</div>
+<div class="interest-title recent-music-title">Love Grows (Where My Rosemary Goes)</div>
+<div class="interest-subtitle recent-music-artist">Edison Lighthouse</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

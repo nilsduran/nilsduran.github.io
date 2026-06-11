@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-fall-guy-2024/1/" rel="noopener" target="_blank">
-<img alt="The Fall Guy (2024)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/6/6/7/5/5/0/667550-the-fall-guy-0-500-0-750-crop.jpg?v=5f491a1281"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/school-of-rock/1/" rel="noopener" target="_blank">
+<img alt="School of Rock (2003)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/5/0/9/5/0/50950-school-of-rock-0-500-0-750-crop.jpg?v=1d462b4ca3"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">The Fall Guy (2024)</div>
-<div class="interest-subtitle recent-movie-director">★★½</div>
+<div class="interest-title recent-movie-title">School of Rock (2003)</div>
+<div class="interest-subtitle recent-movie-director">★★★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

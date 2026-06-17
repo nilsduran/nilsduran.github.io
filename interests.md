@@ -17,19 +17,19 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/school-of-rock/1/" rel="noopener" target="_blank">
-<img alt="School of Rock (2003)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/5/0/9/5/0/50950-school-of-rock-0-500-0-750-crop.jpg?v=1d462b4ca3"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/game-night/" rel="noopener" target="_blank">
+<img alt="Game Night (2018)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/3/7/8/0/4/8/378048-game-night-0-500-0-750-crop.jpg?v=7216b8d79c"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">School of Rock (2003)</div>
-<div class="interest-subtitle recent-movie-director">★★★★½</div>
+<div class="interest-title recent-movie-title">Game Night (2018)</div>
+<div class="interest-subtitle recent-movie-director">★★★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Chappell+Roan/_/Good+Luck,+Babe!" rel="noopener" target="_blank">
-<img alt="Good Luck, Babe!" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/86fa0d410ba70ada74d22cf4b690b05b.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Rodrigo/_/stupid+song" rel="noopener" target="_blank">
+<img alt="stupid song" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/06ccc3cc0cfe1e4ca42a26ac00d97a7b.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Good Luck, Babe!</div>
-<div class="interest-subtitle recent-music-artist">Chappell Roan</div>
+<div class="interest-title recent-music-title">stupid song</div>
+<div class="interest-subtitle recent-music-artist">Olivia Rodrigo</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

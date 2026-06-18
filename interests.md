@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/game-night/" rel="noopener" target="_blank">
-<img alt="Game Night (2018)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/3/7/8/0/4/8/378048-game-night-0-500-0-750-crop.jpg?v=7216b8d79c"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-campaign/" rel="noopener" target="_blank">
+<img alt="The Campaign (2012)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/sm/upload/kh/lc/jp/f8/6uH8BOWN60mu2Vd5z4jCaVWb2ix-0-500-0-750-crop.jpg?v=85ba621137"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Game Night (2018)</div>
-<div class="interest-subtitle recent-movie-director">★★★★★</div>
+<div class="interest-title recent-movie-title">The Campaign (2012)</div>
+<div class="interest-subtitle recent-movie-director">★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

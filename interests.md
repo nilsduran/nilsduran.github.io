@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-campaign/" rel="noopener" target="_blank">
-<img alt="The Campaign (2012)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/sm/upload/kh/lc/jp/f8/6uH8BOWN60mu2Vd5z4jCaVWb2ix-0-500-0-750-crop.jpg?v=85ba621137"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/keanu/" rel="noopener" target="_blank">
+<img alt="Keanu (2016)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/sm/upload/b7/u5/wl/xy/46RdI1XNmNm4me25oIvXf6Zizy5-0-500-0-750-crop.jpg?v=4b8f3d7aba"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">The Campaign (2012)</div>
-<div class="interest-subtitle recent-movie-director">★★½</div>
+<div class="interest-title recent-movie-title">Keanu (2016)</div>
+<div class="interest-subtitle recent-movie-director">★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

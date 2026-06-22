@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/keanu/" rel="noopener" target="_blank">
-<img alt="Keanu (2016)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/sm/upload/b7/u5/wl/xy/46RdI1XNmNm4me25oIvXf6Zizy5-0-500-0-750-crop.jpg?v=4b8f3d7aba"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/toy-story-5/" rel="noopener" target="_blank">
+<img alt="Toy Story 5 (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/9/7/7/1/8/6/977186-toy-story-5-0-500-0-750-crop.jpg?v=d0ac6a7d01"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Keanu (2016)</div>
-<div class="interest-subtitle recent-movie-director">★★</div>
+<div class="interest-title recent-movie-title">Toy Story 5 (2026)</div>
+<div class="interest-subtitle recent-movie-director">★★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

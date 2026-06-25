@@ -25,10 +25,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Rodrigo/_/less" rel="noopener" target="_blank">
-<img alt="less" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/06ccc3cc0cfe1e4ca42a26ac00d97a7b.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Rodrigo/_/vampire" rel="noopener" target="_blank">
+<img alt="vampire" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/e39eb31f874f4a5c4afa836845141437.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">less</div>
+<div class="interest-title recent-music-title">vampire</div>
 <div class="interest-subtitle recent-music-artist">Olivia Rodrigo</div>
 </div>
 </a></div>

@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Hans+Zimmer/_/Day+One+(Interstellar+Theme)" rel="noopener" target="_blank">
-<img alt="Day One (Interstellar Theme)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/4d6322c6d784708fd7723b991714e51d.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Lucy+Dacus/_/Planting+Tomatoes" rel="noopener" target="_blank">
+<img alt="Planting Tomatoes" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/0841354173395a0bfb2c2d61f683d242.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Day One (Interstellar Theme)</div>
-<div class="interest-subtitle recent-music-artist">Hans Zimmer</div>
+<div class="interest-title recent-music-title">Planting Tomatoes</div>
+<div class="interest-subtitle recent-music-artist">Lucy Dacus</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

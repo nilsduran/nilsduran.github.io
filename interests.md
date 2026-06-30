@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Fleetwood+Mac/_/The+Chain+-+2004+Remaster" rel="noopener" target="_blank">
-<img alt="The Chain - 2004 Remaster" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/e64ceb720a09f1f6072b84cdae41d751.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Gwen+Stefani/_/The+Sweet+Escape" rel="noopener" target="_blank">
+<img alt="The Sweet Escape" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/00f4aef783c07afd0bd8e33f84051362.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">The Chain - 2004 Remaster</div>
-<div class="interest-subtitle recent-music-artist">Fleetwood Mac</div>
+<div class="interest-title recent-music-title">The Sweet Escape</div>
+<div class="interest-subtitle recent-music-artist">Gwen Stefani</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

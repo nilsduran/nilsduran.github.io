@@ -25,10 +25,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Rodrigo/_/my+way" rel="noopener" target="_blank">
-<img alt="my way" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/06ccc3cc0cfe1e4ca42a26ac00d97a7b.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Rodrigo/_/drivers+license" rel="noopener" target="_blank">
+<img alt="drivers license" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/9da8add22ca31771a440d2a6f7615f6d.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">my way</div>
+<div class="interest-title recent-music-title">drivers license</div>
 <div class="interest-subtitle recent-music-artist">Olivia Rodrigo</div>
 </div>
 </a></div>

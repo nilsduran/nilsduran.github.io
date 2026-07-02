@@ -17,10 +17,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/a-futile-and-stupid-gesture/" rel="noopener" target="_blank">
-<img alt="A Futile and Stupid Gesture (2018)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/3/2/6/2/7/7/326277-a-futile-and-stupid-gesture-0-500-0-750-crop.jpg?v=014f53343e"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/sinners-2025/1/" rel="noopener" target="_blank">
+<img alt="Sinners (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/1/1/6/6/0/0/1116600-sinners-2025-0-500-0-750-crop.jpg?v=5996b7d555"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">A Futile and Stupid Gesture (2018)</div>
+<div class="interest-title recent-movie-title">Sinners (2025)</div>
 <div class="interest-subtitle recent-movie-director">★★★★½</div>
 </div>
 </a></div>

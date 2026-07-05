@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Lady+Gaga/_/Telephone+(feat.+Beyonc%C3%A9)" rel="noopener" target="_blank">
-<img alt="Telephone (feat. Beyoncé)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/0dc64dbb17438473725ef05fef4e6741.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Rodrigo/_/cigarette+smoke" rel="noopener" target="_blank">
+<img alt="cigarette smoke" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/06ccc3cc0cfe1e4ca42a26ac00d97a7b.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Telephone (feat. Beyoncé)</div>
-<div class="interest-subtitle recent-music-artist">Lady Gaga</div>
+<div class="interest-title recent-music-title">cigarette smoke</div>
+<div class="interest-subtitle recent-music-artist">Olivia Rodrigo</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

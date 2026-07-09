@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/sinners-2025/1/" rel="noopener" target="_blank">
-<img alt="Sinners (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/1/1/6/6/0/0/1116600-sinners-2025-0-500-0-750-crop.jpg?v=5996b7d555"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-irishman-2019/" rel="noopener" target="_blank">
+<img alt="The Irishman (2019)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/3/3/3/2/0/3/333203-the-irishman-0-500-0-750-crop.jpg?v=44b0138d78"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Sinners (2025)</div>
-<div class="interest-subtitle recent-movie-director">★★★★½</div>
+<div class="interest-title recent-movie-title">The Irishman (2019)</div>
+<div class="interest-subtitle recent-movie-director">★★★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

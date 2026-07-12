@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Gracie+Abrams/_/Hit+the+Wall" rel="noopener" target="_blank">
-<img alt="Hit the Wall" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/e6c9fb1e679dabffed59d425da31163b.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Dominic+Fike/_/White+Keys" rel="noopener" target="_blank">
+<img alt="White Keys" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/ad896fb706c1958b6ecd68d7eadb437e.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Hit the Wall</div>
-<div class="interest-subtitle recent-music-artist">Gracie Abrams</div>
+<div class="interest-title recent-music-title">White Keys</div>
+<div class="interest-subtitle recent-music-artist">Dominic Fike</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

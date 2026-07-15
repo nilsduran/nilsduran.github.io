@@ -25,10 +25,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Noah+Kahan/_/Everywhere,+Everything+(with+Gracie+Abrams)" rel="noopener" target="_blank">
-<img alt="Everywhere, Everything (with Gracie Abrams)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/f31f8ca74147fb1051d9cadf5cf8dec9.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Noah+Kahan/_/False+Confidence" rel="noopener" target="_blank">
+<img alt="False Confidence" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/95bd1e9dd4bca15fa5b95867e7c2c1f9.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Everywhere, Everything (with Gracie Abrams)</div>
+<div class="interest-title recent-music-title">False Confidence</div>
 <div class="interest-subtitle recent-music-artist">Noah Kahan</div>
 </div>
 </a></div>

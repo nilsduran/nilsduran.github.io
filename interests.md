@@ -25,10 +25,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Noah+Kahan/_/False+Confidence" rel="noopener" target="_blank">
-<img alt="False Confidence" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/95bd1e9dd4bca15fa5b95867e7c2c1f9.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Noah+Kahan/_/Orange+Juice" rel="noopener" target="_blank">
+<img alt="Orange Juice" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/370510f1781a9bd351389b6633c517ed.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">False Confidence</div>
+<div class="interest-title recent-music-title">Orange Juice</div>
 <div class="interest-subtitle recent-music-artist">Noah Kahan</div>
 </div>
 </a></div>

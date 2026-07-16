@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Noah+Kahan/_/Orbiter" rel="noopener" target="_blank">
-<img alt="Orbiter" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/aca9c3722555137882432a85236b962b.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Taylor+Swift/_/my+tears+ricochet" rel="noopener" target="_blank">
+<img alt="my tears ricochet" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/7283dedc810f971388eba0b710d90020.png"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Orbiter</div>
-<div class="interest-subtitle recent-music-artist">Noah Kahan</div>
+<div class="interest-title recent-music-title">my tears ricochet</div>
+<div class="interest-subtitle recent-music-artist">Taylor Swift</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Noah+Kahan/_/Northern+Attitude" rel="noopener" target="_blank">
-<img alt="Northern Attitude" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/370510f1781a9bd351389b6633c517ed.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Walk+the+Moon/_/Shut+Up+and+Dance" rel="noopener" target="_blank">
+<img alt="Shut Up and Dance" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/7fee8351f9424cb78d67ac5af0a75b52.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Northern Attitude</div>
-<div class="interest-subtitle recent-music-artist">Noah Kahan</div>
+<div class="interest-title recent-music-title">Shut Up and Dance</div>
+<div class="interest-subtitle recent-music-artist">Walk the Moon</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

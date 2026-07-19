@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/challengers/" rel="noopener" target="_blank">
-<img alt="Challengers (2024)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/8/4/2/3/0/1/842301-challengers-0-500-0-750-crop.jpg?v=a7cd63cbef"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/what-happens-in-vegas/" rel="noopener" target="_blank">
+<img alt="What Happens in Vegas (2008)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/4/7/4/1/4/47414-what-happens-in-vegas--0-500-0-750-crop.jpg?v=8529757dc9"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Challengers (2024)</div>
-<div class="interest-subtitle recent-movie-director">★★★½</div>
+<div class="interest-title recent-movie-title">What Happens in Vegas (2008)</div>
+<div class="interest-subtitle recent-movie-director">★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

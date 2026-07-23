@@ -17,10 +17,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/drivers-ed-2025/" rel="noopener" target="_blank">
-<img alt="Driver's Ed (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/2/8/1/2/5/2/1281252-drivers-ed-2025-0-500-0-750-crop.jpg?v=a630f25ab4"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-odyssey-2026/" rel="noopener" target="_blank">
+<img alt="The Odyssey (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/2/5/5/3/9/4/1255394-the-odyssey-2026-0-500-0-750-crop.jpg?v=1eed046d0c"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Driver's Ed (2025)</div>
+<div class="interest-title recent-movie-title">The Odyssey (2026)</div>
 <div class="interest-subtitle recent-movie-director">★★★★★</div>
 </div>
 </a></div>

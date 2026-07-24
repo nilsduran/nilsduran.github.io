@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Walk+the+Moon/_/Shut+Up+and+Dance" rel="noopener" target="_blank">
-<img alt="Shut Up and Dance" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/7fee8351f9424cb78d67ac5af0a75b52.jpg"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Rodrigo/_/my+way" rel="noopener" target="_blank">
+<img alt="my way" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/06ccc3cc0cfe1e4ca42a26ac00d97a7b.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Shut Up and Dance</div>
-<div class="interest-subtitle recent-music-artist">Walk the Moon</div>
+<div class="interest-title recent-music-title">my way</div>
+<div class="interest-subtitle recent-music-artist">Olivia Rodrigo</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

@@ -25,11 +25,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
-<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Noah+Kahan/_/Everywhere,+Everything+(with+Gracie+Abrams)" rel="noopener" target="_blank">
-<img alt="Everywhere, Everything (with Gracie Abrams)" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/f31f8ca74147fb1051d9cadf5cf8dec9.png"/>
+<div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Olivia+Rodrigo/_/honeybee" rel="noopener" target="_blank">
+<img alt="honeybee" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/06ccc3cc0cfe1e4ca42a26ac00d97a7b.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title recent-music-title">Everywhere, Everything (with Gracie Abrams)</div>
-<div class="interest-subtitle recent-music-artist">Noah Kahan</div>
+<div class="interest-title recent-music-title">honeybee</div>
+<div class="interest-subtitle recent-music-artist">Olivia Rodrigo</div>
 </div>
 </a></div>
 <!-- Últim país visitat -->

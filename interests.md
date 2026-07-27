@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/project-x-2012/" rel="noopener" target="_blank">
-<img alt="Project X (2012)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/sm/upload/h7/gc/y5/05/cWXkRLmzKfYutvWeJXaednoGKdF-0-500-0-750-crop.jpg?v=649cf07ecb"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/look-back-2024/" rel="noopener" target="_blank">
+<img alt="Look Back (2024)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/1/2/7/6/6/9/1127669-look-back-0-500-0-750-crop.jpg?v=6a67407577"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Project X (2012)</div>
-<div class="interest-subtitle recent-movie-director">★★★★</div>
+<div class="interest-title recent-movie-title">Look Back (2024)</div>
+<div class="interest-subtitle recent-movie-director">★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

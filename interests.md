@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/failure-to-launch/" rel="noopener" target="_blank">
-<img alt="Failure to Launch (2006)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/4/8/1/8/6/48186-failure-to-launch-0-500-0-750-crop.jpg?v=b2a86d3f25"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/casablanca/" rel="noopener" target="_blank">
+<img alt="Casablanca (1942)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/sm/upload/kq/vf/8s/1p/wOBKAoUJZb5qTsWv5XXvVV2vUzz-0-500-0-750-crop.jpg?v=cdb9b25970"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Failure to Launch (2006)</div>
-<div class="interest-subtitle recent-movie-director">★½</div>
+<div class="interest-title recent-movie-title">Casablanca (1942)</div>
+<div class="interest-subtitle recent-movie-director">★★★★★ (contains spoilers)</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

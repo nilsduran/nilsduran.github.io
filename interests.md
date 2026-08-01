@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/casablanca/" rel="noopener" target="_blank">
-<img alt="Casablanca (1942)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/sm/upload/kq/vf/8s/1p/wOBKAoUJZb5qTsWv5XXvVV2vUzz-0-500-0-750-crop.jpg?v=cdb9b25970"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-kings-speech/" rel="noopener" target="_blank">
+<img alt="The King's Speech (2010)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/5/3/6/3/5363-the-king-s-speech-0-500-0-750-crop.jpg?v=334f06fd89"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Casablanca (1942)</div>
-<div class="interest-subtitle recent-movie-director">★★★★★ (contains spoilers)</div>
+<div class="interest-title recent-movie-title">The King's Speech (2010)</div>
+<div class="interest-subtitle recent-movie-director">★★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

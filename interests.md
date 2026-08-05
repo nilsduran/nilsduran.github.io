@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/spider-man-brand-new-day/" rel="noopener" target="_blank">
-<img alt="Spider-Man: Brand New Day (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/8/7/2/8/7/1/872871-spider-man-brand-new-day-0-500-0-750-crop.jpg?v=ebe6beb4fc"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/happy-gilmore-2/" rel="noopener" target="_blank">
+<img alt="Happy Gilmore 2 (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/1/4/7/3/7/1/1147371-happy-gilmore-2-0-500-0-750-crop.jpg?v=43c978d784"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Spider-Man: Brand New Day (2026)</div>
-<div class="interest-subtitle recent-movie-director">★★★★½</div>
+<div class="interest-title recent-movie-title">Happy Gilmore 2 (2025)</div>
+<div class="interest-subtitle recent-movie-director">★★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

@@ -26,7 +26,7 @@ permalink: /interests/
 </a></div>
 <!-- Última cançó escoltada -->
 <div class="interest-item" id="recent-music"><a class="interest-link recent-music-link" href="https://www.last.fm/music/Noah+Kahan/_/Orbiter" rel="noopener" target="_blank">
-<img alt="Orbiter" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm.freetls.fastly.net/i/u/300x300/977005a5dfd23e7e66b704812ea4fe4a.jpg"/>
+<img alt="Orbiter" class="recent-music-cover" onerror="this.src='/images/interests/recent/music.jpg'" src="https://lastfm-img.freetls.fastly.net/i/u/300x300/977005a5dfd23e7e66b704812ea4fe4a.jpg"/>
 <div class="interest-overlay">
 <div class="interest-title recent-music-title">Orbiter</div>
 <div class="interest-subtitle recent-music-artist">Noah Kahan</div>

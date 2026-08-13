@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-drama/" rel="noopener" target="_blank">
-<img alt="The Drama (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/2/0/5/4/9/4/1205494-the-drama-0-500-0-750-crop.jpg?v=2320acafd5"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-whale-2022/" rel="noopener" target="_blank">
+<img alt="The Whale (2022)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/7/0/3/4/7/8/703478-the-whale-0-500-0-750-crop.jpg?v=84e98165fb"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">The Drama (2026)</div>
-<div class="interest-subtitle recent-movie-director">★★★★</div>
+<div class="interest-title recent-movie-title">The Whale (2022)</div>
+<div class="interest-subtitle recent-movie-director">★★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

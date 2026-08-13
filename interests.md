@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-whale-2022/" rel="noopener" target="_blank">
-<img alt="The Whale (2022)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/7/0/3/4/7/8/703478-the-whale-0-500-0-750-crop.jpg?v=84e98165fb"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-grand-budapest-hotel/" rel="noopener" target="_blank">
+<img alt="The Grand Budapest Hotel (2014)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/9/5/1/1/3/95113-the-grand-budapest-hotel-0-500-0-750-crop.jpg?v=6ac71cf4ba"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">The Whale (2022)</div>
-<div class="interest-subtitle recent-movie-director">★★★½</div>
+<div class="interest-title recent-movie-title">The Grand Budapest Hotel (2014)</div>
+<div class="interest-subtitle recent-movie-director">★★★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-grand-budapest-hotel/" rel="noopener" target="_blank">
-<img alt="The Grand Budapest Hotel (2014)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/9/5/1/1/3/95113-the-grand-budapest-hotel-0-500-0-750-crop.jpg?v=6ac71cf4ba"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/licorice-pizza/1/" rel="noopener" target="_blank">
+<img alt="Licorice Pizza (2021)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/6/4/1/0/8/6/641086-licorice-pizza-0-500-0-750-crop.jpg?v=6f08c3828c"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">The Grand Budapest Hotel (2014)</div>
-<div class="interest-subtitle recent-movie-director">★★★★★</div>
+<div class="interest-title recent-movie-title">Licorice Pizza (2021)</div>
+<div class="interest-subtitle recent-movie-director">★★★★ (contains spoilers)</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/lady-bird/1/" rel="noopener" target="_blank">
-<img alt="Lady Bird (2017)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/3/2/6/2/7/9/326279-lady-bird-0-500-0-750-crop.jpg?v=754ff28eb4"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/spider-man-brand-new-day/1/" rel="noopener" target="_blank">
+<img alt="Spider-Man: Brand New Day (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/8/7/2/8/7/1/872871-spider-man-brand-new-day-0-500-0-750-crop.jpg?v=ebe6beb4fc"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Lady Bird (2017)</div>
-<div class="interest-subtitle recent-movie-director">★★★★★</div>
+<div class="interest-title recent-movie-title">Spider-Man: Brand New Day (2026)</div>
+<div class="interest-subtitle recent-movie-director">★★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

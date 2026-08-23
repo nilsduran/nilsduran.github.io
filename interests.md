@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/spider-man-brand-new-day/1/" rel="noopener" target="_blank">
-<img alt="Spider-Man: Brand New Day (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/8/7/2/8/7/1/872871-spider-man-brand-new-day-0-500-0-750-crop.jpg?v=ebe6beb4fc"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/charlie-wilsons-war/" rel="noopener" target="_blank">
+<img alt="Charlie Wilson's War (2007)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/4/8/2/6/2/48262-charlie-wilson-s-war-0-500-0-750-crop.jpg?v=1eeb24a8dd"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Spider-Man: Brand New Day (2026)</div>
-<div class="interest-subtitle recent-movie-director">★★★★</div>
+<div class="interest-title recent-movie-title">Charlie Wilson's War (2007)</div>
+<div class="interest-subtitle recent-movie-director">★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

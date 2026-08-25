@@ -17,10 +17,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/charlie-wilsons-war/" rel="noopener" target="_blank">
-<img alt="Charlie Wilson's War (2007)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/4/8/2/6/2/48262-charlie-wilson-s-war-0-500-0-750-crop.jpg?v=1eeb24a8dd"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/bye-bye-birdie/" rel="noopener" target="_blank">
+<img alt="Bye Bye Birdie (1963)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/3/6/2/3/8/36238-bye-bye-birdie-0-500-0-750-crop.jpg?v=3c1377591a"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Charlie Wilson's War (2007)</div>
+<div class="interest-title recent-movie-title">Bye Bye Birdie (1963)</div>
 <div class="interest-subtitle recent-movie-director">★★½</div>
 </div>
 </a></div>

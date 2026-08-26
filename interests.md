@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/bye-bye-birdie/" rel="noopener" target="_blank">
-<img alt="Bye Bye Birdie (1963)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/3/6/2/3/8/36238-bye-bye-birdie-0-500-0-750-crop.jpg?v=3c1377591a"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/black-adam/" rel="noopener" target="_blank">
+<img alt="Black Adam (2022)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/3/6/9/1/7/9/369179-black-adam-0-500-0-750-crop.jpg?v=64f4425b39"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Bye Bye Birdie (1963)</div>
-<div class="interest-subtitle recent-movie-director">★★½</div>
+<div class="interest-title recent-movie-title">Black Adam (2022)</div>
+<div class="interest-subtitle recent-movie-director">★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

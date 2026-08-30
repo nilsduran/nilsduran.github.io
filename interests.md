@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/one-battle-after-another/2/" rel="noopener" target="_blank">
-<img alt="One Battle After Another (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/9/5/1/2/7/7/951277-one-battle-after-another-0-500-0-750-crop.jpg?v=d27c4cc662"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/dead-poets-society/1/" rel="noopener" target="_blank">
+<img alt="Dead Poets Society (1989)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/5/1/8/4/6/51846-dead-poets-society-0-500-0-750-crop.jpg?v=9273e8acf7"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">One Battle After Another (2025)</div>
-<div class="interest-subtitle recent-movie-director">★★★★★</div>
+<div class="interest-title recent-movie-title">Dead Poets Society (1989)</div>
+<div class="interest-subtitle recent-movie-director">★★★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

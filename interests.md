@@ -17,10 +17,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/dead-poets-society/1/" rel="noopener" target="_blank">
-<img alt="Dead Poets Society (1989)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/5/1/8/4/6/51846-dead-poets-society-0-500-0-750-crop.jpg?v=9273e8acf7"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/legally-blonde/" rel="noopener" target="_blank">
+<img alt="Legally Blonde (2001)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/4/7/5/8/6/47586-legally-blonde-0-500-0-750-crop.jpg?v=683a318854"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Dead Poets Society (1989)</div>
+<div class="interest-title recent-movie-title">Legally Blonde (2001)</div>
 <div class="interest-subtitle recent-movie-director">★★★★½</div>
 </div>
 </a></div>

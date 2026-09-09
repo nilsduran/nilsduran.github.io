@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/man-of-the-year-2006/" rel="noopener" target="_blank">
-<img alt="Man of the Year (2006)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/4/6/7/3/9/46739-man-of-the-year-0-500-0-750-crop.jpg?v=73104989ae"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/i-want-your-sex/" rel="noopener" target="_blank">
+<img alt="I Want Your Sex (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/1/7/0/9/5/4/1170954-i-want-your-sex-0-500-0-750-crop.jpg?v=c13a0c57b7"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Man of the Year (2006)</div>
-<div class="interest-subtitle recent-movie-director">★★★</div>
+<div class="interest-title recent-movie-title">I Want Your Sex (2026)</div>
+<div class="interest-subtitle recent-movie-director">★★★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

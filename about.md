@@ -1,31 +1,42 @@
----
+﻿---
 layout: about
 permalink: /about/
-title: Una mica sobre mi
+title: About Me
 tags: about
 headshot: /images/misc/headshot.jpg
 ---
 
-### Introducció
+### Introduction
 
-Hola, soc en Nils, un estudiant de 21 anys cursant el quart any del grau en Intel·ligència Artificial a la UPC. Fora dels meus estudis, m'agrada llegir, jugar a tennis, escalar i els escacs.
+Hi, I'm Nils, a 22-year-old Data Science and Artificial Intelligence engineer based in Barcelona, Catalonia. I recently graduated with a Bachelor's in Artificial Intelligence from Universitat Politècnica de Catalunya (UPC) and am currently pursuing an MSc in Data Science at the same institution.
 
-### Què faig ara
+Outside of tech and research, I enjoy reading, playing tennis, climbing, and competitive chess.
 
-Actualment, estic centrat en els meus estudis d'Intel·ligència Artificial i treballant en projectes apassionants en aquest camp. Pots veure alguns dels meus treballs a la [pàgina de projectes](/projects/).
+### What I Do
 
-### Educació
+I am focused on designing and deploying intelligent, high-performance systems. My work spans:
+- **Agentic AI & LLMs:** Multi-agent architectures (LangGraph), LoRA fine-tuning, and clinical reasoning evaluation.
+- **Deep Learning & HPC:** Distributed Transformer vision training on the MareNostrum 5 supercomputer (BSC).
+- **Computational Neuroscience:** Decoding perceptual conscious states from multi-channel EEG signals using Spatio-Temporal Graph Neural Networks (ST-GNN) and Foundation Models (LaBraM).
+- **Software Quality & Engineering:** Automated testing architectures (Java) in regulated medical environments (Werfen), graph analytics (Sparsity), and full-stack product building ([Vegan Tools](https://vegantools.org)).
 
-Actualment estic cursant el **Grau en Intel·ligència Artificial** a la *Universitat Politècnica de Catalunya* (2022-2026).
+### Education
 
-Estic fent un Erasmus al *Karlsruhe Institut für Technologie* (KIT) a Karlsruhe, Baden-Württemberg, Alemanya (Quadrimestre de tardor 2025-2026).
+- **MSc in Data Science** — *Universitat Politècnica de Catalunya (UPC)* (2026 – Present)
+- **BSc in Artificial Intelligence** — *Universitat Politècnica de Catalunya (UPC)* (2022 – 2026)
+  - *Bachelor Thesis (TFG):* Decoding perceptual consciousness using deep learning and brain signals (EEG).
+- **Academic Exchange (Erasmus+)** — *Karlsruhe Institute of Technology (KIT)*, Germany (2024 – 2025)
+  - High-Performance Computing and Advanced Algorithms. German C1 proficiency.
 
-Anteriorment, vaig completar l'**ESO i el Batxillerat** a l'*Escola Frederic Mistral-Tècnic Eulàlia* (2016-2022).
+### Industry & Research Experience
 
-### Curriculum Vitae
+- **Werfen** — *Software Tester Intern (SW Quality & Automation)* (Summer 2025)
+  - Engineered automated testing suites in Java for in-vitro diagnostic clinical systems, integrated test gates in CI/CD, and executed rigorous regression validation.
+- **Sparsity Technologies** — *Data Engineering Intern* (Fall 2025)
+  - Automated graph data pipelines, competitor intelligence querying, and statistical text analysis.
+- **Telefónica Innovación Digital** — *Applied AI Research Collaboration* (Spring 2025)
+  - Co-developed SinergIA: a multi-agent LangGraph system boosting baseline Gemini accuracy on MedQA by +3% via diversity modeling.
 
-Si vols més detalls sobre la meva experiència acadèmica i professional, pots consultar el meu [CV](/cv/).
+### Contact
 
-### Contacta'm
-
-Pots contactar amb mi a través del meu [correu electrònic](mailto:nilsdula@gmail.com) o connectar amb mi a [LinkedIn](https://www.linkedin.com/in/nils-duran2004) i [GitHub](https://github.com/nilsduran).
+Feel free to reach out via [email](mailto:nilsdula@gmail.com) or connect on [LinkedIn](https://www.linkedin.com/in/nils-duran2004) and [GitHub](https://github.com/nilsduran).

@@ -1,18 +1,15 @@
-# Site settings
+﻿# Site settings
 title: Nils Duran
 author: Nils Duran
-description: "AI Developer Portfolio"
+description: "MSc Data Science Student & AI Engineer | UPC"
 baseurl: ""
 url: "https://nilsduran.github.io"
 date_format: "%b %-d, %Y"
 
 # Google services
 google_verification:
-# Use either direct GA implementation or set up GTM account
-# - using both will skew your data (leave blank to not use at all)
 google_analytics:
 google_tag_manager:
-# Bing services
 bing_verification:
 
 # Optional features
@@ -32,8 +29,8 @@ linkedin_username: nils-duran2004
 text:
   post:
     updated: "Updated"
-    minute_read: '🕒 minuts'
-    related_posts: "També et pot interessar"
+    minute_read: '🕒 min read'
+    related_posts: "You might also like"
   index:
     coming_soon: "Coming soon..."
 
@@ -43,15 +40,45 @@ redcarpet:
   extensions: ["smart", "tables", "with_toc_data", "footnotes"]
 permalink: pretty
 sass:
-  compressed: true
-plugins:
-  - jekyll-sitemap
+  sass_dir: _sass
+  style: compressed
 
-# Collections
 collections:
   projects:
     output: true
     permalink: /projects/:name/
 
-# https://github.com/jekyll/jekyll/issues/2938
-exclude: [vendor]
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      read_time: true
+      comments: true
+      share: false
+      author: Nils Duran
+      avatar: /images/misc/headshot.jpg
+      tags: []
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+      read_time: true
+      comments: false
+      share: false
+      author: Nils Duran
+      avatar: /images/misc/headshot.jpg
+      tags: []

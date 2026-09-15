@@ -1,7 +1,7 @@
----
+﻿---
 layout: projects_index
-title: Projectes
+title: Projects
 permalink: /projects/
 ---
 
-Aquí hi ha alguns dels projectes en els quals he treballat.
+Selected works across Applied Artificial Intelligence, Deep Learning, Supercomputing, and Full-Stack Engineering.

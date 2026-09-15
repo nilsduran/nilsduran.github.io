@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-end-of-oak-street/1/" rel="noopener" target="_blank">
-<img alt="The End of Oak Street (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/9/9/2/9/6/2/992962-the-end-of-oak-street-0-500-0-750-crop.jpg?v=b06dbfb4c9"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/one-night-only-2026/" rel="noopener" target="_blank">
+<img alt="One Night Only (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/3/1/1/6/7/7/1311677-one-night-only-2026-0-500-0-750-crop.jpg?v=9e18b23e11"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">The End of Oak Street (2026)</div>
-<div class="interest-subtitle recent-movie-director">★★★★</div>
+<div class="interest-title recent-movie-title">One Night Only (2026)</div>
+<div class="interest-subtitle recent-movie-director">★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

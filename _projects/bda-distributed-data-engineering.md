@@ -1,5 +1,6 @@
 ---
 layout: project
+priority: 7
 title: Large-Scale Data Engineering & Knowledge Graphs
 subtitle: Distributed Graph Processing, Semantic Web Modeling, and Scalable Analytical Workflows
 category: "Big Data & Distributed Systems"
@@ -23,22 +24,25 @@ index_description: "Architected distributed data pipelines integrating heterogen
 
 ## Project Overview
 
-Developed as the core project for **Big Data Analytics (BDA)** at URC, this engineering project addressed the architectural failure modes common to industrial data pipelines--such as data silos, private local processing scripts, and uncoordinated schema migrations.
+Developed as the core project for **Big Data Analytics (BDA)** at UPC, this engineering project addressed the architectural challenges common to large-scale industrial data pipelines—such as data silos, heterogeneous schemas, and uncoordinated processing workflows.
 
-Working in a team of three, we architected an enterprise-grade data lifecycle pipeline integrating heterogeneous distributed data sources into unified **Knowledge Graphs** managed with *GraphDB**, querying complex relational patterns via **SPARQL**.
+Working in a team of three (with Ramon Andreu and Daniel Lopez), we architected an enterprise-grade distributed data pipeline integrating heterogeneous data sources into unified **Knowledge Graphs** managed with **GraphDB**, querying complex relational patterns via **SPARQL**, and running distributed processing with **Apache Spark**.
+
+![Distributed Data Pipeline & Knowledge Graph Architecture](/images/projects/bda-distributed-data-engineering/bda-distributed-data-engineering.png)
+*Figure 1: Distributed data lifecycle architecture linking Apache Spark processing nodes, NoSQL Cassandra clusters, and 3D RDF Knowledge Graph triplestores.*
 
 ---
 
 ## System Architecture & Data Lifecycle
 
-- **1. Ingestion & Preprocessing:** Automated ETL pipelines cleaning raw sensor, commercial, and operational records using distributed workers.
-- **2. Semantic Modeling (RDF/S):** Formal ontology design linking domain concepts, hierarchical classifications, and relational constraints using RDFS standards.
+- **1. Distributed Ingestion & Processing:** Automated ETL pipelines cleaning raw sensor, commercial, and operational records using Apache Spark and distributed workers.
+- **2. Semantic Modeling (RDF/S & OWL):** Formal ontology design linking domain concepts, hierarchical classifications, and relational constraints using RDFS standards.
 - **3. High-Throughput SPARQL:** Optimized graph query execution across millions of triples in GraphDB, extracting real-time analytical indicators.
 
 ---
 
 ## Key Technical Contributions
 
-- {* Ontological Triplification:** Transformed raw tabular and semi-structured datasets into linked RDF triplestores adhering to standard semantic ontologies.
-- {* Analytical Graph Querying:** Formulated complex federated SPARQL queries incorporating property paths, aggregation filters, and semantic inference rules.
-- {* Resilient Data Architecture:** Designed storage and processing layers preventing unshared local data traps, ensuring reproducible and verifiable analytics.
+- **Ontological Triplification:** Transformed raw tabular and semi-structured datasets into linked RDF triplestores adhering to standard semantic ontologies.
+- **Analytical Graph Querying:** Formulated complex federated SPARQL queries incorporating property paths, aggregation filters, and semantic inference rules.
+- **Resilient Data Architecture:** Designed storage and processing layers preventing unshared local data traps, ensuring reproducible and verifiable analytics across the distributed cluster.

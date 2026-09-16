@@ -1,5 +1,6 @@
 ---
 layout: project
+priority: 1
 title: Artificial Intelligence for Cognition — Decoding Cognitive Conflict & Perception from EEG
 subtitle: Bachelor's Thesis in Artificial Intelligence at Universitat Politècnica de Catalunya (UPC)
 category: "Computational Neuroscience & AI"
@@ -29,7 +30,7 @@ index_description: "Bachelor's thesis evaluating Riemannian geometry, Spatio-Tem
 
 ## Executive Summary & Scientific Context
 
-This project represents my **Bachelor's Thesis (Treball de Final de Grau)** in Artificial Intelligence at the **Facultat d'Informàtica de Barcelona (FIB), Universitat Politècnica de Catalunya (UPC)**, completed under the academic supervision of **Dr. Adrián Francisco Tauste Campo** and **Dr. Mireia Torralba Cuello** (Department of Physics, UPC).
+This project represents my **Bachelor's Thesis (Treball de Final de Grau)** in Artificial Intelligence at the **Facultat d'Informàtica de Barcelona (FIB), Universitat Politècnica de Catalunya (UPC)**, completed under the academic supervision of **Dr. Adrià Tauste Campo** and **Dr. Mireia Torralba Cuello** (Department of Physics, UPC).
 
 The work investigates whether non-invasive electroencephalography (EEG) recorded during onset binocular rivalry contains decodable information about perceptual conflict and conscious resolution on a single-trial basis. In binocular rivalry, incompatible visual stimuli (orthogonal red and green Gabor gratings) are presented dichoptically to each eye through a mirror stereoscope. Because the physical input remains conflicting while conscious perception fluctuates between one image, the other, or a mixed percept, this paradigm provides an experimental setting to isolate neural correlates of conscious perception from bottom-up sensory processing.
 

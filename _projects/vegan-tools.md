@@ -1,5 +1,6 @@
 ---
 layout: project
+priority: 2
 title: Vegan Tools
 subtitle: Production Full-Stack Web Platform Providing AI-Powered Assistance for Everyday Plant-Based Living
 category: "Production Full-Stack & Applied AI"

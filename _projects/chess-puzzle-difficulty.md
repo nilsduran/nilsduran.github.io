@@ -1,5 +1,6 @@
 ---
 layout: project
+priority: 5
 title: IEEE BigData 2024 Cup — Predicting Chess Puzzle Difficulty
 subtitle: Machine Learning Difficulty Estimation Combining Neural Chess Engines
 type: project
@@ -24,6 +25,9 @@ github_url: "https://github.com/nilsduran/IEEE-BigData-2024-Cup--Predicting-Ches
 ## Project Overview
 
 Participated in the **IEEE BigData 2024 Cup** competition with team *PlatsBruts*, competing to accurately predict the human solving difficulty rating (Elo) of tactical chess puzzles from millions of positions.
+
+![Tactical Chess Puzzle Difficulty Prediction](/images/projects/chess-puzzle-difficulty/chess-puzzle-difficulty.png)
+*Figure 1: Tactical chess puzzle position evaluation combining deep engine search depth (Stockfish) with human behavioral probability distributions (Maia Chess).*
 
 Predicting puzzle difficulty is challenging because traditional chess engines evaluate *objective positional advantage* rather than *human cognitive difficulty*. A move that is trivial for an engine to calculate can be virtually invisible to a human master, and vice versa.
 

@@ -1,5 +1,6 @@
 ﻿---
 layout: project
+priority: 8
 title: Deep Reinforcement Learning in Gymnasium Environments
 subtitle: Model-Free Control Algorithms for Classic Control & Atari
 type: project

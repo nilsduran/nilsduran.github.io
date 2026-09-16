@@ -1,5 +1,6 @@
 ﻿---
 layout: project
+priority: 9
 title: Clinical Survival Prediction in Cirrhosis Patients
 subtitle: Comparative Machine Learning & Explainable AI on Biomedical Data
 type: project

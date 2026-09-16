@@ -1,5 +1,6 @@
 ---
 layout: project
+priority: 3
 title: Large-Scale Transformer Training on MareNostrum 5
 subtitle: Distributed Deep Learning on BSC Supercomputing Infrastructure
 type: project

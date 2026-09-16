@@ -1,5 +1,6 @@
 ---
 layout: project
+priority: 4
 title: SinergIA — Multi-Agent Systems & LLM LoRA Fine-Tuning
 subtitle: Clinical Question-Answering Evaluation with LangGraph and Gemini
 date_display: "Spring 2025"

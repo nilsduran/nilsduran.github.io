@@ -1,5 +1,6 @@
 ---
 layout: project
+priority: 6
 title: In-Context Learning in LLMs for Catalan NLP
 subtitle: Empirical Benchmark of Prompting Paradigms Across Open-Weight Model Families
 category: "Natural Language Processing & LLMs"
@@ -53,8 +54,15 @@ The evaluation compared open-weight foundation models across parameter scales:
 
 ---
 
-## Key Empirical Findings
+## Key Empirical Findings & Benchmark Visualizations
+
+![Few-Shot Exact Match Accuracy per Model and Task](/images/projects/catalan-llm-in-context-learning/catalan-llm-in-context-learning.png)
+*Figure 1: Exact Match (EM) accuracy heatmap across open-weight models and four evaluated Catalan manipulation tasks (Aritmètica, Idioma, Atbash, and Combinació).*
+
+![Global Leaderboard by Prompting Regime](/images/projects/catalan-llm-in-context-learning/plot_global_leaderboard_em.png)
+*Figure 2: Global leaderboard showing mean Exact Match accuracy across Zero-Shot, Few-Shot, and Examples-Only prompting regimes.*
 
 1. **Scale Dominance in Catalan Reasoning:** LLaMA 3.3 70B achieved near-flawless performance on symbolic arithmetic extraction, whereas the 8B model scored only 5.88% in zero-shot, jumping to 21.18% with few-shot priming.
-2. **Demonstrations vs. Instructions:** Few-shot prompting consistently yielded the highest performance across all model families. Interestingly, *Examples-Only** prompting achieved competitive accuracy, demonstrating strong inductive pattern extrapolation without explicit Catalan natural language instructions.
-3. **Download Full Report:** The complete 7-page research paper with task-specific breakdown curves is available in the header link.
+2. **Demonstrations vs. Instructions:** Few-shot prompting consistently yielded the highest performance across all model families. Interestingly, *Examples-Only* prompting achieved competitive accuracy, demonstrating strong inductive pattern extrapolation without explicit Catalan natural language instructions.
+3. **Download Full Report:** The complete 7-page technical research paper with task-specific breakdown curves is available [here](/docs/Nils_Duran_Catalan_LLM_Report.pdf).
+

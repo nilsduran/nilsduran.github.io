@@ -1,14 +1,14 @@
 ---
 layout: project
-title: Computational Neuroscience & EEG Decoding (Bachelor's Thesis)
-subtitle: Decoding Perceptual Consciousness During Binocular Rivalry Using Spatio-Temporal Deep Learning
+title: Artificial Intelligence for Cognition — Decoding Cognitive Conflict & Perception from EEG
+subtitle: Bachelor's Thesis in Artificial Intelligence at Universitat Politècnica de Catalunya (UPC)
 category: "Computational Neuroscience & AI"
 hero_color_1: "#1e3a8a"
 hero_color_2: "#0f172a"
 image_format: png
-date: 2026-06-26
+date: 2026-06-25
 date_display: "June 2026"
-duration: "9 Months Research"
+duration: "Bachelor's Thesis (18 ECTS)"
 team_size: 1
 technologies:
   - PyTorch
@@ -18,80 +18,117 @@ technologies:
   - Spatio-Temporal GNNs (ChebConv)
   - Transformers & LoRA
   - Foundation Models (LaBraM)
-  - Explainable AI (SHAP & Integrated Gradients)
+  - Integrated Gradients & SHAP
+accuracy: "58.7% (Riemannian)"
+dataset_size: "60-ch EEG (47 Subj)"
+improvement: "Beats Foundation Models"
 github_url: "https://github.com/nilsduran/TFG"
-index_description: "Bachelor's thesis decoding visual perceptual consciousness from 64-channel EEG epochs using Riemannian geometry, Spatio-Temporal GNNs, LoRA-adapted Transformers, and large brain foundation models."
+paper_url: "/docs/Nils_Duran_TFG_Thesis.pdf"
+index_description: "Bachelor's thesis evaluating Riemannian geometry, Spatio-Temporal GNNs, LoRA-adapted Transformers, and EEG Foundation Models to decode cognitive conflict during binocular rivalry."
 ---
 
 ## Executive Summary & Scientific Context
 
-This project represents my **Bachelor's Thesis (Treball de Final de Grau)** in Artificial Intelligence at the **Universitat Politècnica de Catalunya (UPC)**, completed under the academic supervision of **Dr. Adrián F. Tauste Campo** and **Dr. Mireia Torralba Cuello**.
+This project represents my **Bachelor's Thesis (Treball de Final de Grau)** in Artificial Intelligence at the **Facultat d'Informàtica de Barcelona (FIB), Universitat Politècnica de Catalunya (UPC)**, completed under the academic supervision of **Dr. Adrián Francisco Tauste Campo** and **Dr. Mireia Torralba Cuello** (Department of Physics, UPC).
 
-The core objective was to investigate whether non-invasive electroencephalography (EEG) signals contain decodable signatures of visual perceptual consciousness during **binocular rivalry**. In binocular rivalry, incompatible visual stimuli (such as orthogonal red and green gratings) are presented simultaneously to each eye. Rather than seeing a fused image, human perception spontaneously alternates between the two stimuli every few seconds—even though the underlying physical sensory input remains entirely static. This paradigm provides a unique experimental window to isolate neural correlates of conscious perception from purely bottom-up sensory processing.
+The work investigates whether non-invasive electroencephalography (EEG) recorded during onset binocular rivalry contains decodable information about perceptual conflict and conscious resolution on a single-trial basis. In binocular rivalry, incompatible visual stimuli (orthogonal red and green Gabor gratings) are presented dichoptically to each eye through a mirror stereoscope. Because the physical input remains conflicting while conscious perception fluctuates between one image, the other, or a mixed percept, this paradigm provides an experimental setting to isolate neural correlates of conscious perception from bottom-up sensory processing.
 
----
-
-## Technical Methodology & Pipeline
-
-```
-64-Channel Raw EEG ──> Preprocessing & Filtering (0.5–45 Hz) ──> Perceptual Epoch Alignment
-                                                                         │
-                     ┌───────────────────────────────────────────────────┴──────────────────────────────┐
-                     ▼                                                   ▼                              ▼
-           Riemannian Manifold                                  Spatio-Temporal GNN              ST-EEGFormer + LoRA
-      (OAS Covariance + Tangent Space)                          (Chebyshev Spectral)           (Multi-Head Attention)
-                     │                                                   │                              │
-                     └───────────────────────────────────────────────────┼──────────────────────────────┘
-                                                                         ▼
-                                                     Statistical Rigor & FDR Control
-                                                       (Wilcoxon & Permutation)
-                                                                         │
-                                                                         ▼
-                                                        Feature Attribution & XAI
-                                                        (SHAP & Integrated Grads)
-```
-
-### 1. Signal Preprocessing & Epoch Extraction
-- **Data Acquisition:** 64 scalp electrodes recorded according to the extended International 10-20 system.
-- **Filtering & Artifact Rejection:** Zero-phase bandpass filtering (0.5–45 Hz) with notch filtering at 50 Hz to remove European line noise. Epochs were aligned to behavioral transition onsets reported by subjects.
-- **Covariance Conditioning:** Empirical covariance estimation suffers in small-sample, high-dimensional regimes ($N \ll C^2$). We deployed **Optimal Approximate Shrinkage (OAS)** to compute well-conditioned covariance matrices:
-  $$\Sigma_{\text{OAS}} = (1 - \rho)\Sigma_{\text{sample}} + \rho \frac{\text{Tr}(\Sigma_{\text{sample}})}{C} I$$
-
-### 2. Riemannian Geometry & Tangent Space Projection
-Covariance matrices belong to the symmetric positive-definite (SPD) Riemannian manifold $\mathcal{S}_{++}^C$, where standard Euclidean metrics yield distorted geometric distances. We computed the **Fréchet mean** (geometric mean) of covariance matrices on the manifold and projected Riemannian tensors onto the Euclidean tangent space at the reference mean, preserving geodesic Riemannian distances for classification.
-
-### 3. Spatio-Temporal Graph Neural Networks (ST-GNN)
-To exploit both the physical layout of the scalp and the temporal dynamics of neural oscillations:
-- Electrode graphs were constructed where nodes represent channels and edge weights are determined by 3D physical geodesic distances over the scalp.
-- **Chebyshev Spectral Convolutions (ChebConv)** were applied across spatial neighborhoods to approximate fast localized spectral filters:
-  $$Z = \sum_{k=0}^{K-1} \theta_k T_k(\tilde{L}) X$$
-  where $\tilde{L}$ is the scaled graph Laplacian and $T_k$ are Chebyshev polynomials.
-
-### 4. Attention Mechanisms & Foundation Model Transfer
-- **ST-EEGFormer with LoRA:** Implemented multi-head self-attention operating over time-channel token representations. To enable parameter-efficient fine-tuning across heterogeneous subject recordings without catastrophic forgetting, we integrated **Low-Rank Adaptation (LoRA)** modules into the projection weights.
-- **Large Brain Model (LaBraM):** Evaluated transfer learning capabilities of pre-trained foundation models on cognitive transition decoding.
+![Experimental Paradigm and Stimulus Timeline](/images/projects/tfg-neuroscience/experimental_paradigm.png)
+*Figure 1: Onset binocular rivalry experimental timeline. Trials begin with a blank fixation, smooth fade-in ramp, stimulus presentation (main analysis window), variable jitter, and delayed response screen.*
 
 ---
 
-## Experimental Benchmarks & Validation
+## Two Core Classification Contrasts
 
-The models were evaluated under rigorous inter-subject cross-validation schemes to ensure generalization across individual brain morphologies and cognitive variance.
+To dissect conflict detection from motor execution and perceptual mixture, the study evaluates two binary classification tasks:
 
-![Inter-Subject Model Comparison](/images/projects/tfg-neuroscience/comparison.png)
-*Figure 1: Comparative evaluation across subjects comparing Riemannian baselines, GNN architectures, and Transformer models.*
-
-![Temporal Onset Profile](/images/projects/tfg-neuroscience/onset.png)
-*Figure 2: Time-resolved decoding accuracy relative to perceptual transition onset ($t = 0$), identifying peak discriminative predictive windows in parietal-occipital electrodes.*
-
-### Statistical Rigor & Interpretability
-- **Hypothesis Testing:** Non-parametric permutation testing (10,000 permutations) and Wilcoxon signed-rank tests across subjects.
-- **FDR Correction:** P-values across electrode channels and temporal bins were corrected using the **Benjamini-Hochberg False Discovery Rate (FDR)** procedure ($\alpha = 0.05$).
-- **Explainable AI (XAI):** Integrated Gradients and SHAP attribution confirmed that neural discriminability concentrated predominantly in posterior parietal and occipital electrode clusters, aligning closely with established visual cortex literature on conscious state shifts.
+1. **Congruent vs. Incongruent-Pure (C vs. IP):** Compares compatible binocular stimuli against incompatible stimuli where the observer reported complete single-color dominance. Because both classes involve identical single-color reports, this contrast tests the neural signature of interocular conflict while holding reporting behavior constant.
+2. **Incongruent-Mixed vs. Incongruent-Pure (IM vs. IP):** Evaluates two distinct perceptual outcomes under identical incompatible visual stimulation (unstable mixed percept vs. complete single-image dominance).
 
 ---
 
-## Key Takeaways
+## End-to-End Decoding Pipeline
 
-1. **Geometry vs. Depth:** Riemannian manifold projection with regularized linear classifiers provides an extraordinarily strong, parameter-free baseline for multi-channel covariance decoding.
-2. **Topology Matters:** Spatio-temporal graph convolutions naturally respect the spherical geometry of scalp montages, significantly accelerating learning convergence.
-3. **Parameter-Efficient Adaptation:** LoRA offers an ideal paradigm for cross-subject neuroimaging models where subject-specific variance can be accommodated in rank-4 adapters without retraining backbone representations.
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1.5rem 0 2rem 0;">
+  <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem;">
+    <strong style="color: #1e3a8a;">1. Preprocessing</strong>
+    <p style="font-size: 0.88rem; color: #475569; margin: 0.5rem 0 0 0;">60-electrode 10-10 montage, 500 Hz sampling rate, 0.5–45 Hz zero-phase bandpass filter, EOG artifact monitoring, and delayed-response epoch alignment (0–1.5 s).</p>
+  </div>
+  <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem;">
+    <strong style="color: #1e3a8a;">2. Spatiotemporal Clustering</strong>
+    <p style="font-size: 0.88rem; color: #475569; margin: 0.5rem 0 0 0;">Delaunay triangulation for sensor neighborhood graphs with 2D non-parametric Monte Carlo cluster-permutation testing to control family-wise error rate (FWER).</p>
+  </div>
+  <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem;">
+    <strong style="color: #1e3a8a;">3. Model Evaluation Ladder</strong>
+    <p style="font-size: 0.88rem; color: #475569; margin: 0.5rem 0 0 0;">Structured hierarchy from hypothesis-driven baselines (FCz-theta, Oz-alpha) to Riemannian covariance, EEGNet, Spatio-Temporal GNNs, and Foundation Models.</p>
+  </div>
+  <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem;">
+    <strong style="color: #1e3a8a;">4. Leakage-Aware Validation</strong>
+    <p style="font-size: 0.88rem; color: #475569; margin: 0.5rem 0 0 0;">Stratified Group K-Fold cross-validation preventing temporal leakage (autocorrelation r = 0.56) across session blocks, with fold-contained scaling.</p>
+  </div>
+</div>
+
+![Spatiotemporal Cluster Topomaps](/images/projects/tfg-neuroscience/clustering_topomaps.png)
+*Figure 2: Two-dimensional cluster-based permutation test topomaps across representative time points, identifying broad posterior alpha suppression ($p_{\text{corrected}} = 0.0002$) and focal late fronto-medial theta effects ($p_{\text{corrected}} = 0.024$).*
+
+---
+
+## Machine Learning Architecture Hierarchy
+
+The thesis compares 10 distinct modeling approaches under identical cross-validation constraints:
+
+### 1. Classical & Riemannian Approaches
+- **Single-Feature Baselines:** L2-regularized Logistic Regression on Hilbert envelope features (FCz-theta and Oz-alpha).
+- **Riemannian Covariance Decoding:** Optimal Approximate Shrinkage (OAS) covariance matrices projected onto the Riemannian manifold tangent space at the Fréchet mean, paired with shrinkage Linear Discriminant Analysis (LDA).
+- **Cluster-Restricted SVC:** Support Vector Classifiers trained directly on data-driven cluster summaries.
+
+### 2. Deep Learning & Foundation Models
+- **EEGNet:** Compact convolutional baseline (2,258 parameters, 100% trainable) using depthwise spatial filtering and separable convolutions.
+- **Spatio-Temporal Graph Neural Network (ST-GNN):** 60-node sensor graph with Chebyshev spectral graph convolutions ($K=3$, 23,010 parameters, 100% trainable) combining spatial message passing with temporal convolutions.
+- **ST-EEGFormer:** Transformer encoder backbone (25.8M parameters) adapted using rank-8 Low-Rank Adaptation (LoRA, $\alpha = 16$, 534k trainable parameters = 2.1%).
+- **LaBraM (Large Brain Model):** Pre-trained patch-based EEG foundation model (5.8M parameters) adapted with LoRA adapters on attention/MLP layers (308k trainable parameters = 5.3%).
+
+---
+
+## Experimental Results & Benchmark Comparison
+
+The empirical findings from the final holdout evaluations across subjects are summarized below:
+
+| Model Architecture | Parameter Scope | C vs. IP Balanced Acc (%) | IM vs. IP Balanced Acc (%) |
+| :--- | :--- | :--- | :--- |
+| **Riemannian Covariance + LDA** | **Covariance Tangent Space** | **58.7% ± 8.3%** | 49.3% ± 6.1% |
+| **Experiment-Guided Classical ML** | Feature Ensemble | 56.9% ± 8.1% | 50.9% ± 8.1% |
+| **SVC Cluster Features** | RBF Kernel | 56.2% ± 6.3% | **52.7% ± 6.2%** |
+| **Logistic Regression (Oz-alpha)** | Single Feature | 53.6% ± 8.2% | 49.4% ± 8.0% |
+| **EEGNet (Agnostic)** | 2.2k Params (100% Trainable) | 53.2% ± 8.2% | 49.5% ± 5.8% |
+| **ST-EEGFormer (LoRA)** | 25.8M Params (2.1% Fine-Tuned)| 52.5% ± 8.3% | 50.7% ± 5.8% |
+| **ST-GNN (ChebConv)** | 23k Params (100% Trainable) | 52.0% ± 7.3% | 51.4% ± 5.6% |
+| **LaBraM Adaptation (LoRA)** | 5.8M Params (5.3% Fine-Tuned) | 51.9% ± 6.8% | 48.2% ± 9.6% |
+| **Logistic Regression (FCz-theta)**| Single Feature | 49.6% ± 6.7% | 50.6% ± 8.6% |
+
+![Cohort ROC and PR Curves](/images/projects/tfg-neuroscience/cohort_roc_pr_curves_c_vs_ip.png)
+*Figure 3: Cohort-wide Receiver Operating Characteristic (ROC) and Precision-Recall curves for C vs. IP, demonstrating clear above-chance separation led by Riemannian covariance.*
+
+---
+
+## Interpretability & Neuroscientific Diagnostics
+
+Model interpretability was evaluated through **Integrated Gradients (IG)** on deep networks and weight projection on Riemannian classifiers, testing whether models relied on biologically plausible features rather than noise or session artifacts.
+
+![Spatial Model Attribution Maps](/images/projects/tfg-neuroscience/shared_cohort_spatial_topomaps_c_vs_ip.png)
+*Figure 4: Spatial attribution topomaps across all 10 evaluated models for C vs. IP. Above-chance models consistently converge on broad posterior and parieto-occipital electrode regions.*
+
+![Consensus Diagnostic](/images/projects/tfg-neuroscience/experimental_consensus_diagnostic_c_vs_ip.png)
+*Figure 5: Experimental consensus diagnostic combining weighted spatial topographies and temporal attribution curves, showing sustained relevance from 400 ms through 1.2 s post-stimulus.*
+
+![Temporal Generalization Matrix](/images/projects/tfg-neuroscience/tgm_matrix_only.png)
+*Figure 6: Temporal Generalization Matrix (TGM) showing that decodable information is dynamically localized in post-stimulus windows rather than persisting as a static trial-wide state.*
+
+---
+
+## Key Methodological Insights
+
+1. **Why the Best Models Are Not the Largest Models:** In low-SNR, subject-variable biomedical time series with modest trial counts, classical Riemannian covariance with strong geometric inductive biases outperforms 25M-parameter deep models. Larger models risk fitting to person-specific noise and session drift.
+2. **Subject Identity Control:** An auxiliary control experiment demonstrated that models could classify *which subject* produced a held-out trial with **>98% accuracy**, proving that EEG contains unique biometric signatures that necessitate strict grouped cross-validation to avoid leakage.
+3. **Posterior Alpha vs. Fronto-Medial Theta:** The decodable neural signature of perceptual conflict is dominated by broad posterior and occipital alpha modulations rather than isolated frontal theta rhythms.
+4. **Reproducibility & Open Science:** All data processing pipelines, modeling notebooks, and figure generation scripts are fully open-sourced on GitHub.

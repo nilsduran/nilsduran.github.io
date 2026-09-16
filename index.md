@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default
 permalink: /
 ---
@@ -10,7 +10,7 @@ permalink: /
     </div>
     
     <div class="home-title">
-      Hi, I'm Nils Duran — Data Science & AI Engineer from Barcelona, Catalonia.
+      Hi, I'm Nils Duran — Data Science & ML Engineer from Barcelona, Catalonia.
     </div>
     
     <div class="home-subtitle">

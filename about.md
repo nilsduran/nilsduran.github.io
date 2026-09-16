@@ -17,7 +17,7 @@ headshot: /images/misc/headshot.jpg
 
 ### Introduction
 
-Hi, I'm Nils, a 22-year-old Data Science and Artificial Intelligence engineer based in Barcelona, Catalonia. I recently graduated with a Bachelor's degree in Artificial Intelligence from the *Universitat Politècnica de Catalunya (UPC)* and am currently pursuing my Master's in Data Science at the same university.
+Hi, I'm Nils, a 22-year-old Data Science and Machine Learning (ML) engineer based in Barcelona, Catalonia. I recently graduated with a Bachelor's degree in Artificial Intelligence from the *Universitat Politècnica de Catalunya (UPC)* and am currently pursuing my Master's in Data Science at the same university.
 
 Outside of research and engineering, I enjoy reading, playing tennis, and competitive chess.
 

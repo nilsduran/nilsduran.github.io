@@ -1,4 +1,4 @@
-﻿---
+---
 layout: project
 title: SinergIA — Multi-Agent Systems & LLM LoRA Fine-Tuning
 subtitle: Clinical Question-Answering Evaluation with LangGraph and Gemini
@@ -35,16 +35,49 @@ challenges:
     description: Ensuring that fine-tuned agents provided genuinely diverse clinical perspectives rather than redundant opinions.
     solution: Developed an Elo rating system and dissimilarity matrix to evaluate and select optimal agent combinations.
 learnings: "Demonstrated that ensembles of domain-adapted smaller models orchestrated in structured agentic graphs can consistently surpass raw zero-shot performance of single large models on domain-specific benchmarks like MedQA."
+architecture_image: "/images/projects/pia/architecture.png"
+demo_video: "/images/projects/pia/demo.mov"
 github_url: "https://github.com/nilsduran/PIA"
 ---
 
 ## Project Overview
 
-**SinergIA** was developed as a collaboration project with guidance from **Telefónica Innovación Digital**. The objective was to investigate whether cognitive diversity in multi-agent systems could reliably enhance complex clinical reasoning and reduce hallucinations in medical question answering.
+**SinergIA** was developed as an applied artificial intelligence research project in collaboration with **Telefónica Innovación Digital**. The project investigated whether cognitive diversity within multi-agent LLM systems can measurably improve complex clinical diagnostic reasoning and mitigate hallucinations on standardized medical benchmarks.
 
-### Technical Methodology
+Using **LangGraph** and **Google Gemini**, the system orchestrates specialized expert agents, evaluates candidate opinions through peer-critique loops, and aggregates final conclusions through a supervisory consensus module.
 
-1. **LoRA Fine-Tuning:** Fine-tuned language models on medical and clinical literature to create specialized sub-domain experts.
-2. **LangGraph State Orchestration:** Designed stateful conversational graphs coordinating expert deliberations, critique loops, and supervisory consensus.
-3. **Benchmarking on MedQA:** Evaluated the multi-agent system on USMLE-style questions from the MedQA benchmark, achieving a verified improvement from **87% to 90%** accuracy over standalone Gemini 2.5 Flash baselines.
-4. **Diversity & Elo Rating:** Computed dissimilarity matrices and head-to-head Elo ratings to understand temperature dynamics and model complementarity.
+---
+
+## Technical Methodology
+
+### 1. Domain Adaptation with LoRA
+Generalist language models often struggle with nuanced clinical protocols and pharmaceutical interactions. We fine-tuned domain-specific smaller models using **Low-Rank Adaptation (LoRA)** on curated medical corpora, creating specialized agents (diagnostic specialist, pharmacologist, and clinical critic) that operate with high domain fidelity.
+
+### 2. Multi-Agent Orchestration with LangGraph
+Rather than standard linear chains, the orchestration is modeled as a stateful cyclic graph in LangGraph:
+- **Query Intake & Routing:** A supervisor agent ingests the clinical patient vignette and dynamically delegates sub-problems to specialized expert agents.
+- **Peer Deliberation & Critique:** Agents review peer justifications, identify diagnostic edge cases, and challenge ungrounded assertions.
+- **Consensus & Confidence Aggregation:** When confidence criteria are satisfied, the supervisor synthesizes the consensus diagnostic recommendation.
+
+### 3. Diversity Modeling & Elo Ratings
+To quantify the benefit of agent diversity:
+- **Dissimilarity Matrices:** Computed pairwise output dissimilarities across agent configurations and decoding temperatures to identify non-redundant agent pairs.
+- **Head-to-Head Elo Evaluation:** Implemented an automated tournament framework to benchmark agent combinations against baseline Gemini Flash models.
+
+---
+
+## Benchmark Results on MedQA
+
+Evaluated on USMLE clinical questions from the **MedQA benchmark**:
+- **Baseline Gemini 2.5 Flash:** 87.0% accuracy
+- **SinergIA Multi-Agent Consensus:** **90.0% accuracy (+3.0% absolute gain)**
+- **Hallucination Rate:** Significantly reduced through multi-agent cross-verification loops.
+
+---
+
+## Interactive Streamlit Application
+
+The project includes an interactive **Streamlit dashboard** allowing clinicians and researchers to:
+1. Conduct real-time diagnostic consultations with inspectable multi-agent deliberation traces.
+2. Run head-to-head model battles and observe real-time Elo rating adjustments.
+3. Visualize agent diversity dissimilarity heatmaps across prompt variations.

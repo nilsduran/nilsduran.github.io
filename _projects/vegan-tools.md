@@ -24,43 +24,53 @@ index_description: "A production-grade web platform featuring an Ingredient Chec
 
 ## Overview
 
-**Vegan Tools** ([vegantools.org](https://vegantools.org)) is a deployed, production web platform engineered to solve real friction points for vegans, vegetarians, and consumers with dietary restrictions navigating a non-vegan world.
+**Vegan Tools** ([vegantools.org](https://vegantools.org)) is a deployed, production web application engineered to eliminate everyday friction for vegans, vegetarians, and consumers with dietary restrictions navigating a non-vegan world.
 
-Rather than generic chat interfaces, Vegan Tools provides **fast, purpose-built utilities** powered by specialized multi-modal AI pipelines, structured schemas, and comprehensive food science knowledge bases.
+Rather than generic conversational interfaces, Vegan Tools provides **specialized, high-speed utilities** powered by client-side caching, vision-language APIs, strict JSON schema validation, and verified biochemical food additive databases.
 
----
-
-## Core Modules & Features
-
-```
-                               ┌────────────────────────────────────────────────────────┐
-                               │                    vegantools.org                      │
-                               └──────────────────────────┬─────────────────────────────┘
-                                                          │
-                    ┌─────────────────────────────────────┼─────────────────────────────────────┐
-                    ▼                                     ▼                                     ▼
-        🔍 Ingredient Checker                  📷 Menu OCR Interpreter                🥗 Recipe Veganizer
-  - E-Number / additive database        - Multi-lingual menu image parsing     - Functional culinary substitutions
-  - Hidden animal byproduct detection   - Dissection of complex dish components- Moisture & leavening preservation
-  - Certainty & cross-contamination     - Cross-referencing allergen tables    - Nutritional macro rebalancing
-```
-
-### 1. Product Ingredient Checker
-- **The Problem:** Food labels contain obscure chemical names, nested additives, and European food additive codes (E-numbers) that often mask animal-derived sources (e.g., E120 / carmine from cochineal insects, E904 shellac, bone char filtered sugars, or ambiguously sourced mono- and diglycerides).
-- **The Solution:** An ultra-fast scanner that breaks down raw ingredient strings, queries a verified dictionary of additives, and evaluates ambiguous ingredients with confidence ratings and manufacturer inquiry guidance.
-
-### 2. Restaurant Menu OCR Interpreter
-- **The Problem:** Dining out in unfamiliar or international restaurants often involves deciphering unfamiliar culinary terms and regional preparations.
-- **The Solution:** Users upload or snap a photo of physical menus. The pipeline performs OCR extraction and multi-modal semantic analysis, classifying dishes as naturally vegan, adaptable with minor modifications (e.g., omitting dairy dressings), or inherently animal-based.
-
-### 3. Culinary Recipe Veganizer
-- **The Problem:** Simply removing eggs or butter from recipes ruins dough hydration, texture, emulsification, and rise.
-- **The Solution:** A structured culinary transformation engine that analyzes each non-vegan ingredient's functional role (binding, fat ratio, leavening, moisture) and suggests optimized culinary substitutes (e.g., aquafaba vs. flax egg vs. silken tofu) tailored to the specific cooking technique.
+![Vegan Tools Production Home Screen](/images/projects/vegan-tools/home.png)
+*Figure 1: Production interface of vegantools.org featuring quick access to the interactive map, scanner, and recipe suite.*
 
 ---
 
-## Architecture & Engineering Highlights
+## Key Modules & Features
 
-- **Frontend:** Next.js and React with TypeScript, prioritizing sub-second initial load times, progressive web app (PWA) mobile optimization, and accessible responsive design.
-- **AI Integration:** Multi-modal LLMs configured with strict JSON schema outputs and fallback rule-based validators to eliminate hallucinations on dietary safety claims.
-- **Infrastructure:** Deployed globally with CDN caching and edge routing for high availability and low latency.
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin: 1.5rem 0 2rem 0;">
+  <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.25rem;">
+    <h3 style="margin-top: 0; color: #047857;">🔍 Product Ingredient Scanner</h3>
+    <p style="margin-bottom: 0; font-size: 0.95rem; color: #475569;">Instant evaluation of ingredient lists, identifying obscure chemical compounds, E-number derivatives (e.g., E120 carmine, E904 shellac), and bone-char processing indicators with verified dietary confidence ratings.</p>
+  </div>
+  <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.25rem;">
+    <h3 style="margin-top: 0; color: #047857;">🗺️ Interactive Vegan Discovery Map</h3>
+    <p style="margin-bottom: 0; font-size: 0.95rem; color: #475569;">A high-performance interactive map interface indexing verified plant-based restaurants, bakeries, and grocery stores with real-time geolocation filtering and community curation.</p>
+  </div>
+  <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.25rem;">
+    <h3 style="margin-top: 0; color: #047857;">🥗 Smart Recipe Veganizer</h3>
+    <p style="margin-bottom: 0; font-size: 0.95rem; color: #475569;">Nutritional and culinary transformation engine that analyzes the functional purpose of animal products in traditional recipes (binding, fat ratio, aeration) and computes biochemically optimal plant substitutions.</p>
+  </div>
+</div>
+
+### Interactive Discovery Map
+
+The interactive map module provides real-time exploration of vegan-friendly locations, filtering dining options by certification level, cuisine, and opening hours.
+
+![Interactive Vegan Map Interface](/images/projects/vegan-tools/map.png)
+*Figure 2: Interactive map view on vegantools.org/map for finding plant-based establishments with responsive filtering.*
+
+---
+
+### Culinary Recipe Transformation
+
+Unlike naive keyword replacements, the recipe engine understands the physical role of ingredients in baking and cooking. Replacing eggs in a meringue requires aquafaba's albumin-mimicking protein structure, whereas an egg in a brownie requires moisture and fat balance from flaxseed or silken tofu. The system provides step-by-step culinary adaptations with adjusted baking times and moisture ratios.
+
+![Recipe Transformation Suite](/images/projects/vegan-tools/recipes.png)
+*Figure 3: Recipe veganization workflow on vegantools.org/recipes showing culinary adaptations and ingredient alternatives.*
+
+---
+
+## Technical Architecture & Engineering Highlights
+
+- **Modern Frontend Stack:** Built with Next.js, React, and TypeScript, optimized for sub-second page loads, progressive web app (PWA) offline capabilities, and mobile-first responsive interactions.
+- **Vision & Multi-Modal Processing:** Integrates camera capture and multi-lingual OCR pipelines to parse physical food menus and packaging directly in the browser.
+- **Strict Schema Enforcement:** Backend LLM pipelines enforce deterministic JSON schemas with fallback deterministic rule engines, eliminating hallucinated safety claims on allergens and ingredients.
+- **Global Edge Deployment:** Served globally across CDN edge nodes with optimized asset compression for minimal latency on mobile cellular connections.

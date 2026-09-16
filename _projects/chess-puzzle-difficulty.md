@@ -1,4 +1,4 @@
-﻿---
+---
 layout: project
 title: IEEE BigData 2024 Cup — Predicting Chess Puzzle Difficulty
 subtitle: Machine Learning Difficulty Estimation Combining Neural Chess Engines
@@ -23,10 +23,21 @@ github_url: "https://github.com/nilsduran/IEEE-BigData-2024-Cup--Predicting-Ches
 
 ## Project Overview
 
-Participated in the **IEEE BigData 2024 Cup** competition with team *PlatsBruts*, focused on predicting the human rating difficulty (Elo) of complex chess tactical positions.
+Participated in the **IEEE BigData 2024 Cup** competition with team *PlatsBruts*, competing to accurately predict the human solving difficulty rating (Elo) of tactical chess puzzles from millions of positions.
 
-### Technical Approach
+Predicting puzzle difficulty is challenging because traditional chess engines evaluate *objective positional advantage* rather than *human cognitive difficulty*. A move that is trivial for an engine to calculate can be virtually invisible to a human master, and vice versa.
 
-- **Chess Engine Feature Extraction:** Parsed FEN/PGN positions to extract deep heuristic features from **Stockfish** (centipawn evaluation, node search depth, candidate move variance).
-- **Human-Centric Modeling with Maia & Leela:** Incorporated evaluation distributions from **Maia Chess** (neural networks specifically trained to emulate human players across specific Elo brackets) to identify human perceptual blindspots.
-- **Ensemble Regression:** Built gradient-boosted decision tree ensembles mapping engine metrics and tactical complexity indicators to continuous Elo difficulty scores.
+---
+
+## Technical Methodology & Feature Engineering
+
+### 1. Engine Heuristic Features
+- **Stockfish Search Dynamics:** Evaluated positions at varying depths to extract centipawn volatility, move order stability, node count expansion, and evaluation deltas between the best move and second-best alternative.
+- **Shannon Entropy of Move Distribution:** Calculated the entropy over candidate move probabilities; high entropy reflects ambiguous positions with many plausible-looking decoy moves (blunder traps).
+
+### 2. Human Behavior Modeling with Maia Chess
+- **Maia Neural Networks:** Unlike standard superhuman engines, **Maia** is trained directly on millions of human games across specific rating tiers (Maia 1100 to Maia 1900) to predict the exact move a human at that rating would make.
+- Extracted disagreement rates between superhuman ground truth (Stockfish) and human expectation (Maia) as direct proxies for tactical difficulty and intuitive traps.
+
+### 3. Gradient Boosted Decision Ensembles
+- Trained **LightGBM** and **XGBoost** regression models with Bayesian hyperparameter optimization and k-fold cross-validation, optimizing Root Mean Squared Error (RMSE) against verified human rating benchmarks.

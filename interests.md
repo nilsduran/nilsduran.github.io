@@ -306,7 +306,7 @@ permalink: /interests/
 <!-- Menjar -->
 <div class="divider-fade"><div class="divider-fade-inner"></div></div>
 <div class="interest-category">
-<h2>🍽️ Food & Cuisine</h2>
+<h2>🍽️ Food &amp; Cuisine</h2>
 <div class="interest-grid">
 <div class="interest-item">
 <a class="interest-link" href="#" rel="noopener" target="_blank">
@@ -390,7 +390,7 @@ permalink: /interests/
 </div>
 <!-- Esports -->
 <div class="interest-category">
-<h2>⚽ Sports & Games</h2>
+<h2>⚽ Sports &amp; Games</h2>
 <div class="interest-grid">
 <div class="interest-item">
 <a class="interest-link" href="#⚽-esports" rel="noopener" target="_blank">
@@ -423,7 +423,7 @@ permalink: /interests/
 </div>
 <!-- Obres d'art -->
 <div class="interest-category art-category">
-<h2>🎨 Art & Architecture</h2>
+<h2>🎨 Art &amp; Architecture</h2>
 <div class="interest-grid">
 <div class="interest-item">
 <a class="interest-link" href="https://artsandculture.google.com/asset/shipwreck-off-a-rocky-coast-nuijen-wijnand/jwHeR2DfWY0qpw" rel="noopener" target="_blank">

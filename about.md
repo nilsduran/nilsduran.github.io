@@ -1,4 +1,4 @@
-﻿---
+---
 layout: about
 permalink: /about/
 title: About Me
@@ -40,8 +40,8 @@ I focus on architecting reliable, high-performance computing and machine learnin
 
 ### Industry & Applied Research
 
-- **Werfen** — *Software Tester Intern (SW Quality & Automation)* (June 2026 – Present)
-  - Engineering automated test suites in Java for in-vitro diagnostic (IVD) clinical software, integrating test execution into CI/CD pipelines, and conducting defect triage in JIRA under medical quality regulations (ISO 13485).
+- **Werfen** — *Software Tester Intern (Beacon Project)* (June 2026 – Present)
+  - Engineering fullstack automated test suites in Java (API & FormUI) for in-vitro diagnostic (IVD) clinical laboratory software on the Beacon Project. Managing requirements traceability and verification with Jama Connect, and developing automation scripts to accelerate QA cycles under ISO 13485 regulations.
 - **Sparsity Technologies** — *Data Engineering Intern* (October 2025 – January 2026)
   - Automated graph data extraction and ingestion pipelines, executed complex graph queries for competitor intelligence, and applied statistical text analysis.
 - **Telefónica Innovación Digital** — *Applied AI Research Collaboration* (Spring 2025)

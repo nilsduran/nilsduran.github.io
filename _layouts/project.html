@@ -3,440 +3,435 @@ layout: default
 ---
 
 <style>
-  .project-hero {
-    background: linear-gradient(135deg, {{ page.hero_color_1 | default: "#667eea" }} 0%, {{ page.hero_color_2 | default: "#764ba2" }} 100%);
-    color: white;
-    padding: 1rem 2rem 2rem 2rem;
-    margin: 1rem -2rem 2rem -2rem;
+  .project-header-card {
+    background: linear-gradient(135deg, {{ page.hero_color_1 | default: "#1e293b" }} 0%, {{ page.hero_color_2 | default: "#0f172a" }} 100%);
+    color: #f8fafc;
+    padding: 2.5rem 2rem;
     border-radius: 16px;
-    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
   }
 
-  .project-hero h1 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-  }
-
-  .project-hero .subtitle {
-    font-size: 1.2rem;
-    opacity: 0.9;
-    margin-bottom: 1rem;
-  }
-
-  .project-meta {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-  }
-
-  .meta-item {
-    background: rgba(255,255,255,0.2);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-  }
-
-  .project-image {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-    margin: 1.5rem auto;
-    display: block;
-  }
-
-  .project-section {
-    margin: 1rem 0;
-    padding: 1rem 2rem;
-    background: #f8f9fa;
-    border-radius: 12px;
-    border-left: 4px solid #667eea;
-    text-align: justify;
-  }
-
-  .project-section h2 {
-    color: #2c3e50;
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
-
-  .tech-stack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    margin: 0.5rem 0;
-  }
-
-  .tech-tag {
-    background: #667eea;
-    color: white;
-    padding: 0.2rem 0.6rem;
-    border-radius: 12px;
+  .project-badge-category {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #e2e8f0;
+    border-radius: 9999px;
     font-size: 0.8rem;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 0.85rem;
   }
 
-  .metrics-grid {
+  .project-header-card h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 0.75rem 0;
+    line-height: 1.25;
+  }
+
+  .project-header-card .subtitle {
+    font-size: 1.15rem;
+    color: #cbd5e1;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+  }
+
+  .project-meta-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .meta-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0.35rem 0.85rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #e2e8f0;
+  }
+
+  .project-action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+
+  .action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1.25rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+  }
+
+  .action-btn-primary {
+    background-color: #2563eb;
+    color: #ffffff !important;
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.3);
+  }
+
+  .action-btn-primary:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+  }
+
+  .action-btn-secondary {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .action-btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+  }
+
+  .project-banner-container {
+    margin: 1.5rem 0 2rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    background: #0f172a;
+  }
+
+  .project-banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 480px;
+    object-fit: cover;
+  }
+
+  .metrics-strip {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0 2rem 0;
   }
 
   .metric-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 1.25rem;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
   }
 
   .metric-value {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #667eea;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #2563eb;
     display: block;
+    line-height: 1.2;
   }
 
   .metric-label {
-    color: #666;
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
+    color: #64748b;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 0.4rem;
   }
 
-  .architecture-diagram {
-    background: white;
-    border: 2px dashed #ccc;
-    border-radius: 8px;
-    padding: 3rem;
-    text-align: center;
-    color: #666;
-    margin: 2rem 0;
+  .tech-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0 2rem 0;
   }
 
-  .code-snippet {
-    background: #2d3748;
-    color: #e2e8f0;
-    padding: 1.5rem;
-    border-radius: 8px;
-    overflow-x: auto;
-    margin: 1rem 0;
-    font-family: 'Fira Code', monospace;
-  }
-
-  .challenges-list {
-    list-style: none;
-    padding: 0;
-  }
-
-  .challenge-item {
-    background: white;
-    margin: 1rem 0;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid #f39c12;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-
-  .challenge-title {
+  .tech-pill {
+    background: #f1f5f9;
+    color: #334155;
+    border: 1px solid #e2e8f0;
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.82rem;
     font-weight: 600;
-    color: #2c3e50;
+  }
+
+  .project-content-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.75;
+    color: #334155;
+  }
+
+  .project-content-card h1, .project-content-card h2 {
+    color: #0f172a;
+    font-size: 1.45rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 0.5rem;
+  }
+
+  .project-content-card h1:first-child, .project-content-card h2:first-child {
+    margin-top: 0;
+  }
+
+  .project-content-card h3 {
+    color: #1e293b;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .project-content-card ul, .project-content-card ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .project-content-card li {
     margin-bottom: 0.5rem;
   }
 
-  .challenge-solution {
-    color: #27ae60;
-    font-style: italic;
-    margin-top: 0.5rem;
-  }
-
-  .project-links {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin: 2rem 0;
-  }
-
-  .project-link {
-    background: #667eea;
-    color: white !important;
-    padding: 0.75rem 1.5rem;
+  .project-content-card img {
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
-    text-decoration: none !important;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    border: 1px solid #e2e8f0;
+  }
+
+  .challenges-list {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin: 1.5rem 0 !important;
+  }
+
+  .challenge-item {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #f59e0b;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .challenge-title {
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.35rem;
+  }
+
+  .challenge-solution {
+    color: #16a34a;
     font-weight: 500;
-    transition: transform 0.2s ease;
-  }
-
-  .project-link:hover {
-    transform: translateY(-2px);
-    background: #5a6fd8;
-  }
-
-  .project-timeline {
-    position: relative;
-    padding-left: 2rem;
-  }
-
-  .timeline-item {
-    position: relative;
-    margin-bottom: 2rem;
-    padding-left: 2rem;
-  }
-
-  .timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -6px;
-    top: 8px;
-    width: 12px;
-    height: 12px;
-    background: #667eea;
-    border-radius: 50%;
-  }
-
-  .timeline-item::after {
-    content: '';
-    position: absolute;
-    left: -1px;
-    top: 20px;
-    width: 2px;
-    height: calc(100% + 1rem);
-    background: #e0e6ed;
-  }
-
-  .timeline-item:last-child::after {
-    display: none;
-  }
-
-  .timeline-date {
-    font-weight: 600;
-    color: #667eea;
-    font-size: 0.9rem;
-  }
-
-  .timeline-content {
     margin-top: 0.5rem;
-    color: #666;
   }
 
-  @media (max-width: 768px) {
-    .project-hero {
-      padding: 2rem 1rem;
-      margin: -1rem -1rem 2rem -1rem;
-    }
+  .project-nav-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 2rem;
+  }
 
-    .project-hero h1 {
-      font-size: 2rem;
-    }
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
 
-    .project-meta {
-      gap: 1rem;
-    }
-
-    .metrics-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .project-links {
-      flex-direction: column;
-    }
+  .back-link:hover {
+    text-decoration: underline;
   }
 </style>
 
-<div class="project-hero">
-  <h1>{{ page.title }}</h1>
-  <div class="subtitle">{{ page.subtitle | default: "Projecte d'Enginyeria de Dades i Machine Learning" }}</div>
-  
-  <div class="project-meta">
-    {% if page.team_size %}
-      {% assign team_count = page.team_size | plus: 0 %}
-      {% if team_count == 1 %}
-      <div class="meta-item">👤 {{ page.team_size }}</div>
-      {% else %}
-      <div class="meta-item">👥 {{ page.team_size }}</div>
+<div class="wrapper">
+  <div class="container">
+    {% assign gh_url = page.github_url | default: page.github %}
+    {% assign live_url = page.demo_url | default: page.demo %}
+    {% assign paper_url = page.paper_url | default: page.paper %}
+    {% assign project_slug = page.url | split: "/" | last %}
+    {% assign image_ext = page.image_format | default: "png" %}
+    {% assign project_image = "/images/projects/" | append: project_slug | append: "/" | append: project_slug | append: "." | append: image_ext %}
+
+    <!-- Header Hero -->
+    <div class="project-header-card">
+      {% if page.category %}
+        <div class="project-badge-category">{{ page.category }}</div>
       {% endif %}
-    {% endif %}
-    {% if page.date_display %}<div class="meta-item">📅 {{ page.date_display }}</div>{% endif %}
-    {% if page.duration %}<div class="meta-item">⏱️ {{ page.duration }}</div>{% endif %}
-  </div>
+      <h1>{{ page.title }}</h1>
+      {% if page.subtitle %}
+        <div class="subtitle">{{ page.subtitle }}</div>
+      {% endif %}
 
-{% if page.demo_video %}
-<div class="project-section" style="padding: 0; overflow: hidden; background: #000;">
-  <div style="background: #262730; color: white; padding: 0.5rem 1rem; font-size: 0.8rem; text-align: right;">
-    🎥 Demostració en vídeo (Arxivat)
-  </div>
-  <video controls style="width: 100%; display: block;">
-    <source src="{{ page.demo_video }}" type="video/mp4">
-    El teu navegador no suporta el tag de vídeo.
-  </video>
-</div>
-{% endif %}
-</div>
+      <div class="project-meta-pills">
+        {% if page.team_size %}
+          {% assign team_count = page.team_size | plus: 0 %}
+          <div class="meta-pill">👥 {% if team_count == 1 %}Individual Project{% else %}Team of {{ page.team_size }}{% endif %}</div>
+        {% endif %}
+        {% if page.date_display %}
+          <div class="meta-pill">📅 {{ page.date_display }}</div>
+        {% elsif page.date %}
+          <div class="meta-pill">📅 {{ page.date | date: "%B %Y" }}</div>
+        {% endif %}
+        {% if page.duration %}
+          <div class="meta-pill">⏱️ {{ page.duration }}</div>
+        {% endif %}
+      </div>
 
-{% if page.streamlit_url %}
-<div class="project-section" style="padding: 0; overflow: hidden; background: #fafafa;">
-  <div style="background: #262730; color: white; padding: 0.5rem 1rem; font-size: 0.8rem; text-align: right;">
-    📱 App interactiva carregada des de Streamlit Cloud
-  </div>
-  <iframe
-    src="{{ page.streamlit_url }}?embed=true"
-    height="850"
-    style="width:100%; border:none;"
-    title="{{ page.title }}"
-  ></iframe>
-</div>
-{% endif %}
-
-<!-- Imatge principal del projecte -->
-{% assign project_slug = page.url | split: "/" | last %}
-{% assign image_ext = page.image_format | default: "png" %}
-{% assign project_image = "/images/projects/" | append: project_slug | append: "/" | append: project_slug | append: "." | append: image_ext %}
-<img src="{{ project_image }}" alt="{{ page.title }}" class="project-image">
-
-<!-- Resum -->
-<div class="project-section">
-  <h2>🎯 Resum</h2>
-  <p>{{ page.executive_summary | default: content }}</p>
-  
-  {% if page.key_achievements %}
-  <h3>Assoliments Clau:</h3>
-  <ul>
-    {% for achievement in page.key_achievements %}
-    <li>{{ achievement }}</li>
-    {% endfor %}
-  </ul>
-  {% endif %}
-</div>
-
-<!-- Tecnologies utilitzades -->
-<div class="project-section">
-  <h2>🛠️ Stack Tecnològic</h2>
-  <div class="tech-stack">
-    {% assign default_tech = "Python,Pandas,Scikit-learn,Jupyter,Git" | split: "," %}
-    {% assign technologies = page.technologies | default: default_tech %}
-    {% for tech in technologies %}
-    <span class="tech-tag">{{ tech }}</span>
-    {% endfor %}
-  </div>
-</div>
-
-<!-- Mètriques i resultats -->
-<div class="project-section">
-  <h2>📊 Resultats i Mètriques</h2>
-  <div class="metrics-grid">
-    <div class="metric-card">
-      <span class="metric-value">{{ page.accuracy | default: "94.2%" }}</span>
-      <div class="metric-label">Precisió del Model</div>
+      <div class="project-action-buttons">
+        {% if live_url %}
+          <a href="{{ live_url }}" target="_blank" rel="noopener noreferrer" class="action-btn action-btn-primary">
+            🚀 Live Demo / App
+          </a>
+        {% endif %}
+        {% if gh_url %}
+          <a href="{{ gh_url }}" target="_blank" rel="noopener noreferrer" class="action-btn action-btn-secondary">
+            💻 View on GitHub
+          </a>
+        {% endif %}
+        {% if paper_url %}
+          <a href="{{ paper_url }}" target="_blank" rel="noopener noreferrer" class="action-btn action-btn-secondary">
+            📄 Research Paper / Thesis
+          </a>
+        {% endif %}
+      </div>
     </div>
-    {% if page.dataset_size %}
-    <div class="metric-card">
-      <span class="metric-value">{{ page.dataset_size }}</span>
-      <div class="metric-label">Registres Processats</div>
-    </div>
-    {% endif %}
-    {% if page.processing_time %}
-    <div class="metric-card">
-      <span class="metric-value">{{ page.processing_time }}</span>
-      <div class="metric-label">Temps d'Inferència</div>
-    </div>
-    {% endif %}
-    <div class="metric-card">
-      <span class="metric-value">{{ page.improvement | default: "+23%" }}</span>
-      <div class="metric-label">Millora vs Baseline</div>
-    </div>
-  </div>
-</div>
 
-<!-- Arquitectura del sistema -->
-<div class="project-section">
-  <h2>🏗️ Arquitectura del Sistema</h2>
-  <div class="architecture-diagram" style="padding: 0; border: none; overflow: hidden;">
-    {% if page.architecture_image %}
-      <img src="{{ page.architecture_image }}" alt="Arquitectura del sistema" style="width: 100%; height: auto; display: block;">
-    {% else %}
-      <div style="padding: 3rem; border: 2px dashed #ccc; border-radius: 8px;">
-        <p>📋 Diagrama d'Arquitectura</p>
-        <p style="font-style: italic; color: #999;">
-          [Aquí aniria un diagrama detallat de l'arquitectura del sistema<br>
-          mostrant el flux de dades, components principals i integracions]
-        </p>
+    <!-- Tech Stack -->
+    {% if page.technologies %}
+      <div style="margin-bottom: 0.5rem; font-weight: 700; color: #475569; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em;">Technologies & Stack</div>
+      <div class="tech-pills">
+        {% for tech in page.technologies %}
+          <span class="tech-pill">{{ tech }}</span>
+        {% endfor %}
       </div>
     {% endif %}
-  </div>
-  
-  {% if page.architecture_description %}
-  <p>{{ page.architecture_description }}</p>
-  {% else %}
-  <p>El sistema segueix una arquitectura modular amb components ben definits per a la ingesta, processament, entrenament i desplegament del model. La pipeline està optimitzada per a escalabilitat i mantenibilitat.</p>
-  {% endif %}
-</div>
 
-<!-- Implementació destacada -->
-  {% if page.code_snippet %}
-  <div class="project-section">
-    <h2>💻 Implementació Destacada</h2>
-    <div class="code-snippet">{{ page.code_snippet }}</div>
-  </div>
-  {% endif %}
-
-<!-- Reptes i solucions -->
-<div class="project-section">
-  <h2>🧩 Reptes i Solucions</h2>
-  <ul class="challenges-list">
-    {% if page.challenges %}
-    {% for challenge in page.challenges %}
-    <li class="challenge-item">
-      <div class="challenge-title">Repte: {{ challenge.problem }}</div>
-      <div>{{ challenge.description }}</div>
-      <div class="challenge-solution">✅ Solució: {{ challenge.solution }}</div>
-    </li>
-    {% endfor %}
-    {% else %}
-    <li class="challenge-item">
-      <div class="challenge-title">Repte: Qualitat de les Dades</div>
-      <div>El dataset inicial presentava valors faltants i inconsistències que afectaven el rendiment del model.</div>
-      <div class="challenge-solution">✅ Solució: Implementació d'una pipeline robusta de neteja i validació de dades amb tècniques d'imputació avançades.</div>
-    </li>
-    <li class="challenge-item">
-      <div class="challenge-title">Repte: Escalabilitat</div>
-      <div>El model inicial no podia processar volums grans de dades en temps real.</div>
-      <div class="challenge-solution">✅ Solució: Migració a una arquitectura distribuïda amb Apache Spark i optimització algorítmica.</div>
-    </li>
-    <li class="challenge-item">
-      <div class="challenge-title">Repte: Interpretabilitat</div>
-      <div>Els stakeholders necessitaven entendre les decisions del model per a la seva adopció.</div>
-      <div class="challenge-solution">✅ Solució: Integració de SHAP i LIME per a explicabilitat del model i creació de dashboards interactius.</div>
-    </li>
+    <!-- Real Metrics Strip (only if explicitly provided) -->
+    {% if page.accuracy or page.f1_score or page.dataset_size or page.improvement %}
+      <div class="metrics-strip">
+        {% if page.accuracy %}
+          <div class="metric-card">
+            <span class="metric-value">{{ page.accuracy }}</span>
+            <div class="metric-label">Model Accuracy</div>
+          </div>
+        {% endif %}
+        {% if page.f1_score %}
+          <div class="metric-card">
+            <span class="metric-value">{{ page.f1_score }}</span>
+            <div class="metric-label">Test F1-Score</div>
+          </div>
+        {% endif %}
+        {% if page.dataset_size %}
+          <div class="metric-card">
+            <span class="metric-value">{{ page.dataset_size }}</span>
+            <div class="metric-label">Dataset / Workload</div>
+          </div>
+        {% endif %}
+        {% if page.improvement %}
+          <div class="metric-card">
+            <span class="metric-value">{{ page.improvement }}</span>
+            <div class="metric-label">Benchmark Improvement</div>
+          </div>
+        {% endif %}
+      </div>
     {% endif %}
-  </ul>
-</div>
 
-<!-- Aprenentatges i conclusions -->
-<div class="project-section">
-  <h2>🎓 Aprenentatges i Conclusions</h2>
-  {% if page.learnings %}
-  <p>{{ page.learnings }}</p>
-  {% else %}
-  <p>Aquest projecte ha permès aprofundir en tècniques avançades de machine learning i enginyeria de dades. Els principals aprenentatges inclouen la importància d'una pipeline robusta de dades, l'optimització d'hiperparàmetres sistemàtica, i la necessitat d'interpretabilitat en entorns de producció.</p>
-  
-  <p>Les conclusions clau són que l'èxit d'un projecte de ML depèn tant de la qualitat de les dades com de l'algorisme escollit, i que la col·laboració interdisciplinària és fonamental per a la implementació exitosa de solucions d'IA.</p>
-  {% endif %}
-</div>
+    <!-- Media (Interactive App, Video, or Project Banner) -->
+    {% if page.demo_video %}
+      <div class="project-banner-container">
+        <video controls style="width: 100%; display: block;">
+          <source src="{{ page.demo_video }}" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+    {% elsif page.streamlit_url %}
+      <div class="project-banner-container" style="background: #ffffff; padding: 0;">
+        <iframe
+          src="{{ page.streamlit_url }}?embed=true"
+          height="800"
+          style="width: 100%; border: none;"
+          title="{{ page.title }}"
+        ></iframe>
+      </div>
+    {% else %}
+      <div class="project-banner-container">
+        <img src="{{ project_image }}" alt="{{ page.title }}" class="project-banner-img" onerror="this.parentElement.style.display='none'">
+      </div>
+    {% endif %}
 
-<!-- Liens del projecte -->
-{% if page.github_url or page.demo_url or page.paper_url %}
-<div class="project-section">
-  <h2>🔗 Enllaços del Projecte</h2>
-  <div class="project-links">
-    {% if page.github_url %}<a href="{{ page.github_url }}" class="project-link">📱 Codi Font</a>{% endif %}
-    {% if page.demo_url %}<a href="{{ page.demo_url }}" class="project-link">🚀 Demo en Viu</a>{% endif %}
-    {% if page.paper_url %}<a href="{{ page.paper_url }}" class="project-link">📄 Paper/Documentació</a>{% endif %}
-    {% if page.slides_url %}<a href="{{ page.slides_url }}" class="project-link">📊 Presentació</a>{% endif %}
+    <!-- Architecture Section (if provided) -->
+    {% if page.architecture_image or page.architecture_description %}
+      <div class="project-content-card" style="margin-bottom: 2rem;">
+        <h2 style="margin-top: 0;">System Architecture</h2>
+        {% if page.architecture_image %}
+          <img src="{{ page.architecture_image }}" alt="System Architecture Diagram" style="width: 100%; display: block; border-radius: 8px; margin-bottom: 1.5rem;">
+        {% endif %}
+        {% if page.architecture_description %}
+          <p>{{ page.architecture_description }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <!-- Main Project Content -->
+    <div class="project-content-card">
+      {{ content }}
+    </div>
+
+    <!-- Challenges & Solutions (only if explicitly provided) -->
+    {% if page.challenges %}
+      <div class="project-content-card">
+        <h2 style="margin-top: 0;">Key Engineering Challenges & Solutions</h2>
+        <ul class="challenges-list">
+          {% for challenge in page.challenges %}
+            <li class="challenge-item">
+              <div class="challenge-title">Challenge: {{ challenge.problem }}</div>
+              <div>{{ challenge.description }}</div>
+              <div class="challenge-solution">✓ Solution: {{ challenge.solution }}</div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    <!-- Learnings (only if explicitly provided) -->
+    {% if page.learnings %}
+      <div class="project-content-card">
+        <h2 style="margin-top: 0;">Key Takeaways & Insights</h2>
+        <p>{{ page.learnings }}</p>
+      </div>
+    {% endif %}
+
+    <!-- Bottom Navigation -->
+    <div class="project-nav-footer">
+      <a href="/projects/" class="back-link">← Back to all projects</a>
+      {% if gh_url %}
+        <a href="{{ gh_url }}" target="_blank" rel="noopener noreferrer" class="action-btn action-btn-primary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+          View Repository on GitHub ↗
+        </a>
+      {% endif %}
+    </div>
   </div>
 </div>
-{% endif %}

@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Interessos
+title: Interests
 permalink: /interests/
 ---
 <div class="interests-container">
 <!-- Recents -->
 <div class="interest-category">
-<h2>🔥 Recents</h2>
+<h2>🔥 Recent Activity</h2>
 <div class="interest-grid">
 <!-- Últim llibre llegit -->
 <div class="interest-item" id="recent-book"><a class="interest-link" href="https://app.thestorygraph.com/books/ea859dce-4ff3-4267-b996-afb90856b62d" rel="noopener" target="_blank">
@@ -46,7 +46,7 @@ permalink: /interests/
 <!-- Pel·lícules -->
 <div class="divider-fade"><div class="divider-fade-inner"></div></div>
 <div class="interest-category">
-<h2>🎬 Pel·lícules</h2>
+<h2>🎬 Movies</h2>
 <div class="interest-grid">
 <div class="interest-item">
 <a class="interest-link" href="https://letterboxd.com/tique_011/film/the-sound-of-music/activity/" rel="noopener" target="_blank">
@@ -89,7 +89,7 @@ permalink: /interests/
 <!-- Sèries -->
 <div class="divider-fade"><div class="divider-fade-inner"></div></div>
 <div class="interest-category">
-<h2>📺 Sèries</h2>
+<h2>📺 TV Shows</h2>
 <div class="interest-grid">
 <div class="interest-item">
 <a class="interest-link" href="https://www.imdb.com/title/tt0367279/" rel="noopener" target="_blank">
@@ -132,7 +132,7 @@ permalink: /interests/
 <!-- Llibres de ficció -->
 <div class="divider-fade"><div class="divider-fade-inner"></div></div>
 <div class="interest-category">
-<h2>📚 Ficció</h2>
+<h2>📚 Fiction</h2>
 <div class="interest-grid">
 <div class="interest-item">
 <a class="interest-link" href="https://app.thestorygraph.com/reviews/9b49ae8e-0b73-4d4b-bb89-ee7c98a80aef" rel="noopener" target="_blank">
@@ -175,7 +175,7 @@ permalink: /interests/
 <!-- Llibres de no-ficció -->
 <div class="divider-fade"><div class="divider-fade-inner"></div></div>
 <div class="interest-category">
-<h2>📖 No-ficció</h2>
+<h2>📖 Non-Fiction</h2>
 <div class="interest-grid">
 <div class="interest-item">
 <a class="interest-link" href="https://app.thestorygraph.com/reviews/99441071-67b2-40ee-9ec1-123df94e262b" rel="noopener" target="_blank">
@@ -218,7 +218,7 @@ permalink: /interests/
 <!-- Música (artistes i àlbums favorits) -->
 <div class="divider-fade"><div class="divider-fade-inner"></div></div>
 <div class="interest-category">
-<h2>🎵 Música</h2>
+<h2>🎵 Music</h2>
 <div class="interest-grid">
 <!-- Artistes seleccionats -->
 <div class="interest-item">
@@ -306,7 +306,7 @@ permalink: /interests/
 <!-- Menjar -->
 <div class="divider-fade"><div class="divider-fade-inner"></div></div>
 <div class="interest-category">
-<h2>🍽️ Menjar</h2>
+<h2>🍽️ Food & Cuisine</h2>
 <div class="interest-grid">
 <div class="interest-item">
 <a class="interest-link" href="#" rel="noopener" target="_blank">
@@ -390,7 +390,7 @@ permalink: /interests/
 </div>
 <!-- Esports -->
 <div class="interest-category">
-<h2>⚽ Esports</h2>
+<h2>⚽ Sports & Games</h2>
 <div class="interest-grid">
 <div class="interest-item">
 <a class="interest-link" href="#⚽-esports" rel="noopener" target="_blank">
@@ -411,19 +411,10 @@ permalink: /interests/
 </a>
 </div>
 <div class="interest-item">
-<a class="interest-.interest-link" href="#⚽-esports" rel="noopener" target="_blank">
-<img alt="Esport 3" onerror="this.parentElement.parentElement.innerHTML='&lt;div class=&quot;interest-placeholder&quot;&gt;Esport 3&lt;/div&gt;'" src="/images/interests/sports/climbing.jpg"/>
-<div class="interest-overlay">
-<div class="interest-title">Escalada</div>
-<div class="interest-subtitle">Janja Garnbret</div>
-</div>
-</a>
-</div>
-<div class="interest-item">
 <a class="interest-link" href="#⚽-esports" rel="noopener" target="_blank">
-<img alt="Esport 4" onerror="this.parentElement.parentElement.innerHTML='&lt;div class=&quot;interest-placeholder&quot;&gt;Esport 4&lt;/div&gt;'" src="/images/interests/sports/chess.jpg"/>
+<img alt="Chess" onerror="this.parentElement.parentElement.innerHTML='&lt;div class=&quot;interest-placeholder&quot;&gt;Chess&lt;/div&gt;'" src="/images/interests/sports/chess.jpg"/>
 <div class="interest-overlay">
-<div class="interest-title">Escacs</div>
+<div class="interest-title">Chess</div>
 <div class="interest-subtitle">Magnus Carlsen, penguingm1</div>
 </div>
 </a>
@@ -432,7 +423,7 @@ permalink: /interests/
 </div>
 <!-- Obres d'art -->
 <div class="interest-category art-category">
-<h2>🎨 Obres d'art</h2>
+<h2>🎨 Art & Architecture</h2>
 <div class="interest-grid">
 <div class="interest-item">
 <a class="interest-link" href="https://artsandculture.google.com/asset/shipwreck-off-a-rocky-coast-nuijen-wijnand/jwHeR2DfWY0qpw" rel="noopener" target="_blank">

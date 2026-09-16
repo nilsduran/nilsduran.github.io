@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 permalink: /
 ---
@@ -6,34 +6,35 @@ permalink: /
 <div class="home-container">
   <div class="home-content">
     <div class="home-image">
-        <img src="/images/misc/headshot.jpg" alt="Nils Duran" class="profile-image">
-        </div>
-        
-        <div class="home-title">
-        Hola, soc en Nils Duran, estudiant d'IA de Barcelona, Catalunya.
-        </div>
-        
-        <div class="home-subtitle">
-        M'interessen tot tipus d'especialitats de la IA com ara NLP, CV, ML, Deep Learning i Reinforcement Learning. També m'interessen camps científics relacionats com ara la neurociència i medicina, i la física i les matemàtiques.
-        </div>
-        
-        <div class="home-description">
-        Actualment estudio Intel·ligència Artificial a la Facultat d'Informàtica de Barcelona a la Universitat Politècnica de Catalunya (FIB-UPC). Faré un Erasmus al Karlsruhe Institut für Technologie (KIT) a Karlsruhe, Baden-Württemberg, Alemanya.
-        <br><br>
-        
-        Si vols més informació sobre la meva experiència acadèmica i professional, pots consultar el meu <a href="/cv">CV</a>.
-        <br><br>
-        
-        Sóc un gran fan de:
-          <br>
-          
-          <div style="margin-left: 1rem;">
-            • 🧠 La Intel·ligència Artificial i el seu potencial per resoldre problemes del món real.<br>
-            • 🎨 L'art en totes les seves formes com a eina transformadora. Alguns dels meus artistes preferits són l'Antoni Gaudí i en <a href="https://www.youtube.com/watch?v=GZg_36utl2w">CJ The X</a><br>
-            • 📚 Els llibres per reflexionar i somiar. Alguns que recomano són <a href="https://app.thestorygraph.com/books/6b6b5cc8-3724-4a9a-8465-2fb9ea94b69d">The Power Broker, Robert A. Caro</a> i <a href="https://app.thestorygraph.com/books/fde79989-1f95-4499-b879-81e4722e14c7">La plaça del Diamant, Mercè Rodoreda</a>.<br>
-            • L'escalada🧗, el tennis🎾, els escacs♟️ i el Barça<img src="/images/misc/escut-barça.png" alt="Barça Logo" style="width: 25px; height: 25px; vertical-align: middle;">. </div>
-        </div>
+      <img src="/images/misc/headshot.jpg" alt="Nils Duran" class="profile-image">
+    </div>
+    
+    <div class="home-title">
+      Hi, I'm Nils Duran — Data Science & AI Engineer from Barcelona, Catalonia.
+    </div>
+    
+    <div class="home-subtitle">
+      I specialize in applied machine learning, agentic systems (LangGraph / LLMs), high-performance deep learning, and software reliability. I am deeply interested in computational neuroscience, biomedical data science, and complex systems.
+    </div>
+    
+    <div class="home-description">
+      Currently pursuing a <strong>Master of Science in Data Science</strong> at Universitat Politècnica de Catalunya (UPC), after graduating with a <strong>BSc in Artificial Intelligence</strong> from the same university and completing an academic exchange at <strong>Karlsruhe Institute of Technology (KIT)</strong> in Germany. Working as a <strong>Software Tester Intern</strong> at Werfen.
+      <br><br>
+      
+      <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 1.25rem 0;">
+        <a href="/cv/" class="btn" style="padding: 0.55rem 1.1rem; background-color: #2563eb; color: #ffffff !important; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.9rem;">View Curriculum Vitae</a>
+        <a href="/projects/" class="btn" style="padding: 0.55rem 1.1rem; background-color: #f3f4f6; color: #1f2937 !important; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.9rem; border: 1px solid #d1d5db;">Browse Projects</a>
+      </div>
+      <br>
+      
+      Areas of passion & work:
+      <div style="margin-left: 1rem; margin-top: 0.5rem; line-height: 1.8;">
+        • 🧠 <strong>Artificial Intelligence & Neuroscience:</strong> Developing foundational brain decoding pipelines (EEG) with Spatio-Temporal GNNs, Transformers, and LoRA.<br>
+        • 🤖 <strong>Agentic Systems & LLMs:</strong> Designing multi-expert architectures (LangGraph) and clinical question-answering evaluation (MedQA).<br>
+        • ⚡ <strong>High-Performance Computing:</strong> Distributed model training on the MareNostrum 5 supercomputer with Slurm and PyTorch.<br>
+        • 💻 <strong>Full-Stack & Quality:</strong> Building real-world applications like <a href="https://vegantools.org" target="_blank" rel="noopener">Vegan Tools</a> and engineering automated testing frameworks in Java at Werfen.<br>
+        • ♟️ Outside of engineering: competitive chess, tennis, books, and Barça <img src="/images/misc/escut-barça.png" alt="Barça Logo" style="width: 22px; height: 22px; vertical-align: middle;">.
+      </div>
+    </div>
   </div>
 </div>
-
-

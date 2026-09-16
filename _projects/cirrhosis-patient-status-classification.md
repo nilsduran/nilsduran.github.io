@@ -1,60 +1,45 @@
----
+﻿---
 layout: project
-title: Classificació de l'Estat de Pacients amb Cirrosi
-subtitle: Sistema Intel·ligent de Suport al Diagnòstic Mèdic
+title: Clinical Survival Prediction in Cirrhosis Patients
+subtitle: Comparative Machine Learning & Explainable AI on Biomedical Data
 type: project
 image_format: png
-index_description: "Model ML interpretable per predir l'estat de pacients hepàtics amb un 94% de precisió, utilitzant XGBoost i SHAP."
-date_display: "Novembre 2024"
-duration: 8 setmanes
+index_description: "Multiclass clinical status and prognostic prediction on cirrhosis patients evaluating SVM, KNN, Decision Trees, and Explainable Boosting Machines (EBM)."
+date_display: "Spring 2024"
+duration: "Coursework Project"
 team_size: 1
 hero_color_1: "#e74c3c"
 hero_color_2: "#c0392b"
-executive_summary: "Desenvolupament d'un sistema de machine learning per a la classificació automàtica de l'estat de pacients amb cirrosi hepàtica, utilitzant dades clíniques i biomarcadors. El projecte va aconseguir una precisió del 94.2% superant els mètodes tradicionals en un 23%."
+executive_summary: "Biomedical machine learning project predicting survival outcomes and disease progression stages in cirrhosis patients using tabular clinical biomarkers. Benchmarked classical classifiers and Explainable Boosting Machines (EBM) with calibrated cross-validation."
 technologies:
   - Python
   - Scikit-learn
-  - Pandas
-  - NumPy
-  - XGBoost
-  - SHAP
-  - Matplotlib
-  - Seaborn
-  - Jupyter Notebook
+  - Explainable Boosting Machines (InterpretML)
+  - Support Vector Machines (SVM)
+  - Pandas / NumPy
+  - Matplotlib / Seaborn
 key_achievements:
-  - Precisió del 94.2% en la classificació de l'estat del pacient
-  - Reducció del 40% en el temps de diagnòstic
-  - Implementació d'explicabilitat del model amb SHAP
-  - Pipeline automatitzada de preprocessament de dades
-accuracy: 94.2%
-dataset_size: 12.8K
-processing_time: <0.5s
-improvement: +23%
-architecture_description: "L'arquitectura segueix un enfocament modular amb components separats per a la ingesta de dades clíniques, preprocessament amb gestió de valors faltants, feature engineering biomèdic, entrenament d'ensemble de models, i sistema d'explicabilitat per a suport clínic."
+  - "Built an end-to-end clinical tabular preprocessing and imputation pipeline"
+  - "Trained and benchmarked KNN, Decision Trees, SVM, and EBM classifiers"
+  - "Evaluated feature importance curves and clinical risk factor attributions"
+  - "Addressed multi-class imbalance through calibrated stratified cross-validation"
+accuracy: "Cross-Validated"
+dataset_size: "Clinical Cohort"
+improvement: "XAI Transparency"
+architecture_description: "Modular tabular ML workflow incorporating automated missing-value handling, outlier detection, feature standardization, and hyperparameter tuning with cross-validation."
 challenges:
-  - problem: Desequilibri de classes
-    description: El dataset presentava una distribució desigual entre les diferents categories d'estat del pacient
-    solution: Aplicació de tècniques SMOTE i ajust de pesos de classe per equilibrar el dataset
-  - problem: Valors faltants crítics
-    description: Diversos biomarcadors clau tenien fins a un 30% de valors faltants
-    solution: Desenvolupament d'un sistema d'imputació intel·ligent basat en correlacions clíniques
-  - problem: Interpretabilitat clínica
-    description: Els metges necessitaven entendre les decisions del model per confiar-hi
-    solution: Integració de SHAP values i creació d'un dashboard de factors de risc interpretables
-learnings: "Aquest projecte va proporcionar una comprensió profunda de les particularitats del machine learning en l'àmbit sanitari. La importància de la interpretabilitat del model en contexts clínics no pot ser subestimada - els professionals sanitaris necessiten entendre el 'perquè' darrere de cada predicció. L'experiència va demostrar que a vegades un model lleugerament menys precís però més interpretable és preferible en aplicacions crítiques com la medicina."
-github_url: "https://github.com/nilsduran/cirrhosis-classification"
+  - problem: Clinical Interpretability
+    description: Medical practitioners require transparent rationales behind risk predictions rather than opaque black-box outputs.
+    solution: Deployed Explainable Boosting Machines (EBMs) providing exact generalized additive feature contribution scores for each clinical variable.
+learnings: "Deepened practical appreciation for the trade-offs between raw predictive accuracy and clinical interpretability, where transparent models like EBMs provide critical decision support."
 ---
 
-## Descripció del Projecte
+## Project Overview
 
-El projecte se centra en el desenvolupament d'un sistema intelligent per a la classificació de l'estat de pacients amb cirrosi hepàtica. Utilitzant un conjunt complet de dades clíniques que inclou biomarcadors, historial mèdic i paràmetres bioquímics, el sistema és capaç de predir amb alta precisió l'estat actual del pacient i el risc de progressió de la malaltia.
+Cirrhosis of the liver is a progressive clinical condition where timely prognostic stratification is vital for therapeutic prioritization. This project developed and evaluated predictive models for classifying clinical patient outcomes from complex biomarker panels.
 
-La cirrosi hepàtica és una condició mèdica complexa que requereix una avaluació contínua i precisa per a un tractament efectiu. Aquest projecte aborda la necessitat d'eines automatitzades que puguin assistir els professionals sanitaris en la presa de decisions clíniques basades en evidència.
+### Methodology
 
-## Metodologia
-
-L'enfocament metodològic va seguir les millors pràctiques en ciència de dades aplicada a la salut, començant amb una exhaustiva anàlisi exploratòria per entendre les característiques del dataset i identificar patterns clínics rellevants. Posteriorment, es va desenvolupar una pipeline robusta de preprocessament capaç de gestionar la variabilitat inherent de les dades mèdiques.
-
-## Resultats Clínics
-
-Els resultats obtinguts demostren el potencial de les tècniques de machine learning en el suport al diagnòstic mèdic. La capacitat del sistema per identificar factors de risc subtils i proporcionar explicacions interpretables el converteix en una eina valuosa per a la pràctica clínica quotidiana.
+- **Data Preprocessing:** Implemented clinical biomarker normalization, handled missing clinical observations, and applied stratified partitioning to maintain class ratios.
+- **Model Benchmarking:** Systematically evaluated k-Nearest Neighbors (k-NN), Support Vector Classifiers (SVC), Decision Trees, and Generalized Additive Models with interactions (Explainable Boosting Machines).
+- **Interpretability Analysis:** Analyzed individual feature contribution curves to identify key physiological markers driving high-risk prognostic classifications.

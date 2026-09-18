@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/dream-scenario/" rel="noopener" target="_blank">
-<img alt="Dream Scenario (2023)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/7/3/9/6/9/1/739691-dream-scenario-0-500-0-750-crop.jpg?v=bd5ff0ede9"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-fabelmans/" rel="noopener" target="_blank">
+<img alt="The Fabelmans (2022)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/7/2/1/2/8/8/721288-the-fabelmans-0-500-0-750-crop.jpg?v=93ea6717b8"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Dream Scenario (2023)</div>
-<div class="interest-subtitle recent-movie-director">★★★½</div>
+<div class="interest-title recent-movie-title">The Fabelmans (2022)</div>
+<div class="interest-subtitle recent-movie-director">★★★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

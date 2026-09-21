@@ -17,7 +17,7 @@ headshot: /images/misc/headshot.jpg
 
 ### Introduction
 
-Hi, I'm Nils, a 22-year-old Data Science and Machine Learning (ML) engineer based in Barcelona, Catalonia. I recently graduated with a Bachelor's degree in Artificial Intelligence from the *Universitat Politècnica de Catalunya (UPC)* and am currently pursuing my Master's in Data Science at the same university.
+Hi, I'm Nils, a 22-year-old Data Science and Machine Learning Engineer based in Barcelona, Catalonia. I recently graduated with a Bachelor's degree in Artificial Intelligence from the *Universitat Politècnica de Catalunya (UPC)* and am currently pursuing my Master's in Data Science at the same university.
 
 Outside of research and engineering, I enjoy reading, playing tennis, and competitive chess.
 
@@ -31,18 +31,18 @@ I focus on architecting reliable, high-performance computing and machine learnin
 
 ### Education
 
-- **MSc in Data Science** — *Universitat Politècnica de Catalunya (UPC)* (2026 – Present)
+- **MSc in Data Science** — *Universitat Politècnica de Catalunya (UPC)* (2026 – Expected June 2028)
   - Specializing in large-scale distributed data systems, statistical learning, and ML infrastructure.
 - **BSc in Artificial Intelligence** — *Universitat Politècnica de Catalunya (UPC)* (2022 – 2026)
   - *Bachelor Thesis (TFG):* "Decoding Perceptual Consciousness via Computational Neuroscience and Deep Learning".
-- **Academic Exchange (Erasmus+)** — *Karlsruhe Institute of Technology (KIT)*, Germany (2024 – 2025)
+- **Academic Exchange (Erasmus+)** — *Karlsruhe Institute of Technology (KIT)*, Germany (Oct 2025 – Mar 2026)
   - Advanced coursework in high-performance algorithms, distributed computing, and systems engineering. Certified German C1 level.
 
 ### Industry & Applied Research
 
 - **Werfen** — *Software Tester Intern (Beacon Project)* (June 2026 – Present)
   - Engineering fullstack automated test suites in Java (API & FormUI) for in-vitro diagnostic (IVD) clinical laboratory software on the Beacon Project. Managing requirements traceability and verification with Jama Connect, and developing automation scripts to accelerate QA cycles under ISO 13485 regulations.
-- **Sparsity Technologies** — *Data Engineering Intern* (October 2025 – January 2026)
+- **Sparsity Technologies** — *Data Engineering Intern* (Fall 2025)
   - Automated graph data extraction and ingestion pipelines, executed complex graph queries for competitor intelligence, and applied statistical text analysis.
 - **Telefónica Innovación Digital** — *Applied AI Research Collaboration* (Spring 2025)
   - Co-developed SinergIA: an agentic multi-expert system with LangGraph boosting baseline Gemini accuracy on MedQA by +3% via diversity modeling and LoRA fine-tuning.

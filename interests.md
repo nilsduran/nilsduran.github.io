@@ -17,10 +17,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/zootopia-2/" rel="noopener" target="_blank">
-<img alt="Zootopia 2 (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/9/7/7/3/4/2/977342-zootopia-2-0-500-0-750-crop.jpg?v=00a15a97bc"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-invite-2026/" rel="noopener" target="_blank">
+<img alt="The Invite (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/8/5/4/8/3/1/854831-the-invite-2026-0-500-0-750-crop.jpg?v=ee72905e48"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Zootopia 2 (2025)</div>
+<div class="interest-title recent-movie-title">The Invite (2026)</div>
 <div class="interest-subtitle recent-movie-director">★★★★</div>
 </div>
 </a></div>

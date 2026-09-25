@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-invite-2026/" rel="noopener" target="_blank">
-<img alt="The Invite (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/8/5/4/8/3/1/854831-the-invite-2026-0-500-0-750-crop.jpg?v=ee72905e48"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/dont-say-good-luck/" rel="noopener" target="_blank">
+<img alt="Don't Say Good Luck (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/3/8/0/6/7/1/1380671-dont-say-good-luck-0-500-0-750-crop.jpg?v=70cba134f2"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">The Invite (2026)</div>
-<div class="interest-subtitle recent-movie-director">★★★★</div>
+<div class="interest-title recent-movie-title">Don't Say Good Luck (2026)</div>
+<div class="interest-subtitle recent-movie-director">★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

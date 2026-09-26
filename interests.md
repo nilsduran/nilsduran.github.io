@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-zone-of-interest/" rel="noopener" target="_blank">
-<img alt="The Zone of Interest (2023)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/3/9/8/8/0/0/398800-the-zone-of-interest-0-500-0-750-crop.jpg?v=0514f658e1"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/alien-romulus/" rel="noopener" target="_blank">
+<img alt="Alien: Romulus (2024)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/8/5/0/4/5/9/850459-alien-romulus-0-500-0-750-crop.jpg?v=acabb7fd83"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">The Zone of Interest (2023)</div>
-<div class="interest-subtitle recent-movie-director">★★★★</div>
+<div class="interest-title recent-movie-title">Alien: Romulus (2024)</div>
+<div class="interest-subtitle recent-movie-director">★★★½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

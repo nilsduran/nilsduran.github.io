@@ -17,10 +17,10 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/coyote-vs-acme/" rel="noopener" target="_blank">
-<img alt="Coyote vs. Acme (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/0/8/9/0/8/8/1089088-coyote-vs-acme-0-500-0-750-crop.jpg?v=735eb10cc7"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/escape-room-2/" rel="noopener" target="_blank">
+<img alt="Escape Room 2 (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/4/4/6/3/4/3/1446343-escape-room-2-0-500-0-750-crop.jpg?v=65a86f1b83"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Coyote vs. Acme (2026)</div>
+<div class="interest-title recent-movie-title">Escape Room 2 (2026)</div>
 <div class="interest-subtitle recent-movie-director">★★★★</div>
 </div>
 </a></div>

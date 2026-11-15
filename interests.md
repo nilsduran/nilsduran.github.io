@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/your-mother-your-mother-your-mother/" rel="noopener" target="_blank">
-<img alt="Your Mother Your Mother Your Mother (2026)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/1/3/1/5/2/1/6/1315216-your-mother-your-mother-your-mother-0-500-0-750-crop.jpg?v=a644997d58"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/war-of-the-worlds-2025/" rel="noopener" target="_blank">
+<img alt="War of the Worlds (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/6/7/6/5/4/5/676545-war-of-the-worlds-2025-0-500-0-750-crop.jpg?v=758c330585"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">Your Mother Your Mother Your Mother (2026)</div>
-<div class="interest-subtitle recent-movie-director">★★★★</div>
+<div class="interest-title recent-movie-title">War of the Worlds (2025)</div>
+<div class="interest-subtitle recent-movie-director">½</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->

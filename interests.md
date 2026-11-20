@@ -17,11 +17,11 @@ permalink: /interests/
 </div>
 </a></div>
 <!-- Última pel·lícula vista -->
-<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/war-of-the-worlds-2025/" rel="noopener" target="_blank">
-<img alt="War of the Worlds (2025)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/film-poster/6/7/6/5/4/5/676545-war-of-the-worlds-2025-0-500-0-750-crop.jpg?v=758c330585"/>
+<div class="interest-item" id="recent-movie"><a class="interest-link" href="https://letterboxd.com/tique_011/film/the-hunger-games/1/" rel="noopener" target="_blank">
+<img alt="The Hunger Games (2012)" class="recent-movie-poster" onerror="this.src='/images/interests/recent/movie.jpg'" src="https://a.ltrbxd.com/resized/sm/upload/x3/tw/wu/z4/vAkjFEm76Lu5hSevquxPgQ91OtI-0-500-0-750-crop.jpg?v=f4bfaf16df"/>
 <div class="interest-overlay">
-<div class="interest-title recent-movie-title">War of the Worlds (2025)</div>
-<div class="interest-subtitle recent-movie-director">½</div>
+<div class="interest-title recent-movie-title">The Hunger Games (2012)</div>
+<div class="interest-subtitle recent-movie-director">★★★★★</div>
 </div>
 </a></div>
 <!-- Última cançó escoltada -->
